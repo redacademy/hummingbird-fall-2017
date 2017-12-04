@@ -24,7 +24,7 @@ js-standard-style
 
 Include logo/demo screenshot etc.
 
-Tech/framework used
+##Tech/framework used
 
 Ex. -
 
