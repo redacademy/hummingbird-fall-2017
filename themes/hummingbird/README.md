@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Project title
-=======
 # Tomatoes suck 
->>>>>>> dba28d029c22b578997ca88d242a5ac8f3288ae2
 
 A little info about your project and/ or overview that explains what the project is about.
 
