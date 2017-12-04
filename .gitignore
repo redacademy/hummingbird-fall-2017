@@ -38,7 +38,7 @@ themes/*
 
 # Ignore npm packages #
 # =================== #
-themes/[hummingbird/node_modules/*
+themes/hummingbird/node_modules/*
 
 # Ignore build files #
 # ================== #
