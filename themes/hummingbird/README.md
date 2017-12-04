@@ -1,4 +1,4 @@
-# RED Starter
+# Tomatoes suck 
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
