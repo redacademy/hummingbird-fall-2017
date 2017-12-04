@@ -49,7 +49,7 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 Describe and show how to run the tests with code examples.
 
-**How to use?
+**How to use?git add . 
 
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 
