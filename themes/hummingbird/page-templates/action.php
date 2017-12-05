@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+ * 
+ * Template Name: Action Page
  *
  * @package Hummingbird_Theme
  */

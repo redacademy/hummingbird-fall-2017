@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Who Page
  *
  * @package Hummingbird_Theme
  */

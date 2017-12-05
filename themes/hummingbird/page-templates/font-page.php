@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Front-page Page
  *
  * @package Hummingbird_Theme
  */
