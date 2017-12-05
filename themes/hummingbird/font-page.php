@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front-page Page
+ * Template Name: Front-Page 
  *
  * @package Hummingbird_Theme
  */
