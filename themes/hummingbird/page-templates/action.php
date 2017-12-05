@@ -6,6 +6,7 @@
  * @package Hummingbird_Theme
  */
 
+
 get_header(); ?>
 
 	<div id="primary" class="content-area page-action">
