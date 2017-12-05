@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Volunteer Page
  *
  * @package Hummingbird_Theme
  */
