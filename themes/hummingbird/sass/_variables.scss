@@ -4,16 +4,27 @@ $base__space-unit: 1.5rem;
 
 // Colors
 
+$color__black: #000000;
+$color__text-main: #171717;
 $color__background-body: #f0f3f3;
-$color__text-main: #404040;
-
-$color__background-screen: #f1f1f1;
-$color__text-screen: #21759b;
-
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__border-abbr: #666;
+$color__white: #fff;
+$color__white-alt: #f0f3f3;
+$color__green-light: #cbd8d5;
+$color__green-nav-bar: #e8eeee;
+$color__green-medium: #adc1bd;
+$color__green-main: #688e87;
+$color__green-text: #577c74;
+$color__green-icons: #7d9c96;
+$color__main-orange: #da9127;
+$color__text-orange: #d07f1e;
+$color__numbers-orange: #c5781d;
+$color__blue-numbers: #619da3;
+$color__blue-dark: #113340;
+$color__burgundy-light: #744d4d;
+$color__burgundy-dark: #3c2829;
+$color__grey-light: #d8d8d8;
+$color__grey-medium: #c3c3c3;
+$color__grey-dark: #979797;
 
 $color__link: royalblue;
 $color__link-visited: purple;
@@ -21,8 +32,10 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Overpass', sans-serif;
+$font__headings: 'Merriweather', serif;;
+$font__extra: SFNS Display Regular;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__size-basic: 17px;
+$font__size-h1: 50px;
