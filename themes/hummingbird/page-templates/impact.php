@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Impact Page
  *
  * @package Hummingbird_Theme
  */
