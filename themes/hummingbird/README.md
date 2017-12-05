@@ -3,11 +3,11 @@
 
 # Hummingbird Network 
 
-A little info about your project and/ or overview that explains what the project is about.
+A WordPress site designed and created for a startup which operates largely in the public interest. The Hummingbird Network is a an organization dedicated to the early warning of forest fires in western Canada. 
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+The founders of the Hummingbird Network are looking to attract volunteers to their organization, and enhance their ability to have universal, immediate indication of forest fires throughout the western provinces. We have created a simple to use, attractive website used to spread awareness and encourage potential volunteers to sign up. s
 
 ## Build status
 
@@ -17,9 +17,11 @@ Build Status Windows Build Status
 
 ## Code style
 
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
+This site is built using:
+SASS
+PHP
+jQuery
 
-js-standard-style
 
 ## Screenshots
 
@@ -34,6 +36,8 @@ front-page.php
 impact.php
 volunteer.php
 who.php
+
+*These templates include corresponding .scss partials.
 
 ## Built with
 
@@ -58,10 +62,6 @@ Depending on the size of the project, if it is small and simple enough the refer
 
 Describe and show how to run the tests with code examples.
 
-## How to use?git add . 
-
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
 ## Contribute
 
 Let people know how they can contribute into your project. A contributing guideline will be a big plus.
@@ -74,6 +74,10 @@ Anything else that seems useful
 
 ## License
 
-A short snippet describing the license (MIT, Apache etc)
+Copyright <2017> <Nathan, Travis, Hamdy (Red Academy Dev Class fall 2017)>
 
-MIT © Yourname
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
