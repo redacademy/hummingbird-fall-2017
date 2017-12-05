@@ -3,11 +3,7 @@
 
 # Hummingbird Network 
 
-<<<<<<< HEAD
-A little info about your project and/ or overview that explains what the project is about. 
-=======
 A WordPress site designed and created for a startup which operates largely in the public interest. The Hummingbird Network is a an organization dedicated to the early warning of forest fires in western Canada. 
->>>>>>> 6450d0942468929d5b53af3608476bb4225afe38
 
 ## Motivation
 
