@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Front-page Page
+ * Template Name: Front-Page 
  *
  * @package Hummingbird_Theme
  */
@@ -15,7 +15,9 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+				<?php echo CFS()->get('front_page_header_title'); ?>
+
+			<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
