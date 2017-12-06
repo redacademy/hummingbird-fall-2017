@@ -223,9 +223,6 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -233,8 +230,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #171717;
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -257,8 +254,8 @@ address {
   margin: 0 0 1.5rem; }
 
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  background: #f0f3f3;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -268,16 +265,16 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Overpass", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #c3c3c3;
   cursor: help; }
 
 mark, ins {
-  background: #fff9c0;
+  background: #f0f3f3;
   text-decoration: none; }
 
 big {
@@ -300,7 +297,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #f0f3f3;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -309,7 +306,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #ccc;
+  background-color: #f0f3f3;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -504,12 +501,12 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #f1f1f1;
+    background-color: #f0f3f3;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #c3c3c3;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -665,7 +662,10 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 /* Front page */
+=======
+>>>>>>> f14dce6f43ff1751d01a52fcbac4dbbe8f1d4c36
 /*--------------------------------------------------------------
 - page-action
 --------------------------------------------------------------*/
@@ -684,3 +684,37 @@ object {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+<<<<<<< HEAD
+=======
+/*--------------------------------------------------------------
+- page-footer
+--------------------------------------------------------------*/
+.page-footer {
+  width: 100%;
+  height: 614px;
+  color: #fff;
+  background-color: #688e87; }
+  .page-footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff; }
+  .page-footer .logo-white {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    right: 30px; }
+  .page-footer .line-one {
+    margin-left: 80px; }
+  .page-footer .address {
+    line-height: 1px;
+    margin-left: 80px; }
+    .page-footer .address img {
+      position: absolute;
+      left: 60px; }
+  .page-footer .email-icon {
+    position: absolute;
+    left: 60px; }
+  .page-footer .phone-icon {
+    position: absolute;
+    left: 60px; }
+>>>>>>> f14dce6f43ff1751d01a52fcbac4dbbe8f1d4c36
