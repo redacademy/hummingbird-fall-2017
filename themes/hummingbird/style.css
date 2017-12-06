@@ -685,5 +685,29 @@ object {
 --------------------------------------------------------------*/
 .page-footer {
   width: 100%;
-  height: 30%;
+  height: 614px;
+  color: #fff;
   background-color: #688e87; }
+  .page-footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff; }
+  .page-footer .logo-white {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    right: 30px; }
+  .page-footer .line-one {
+    margin-left: 80px; }
+  .page-footer .address {
+    line-height: 1px;
+    margin-left: 80px; }
+    .page-footer .address img {
+      position: absolute;
+      left: 60px; }
+  .page-footer .email-icon {
+    position: absolute;
+    left: 60px; }
+  .page-footer .phone-icon {
+    position: absolute;
+    left: 60px; }
