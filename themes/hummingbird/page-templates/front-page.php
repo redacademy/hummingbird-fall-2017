@@ -43,10 +43,43 @@ get_header(); ?>
 						echo '<div>';
 						echo $field['front_page_explanation_case_number'];
 						echo $field['front_page_explanation_case_title'];
+						echo $field['front_page_explanation_case_abstract'];
 						echo '</div>';
 					}
+				?>
+			</section>
 
-					// d($fields);
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
+				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'front_page_impact_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['front_page_impact_case_number'];
+						echo $field['front_page_impact_case_metric'];
+						echo $field['front_page_impact_case_content'];
+						echo '</div>';
+					}
+				?>
+			</section>
+
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'front_page_volunteer_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['front_page_volunteer_case_name'];
+						echo $field['front_page_volunteer_case_content'];
+						echo '</div>';
+					}
 				?>
 			</section>
 
