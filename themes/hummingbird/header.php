@@ -12,12 +12,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i|Overpass:300,300i,400,400i,700,700i" rel="stylesheet">
+		
 	<?php wp_head(); ?>
+	 
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
+		<div id="page" class="hfeed site page-header">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
