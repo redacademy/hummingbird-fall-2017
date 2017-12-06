@@ -20,24 +20,43 @@
     }
     .line-one{
     margin-left: 80px;
+    vertical-align: bottom;
     }
     .address{
-    line-height: 1px;
+    line-height: 1.5px;
     margin-left: 80px;
+    height: 135px;
+    .location-marker {
+        position: relative;
+        left: -30px;
+        bottom: -30px;
+    }
+    }
+    .emailphone{
+    margin-left: 60px;
+    p {
+        margin: 0;
+    }
+    .phone-number {
+    margin-left: 7px;
+    line-height: 2.2;
+    }
+    }
+    .email-icon {
+    position: relative;
+    left: -15px;
+    }
+    .phone-icon {
+    position: relative;
+    left: -10px;
+    vertical-align: text-top;
+    }
+    .sm-icons {
+    text-align: center;
     img {
-        position: absolute;
-        left: 60px;
+        padding: .7rem;
     }
     }
-    .email-icon{
-        position: absolute;
-        left: 60px;
-    }
-    .phone-icon{
-        position: absolute;
-        left: 60px;
-    }
-    
 
 
 
