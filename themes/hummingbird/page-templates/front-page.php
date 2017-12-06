@@ -13,6 +13,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
 			<?php endwhile; // End of the loop. ?>
 
 			<section>
@@ -37,10 +38,47 @@ get_header(); ?>
 
 			<section>
 				<?php
-					$loop = CFS()->get( 'front_page_explanation_content_case' );
-					foreach ( $loop as $row ) {
-							echo $row['step_number'];
-							echo $row['title'];
+					$fields = CFS()->get( 'front_page_explanation_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['front_page_explanation_case_number'];
+						echo $field['front_page_explanation_case_title'];
+						echo $field['front_page_explanation_case_abstract'];
+						echo '</div>';
+					}
+				?>
+			</section>
+
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
+				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'front_page_impact_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['front_page_impact_case_number'];
+						echo $field['front_page_impact_case_metric'];
+						echo $field['front_page_impact_case_content'];
+						echo '</div>';
+					}
+				?>
+			</section>
+
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'front_page_volunteer_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['front_page_volunteer_case_name'];
+						echo $field['front_page_volunteer_case_content'];
+						echo '</div>';
 					}
 				?>
 			</section>
