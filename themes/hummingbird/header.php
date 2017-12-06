@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i|Overpass:300,300i,400,400i,700,700i" rel="stylesheet">
 		
 	<?php wp_head(); ?>
+	 
 	</head>
 
 	<body <?php body_class(); ?>>
