@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Front Page
  *
  * @package Hummingbird_Theme
  */
@@ -62,22 +62,6 @@ get_header(); ?>
 						echo $field['front_page_impact_case_number'];
 						echo $field['front_page_impact_case_metric'];
 						echo $field['front_page_impact_case_content'];
-						echo '</div>';
-					}
-				?>
-			</section>
-
-			<section>
-				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
-			</section>
-
-			<section>
-				<?php
-					$fields = CFS()->get( 'front_page_volunteer_case' );
-					foreach ( $fields as $field ) {
-						echo '<div>';
-						echo $field['front_page_volunteer_case_name'];
-						echo $field['front_page_volunteer_case_content'];
 						echo '</div>';
 					}
 				?>
