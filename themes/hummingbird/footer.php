@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the footer.
+  * Template Name: Footer page
  *
  * @package Hummingbird_Theme
  */
@@ -12,10 +12,12 @@
 			<footer id="colophon" class="site-footer page-footer" role="contentinfo">
 				<div class="site-info">
 
+                <p><?php echo CFS()->get( 'footer_address' ); ?></p>
+					
                 <p>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"><span>info@hummingbirdnetwork.ca</span></p>
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"><span><?php echo CFS()->get( 'footer_email' ); ?></span></p>
                 <p>
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"><span>(250) 877.7082</span>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"><span><?php echo CFS()->get( 'footer_phone_number' ); ?></span>
 				</p>
                 <p>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon">
@@ -28,8 +30,6 @@
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
 		<?php wp_footer(); ?>
-
 	</body>
 </html>
