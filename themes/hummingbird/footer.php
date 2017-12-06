@@ -11,14 +11,16 @@
 
 			<footer id="colophon" class="site-footer page-footer" role="contentinfo">
 				<div class="site-info">
-
-				<div class="line-one">
-				   <span><h3>Contact Details</h3></span><img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-white-large.png" alt="symbol white large">
+                <div class="footer-form">
 				</div>
-
-				<div class="address">   
-			       <img class="location-marker" src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="location marker">
-				  <p>348 Tranquille Road</p>
+				<div class="logo">
+				   <span></span><img class="logo-white" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-white-large.png" alt="symbol white large">
+				</div>
+                <p class="line-one">Contact Details</p>
+				<div class="address">
+				  <p class="top-line">
+					  <img class="location-marker" src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="location marker"><span>348 Tranquille Road</span>
+				  </p>
 				  <p>Kamloops BC</p>
 				  <p> V2B 3G6</p>
 				  <p> Canada</p>
