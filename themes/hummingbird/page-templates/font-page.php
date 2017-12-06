@@ -12,10 +12,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
 			<?php endwhile; // End of the loop. ?>
+
+			<?php echo CFS()->get( 'front_page_header_title' ); ?>
+			<?php echo CFS()->get( 'front_page_header_content' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
