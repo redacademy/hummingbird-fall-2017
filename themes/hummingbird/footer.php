@@ -40,8 +40,16 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon">
                 </div>
 				<div class="black-bottom">
-
-				</div> 
+                  <div class="blog">Blog</div>
+				  <div class="faq">FAQ</div>
+				  <div class="sitemap">Site Map</div>
+				  <div class="pp">Privacy Policy</div>
+				  <div class="copyright">c 2017 Hummingbird Network</div>
+				  <div class="designed">Designed by Dream Team</div>
+				  <div class="powered">Powered by Coffee</div>
+				</div>
+				 
+				
 
 				<a href="<?php echo esc_url( 'https://github.com/redacademy/hummingbird-fall-2017' ); ?>"><?php printf( esc_html( 'Proudly developed by %s' ), 'Nate, Travis, Hamdy' ); ?></a>
 
