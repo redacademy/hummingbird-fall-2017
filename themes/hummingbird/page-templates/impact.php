@@ -17,6 +17,11 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
+			<section>
+				<h1><?php echo CFS()->get( 'impact_header_title' ); ?></h1>
+				<p><?php echo CFS()->get( 'impact_header_content' ); ?></p>
+			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
