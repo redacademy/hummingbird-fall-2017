@@ -15,21 +15,37 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
-			<?php echo CFS()->get( 'front_page_header_title' ); ?>
-			<?php echo CFS()->get( 'front_page_header_content' ); ?>
+			<section>
+				<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
+				<p><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
+			</section>
 
-			<?php echo CFS()->get( 'front_page_description_title' ); ?>
-			<?php echo CFS()->get( 'front_page_description_content' ); ?>
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
+				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
+			</section>
 
-			<?php echo CFS()->get( 'front_page_volunteer_title' ); ?>
-			<?php echo CFS()->get( 'front_page_volunteer_content' ); ?>
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
+				<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
+			</section>
 
-			<?php echo CFS()->get( 'front_page_explanation_title' ); ?>
-			<?php echo CFS()->get( 'front_page_explanation_content' ); ?>
+			<section>
+				<h2><?php echo CFS()->get( 'front_page_explanation_title' ); ?></h2>
+				<p><?php echo CFS()->get( 'front_page_explanation_content' ); ?></p>
+			</section>
 
+			<section>
+				<?php
+					$loop = CFS()->get( 'front_page_explanation_content_case' );
+					foreach ( $loop as $row ) {
+							echo $row['step_number'];
+							echo $row['title'];
+					}
+				?>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
