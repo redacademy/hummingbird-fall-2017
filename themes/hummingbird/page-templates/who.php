@@ -15,11 +15,11 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'who_header_title' ); ?></h1>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<?php
 					$fields = CFS()->get( 'who_header_case' );
 					foreach ( $fields as $field ) {
@@ -31,11 +31,11 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'who_team_title' ); ?></h1>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<?php
 					$fields = CFS()->get( 'who_team_case' );
 					foreach ( $fields as $field ) {
