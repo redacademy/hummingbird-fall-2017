@@ -131,6 +131,7 @@ $wp_admin_bar->add_menu( array(
 ) );
  
 // SIGN IN PAGE (PASSWORD IS SHOWING. NEEDS TO BE FIXED)
+// http://smallenvelop.com/how-to-get-password-fields-in-contact-form-7/
 function cfp($atts, $content = null) {
 	extract(shortcode_atts(array( "id" => "", "title" => "", "pwd" => "" ), $atts));
 
