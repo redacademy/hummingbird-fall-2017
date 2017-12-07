@@ -49,8 +49,7 @@
 				  <div class="powered">Powered by Coffee</div>
 				</div>
 				 
-				
-
+			
 				<a href="<?php echo esc_url( 'https://github.com/redacademy/hummingbird-fall-2017' ); ?>"><?php printf( esc_html( 'Proudly developed by %s' ), 'Nate, Travis, Hamdy' ); ?></a>
 
 				</div><!-- .site-info -->
