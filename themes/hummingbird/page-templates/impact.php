@@ -29,8 +29,12 @@ get_header(); ?>
 					$fields = CFS()->get( 'impact_header_case' );
 					foreach ( $fields as $field ) {
 						echo '<div>';
-						echo $field['impact_header_case_title'];
-						echo $field['impact_header_case_content'];
+							echo '<h3>';
+								echo $field['impact_header_case_title'];
+							echo '</h3>';
+							echo '<p>';
+								echo $field['impact_header_case_content'];
+							echo '<p>';
 						echo '</div>';
 					}
 				?>
@@ -43,11 +47,11 @@ get_header(); ?>
 
 			<section class="width-content">
 				<?php
-					$fields = CFS()->get( 'impact_call' );
+					$fields = CFS()->get( 'impact_call_case' );
 					foreach ( $fields as $field ) {
-						echo '<div>';
-						echo $field['impact_call_title'];
-						echo '</div>';
+						echo '<h1>';
+						echo $field['impact_call_case_title'];
+						echo '</h1>';
 					}
 				?>
 			</section>
