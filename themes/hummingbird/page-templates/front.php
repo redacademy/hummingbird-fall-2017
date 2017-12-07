@@ -33,7 +33,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_explanation_content' ); ?></p>
 			</section>
 
-			<section class="front-page-explanation-case width-content">
+			<section class="width-content front-page-explanation-case">
 				<?php
 					$fields = CFS()->get( 'front_page_explanation_case' );
 					foreach ( $fields as $field ) {
@@ -70,10 +70,11 @@ get_header(); ?>
 				?>
 			</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			<section class="width-content">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php endwhile; // End of the loop. ?>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

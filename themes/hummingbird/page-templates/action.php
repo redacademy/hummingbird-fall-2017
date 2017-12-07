@@ -16,12 +16,12 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'action_header_title' ); ?></h1>
 				<p><?php echo CFS()->get( 'action_header_content' ); ?></p>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'action_call' ); ?></h1>
 			</section>
 

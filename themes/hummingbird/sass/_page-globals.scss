@@ -6,8 +6,8 @@
 	max-width: $full__width;
 	margin-left: auto;
 	margin-right: auto;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 }
 
 .width-full {
@@ -18,5 +18,7 @@
 
 .bignumber {
 	font-size: 5rem;
+	font-weight: 800;
 	color: $color__blue-numbers;
+	margin: 1rem;
 }
