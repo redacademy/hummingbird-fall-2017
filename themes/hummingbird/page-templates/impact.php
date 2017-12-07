@@ -12,21 +12,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
 			<?php endwhile; // End of the loop. ?>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'impact_header_title' ); ?></h1>
 				<p><?php echo CFS()->get( 'impact_header_content' ); ?></p>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'impact_header_case_title' ); ?></h1>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<?php
 					$fields = CFS()->get( 'impact_header_case' );
 					foreach ( $fields as $field ) {
@@ -38,12 +36,12 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<h1><?php echo CFS()->get( 'impact_where_title' ); ?></h1>
 				<p><?php echo CFS()->get( 'impact_where_content' ); ?></p>
 			</section>
 
-			<section>
+			<section class="width-content">
 				<?php
 					$fields = CFS()->get( 'impact_call' );
 					foreach ( $fields as $field ) {
