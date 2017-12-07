@@ -238,7 +238,10 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  font-family: "Merriweather", serif; }
+
+h1, h2 {
+  text-align: center; }
 
 /* Copy */
 p {
@@ -666,8 +669,8 @@ object {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 1rem;
-  padding-left: 1rem; }
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .width-full {
   width: 100%;
@@ -676,7 +679,9 @@ object {
 
 .bignumber {
   font-size: 5rem;
-  color: #72acb2; }
+  font-weight: 800;
+  color: #72acb2;
+  margin: 1rem; }
 
 /*--------------------------------------------------------------
 - page-action
