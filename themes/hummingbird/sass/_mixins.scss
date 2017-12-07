@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// sections that feature an evenly-spaced horizontal layout
+@mixin flex-horizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

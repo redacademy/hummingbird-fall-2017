@@ -662,6 +662,22 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.width-content {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.width-full {
+  width: 100%;
+  background-color: #da9127;
+  color: #fff; }
+
+.bignumber {
+  font-size: 5rem;
+  color: #72acb2; }
+
 /*--------------------------------------------------------------
 - page-action
 --------------------------------------------------------------*/
@@ -680,6 +696,18 @@ object {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+@media all and (min-width: 700px) {
+  .page-front-page .front-page-explanation-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/

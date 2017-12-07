@@ -6,14 +6,17 @@
 
 
 
+
 }
+
 @media all and (min-width: $medium__width) {
+
     .page-front-page {
 
-
-
+			.front-page-explanation-case {
+				@include flex-horizontal;
+			}
 
     }
-
 
 }
