@@ -11,11 +11,6 @@ get_header(); ?>
 	<div id="primary" class="content-area page-front-page">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
 			<section>
 				<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 				<p><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
@@ -67,21 +62,10 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section>
-				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
-			</section>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<section>
-				<?php
-					$fields = CFS()->get( 'front_page_volunteer_case' );
-					foreach ( $fields as $field ) {
-						echo '<div>';
-						echo $field['front_page_volunteer_case_name'];
-						echo $field['front_page_volunteer_case_content'];
-						echo '</div>';
-					}
-				?>
-			</section>
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
