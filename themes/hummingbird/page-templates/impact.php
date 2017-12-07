@@ -22,6 +22,39 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'impact_header_content' ); ?></p>
 			</section>
 
+			<section>
+				<h1><?php echo CFS()->get( 'impact_header_case_title' ); ?></h1>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'impact_header_case' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['impact_header_case_title'];
+						echo $field['impact_header_case_content'];
+						echo '</div>';
+					}
+				?>
+			</section>
+
+			<section>
+				<h1><?php echo CFS()->get( 'impact_where_title' ); ?></h1>
+				<p><?php echo CFS()->get( 'impact_where_content' ); ?></p>
+			</section>
+
+			<section>
+				<?php
+					$fields = CFS()->get( 'impact_call' );
+					foreach ( $fields as $field ) {
+						echo '<div>';
+						echo $field['impact_call_title'];
+						echo '</div>';
+					}
+				?>
+			</section>
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
