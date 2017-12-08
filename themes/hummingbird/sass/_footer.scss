@@ -199,11 +199,24 @@
                 }
             }
             .footer-form {
-                width: 435px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 30px;
+                // max-width: 25%;
                 height: 350px;
+
                 background-color: $color__text-main;
                 order: 4;
-                z-index: -1;
+                text-align: left;
+
+                p {
+                    
+                    width: 295px;
+                }
+                .get-updates {
+                    text-align: center;
+                }
             }
             .copyrights {
                 order: 5;
@@ -216,7 +229,7 @@
                 padding: 10px; 
                 background-color: transparent;
                 display: grid;
-                grid-template-columns: 300px auto auto auto auto auto auto 30px auto;
+                grid-template-columns: auto 63px 63px 93px 93px 183px 153px 20px 143px;
                 grid-template-rows: 1fr;
                 grid-gap: 10px;
                 .blog {
