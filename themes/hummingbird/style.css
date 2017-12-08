@@ -431,14 +431,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -610,6 +603,9 @@ a {
     font-weight: bold; }
   .menu-toggle {
     display: none; } }
+
+#responsive-menu-search-box {
+  background: green; }
 
 /*--------------------------------------------------------------
 # Accessibility

@@ -40,7 +40,7 @@
 }
 
 .button-link-solid {
-	background-color: $color__main-orange;
+	background-color: $color__orange-main;
 	color: $color__white;
 	&:visited {
 		color: $color__white;
@@ -49,10 +49,10 @@
 }
 
 .button-link-hollow {
-	border: 2px solid $color__main-orange;
-	color: $color__main-orange;
+	border: 2px solid $color__orange-main;
+	color: $color__orange-main;
 	&:visited {
-		color: $color__main-orange;
+		color: $color__orange-main;
 	}
 
 }
