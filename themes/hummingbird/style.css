@@ -431,14 +431,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -827,7 +820,8 @@ object {
   padding: 1rem;
   border-radius: 5px;
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-top: 1rem; }
 
 .button-link-solid {
   background-color: #da9127;
