@@ -38,18 +38,10 @@ get_header(); ?>
 					$fields = CFS()->get( 'front_page_explanation_case' );
 					foreach ( $fields as $field ) {
 						echo '<div>';
-							echo '<p class="bignumber">';
-								echo $field['front_page_explanation_case_number'];
-							echo '</p>';
-							echo '<h3>';
-								echo $field['front_page_explanation_case_title'];
-							echo '</h3>';
-							echo '<p>';
-								echo $field['front_page_explanation_case_abstract'];
-							echo '</p>';
-							
-								echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
-
+							echo '<p class="bignumber">'.$field['front_page_explanation_case_number'].'</p>';
+							echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
+							echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
+							echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
 						echo '</div>';
 					}
 				?>
@@ -60,18 +52,21 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
 
-			<section class="width-content">
-				<?php
-					$fields = CFS()->get( 'front_page_impact_case' );
-					foreach ( $fields as $field ) {
-						echo '<div>';
-						echo $field['front_page_impact_case_number'];
-						echo $field['front_page_impact_case_metric'];
-						echo $field['front_page_impact_case_content'];
-						echo '</div>';
-					}
-				?>
-			</section>
+			<?php $fields = CFS()->get( 'front_page_impact_case' );
+			foreach ( $fields as $field ) { ?>
+
+				<section class="width-content">
+					<?php echo '<h3>'.$field['front_page_impact_case_number'].'</h3>';
+					echo '<h3>'.$field['front_page_impact_case_metric'].'</h3>';
+					echo '<p>'.$field['front_page_impact_case_content'].'</p>';
+					echo '<img src="'.$field['front_page_impact_case_icon'].'">'; ?>
+				</section>
+				<section
+					class="width-full front-page-impact-case-photo"
+					style="background-image: url(<?php echo $field['front_page_impact_case_photo'] ?>);">
+				</section>
+			<?php } ?>
+			
 
 			<section class="width-content">
 				<?php while ( have_posts() ) : the_post(); ?>

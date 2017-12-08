@@ -818,6 +818,11 @@ object {
   background-image: url("../../assets/photos/hero.png");
   background-size: cover; }
 
+.page-front-page .front-page-impact-case-photo {
+  height: 391px;
+  background-size: cover;
+  background-position: center; }
+
 @media all and (min-width: 700px) {
   .page-front-page .front-page-explanation-case {
     display: -webkit-box;
