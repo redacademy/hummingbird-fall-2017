@@ -11,7 +11,7 @@ get_header(); ?>
 	<div id="primary" class="content-area page-front-page">
 		<main id="main" class="site-main" role="main">
 
-			<section class="width-full">
+			<section class="width-full front-page-header">
 				<div class="width-content">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 					<p><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
@@ -47,6 +47,9 @@ get_header(); ?>
 							echo '<p>';
 								echo $field['front_page_explanation_case_abstract'];
 							echo '</p>';
+							
+								echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
+
 						echo '</div>';
 					}
 				?>
