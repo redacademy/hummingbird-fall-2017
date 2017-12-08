@@ -9,11 +9,19 @@
 
 			</div><!-- #content -->
 
+
+			<section class="width-content">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php endwhile; // End of the loop. ?>
+			</section>
+
+
 			<footer id="colophon" class="site-footer page-footer" role="contentinfo">
 				<div class="site-info">
-				  <div class="logo-orange">
+				  <!-- <div class="logo-orange">
 					<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="symbol orange large">
-				  </div>
+				  </div> -->
           <div class="footer-form">
                   <!-- Placeholder -->
 				  </div>
@@ -22,6 +30,7 @@
 				</div>
 				
 				<div class="contact-details">
+					<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="symbol orange large">
 					<div class="division-one">
             <p class="line-one">Contact Details</p>
 				    <div class="address">
