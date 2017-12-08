@@ -785,15 +785,10 @@ object {
 
 .width-full {
   width: 100%;
-<<<<<<< HEAD
-  background-color: #da9127;
+  background-color: #698e87;
   color: #fff;
   padding-bottom: 1rem;
   padding-top: 1rem; }
-=======
-  background-color: #698e87;
-  color: #fff; }
->>>>>>> 2d816a45c753ca751e41a21058f7fe0dd702487a
 
 .bignumber {
   font-size: 5rem;
