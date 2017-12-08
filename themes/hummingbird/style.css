@@ -824,8 +824,10 @@ object {
 - page-front-page
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
-  background-image: url("../../assets/photos/hero.png");
-  background-size: cover; }
+  background: url("../../assets/elements/white-paint.png"), url("../../assets/photos/hero.png");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom, center; }
 
 .page-front-page .front-page-impact-case-photo {
   height: 391px;
@@ -842,7 +844,9 @@ object {
   width: 100px;
   height: 100px;
   border: 9px solid #698e87;
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin-top: 1rem;
+  margin-right: 1rem; }
 
 @media all and (min-width: 700px) {
   .page-front-page .front-page-explanation-case {
