@@ -18,13 +18,21 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<section class="width-content">
+			<section class="width-content flex-horizontal-center">
 				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
 			</section>
 
 			<section class="width-content">
 				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 			</section>
 
 			<section class="width-content">
@@ -49,6 +57,14 @@ get_header(); ?>
 						echo '</div>';
 					}
 				?>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-solid">Read Our Story</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
 			</section>
 
 			<section class="width-content">
@@ -77,6 +93,14 @@ get_header(); ?>
 				</section>
 
 			<?php } ?>
+
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-hollow">Find Out More</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
 			
 
 			<section class="width-content">

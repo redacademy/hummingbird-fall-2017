@@ -808,6 +808,17 @@ object {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.flex-horizontal-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .button-link {
   padding: 1rem;
   border-radius: 5px;
@@ -868,18 +879,6 @@ object {
   border-radius: 50px;
   margin-top: 1rem;
   margin-right: 1rem; }
-
-@media all and (min-width: 700px) {
-  .page-front-page .front-page-explanation-case {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; } }
 
 /*--------------------------------------------------------------
 - page-footer
