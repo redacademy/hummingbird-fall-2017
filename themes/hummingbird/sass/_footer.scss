@@ -4,6 +4,7 @@
 
 // Mobile Screen==================================================================================
 .page-footer {
+    .site-info {
     .logo-orange {
         display: none;
     }
@@ -16,7 +17,6 @@
     .footer-form {
         text-align: center;
         height: 300px;
-        width: 80%;
         background-color: $color__green-form;
     }
     .logo-white {
@@ -102,7 +102,7 @@
         }
     }
 }
-
+}
 // Begin Full Screen==================================================================================
 
 @media all and (min-width: $medium__width) {
@@ -139,11 +139,13 @@
                 width: 50%;
                 background-color: $color__green-main;
                 .division-one {
-                    padding-top: 60px;
-                    text-align: right;
+                    padding-top: 50px;
+                    height: 350px;
+                    
                 }
                 .line-one{
-                    
+                    padding-bottom: 30px;
+                    margin: 0 auto;
                 }
                 .address {
                     margin-bottom: 200px;
@@ -164,12 +166,12 @@
                 }
                 .division-two{
                     padding-top: 115px;
+                    line-height: 2.5;
                 }
                 .emailphone {
                     order: 3;
-                    p {
-                        margin: 0;
-                    }
+                    margin: 0 auto;
+                    
                     .phone-number {
                         margin-left: 7px;
                         line-height: 2.2;
@@ -184,13 +186,9 @@
                     left: -10px;
                     vertical-align: text-top;
                 }
-                .contact-button{
-                    display: block;
-                    order: 4;
-                }
                 .sm-icons {
                     order: 5;
-                    text-align: center;
+                    text-align: left;
                     img {
                         padding: .7rem;
                     }
@@ -198,17 +196,20 @@
                 .contact-button{
                     display: block;
                     order: 4;
-                    text-align: center;
+                    text-align: left;
                 }
             }
-        }
+        
         .footer-form {
             width: 25%;
+            height: 350px;
+            background-color: $color__text-main;
             order: 4;
         }
         .copyrights {
-            height: 25px;
             order: 5;
+            // position: relative;
+            // bottom: 25px;
             .blog {}
             .faq {}
             .pp {}
@@ -216,6 +217,7 @@
             .copyright {}
             .designed {}
             .powered {}
+        }    
         }
     }
 }
