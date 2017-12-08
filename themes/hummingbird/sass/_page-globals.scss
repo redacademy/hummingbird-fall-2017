@@ -24,3 +24,35 @@
 	color: $color__blue-numbers;
 	margin: 1rem;
 }
+
+// sections that feature a left-justified horizontal layout
+.flex-horizontal-left {
+	display: flex;
+	flex-direction: row;
+}
+
+.button-link {
+	padding: 1rem;
+	border-radius: 5px;
+	color: $color__white;
+	text-decoration: none;
+
+}
+
+.button-link-solid {
+	background-color: $color__main-orange;
+	color: $color__white;
+	&:visited {
+		color: $color__white;
+	}
+
+}
+
+.button-link-hollow {
+	border: 2px solid $color__main-orange;
+	color: $color__main-orange;
+	&:visited {
+		color: $color__main-orange;
+	}
+
+}
