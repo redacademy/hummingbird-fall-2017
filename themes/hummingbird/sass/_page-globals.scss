@@ -24,3 +24,9 @@
 	color: $color__blue-numbers;
 	margin: 1rem;
 }
+
+// sections that feature a left-justified horizontal layout
+.flex-horizontal-left {
+	display: flex;
+	flex-direction: row;
+}
