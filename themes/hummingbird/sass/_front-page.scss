@@ -4,7 +4,16 @@
 
 .page-front-page {
 
+	.front-page-header {
+		background-image: url("../../assets/photos/hero.png");
+		background-size: cover;
+	}
 
+	.front-page-impact-case-photo {
+		height: 391px;
+		background-size: cover;
+		background-position: center;
+	}
 
 
 }

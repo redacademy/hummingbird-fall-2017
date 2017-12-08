@@ -13,7 +13,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: white;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -130,3 +130,135 @@ a {
 		width: 50%;
 	}
 }
+.hb-logo{
+	width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+					flex-direction: row-reverse; 				
+}
+//MOBILE NAVIGATION
+
+/* Navigation Menu */
+.main-navigation {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	text-align: center;
+}
+.main-navigation li {
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 1.42857143;
+}
+.main-navigation a {
+	color: #5e5e5e;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #21759b;
+}
+.main-navigation ul.nav-menu,
+.main-navigation div.nav-menu > ul {
+	display: none;
+}
+
+.main-navigation ul.nav-menu.toggled-on,
+.menu-toggle {
+	display: inline-block;
+}
+
+// CSS to use on mobile devices
+
+@media screen and (min-width: 700px) {
+
+.main-navigation ul.nav-menu,
+	.main-navigation div.nav-menu > ul {
+			border-bottom: 1px solid #ededed;
+			border-top: 1px solid #ededed;
+			display: inline-block !important;
+			text-align: left;
+			width: 100%;
+	}
+	.main-navigation ul {
+			margin: 0;
+			text-indent: 0;
+	}
+	.main-navigation li a,
+	.main-navigation li {
+			display: inline-block;
+			text-decoration: none;
+	}
+	.main-navigation li a {
+			border-bottom: 0;
+			color: white;
+			text-transform: uppercase;
+			white-space: nowrap;
+	}
+	.main-navigation li a:hover,
+	.main-navigation li a:focus {
+			color: $color__white;
+	}
+	.main-navigation li {
+			margin: 0 40px 0 0;
+			margin: 0 2.857142857rem 0 0;
+			position: relative;
+	}
+	.main-navigation li ul {
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 100%;
+			z-index: 1;
+			height: 1px;
+			width: 1px;
+			overflow: hidden;
+			clip: rect(1px, 1px, 1px, 1px);
+	}
+	.main-navigation li ul ul {
+			top: 0;
+			left: 100%;
+	}
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul li:focus > ul,
+	.main-navigation .focus > ul {
+			border-left: 0;
+			clip: inherit;
+			overflow: inherit;
+			height: inherit;
+			width: inherit;
+	}
+	.main-navigation li ul li a {
+			background: #efefef;
+			border-bottom: 1px solid #ededed;
+			display: block;
+			font-size: 11px;
+			font-size: 0.785714286rem;
+			line-height: 2.181818182;
+			padding: 8px 10px;
+			padding: 0.571428571rem 0.714285714rem;
+			width: 180px;
+			width: 12.85714286rem;
+			white-space: normal;
+	}
+	.main-navigation li ul li a:hover,
+	.main-navigation li ul li a:focus {
+			background: $color__green-main;
+			color: $color__blue-numbers;
+	}
+	.main-navigation .current-menu-item > a,
+	.main-navigation .current-menu-ancestor > a,
+	.main-navigation .current_page_item > a,
+	.main-navigation .current_page_ancestor > a {
+			color: $color__white;
+			font-weight: bold;
+	}
+	.menu-toggle {
+			display: none;
+	}
+	 
+	}

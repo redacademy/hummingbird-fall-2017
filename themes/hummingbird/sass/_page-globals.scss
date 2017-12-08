@@ -6,17 +6,21 @@
 	max-width: $full__width;
 	margin-left: auto;
 	margin-right: auto;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 }
 
 .width-full {
 	width: 100%;
-	background-color: $color__main-orange;
+	background-color: $color__green-main;
 	color: $color__white;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
 .bignumber {
 	font-size: 5rem;
+	font-weight: 800;
 	color: $color__blue-numbers;
+	margin: 1rem;
 }
