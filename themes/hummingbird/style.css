@@ -1013,7 +1013,8 @@ object {
         .page-footer .site-info .contact-details .division-two {
           padding-top: 115px;
           line-height: 2.5;
-          min-width: 350px;
+          min-width: 280px;
+          margin-right: 1px;
           -webkit-box-ordinal-group: 3;
               -ms-flex-order: 2;
                   order: 2; }
