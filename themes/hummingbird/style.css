@@ -805,6 +805,24 @@ object {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.button-link {
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none; }
+
+.button-link-solid {
+  background-color: #da9127;
+  color: #fff; }
+  .button-link-solid:visited {
+    color: #fff; }
+
+.button-link-hollow {
+  border: 2px solid #da9127;
+  color: #da9127; }
+  .button-link-hollow:visited {
+    color: #da9127; }
+
 /*--------------------------------------------------------------
 - page-action
 --------------------------------------------------------------*/

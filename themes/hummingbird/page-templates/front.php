@@ -19,6 +19,10 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content">
+				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
+
+			<section class="width-content">
 				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
