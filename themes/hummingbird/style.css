@@ -970,6 +970,7 @@ object {
         overflow: hidden;
         background-color: #698e87; }
         .page-footer .site-info .contact-details .logo-large {
+          display: block;
           position: relative;
           left: -260px;
           -webkit-box-ordinal-group: 0;

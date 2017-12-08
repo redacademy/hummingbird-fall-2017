@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 // Mobile Screen==================================================================================
-
 .page-footer {
     .site-info {
         .logo-large {
@@ -128,6 +127,7 @@
                 overflow: hidden; 
                 background-color: $color__green-main;
                 .logo-large {
+                    display: block;
                     position: relative;
                     left: -260px;
                     order: -1;
