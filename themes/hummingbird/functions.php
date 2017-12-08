@@ -153,3 +153,5 @@ add_shortcode('cfp', 'cfp');
 }
 wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
 }
+// new slidepanel
+// wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/js/slidepanel.js', array('jquery'), '20160909', true );

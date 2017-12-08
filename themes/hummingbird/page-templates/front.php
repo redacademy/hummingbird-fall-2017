@@ -18,9 +18,21 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
+			</section>
+
 			<section class="width-content">
 				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 			</section>
 
 			<section class="width-content">
@@ -47,6 +59,14 @@ get_header(); ?>
 				?>
 			</section>
 
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-solid">Read Our Story</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
+			</section>
+
 			<section class="width-content">
 				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
@@ -56,16 +76,31 @@ get_header(); ?>
 			foreach ( $fields as $field ) { ?>
 
 				<section class="width-content">
-					<?php echo '<h3>'.$field['front_page_impact_case_number'].'</h3>';
-					echo '<h3>'.$field['front_page_impact_case_metric'].'</h3>';
-					echo '<p>'.$field['front_page_impact_case_content'].'</p>';
-					echo '<img src="'.$field['front_page_impact_case_icon'].'">'; ?>
+					<div class="flex-horizontal-left">
+						<div class="front-page-impact-case-icon-container">
+							<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
+						</div>
+						<div>
+							<h3 class="front-page-impact-case-number"><?php echo $field['front_page_impact_case_number'] ?></h3>
+							<h3 class="front-page-impact-case-metric"><?php echo $field['front_page_impact_case_metric'] ?></h3>
+						</div>
+					</div>
+					<p><?php echo $field['front_page_impact_case_content'] ?></p>
 				</section>
 				<section
 					class="width-full front-page-impact-case-photo"
 					style="background-image: url(<?php echo $field['front_page_impact_case_photo'] ?>);">
 				</section>
+
 			<?php } ?>
+
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-hollow">Find Out More</a>
+			</section>
+
+			<section class="width-content flex-horizontal-center">
+				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
 			
 
 			<section class="width-content">

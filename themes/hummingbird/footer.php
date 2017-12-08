@@ -9,19 +9,22 @@
 
 			</div><!-- #content -->
 
+
+		
+
+
 			<footer id="colophon" class="site-footer page-footer" role="contentinfo">
 				<div class="site-info">
-				  <div class="logo-orange">
-					<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="symbol orange large">
-				  </div>
+				 
           <div class="footer-form">
-                  <!-- Placeholder -->
+					<?php get_sidebar(); ?>
 				  </div>
 				<div class="logo-white">
 				   <img class="logo-small" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-white-large.png" alt="symbol white">
 				</div>
 				
 				<div class="contact-details">
+					<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="symbol orange large">
 					<div class="division-one">
             <p class="line-one">Contact Details</p>
 				    <div class="address">
@@ -67,6 +70,7 @@
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
+		
 		<?php wp_footer(); ?>
 	</body>
 </html>
