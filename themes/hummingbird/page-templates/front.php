@@ -56,15 +56,22 @@ get_header(); ?>
 			foreach ( $fields as $field ) { ?>
 
 				<section class="width-content">
-					<?php echo '<h3>'.$field['front_page_impact_case_number'].'</h3>';
-					echo '<h3>'.$field['front_page_impact_case_metric'].'</h3>';
-					echo '<p>'.$field['front_page_impact_case_content'].'</p>';
-					echo '<img src="'.$field['front_page_impact_case_icon'].'">'; ?>
+					<div class="flex-horizontal-left">
+						<div class="front-page-impact-case-icon-container">
+							<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
+						</div>
+						<div>
+							<h3 class="front-page-impact-case-number"><?php echo $field['front_page_impact_case_number'] ?></h3>
+							<h3 class="front-page-impact-case-metric"><?php echo $field['front_page_impact_case_metric'] ?></h3>
+						</div>
+					</div>
+					<p><?php echo $field['front_page_impact_case_content'] ?></p>
 				</section>
 				<section
 					class="width-full front-page-impact-case-photo"
 					style="background-image: url(<?php echo $field['front_page_impact_case_photo'] ?>);">
 				</section>
+
 			<?php } ?>
 			
 
