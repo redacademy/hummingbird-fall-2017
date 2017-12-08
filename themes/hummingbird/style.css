@@ -377,9 +377,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 5px;
+  border: none; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -398,6 +397,22 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.page-front-page input[type=email], .page-front-page input[type=text] {
+  background-color: #e8eeee;
+  color: #698e87;
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: 1px dashed #1e1e1e; }
+
+.page-front-page label {
+  font-size: 2rem;
+  font-weight: 800; }
+
+footer input[type=email], footer input[type=text] {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-weight: 800; }
 
 /*--------------------------------------------------------------
 # Navigation
