@@ -675,7 +675,9 @@ object {
 .width-full {
   width: 100%;
   background-color: #da9127;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
 
 .bignumber {
   font-size: 5rem;
@@ -701,6 +703,10 @@ object {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+.page-front-page .front-page-header {
+  background-image: url("../../assets/photos/hero.png");
+  background-size: cover; }
+
 @media all and (min-width: 700px) {
   .page-front-page .front-page-explanation-case {
     display: -webkit-box;
