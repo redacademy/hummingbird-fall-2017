@@ -41,8 +41,8 @@ who.php
 
 ## Built with
 
-Electron
-Features
+SASS
+GRID
 
 What makes your project stand out?
 
