@@ -127,12 +127,12 @@
                 overflow: hidden; 
                 background-color: $color__green-main;
                 .logo-large {
-                    display: block;
                     position: relative;
                     left: -260px;
                     order: -1;
-                    // width: 500px;
+                    width: 500px;
                     height: 500px;
+                    
                 }
                 .division-one {
                     padding-top: 50px;
@@ -165,8 +165,7 @@
                 .division-two {
                     padding-top: 115px;
                     line-height: 2.5;
-                    min-width: 280px;
-                    margin-right: 1px;
+                    min-width: 350px;
                     order: 2;
                 }
                 .emailphone {
@@ -263,4 +262,18 @@
             }
         }
     }
+}
+@media all and (min-width: 1100px) {
+     .page-footer {
+        .site-info {
+            .logo-large {
+                    display: block;
+                    position: relative;
+                    left: -260px;
+                    order: -1;
+                    width: 500px;
+                    height: 500px;
+                }
+}                
+}
 }

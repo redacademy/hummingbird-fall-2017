@@ -979,12 +979,12 @@ object {
         overflow: hidden;
         background-color: #698e87; }
         .page-footer .site-info .contact-details .logo-large {
-          display: block;
           position: relative;
           left: -260px;
           -webkit-box-ordinal-group: 0;
               -ms-flex-order: -1;
                   order: -1;
+          width: 500px;
           height: 500px; }
         .page-footer .site-info .contact-details .division-one {
           padding-top: 50px;
@@ -1013,8 +1013,7 @@ object {
         .page-footer .site-info .contact-details .division-two {
           padding-top: 115px;
           line-height: 2.5;
-          min-width: 280px;
-          margin-right: 1px;
+          min-width: 350px;
           -webkit-box-ordinal-group: 3;
               -ms-flex-order: 2;
                   order: 2; }
@@ -1101,3 +1100,14 @@ object {
           grid-column: 7 / 8; }
         .page-footer .site-info .copyrights .powered {
           grid-column: 9 / 10; } }
+
+@media all and (min-width: 1100px) {
+  .page-footer .site-info .logo-large {
+    display: block;
+    position: relative;
+    left: -260px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 500px;
+    height: 500px; } }
