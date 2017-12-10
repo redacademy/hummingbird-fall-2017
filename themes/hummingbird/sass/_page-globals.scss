@@ -43,12 +43,13 @@
 	border-radius: 5px;
 	color: $color__white;
 	text-decoration: none;
-
+	margin-top: 1rem;
 }
 
-.button-link-solid {
+.button-link-solid, .wpcf7-submit{
 	background-color: $color__orange-main;
 	color: $color__white;
+	border: none;
 	&:visited {
 		color: $color__white;
 	}
