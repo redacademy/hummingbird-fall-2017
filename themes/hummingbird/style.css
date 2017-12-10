@@ -605,7 +605,10 @@ a {
     display: none; } }
 
 #responsive-menu-search-box {
-  background: green; }
+  background: #698e87; }
+
+div#responsive-menu-wrapper {
+  background: #698e87; }
 
 /*--------------------------------------------------------------
 # Accessibility

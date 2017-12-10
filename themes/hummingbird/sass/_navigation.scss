@@ -265,11 +265,10 @@ a {
 
 
 	#responsive-menu-search-box {
-		background: green;
+		background:$color__green-main;
 	}
 
-
-
-
-
-
+	div#responsive-menu-wrapper{
+		background:$color__green-main;
+}
+	
