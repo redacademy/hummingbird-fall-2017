@@ -403,16 +403,22 @@ textarea {
   color: #698e87;
   font-size: 2rem;
   font-weight: 800;
-  border-bottom: 1px dashed #1e1e1e; }
+  border-bottom: 1px dashed #1e1e1e;
+  width: 70%; }
 
 .page-front-page label {
   font-size: 2rem;
   font-weight: 800; }
 
 footer input[type=email], footer input[type=text] {
-  background-color: #1e1e1e;
+  background-color: #698e87;
   color: #fff;
   font-weight: 800; }
+
+@media all and (min-width: 700px) {
+  footer input[type=email], footer input[type=text] {
+    background-color: #1e1e1e;
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -786,8 +792,8 @@ object {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding-right: 3rem;
+  padding-left: 3rem; }
 
 .width-full {
   width: 100%;
@@ -827,7 +833,9 @@ object {
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  min-width: 175px;
+  text-align: center; }
 
 .button-link-solid, .wpcf7-submit {
   background-color: #da9127;

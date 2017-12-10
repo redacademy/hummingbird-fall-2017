@@ -6,8 +6,8 @@
 	max-width: $full__width;
 	margin-left: auto;
 	margin-right: auto;
-	padding-right: 2rem;
-	padding-left: 2rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
 }
 
 .width-full {
@@ -44,6 +44,8 @@
 	color: $color__white;
 	text-decoration: none;
 	margin-top: 1rem;
+	min-width: 175px;
+	text-align: center;
 }
 
 .button-link-solid, .wpcf7-submit{
