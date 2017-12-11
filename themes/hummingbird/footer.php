@@ -17,6 +17,9 @@
 					</div>
 				</div>
 
+				<div class="footer-logo-large">
+				</div>
+
 				<div class="site-info">
 
 					<div class="logo-white">
@@ -27,7 +30,6 @@
 
 						<div> <!-- container div for flexbox purposes -->
 							<h2>Contact Details</h2>
-							<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="The Hummingbird Network logo">
 							<ul class="contact-details-one">
 								<li>
 									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="Location"></span>348 Tranquille Road

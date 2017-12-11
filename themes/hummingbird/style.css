@@ -928,7 +928,8 @@ footer .wpcf7-submit {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-bottom: 1rem; }
     .site-footer .copyrights span {
       padding-left: 1rem; }
     .site-footer .copyrights div {
@@ -936,6 +937,8 @@ footer .wpcf7-submit {
   .site-footer .copyrights-one {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .site-footer .footer-logo-large {
+    display: none; }
 
 @media all and (min-width: 700px) {
   .site-footer {
@@ -958,18 +961,12 @@ footer .wpcf7-submit {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-        .site-footer .site-info .contact-details-container div:nth-child(2) {
-          margin-left: 3rem;
-          padding-top: 4.35rem; }
+            -ms-flex-direction: column;
+                flex-direction: column; }
       .site-footer .site-info .contact-button {
-        display: block; }
+        display: inline-block; }
     .site-footer .copyrights-one {
       background-color: #698e87;
       grid-column: 1;
@@ -980,3 +977,34 @@ footer .wpcf7-submit {
     .site-footer .copyrights-two {
       grid-column: 2;
       grid-row: 2; } }
+
+@media all and (min-width: 920px) {
+  .site-footer .site-info {
+    background: none; }
+    .site-footer .site-info .contact-details-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .site-footer .site-info .contact-details-container div:nth-child(2) {
+        margin-left: 3rem;
+        padding-top: 4.35rem; }
+  .site-footer .copyrights {
+    background: none; }
+  .site-footer .copyrights-two {
+    background-color: #1e1e1e; }
+  .site-footer .footer-logo-large {
+    display: block;
+    background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
+    background-color: #698e87;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: -20em -5em;
+    grid-column: 1;
+    grid-row: 1 / 3; } }
