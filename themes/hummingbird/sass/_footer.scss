@@ -182,10 +182,11 @@
 
 	color: $color__white;
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
 
 	.footer-form {
+		grid-column: 1 / 3;
 		grid-row: 1;
 		background-color: $color__green-main;
 	} // end .footer-form
@@ -193,10 +194,12 @@
 	.site-info {
 
 		background-color: $color__green-main;	
+		grid-column: 1 / 3;
 		grid-row: 2;
 
 		h2 {
 			text-align: left;
+			font-family: $font__main;
 		}
 
 		.icon-spacer {
@@ -222,11 +225,20 @@
 
 	} // end .site-info
 
-	.copyrights-container {
+	.copyrights {
 		font-size: $font__size-small;
 		background-color: $color__text-main;
 		grid-row: 3;
-	} // end .copyrights-container
+		width: 100%;
+		display: flex;
+		span {
+			padding-left: 1rem;
+		}
+		div {
+			padding-right: 1rem;
+		}
+	}
+
 
 >>>>>>> f98a1113c07768dc15747d761c149abca9cdc224
 }
@@ -243,6 +255,10 @@
 			grid-column: 2;
 			grid-row: 1;
 			background-color: $color__text-main;
+			.wpcf7-submit {
+				background-color: $color__text-main;
+				border-color: $color__green-main;
+			}
 		} // end .footer-form
 
 		.site-info {
@@ -266,8 +282,17 @@
 
 		} // end .site-info
 
-		.copyrights-container {
-			grid-column: 1 / 3;
+		.copyrights-one {
+
+			background-color: $color__green-main;
+			grid-column: 1;
+			grid-row: 2;
+
+			justify-content: flex-end;
+		}
+
+		.copyrights-two {
+			grid-column: 2;
 			grid-row: 2;
 		}
 
