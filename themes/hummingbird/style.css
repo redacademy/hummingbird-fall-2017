@@ -315,18 +315,11 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
+  list-style-type: none;
+  padding: 0; }
 
 ol {
   list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
 
 dt {
   font-weight: bold; }
@@ -403,16 +396,22 @@ textarea {
   color: #698e87;
   font-size: 2rem;
   font-weight: 800;
-  border-bottom: 1px dashed #1e1e1e; }
+  border-bottom: 1px dashed #1e1e1e;
+  width: 70%; }
 
 .page-front-page label {
   font-size: 2rem;
   font-weight: 800; }
 
 footer input[type=email], footer input[type=text] {
-  background-color: #1e1e1e;
+  background-color: #698e87;
   color: #fff;
   font-weight: 800; }
+
+@media all and (min-width: 700px) {
+  footer input[type=email], footer input[type=text] {
+    background-color: #1e1e1e;
+    width: 100%; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -784,17 +783,13 @@ object {
 --------------------------------------------------------------*/
 .width-content {
   max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 2rem;
-  padding-left: 2rem; }
+  padding: 1rem 4rem 0 4rem;
+  margin: 0 auto; }
 
 .width-full {
   width: 100%;
   background-color: #698e87;
-  color: #fff;
-  padding-bottom: 1rem;
-  padding-top: 1rem; }
+  color: #fff; }
 
 .bignumber {
   font-size: 5rem;
@@ -822,18 +817,22 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.button-link {
+.button-link,
+.wpcf7-submit {
   padding: 1rem;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  margin-top: 1rem; }
+  min-width: 175px;
+  text-align: center; }
 
-.button-link-solid, .wpcf7-submit {
+.button-link-solid,
+.site-content .wpcf7-submit {
   background-color: #da9127;
   color: #fff;
   border: none; }
-  .button-link-solid:visited, .wpcf7-submit:visited {
+  .button-link-solid:visited,
+  .site-content .wpcf7-submit:visited {
     color: #fff; }
 
 .button-link-hollow {
@@ -841,6 +840,10 @@ object {
   color: #da9127; }
   .button-link-hollow:visited {
     color: #da9127; }
+
+footer .wpcf7-submit {
+  background-color: #698e87;
+  border: 2px solid #fff; }
 
 /*--------------------------------------------------------------
 - page-action
@@ -888,99 +891,52 @@ object {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
-.page-footer .site-info {
-  font-size: 12px;
+.site-footer {
   color: #fff;
-  width: 100%;
-  height: 614px;
-  color: #fff;
-  background-color: #698e87; }
-  .page-footer .site-info .logo-large {
-    display: none; }
-  .page-footer .site-info .footer-form {
-    text-align: center;
-    height: 300px;
-    background-color: #96b0ab; }
-  .page-footer .site-info .logo-white {
-    position: absolute;
-    width: 92px;
-    height: 92px;
-    right: 30px;
-    margin-top: 15px; }
-  .page-footer .site-info .line-one {
-    font-size: 22px;
-    padding-left: 80px;
-    margin-bottom: 0; }
-  .page-footer .site-info .address {
-    line-height: 1.5px;
-    margin-left: 60px; }
-    .page-footer .site-info .address .top-line {
-      text-align: left;
-      padding-left: 5px;
-      margin-top: 0; }
-    .page-footer .site-info .address .location-marker {
-      position: relative;
-      left: -15px; }
-    .page-footer .site-info .address p {
-      padding-left: 22px; }
-  .page-footer .site-info .emailphone {
-    margin-left: 60px; }
-    .page-footer .site-info .emailphone p {
-      margin: 0; }
-    .page-footer .site-info .emailphone .phone-number {
-      margin-left: 7px;
-      line-height: 2.2; }
-  .page-footer .site-info .email-icon {
-    position: relative;
-    left: -15px; }
-  .page-footer .site-info .phone-icon {
-    position: relative;
-    left: -10px;
-    vertical-align: text-top; }
-  .page-footer .site-info .sm-icons {
-    text-align: center; }
-    .page-footer .site-info .sm-icons img {
-      padding: .7rem; }
-  .page-footer .site-info .contact-button {
-    display: none; }
-  .page-footer .site-info .copyrights {
-    height: 50px;
-    font-size: 9px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto; }
+  .site-footer .footer-form {
+    grid-row: 1;
+    background-color: #698e87; }
+  .site-footer .site-info {
+    background-color: #698e87;
+    grid-row: 2; }
+    .site-footer .site-info h2 {
+      text-align: left; }
+    .site-footer .site-info .icon-spacer {
+      display: inline-block;
+      width: 2rem;
+      height: 1rem; }
+    .site-footer .site-info .logo-large {
+      display: none; }
+    .site-footer .site-info .logo-white {
+      position: absolute;
+      width: 92px;
+      right: 4rem;
+      margin-top: 15px; }
+    .site-footer .site-info .contact-button {
+      display: none; }
+  .site-footer .copyrights-container {
+    font-size: 0.7rem;
     background-color: #1e1e1e;
-    display: grid;
-    grid-template-columns: auto auto auto auto 1fr 1fr auto 1fr;
-    grid-template-rows: 50% auto; }
-    .page-footer .site-info .copyrights .copyright {
-      padding-top: 3px;
-      grid-column: 1 / 4;
-      grid-row: 2 / 3; }
-    .page-footer .site-info .copyrights .designed {
-      grid-column: 6 / 7;
-      grid-row: 1 / 3; }
-    .page-footer .site-info .copyrights .powered {
-      grid-column: 8 / 9;
-      grid-row: 1 / 3; }
+    grid-row: 3; }
 
 @media all and (min-width: 700px) {
-  .page-footer {
-    height: 350px; }
-    .page-footer .site-info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      height: 350px;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      background-color: #1e1e1e;
-      font-size: 17px; }
-      .page-footer .site-info .logo-white {
+  .site-footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto; }
+    .site-footer .footer-form {
+      grid-column: 2;
+      grid-row: 1;
+      background-color: #1e1e1e; }
+    .site-footer .site-info {
+      grid-column: 1;
+      grid-row: 1; }
+      .site-footer .site-info .logo-white {
         display: none; }
+<<<<<<< HEAD
       .page-footer .site-info .contact-details {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
@@ -1061,11 +1017,15 @@ object {
                   order: 4;
           text-align: left; }
       .page-footer .site-info .footer-form {
+=======
+      .site-footer .site-info .contact-details-container {
+>>>>>>> f98a1113c07768dc15747d761c149abca9cdc224
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
+<<<<<<< HEAD
             -ms-flex-direction: column;
                 flex-direction: column;
         -webkit-box-pack: center;
@@ -1128,3 +1088,16 @@ object {
             order: -1;
     width: 500px;
     height: 500px; } }
+=======
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        .site-footer .site-info .contact-details-container div:nth-child(2) {
+          margin-left: 3rem;
+          padding-top: 4.35rem; }
+    .site-footer .copyrights-container {
+      grid-column: 1 / 3;
+      grid-row: 2; } }
+>>>>>>> f98a1113c07768dc15747d761c149abca9cdc224
