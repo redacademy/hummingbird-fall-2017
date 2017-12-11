@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+- page-404
+--------------------------------------------------------------*/
+
+.page-404 {
+
+	.error-404 {
+		background-size: contain, cover;
+		background-repeat: no-repeat;
+		background-position: bottom, center;
+	}
+    .back-button {
+        margin-bottom: 210px;
+    }
+
+
+
+}
+
+@media all and (min-width: $medium__width) {
+
+    .page-404 {
+       
+
+    }
+
+}
