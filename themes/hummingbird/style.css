@@ -894,16 +894,19 @@ footer .wpcf7-submit {
 .site-footer {
   color: #fff;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto; }
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; }
   .site-footer .footer-form {
+    grid-column: 1 / 3;
     grid-row: 1;
     background-color: #698e87; }
   .site-footer .site-info {
     background-color: #698e87;
+    grid-column: 1 / 3;
     grid-row: 2; }
     .site-footer .site-info h2 {
-      text-align: left; }
+      text-align: left;
+      font-family: "Overpass", sans-serif; }
     .site-footer .site-info .icon-spacer {
       display: inline-block;
       width: 2rem;
@@ -917,10 +920,18 @@ footer .wpcf7-submit {
       margin-top: 15px; }
     .site-footer .site-info .contact-button {
       display: none; }
-  .site-footer .copyrights-container {
+  .site-footer .copyrights {
     font-size: 0.7rem;
     background-color: #1e1e1e;
-    grid-row: 3; }
+    grid-row: 3;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .copyrights span {
+      padding-left: 1rem; }
+    .site-footer .copyrights div {
+      padding-right: 1rem; }
 
 @media all and (min-width: 700px) {
   .site-footer {
@@ -931,6 +942,9 @@ footer .wpcf7-submit {
       grid-column: 2;
       grid-row: 1;
       background-color: #1e1e1e; }
+      .site-footer .footer-form .wpcf7-submit {
+        background-color: #1e1e1e;
+        border-color: #698e87; }
     .site-footer .site-info {
       grid-column: 1;
       grid-row: 1; }
@@ -950,6 +964,13 @@ footer .wpcf7-submit {
         .site-footer .site-info .contact-details-container div:nth-child(2) {
           margin-left: 3rem;
           padding-top: 4.35rem; }
-    .site-footer .copyrights-container {
-      grid-column: 1 / 3;
+    .site-footer .copyrights-one {
+      background-color: #698e87;
+      grid-column: 1;
+      grid-row: 2;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .site-footer .copyrights-two {
+      grid-column: 2;
       grid-row: 2; } }

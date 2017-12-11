@@ -61,21 +61,17 @@
 				
 				</div><!-- .site-info -->
 
-				<div class="copyrights-container">
+				<div class="copyrights copyrights-one width-content">
+					<span>Blog</span>
+					<span>FAQ</span>
+					<span>Site Map</span>
+					<span>Privacy Policy</span>
+					<span>c 2017 Hummingbird Network</span>
+				</div>
 
-					<div class="copyrights-one width-content">
-						<span>Blog</span>
-						<span>FAQ</span>
-						<span>Site Map</span>
-						<span>Privacy Policy</span>
-						<span>c 2017 Hummingbird Network</span>
-					</div>
-
-					<div class="copyrights-two width-content">
-						<div>Designed by Dream Team</div>
-						<div>Powered by Coffee</div>
-					</div>
-
+				<div class="copyrights copyrights-two width-content">
+					<div>Designed by Dream Team</div>
+					<div>Powered by Coffee</div>
 				</div>
 
 			</footer><!-- #colophon -->
