@@ -1008,7 +1008,6 @@ object {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1;
-          margin-left: -280px;
           min-width: 280px; }
         .page-footer .site-info .contact-details .line-one {
           padding-bottom: 30px;
@@ -1074,6 +1073,7 @@ object {
                 justify-content: center;
         padding: 30px;
         height: 350px;
+        margin-right: -30px;
         background-color: #1e1e1e;
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
@@ -1122,6 +1122,7 @@ object {
     display: block;
     position: relative;
     left: -260px;
+    margin-right: -260px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
