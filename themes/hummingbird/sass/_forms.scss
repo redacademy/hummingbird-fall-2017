@@ -61,7 +61,7 @@ textarea {
 	width: 100%;
 }
 
-// Form on the front page
+// "I want to be part of the community" Form on the front page
 .page-front-page {
 
 	input[type=email], input[type=text] {
@@ -70,6 +70,7 @@ textarea {
 		font-size: 2rem;
 		font-weight: 800;
 		border-bottom: 1px dashed $color__text-main;
+		width: 70%;
 
 	}
 
@@ -84,9 +85,21 @@ textarea {
 footer {
 
 	input[type=email], input[type=text] {
-		background-color: $color__text-main;
+		background-color: $color__green-main;
 		color: $color__white;
 		font-weight: 800;
 	}
 
 }
+
+@media all and (min-width: $medium__width) {
+
+	footer {
+		input[type=email], input[type=text] {
+			background-color: $color__text-main;
+			width: 100%;
+		}	
+	}
+
+}
+
