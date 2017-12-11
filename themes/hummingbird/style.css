@@ -916,11 +916,23 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
+.footer-wrapper {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #698e87), color-stop(50%, #1e1e1e));
+  background: linear-gradient(to right, #698e87 50%, #1e1e1e 50%);
+  color: #fff;
+  padding: 0; }
+
 .site-footer {
+  padding: 0;
   color: #fff;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
+  .site-footer h2 {
+    text-align: left;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.25rem; }
   .site-footer .footer-form {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -929,9 +941,6 @@ footer .wpcf7-submit {
     background-color: #698e87;
     grid-column: 1 / 3;
     grid-row: 2; }
-    .site-footer .site-info h2 {
-      text-align: left;
-      font-family: "Overpass", sans-serif; }
     .site-footer .site-info .icon-spacer {
       display: inline-block;
       width: 2rem;
@@ -1019,7 +1028,7 @@ footer .wpcf7-submit {
               justify-content: flex-end; }
       .site-footer .site-info .contact-details-container div:nth-child(2) {
         margin-left: 3rem;
-        padding-top: 4.35rem; }
+        padding-top: 3rem; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-two {
@@ -1029,8 +1038,8 @@ footer .wpcf7-submit {
     background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
     background-color: #698e87;
     background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: -20em -5em;
+    background-size: 35rem;
+    background-position: left -19rem top -5rem;
     grid-column: 1;
     grid-row: 1 / 3; } }
 

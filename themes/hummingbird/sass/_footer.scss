@@ -4,12 +4,28 @@
 
 // Mobile first, baby!!
 
+.footer-wrapper {
+	width: 100%;
+	background: linear-gradient(to right, $color__green-main 50%, $color__text-main 50%);
+
+	color: $color__white;
+	padding: 0;
+}
+
 .site-footer {
 
+	padding: 0; // override the default padding from .content-width
 	color: $color__white;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
+	
+
+	h2 {
+		text-align: left;
+		font-family: $font__main;
+		font-size: 1.25rem;
+	}
 
 	.footer-form {
 		grid-column: 1 / 3;
@@ -22,11 +38,6 @@
 		background-color: $color__green-main;	
 		grid-column: 1 / 3;
 		grid-row: 2;
-
-		h2 {
-			text-align: left;
-			font-family: $font__main;
-		}
 
 		.icon-spacer {
 			display: inline-block;
@@ -145,7 +156,7 @@
 				justify-content: flex-end;
 				div:nth-child(2) {
 					margin-left: 3rem;
-					padding-top: 4.35rem;
+					padding-top: 3rem;
 				}
 			}
 		}
@@ -163,8 +174,8 @@
 			background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
 			background-color: $color__green-main;
 			background-repeat: no-repeat;
-			background-size: 75%;
-			background-position: -20em -5em;
+			background-size: 35rem;
+			background-position: left -19rem top -5rem;
 			grid-column: 1;
 			grid-row: 1 / 3;
 		}
