@@ -17,7 +17,6 @@
 					</div>
 				</div>
 
-
 				<div class="site-info">
 
 					<div class="logo-white">
@@ -26,37 +25,37 @@
 				
 					<div class="contact-details-container width-content">
 
-						<h2>Contact Details</h2>
+						<div> <!-- container div for flexbox purposes -->
+							<h2>Contact Details</h2>
+							<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="The Hummingbird Network logo">
+							<ul class="contact-details-one">
+								<li>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="Location"></span>348 Tranquille Road
+								</li>
+								<li><span class="icon-spacer"></span>Kamloops BC</li>
+								<li><span class="icon-spacer"></span>V2B 3G6</li>
+								<li><span class="icon-spacer"></span>Canada</li>
+							</ul><!-- contact-details-one -->
+						</div>
 
-						<img class="logo-large" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-color-large.png" alt="The Hummingbird Network logo">
-
-						<ul class="contact-details-one">
-							<li>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="Location"></span>348 Tranquille Road
-							</li>
-							<li><span class="icon-spacer"></span>Kamloops BC</li>
-							<li><span class="icon-spacer"></span>V2B 3G6</li>
-							<li><span class="icon-spacer"></span>Canada</li>
-						</ul><!-- contact-details-one -->
-
-						<ul class="contact-details-two">
-							<li>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"></span>info@hummingbirdnetwork.ca
-							</li>
-							<li>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"></span>(250) 877.7082
-							</li>
-							<li>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon"></span>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon.svg" alt="instagram icon"></span>
-								<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon"></span>
-							</li>
-
+						<div> <!-- container div for flexbox purposes -->
+							<ul class="contact-details-two">
+								<li>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"></span>info@hummingbirdnetwork.ca
+								</li>
+								<li>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"></span>(250) 877.7082
+								</li>
+								<li>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon"></span>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon.svg" alt="instagram icon"></span>
+									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon"></span>
+								</li>
+							</ul><!-- contact-details-two -->
 							<div class="contact-button">
 								<button class="contact-us button-link-solid">Contact Us</button>
 							</div>
-
-						</ul><!-- contact-details-two -->
+						</div>
 
 					</div><!-- contact-details -->
 				

@@ -79,6 +79,16 @@
 				display: none;
 			}
 
+			.contact-details-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				div:nth-child(2) {
+					margin-left: 3rem;
+					padding-top: 4.35rem;
+				}
+			}
+
 		} // end .site-info
 
 		.copyrights-container {
