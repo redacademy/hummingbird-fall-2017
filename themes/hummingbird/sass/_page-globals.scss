@@ -2,20 +2,16 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-.width-content {
+.width-content { // applied to pretty much every main container
 	max-width: $full__width;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 3rem;
-	padding-left: 3rem;
+	padding: 1rem 4rem 0 4rem;
+	margin: 0 auto; // horizontally center the content
 }
 
 .width-full {
 	width: 100%;
 	background-color: $color__green-main;
 	color: $color__white;
-	padding-bottom: 1rem;
-	padding-top: 1rem;
 }
 
 .bignumber {
@@ -38,17 +34,20 @@
 	justify-content: space-around;
 }
 
-.button-link {
+// Buttons and anchors in button's clothing
+
+.button-link, // a basic button style to apply to all buttons and button-esque anchors
+.wpcf7-submit {
 	padding: 1rem;
 	border-radius: 5px;
 	color: $color__white;
 	text-decoration: none;
-	margin-top: 1rem;
 	min-width: 175px;
 	text-align: center;
 }
 
-.button-link-solid, .wpcf7-submit{
+.button-link-solid,
+.site-content .wpcf7-submit {
 	background-color: $color__orange-main;
 	color: $color__white;
 	border: none;
@@ -64,5 +63,9 @@
 	&:visited {
 		color: $color__orange-main;
 	}
+}
 
+footer .wpcf7-submit {
+	background-color: $color__green-main;
+	border: 2px solid $color__white;
 }
