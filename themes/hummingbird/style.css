@@ -964,6 +964,8 @@ footer .wpcf7-submit {
         .site-footer .site-info .contact-details-container div:nth-child(2) {
           margin-left: 3rem;
           padding-top: 4.35rem; }
+      .site-footer .site-info .contact-button {
+        display: block; }
     .site-footer .copyrights-one {
       background-color: #698e87;
       grid-column: 1;

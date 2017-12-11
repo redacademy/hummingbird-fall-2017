@@ -52,9 +52,7 @@
 									<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon"></span>
 								</li>
 							</ul><!-- contact-details-two -->
-							<div class="contact-button">
-								<button class="contact-us button-link-solid">Contact Us</button>
-							</div>
+							<a href="" class="contact-button button-link button-link-solid">Contact Us</a>
 						</div>
 
 					</div><!-- contact-details -->
