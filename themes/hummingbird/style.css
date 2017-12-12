@@ -395,18 +395,19 @@ textarea {
   background-color: #e8eeee;
   color: #698e87;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   border-bottom: 1px dashed #1e1e1e;
-  width: 70%; }
+  width: 70%;
+  max-width: 200px; }
 
 .page-front-page label {
-  font-size: 2rem;
-  font-weight: 800; }
+  font-size: 2.25rem;
+  font-weight: 700; }
 
 footer input[type=email], footer input[type=text] {
   background-color: #698e87;
   color: #fff;
-  font-weight: 800; }
+  font-weight: 700; }
 
 @media all and (min-width: 700px) {
   footer input[type=email], footer input[type=text] {
@@ -791,7 +792,7 @@ object {
 
 .bignumber {
   font-size: 5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #72acb2;
   margin: 0; }
 
@@ -922,13 +923,15 @@ footer .wpcf7-submit {
   color: #da9127; }
 
 .page-front-page .front-page-impact-case .front-page-impact-case-metric {
-  color: #698e87; }
+  color: #698e87;
+  font-size: 2.5rem;
+  margin: 0; }
 
 .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
   width: 100px;
   height: 100px;
   border: 9px solid #698e87;
-  border-radius: 50px;
+  border-radius: 100px;
   margin-top: 1rem;
   margin-right: 1rem; }
 
@@ -953,7 +956,17 @@ footer .wpcf7-submit {
         border-color: #fff; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
       grid-column: 1;
-      grid-row: 2; } }
+      grid-row: 2; }
+    .page-front-page .front-page-impact-case h3 {
+      font-family: "Overpass", sans-serif; }
+    .page-front-page .front-page-impact-case .front-page-impact-case-number {
+      font-size: 5rem;
+      margin: 0; }
+    .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
+      width: 184px;
+      height: 184px; }
+    .page-front-page .front-page-impact-case .front-page-impact-case-photo {
+      height: 100%; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
