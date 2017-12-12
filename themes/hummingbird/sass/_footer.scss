@@ -4,12 +4,28 @@
 
 // Mobile first, baby!!
 
+.footer-wrapper {
+	width: 100%;
+	background: linear-gradient(to right, $color__green-main 50%, $color__text-main 50%);
+
+	color: $color__white;
+	padding: 0;
+}
+
 .site-footer {
 
+	padding: 0; // override the default padding from .content-width
 	color: $color__white;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
+	
+
+	h2 {
+		text-align: left;
+		font-family: $font__main;
+		font-size: 1.25rem;
+	}
 
 	.footer-form {
 		grid-column: 1 / 3;
@@ -23,15 +39,11 @@
 		grid-column: 1 / 3;
 		grid-row: 2;
 
-		h2 {
-			text-align: left;
-			font-family: $font__main;
-		}
-
 		.icon-spacer {
 			display: inline-block;
 			width: 2rem;
-			height: 1rem;
+			height: 2rem;
+			vertical-align: middle;
 		}
 
 		.logo-large {
@@ -57,18 +69,29 @@
 		grid-row: 3;
 		width: 100%;
 		display: flex;
+		padding-bottom: 1rem;
+
 		span {
 			padding-left: 1rem;
 		}
+
 		div {
 			padding-right: 1rem;
 		}
+
 	}
 
+	.copyrights-one {
+		flex-wrap: wrap;
+	}
+
+	.footer-logo-large {
+		display: none;
+	}
 
 }
 
-@media all and (min-width: $medium__width) { // Desktop 
+@media all and (min-width: $medium__width) {
 
 	.site-footer {
 
@@ -97,22 +120,19 @@
 
 			.contact-details-container {
 				display: flex;
-				flex-direction: row;
-				justify-content: flex-end;
-				div:nth-child(2) {
-					margin-left: 3rem;
-					padding-top: 4.35rem;
-				}
+				flex-direction: column;
+			}
+
+			.contact-button {
+				display: inline-block;
 			}
 
 		} // end .site-info
 
 		.copyrights-one {
-
 			background-color: $color__green-main;
 			grid-column: 1;
 			grid-row: 2;
-
 			justify-content: flex-end;
 		}
 
@@ -123,4 +143,42 @@
 
 	}
 
+}
+
+@media all and (min-width: $desktop__width) {
+	.site-footer {
+
+		.site-info {
+			background: none;
+			.contact-details-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				div:nth-child(2) {
+					margin-left: 3rem;
+					padding-top: 3rem;
+				}
+			}
+		}
+
+		.copyrights {
+			background: none;
+		}
+
+		.copyrights-two {
+			background-color: $color__text-main;
+		}
+
+		.footer-logo-large {
+			display: block;
+			background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
+			background-color: $color__green-main;
+			background-repeat: no-repeat;
+			background-size: 35rem;
+			background-position: left -19rem top -5rem;
+			grid-column: 1;
+			grid-row: 1 / 3;
+		}
+
+	}
 }
