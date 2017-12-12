@@ -406,7 +406,7 @@ textarea {
 
 footer input[type=email], footer input[type=text] {
   background-color: #698e87;
-  color: #fff;
+  color: white;
   font-weight: 700; }
 
 @media all and (min-width: 700px) {
@@ -433,7 +433,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -443,7 +442,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -460,7 +458,6 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -486,13 +483,11 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
 
@@ -510,7 +505,8 @@ a {
 .main-navigation {
   margin-top: 24px;
   margin-top: 1.714285714rem;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-inline-box; }
 
 .main-navigation li {
   margin-top: 24px;
@@ -537,8 +533,6 @@ a {
 @media screen and (min-width: 600px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
-    border-bottom: 1px solid #ededed;
-    border-top: 1px solid #ededed;
     display: inline-block !important;
     text-align: left;
     width: 100%; }
@@ -550,7 +544,6 @@ a {
     display: inline-block;
     text-decoration: none; }
   .main-navigation li a {
-    border-bottom: 0;
     color: #6a6a6a;
     line-height: 3.692307692;
     text-transform: uppercase;
@@ -584,8 +577,6 @@ a {
     height: inherit;
     width: inherit; }
   .main-navigation li ul li a {
-    background: #efefef;
-    border-bottom: 1px solid #ededed;
     display: block;
     font-size: 11px;
     font-size: 0.785714286rem;
@@ -606,7 +597,12 @@ a {
     color: #636363;
     font-weight: bold; }
   .menu-toggle {
-    display: none; } }
+    display: none; }
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #e8eeee; } }
 
 /*--------------------------------------------------------------
 # Accessibility
