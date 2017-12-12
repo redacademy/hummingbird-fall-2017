@@ -20,7 +20,7 @@ get_header(); ?>
 				<h1><?php echo CFS()->get( 'who_header_title' ); ?></h1>
 			</section>
 
-            <section class="who-content-wrapper">
+            <section class="width-content who-content-wrapper">
 					<?php $fields = CFS()->get( 'who_header_case' );
 						foreach ( $fields as $field ) { ?>
 
