@@ -31,7 +31,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-content flex-horizontal-center">
+			<section class="width-content ">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
@@ -76,9 +76,12 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
 
-			<section class="front-page-impact-case width-content">
+			<section class="front-page-impact-case"> <!-- The three impact metrics -->
 				<?php $fields = CFS()->get( 'front_page_impact_case' );
-				foreach ( $fields as $field ) { ?>
+
+				// d($fields);
+				
+				foreach ( $fields as $field ) : ?>
 
 					<div class="front-page-impact-content">
 						<div class="flex-horizontal-left">
@@ -97,17 +100,39 @@ get_header(); ?>
 						style="background-image: url(<?php echo $field['front_page_impact_case_photo'] ?>);">
 					</div>
 
-				<?php } ?>
+				<?php endforeach; ?>
 			</section>
+
+			<?php $fields = CFS()->get('front_page_volunteer_case' );
+
+			// d($fields);
+
+			if(isset($fields)):
+
+				foreach ( $fields as $field ) : ?>
+					<section class="width-content flex-horizontal-center"> <!-- Hi, I'm Paula! -->
+						<div
+							style="	background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);
+											background-size: cover;
+											width: 360px;
+											min-width: 360px;
+											height: 360px;
+											margin-right: 4rem;">
+						</div>
+						<div>
+							<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
+							<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
+							<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
+						</div>
+					</section>
+				<?php 
+				endforeach;
+			endif;
+			?>
 
 			<section class="width-content flex-horizontal-center">
 				<a href="" class="button-link button-link-hollow">Find Out More</a>
 			</section>
-
-			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
-			</section>
-			
 
 			<section class="width-content">
 				<?php while ( have_posts() ) : the_post(); ?>

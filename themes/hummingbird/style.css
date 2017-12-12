@@ -778,10 +778,11 @@ object {
 --------------------------------------------------------------*/
 .width-content {
   max-width: 1440px;
-  padding: 1rem 4rem 0 4rem;
+  padding: 6rem 4rem 0 4rem;
   margin: 0 auto; }
 
 .width-full {
+  padding-top: 6rem;
   width: 100%;
   background-color: #698e87;
   color: #fff; }
@@ -851,11 +852,40 @@ footer .wpcf7-submit {
   .page-template-who p {
     text-align: center;
     color: #1e1e1e; }
+  .page-template-who .bignumber {
+    color: #72acb2; }
+  .page-template-who .who-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-template-who .who-title-content:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .page-template-who .who-title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px; }
+    .page-template-who .who-title-content h2 {
+      text-align: center; }
   .page-template-who .who_header_case-photo {
-    height: 391px;
+    height: 259px;
+    min-width: 100%;
     background-size: cover;
     background-position: 50%; }
-  .page-template-who .team-case {
+  .page-template-who .front-page-explanation-case {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -863,9 +893,20 @@ footer .wpcf7-submit {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-who .front-page-explanation-case div h2 {
+      text-align: center; }
+    .page-template-who .front-page-explanation-case span {
+      display: none; }
+  .page-template-who .team-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
@@ -884,7 +925,81 @@ footer .wpcf7-submit {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 450px; }
+    max-width: 450px; }
+  .page-template-who .our-impact-link {
+    margin: 0 auto;
+    height: 400px; }
+    .page-template-who .our-impact-link h2 {
+      margin: 40px auto;
+      max-width: 300px; }
+
+@media all and (min-width: 700px) {
+  .page-template-who .team-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-template-who .our-impact-link {
+    margin: 0 auto;
+    height: 300px; }
+    .page-template-who .our-impact-link h2 {
+      margin: 40px auto;
+      max-width: 810px; }
+  .page-template-who .who-title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 400px;
+    margin: 20px 40px 30px 40px;
+    padding: 20px 20px 0px 20px;
+    text-align: left;
+    -webkit-box-shadow: 3px 3px 15px 1px #bababa;
+            box-shadow: 3px 3px 15px 1px #bababa; }
+    .page-template-who .who-title-content h2 {
+      text-align: center; }
+  .page-template-who .who_header_case-photo {
+    height: 391px;
+    min-width: 50%;
+    background-size: cover;
+    background-position: 50%; }
+  .page-template-who .front-page-explanation-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-who .front-page-explanation-case div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 40%;
+      margin: 20px 40px 30px 40px;
+      padding: 20px 20px 0px 20px;
+      text-align: left;
+      -webkit-box-shadow: 3px 3px 15px 1px #bababa;
+              box-shadow: 3px 3px 15px 1px #bababa; }
+      .page-template-who .front-page-explanation-case div h2 {
+        text-align: center; }
+      .page-template-who .front-page-explanation-case div span {
+        display: block; } }
 
 /*--------------------------------------------------------------
 - page-impact
@@ -902,7 +1017,8 @@ footer .wpcf7-submit {
   background: url("../../assets/elements/white-paint.png"), url("../../assets/photos/hero.png");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center; }
+  background-position: bottom, center;
+  height: 500px; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -910,26 +1026,27 @@ footer .wpcf7-submit {
   grid-template-rows: auto;
   grid-gap: 2rem; }
 
-.page-front-page .front-page-impact-case .front-page-impact-case-photo {
-  height: 391px;
-  background-size: cover;
-  background-position: center; }
-
-.page-front-page .front-page-impact-case .front-page-impact-case-number {
-  color: #da9127; }
-
-.page-front-page .front-page-impact-case .front-page-impact-case-metric {
-  color: #698e87;
-  font-size: 2.5rem;
-  margin: 0; }
-
-.page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
-  width: 100px;
-  height: 100px;
-  border: 9px solid #698e87;
-  border-radius: 100px;
-  margin-top: 1rem;
-  margin-right: 1rem; }
+.page-front-page .front-page-impact-case {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-photo {
+    height: 391px;
+    background-size: cover;
+    background-position: center; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-number {
+    color: #da9127; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-metric {
+    color: #698e87;
+    font-size: 2.5rem;
+    margin: 0; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
+    width: 100px;
+    height: 100px;
+    border: 9px solid #698e87;
+    border-radius: 100px;
+    margin-top: 1rem;
+    margin-right: 1rem; }
 
 @media all and (min-width: 700px) {
   .page-front-page .front-page-explanation-case {
@@ -938,7 +1055,8 @@ footer .wpcf7-submit {
   .page-front-page .front-page-impact-case {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto; }
+    grid-template-rows: auto auto auto;
+    padding-top: 6rem; }
     .page-front-page .front-page-impact-case .front-page-impact-content {
       grid-column: span 2;
       padding: 4rem 6rem; }

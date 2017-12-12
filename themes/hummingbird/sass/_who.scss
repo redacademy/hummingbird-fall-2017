@@ -8,18 +8,51 @@
         text-align: center;
         color: $color__text-main;
     }
-    h3 {
-
+    .bignumber {
+        color: $color__blue-numbers;
+    }
+    .who-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .who-title-content:nth-of-type(2) {
+        order: 2;
+    } // .who_header_case-photo:nth-of-type(2) {
+    //     order: 3;
+    // }
+    .who-title-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 20px 0px 20px;
+        h2 {
+            text-align: center;
+        }
     }
     .who_header_case-photo {
-        height: 391px;
+        height: 259px;
+        min-width: 100%;
         background-size: cover;
         background-position: 50%;
     }
-    .team-case {
+    .front-page-explanation-case {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        flex-wrap: wrap;
+        div {
+        h2 {
+            text-align: center;
+        }
+        }
+        span {
+            display: none;
+        }
+     }    
+    .team-case {
+        display: flex;
+        flex-direction: column;
     }
     .who_team_case-photo {
         margin: 0 auto;
@@ -33,18 +66,71 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 450px;
+        max-width: 450px;
     }
-    
-
-
+    .our-impact-link {
+        margin: 0 auto;
+        height: 400px;
+        h2 {
+            margin: 40px auto;
+            max-width: 300px;
+        }
+    }
 }
 
 @media all and (min-width: $medium__width) {
-    .page-header {
-
-
-
-
+    .page-template-who {
+        .team-case {
+            display: flex;
+            flex-direction: row;
+        }
+        .our-impact-link {
+            margin: 0 auto;
+            height: 300px;
+            h2 {
+                margin: 40px auto;
+                max-width: 810px;
+            }
+           
+        }
+        .who-title-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 400px;
+            margin: 20px 40px 30px 40px;
+            padding: 20px 20px 0px 20px;
+            text-align: left;
+            box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
+            h2 {
+                text-align: center;
+            }
+        }
+        .who_header_case-photo {
+            height: 391px;
+            min-width: 50%;
+            background-size: cover;
+            background-position: 50%;
+        }
+        .front-page-explanation-case {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            div {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin: 20px 40px 30px 40px;
+            padding: 20px 20px 0px 20px;
+            text-align: left;
+            box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
+            h2 {
+                text-align: center;
+            }
+            span {
+            display: block;
+        }
+        }
+     }    
     }
 }

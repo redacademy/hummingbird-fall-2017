@@ -9,6 +9,7 @@
 		background-size: contain, cover;
 		background-repeat: no-repeat;
 		background-position: bottom, center;
+		height: 500px;
 	}
 
 	.front-page-explanation-case {
@@ -19,6 +20,10 @@
 	}
 
 	.front-page-impact-case {
+
+		max-width: $full__width;
+		margin-left: auto;
+		margin-right: auto;
 
 		.front-page-impact-case-photo {
 			height: 391px;
@@ -62,6 +67,7 @@
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				grid-template-rows: auto auto auto;
+				padding-top: 6rem;
 
 				.front-page-impact-content {
 					grid-column: span 2;
