@@ -32,6 +32,10 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
+			</section>
+
+			<section class="width-content flex-horizontal-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 			</section>
 

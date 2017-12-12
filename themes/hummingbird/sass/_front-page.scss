@@ -11,11 +11,20 @@
 		background-position: bottom, center;
 	}
 
+	.front-page-explanation-case {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-gap: 2rem;
+	}
+
 	.front-page-impact-case-photo {
 		height: 391px;
 		background-size: cover;
 		background-position: center;
 	}
+
+
 
 	.front-page-impact-case-number {
 		color: $color__orange-main;
@@ -42,7 +51,24 @@
 
     .page-front-page {
 
+			.front-page-explanation-case {
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto;
+			}
 
+
+    }
+
+}
+
+@media all and (min-width: $desktop__width) {
+
+    .page-front-page {
+
+			.front-page-explanation-case {
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: auto;
+			}
 
     }
 

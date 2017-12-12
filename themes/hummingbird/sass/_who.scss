@@ -2,11 +2,43 @@
 - page-who
 --------------------------------------------------------------*/
 
-.page-who {
+.page-template-who {
+    text-align: center;
+    p {
+        text-align: center;
+        color: $color__text-main;
+    }
+    h3 {
 
+    }
+    .who_header_case-photo {
+        height: 391px;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .team-case {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .who_team_case-photo {
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+        background-size: cover;
+        background-color: transparent;
+        text-align: center;
+    }
+    .single-team-member {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 450px;
+    }
 
 
 }
+
 @media all and (min-width: $medium__width) {
     .page-header {
 

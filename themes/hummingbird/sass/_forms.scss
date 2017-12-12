@@ -4,10 +4,11 @@
 
 /* Buttons */
 
-button,
-input[type="button"],
+// button,
+// input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+// input[type="submit"]
+ {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
@@ -39,9 +40,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border-radius: 5px;
+	border: none;
 
 	&:focus {
 		color: #111;
@@ -60,3 +60,46 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+// "I want to be part of the community" Form on the front page
+.page-front-page {
+
+	input[type=email], input[type=text] {
+		background-color: $color__green-nav-bar;
+		color: $color__green-main;
+		font-size: 2rem;
+		font-weight: 800;
+		border-bottom: 1px dashed $color__text-main;
+		width: 70%;
+
+	}
+
+	label {
+		font-size: 2rem;
+		font-weight: 800;
+	}
+
+}
+
+// Form in the footer
+footer {
+
+	input[type=email], input[type=text] {
+		background-color: $color__green-main;
+		color: $color__white;
+		font-weight: 800;
+	}
+
+}
+
+@media all and (min-width: $medium__width) {
+
+	footer {
+		input[type=email], input[type=text] {
+			background-color: $color__text-main;
+			width: 100%;
+		}	
+	}
+
+}
+
