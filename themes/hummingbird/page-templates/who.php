@@ -98,6 +98,7 @@ get_header(); ?>
 						echo '</p>';						
 						 } ?>
 					</div>	 
+					<a href="" class="contact-button button-link button-link-solid">See Our Impact</a>
 			</section>
 
 		</main><!-- #main -->
