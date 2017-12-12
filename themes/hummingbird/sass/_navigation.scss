@@ -142,6 +142,7 @@ a {
 }
 //MOBILE NAVIGATION
 
+
 /* Navigation Menu */
 .main-navigation {
 	margin-top: 24px;
@@ -174,7 +175,7 @@ a {
 
 // CSS to use on mobile devices
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
 
 .main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
@@ -195,13 +196,14 @@ a {
 	}
 	.main-navigation li a {
 			border-bottom: 0;
-			color: white;
+			color: #6a6a6a;
+			line-height: 3.692307692;
 			text-transform: uppercase;
 			white-space: nowrap;
 	}
 	.main-navigation li a:hover,
 	.main-navigation li a:focus {
-			color: $color__white;
+			color: #000;
 	}
 	.main-navigation li {
 			margin: 0 40px 0 0;
@@ -247,14 +249,14 @@ a {
 	}
 	.main-navigation li ul li a:hover,
 	.main-navigation li ul li a:focus {
-			background: $color__green-main;
-			color: $color__blue-numbers;
+			background: #e3e3e3;
+			color: #444;
 	}
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
-			color: $color__white;
+			color: #636363;
 			font-weight: bold;
 	}
 	.menu-toggle {
@@ -262,14 +264,3 @@ a {
 	}
 	 
 	}
-
-
-	#responsive-menu-search-box {
-		background: green;
-	}
-
-
-
-
-
-
