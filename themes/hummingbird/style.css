@@ -795,7 +795,7 @@ object {
   font-size: 5rem;
   font-weight: 800;
   color: #72acb2;
-  margin: 1rem; }
+  margin: 0; }
 
 .flex-horizontal-left {
   display: -webkit-box;
@@ -894,6 +894,12 @@ footer .wpcf7-submit {
   background-repeat: no-repeat;
   background-position: bottom, center; }
 
+.page-front-page .front-page-explanation-case {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-gap: 2rem; }
+
 .page-front-page .front-page-impact-case-photo {
   height: 391px;
   background-size: cover;
@@ -912,6 +918,16 @@ footer .wpcf7-submit {
   border-radius: 50px;
   margin-top: 1rem;
   margin-right: 1rem; }
+
+@media all and (min-width: 700px) {
+  .page-front-page .front-page-explanation-case {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; } }
+
+@media all and (min-width: 920px) {
+  .page-front-page .front-page-explanation-case {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; } }
 
 /*--------------------------------------------------------------
 - page-footer
