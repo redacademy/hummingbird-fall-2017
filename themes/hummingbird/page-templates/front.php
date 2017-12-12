@@ -31,7 +31,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-content flex-horizontal-center">
+			<section class="width-content ">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
@@ -76,7 +76,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
 
-			<section class="front-page-impact-case width-content">
+			<section class="front-page-impact-case"> <!-- The three impact metrics -->
 				<?php $fields = CFS()->get( 'front_page_impact_case' );
 
 				// d($fields);
@@ -116,7 +116,8 @@ get_header(); ?>
 											background-size: cover;
 											width: 360px;
 											min-width: 360px;
-											height: 360px;">
+											height: 360px;
+											margin-right: 4rem;">
 						</div>
 						<div>
 							<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
