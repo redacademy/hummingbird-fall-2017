@@ -4,11 +4,12 @@
 
 .width-content { // applied to pretty much every main container
 	max-width: $full__width;
-	padding: 1rem 4rem 0 4rem;
+	padding: 6rem 4rem 0 4rem;
 	margin: 0 auto; // horizontally center the content
 }
 
 .width-full {
+	padding-top: 6rem;
 	width: 100%;
 	background-color: $color__green-main;
 	color: $color__white;
