@@ -62,7 +62,7 @@
 					
 					</div><!-- .site-info -->
 
-					<div class="copyrights copyrights-one width-content">
+					<div class="copyrights copyrights-one">
 						<span>Blog</span>
 						<span>FAQ</span>
 						<span>Site Map</span>
@@ -70,9 +70,9 @@
 						<span>c 2017 Hummingbird Network</span>
 					</div>
 
-					<div class="copyrights copyrights-two width-content">
-						<div>Designed by Dream Team</div>
-						<div>Powered by Coffee</div>
+					<div class="copyrights copyrights-two">
+						<div>Designed by<br>Dream Team</div>
+						<div>Powered by<br>Coffee</div>
 					</div>
 
 				</footer><!-- #colophon -->
