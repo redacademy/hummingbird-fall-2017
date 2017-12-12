@@ -533,7 +533,7 @@ a {
 .menu-toggle {
   display: inline-block; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     border-bottom: 1px solid #ededed;
@@ -550,12 +550,13 @@ a {
     text-decoration: none; }
   .main-navigation li a {
     border-bottom: 0;
-    color: white;
+    color: #6a6a6a;
+    line-height: 3.692307692;
     text-transform: uppercase;
     white-space: nowrap; }
   .main-navigation li a:hover,
   .main-navigation li a:focus {
-    color: #fff; }
+    color: #000; }
   .main-navigation li {
     margin: 0 40px 0 0;
     margin: 0 2.857142857rem 0 0;
@@ -595,25 +596,16 @@ a {
     white-space: normal; }
   .main-navigation li ul li a:hover,
   .main-navigation li ul li a:focus {
-    background: #698e87;
-    color: #72acb2; }
+    background: #e3e3e3;
+    color: #444; }
   .main-navigation .current-menu-item > a,
   .main-navigation .current-menu-ancestor > a,
   .main-navigation .current_page_item > a,
   .main-navigation .current_page_ancestor > a {
-    color: #fff;
+    color: #636363;
     font-weight: bold; }
   .menu-toggle {
     display: none; } }
-
-#responsive-menu-search-box {
-  background: #698e87; }
-
-#responsive-menu-item-41 {
-  background: #698e87; }
-
-.responsive-menu {
-  background: #698e87; }
 
 /*--------------------------------------------------------------
 # Accessibility
