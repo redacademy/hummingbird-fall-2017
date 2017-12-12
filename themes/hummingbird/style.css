@@ -856,11 +856,40 @@ footer .wpcf7-submit {
   .page-template-who p {
     text-align: center;
     color: #1e1e1e; }
+  .page-template-who .bignumber {
+    color: #72acb2; }
+  .page-template-who .who-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-template-who .who-title-content:nth-of-type(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .page-template-who .who-title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px; }
+    .page-template-who .who-title-content h2 {
+      text-align: center; }
   .page-template-who .who_header_case-photo {
-    height: 391px;
+    height: 259px;
+    min-width: 100%;
     background-size: cover;
     background-position: 50%; }
-  .page-template-who .team-case {
+  .page-template-who .front-page-explanation-case {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -868,9 +897,20 @@ footer .wpcf7-submit {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-who .front-page-explanation-case div h2 {
+      text-align: center; }
+    .page-template-who .front-page-explanation-case span {
+      display: none; }
+  .page-template-who .team-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
@@ -889,7 +929,81 @@ footer .wpcf7-submit {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 450px; }
+    max-width: 450px; }
+  .page-template-who .our-impact-link {
+    margin: 0 auto;
+    height: 400px; }
+    .page-template-who .our-impact-link h2 {
+      margin: 40px auto;
+      max-width: 300px; }
+
+@media all and (min-width: 700px) {
+  .page-template-who .team-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-template-who .our-impact-link {
+    margin: 0 auto;
+    height: 300px; }
+    .page-template-who .our-impact-link h2 {
+      margin: 40px auto;
+      max-width: 810px; }
+  .page-template-who .who-title-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 400px;
+    margin: 20px 40px 30px 40px;
+    padding: 20px 20px 0px 20px;
+    text-align: left;
+    -webkit-box-shadow: 3px 3px 15px 1px #bababa;
+            box-shadow: 3px 3px 15px 1px #bababa; }
+    .page-template-who .who-title-content h2 {
+      text-align: center; }
+  .page-template-who .who_header_case-photo {
+    height: 391px;
+    min-width: 50%;
+    background-size: cover;
+    background-position: 50%; }
+  .page-template-who .front-page-explanation-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-who .front-page-explanation-case div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 40%;
+      margin: 20px 40px 30px 40px;
+      padding: 20px 20px 0px 20px;
+      text-align: left;
+      -webkit-box-shadow: 3px 3px 15px 1px #bababa;
+              box-shadow: 3px 3px 15px 1px #bababa; }
+      .page-template-who .front-page-explanation-case div h2 {
+        text-align: center; }
+      .page-template-who .front-page-explanation-case div span {
+        display: block; } }
 
 /*--------------------------------------------------------------
 - page-impact
