@@ -139,10 +139,6 @@ get_header(); ?>
 				<?php endwhile; // End of the loop. ?>
 			</section>
 
-			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
-			</section>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
