@@ -23,7 +23,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg"> -->
 			</section>
 
 			<section class="width-content">
