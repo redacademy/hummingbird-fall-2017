@@ -19,8 +19,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font__headings;
 }
 
-h1, h2 {
+h2 {
 	text-align: center;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 0;
 }
 
 /* Copy */

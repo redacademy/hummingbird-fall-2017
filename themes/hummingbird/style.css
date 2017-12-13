@@ -468,7 +468,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -492,7 +492,7 @@ a {
   width: 50%; }
 
 .hb-logo {
-  width: 50%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,7 +506,11 @@ a {
   margin-top: 24px;
   margin-top: 1.714285714rem;
   text-align: center;
-  display: -webkit-inline-box; }
+  display: -webkit-inline-box;
+  background: #e8eeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .main-navigation li {
   margin-top: 24px;
@@ -530,7 +534,7 @@ a {
 .menu-toggle {
   display: inline-block; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
