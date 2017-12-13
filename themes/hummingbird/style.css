@@ -240,8 +240,14 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif; }
 
-h1, h2 {
+h2 {
   text-align: center; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 0; }
 
 /* Copy */
 p {
@@ -1017,11 +1023,18 @@ footer .wpcf7-submit {
 - page-front-page
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
-  background: url("../../assets/elements/white-paint.png"), url("../../assets/photos/hero.png");
+  background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/hero.png");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, center;
-  height: 500px; }
+  background-position: bottom, top;
+  padding-bottom: 6rem; }
+  .page-front-page .front-page-header .front-page-header-content {
+    font-size: 2rem;
+    color: #cecece;
+    font-weight: 300;
+    margin: 0 0 3rem 0; }
+  .page-front-page .front-page-header .button-link {
+    display: none; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1055,6 +1068,8 @@ footer .wpcf7-submit {
     margin-right: 1rem; }
 
 @media all and (min-width: 700px) {
+  .page-front-page .front-page-header .button-link {
+    display: inline-block; }
   .page-front-page .front-page-explanation-case {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
