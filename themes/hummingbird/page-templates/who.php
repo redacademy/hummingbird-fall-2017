@@ -102,7 +102,7 @@ get_header(); ?>
 
 			<section class="width-content our-impact-link">
 				<h2><?php echo CFS()->get( 'our_impact_link' ); ?></h2>
-				<div><a href="" class="contact-button button-link button-link-solid">See Our Impact</a></div>
+				<div><a href="<?php echo esc_url( home_url( 'our-impact/' ) ); ?>" class="contact-button button-link button-link-solid">See Our Impact</a></div>
 			</section>	 
 					
 		</main><!-- #main -->
