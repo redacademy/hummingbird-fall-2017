@@ -8,8 +8,20 @@
 		background: url("../../assets/elements/white-paint.png"), url("../../assets/photos/hero.png");
 		background-size: contain, cover;
 		background-repeat: no-repeat;
-		background-position: bottom, center;
-		height: 500px;
+		background-position: bottom, top;
+		padding-bottom: 6rem;
+
+		.front-page-header-content {
+			font-size: 2rem;
+			color: $color__grey;
+			font-weight: 300;
+			margin: 0 0 3rem 0;
+		}
+
+		.button-link {
+			display: none;
+		}
+
 	}
 
 	.front-page-explanation-case {
@@ -17,6 +29,12 @@
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
 		grid-gap: 2rem;
+
+		.front-page-explanation-case-icon {
+			max-width: 64px;
+			max-height: 64px;
+		}
+
 	}
 
 	.front-page-impact-case {
@@ -57,6 +75,14 @@
 @media all and (min-width: $medium__width) {
 
     .page-front-page {
+
+			.front-page-header {
+
+				.button-link {
+					display: inline-block;
+				}
+
+			}
 
 			.front-page-explanation-case {
 				grid-template-columns: 1fr 1fr;

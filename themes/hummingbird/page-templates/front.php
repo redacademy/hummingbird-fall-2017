@@ -14,16 +14,18 @@ get_header(); ?>
 			<section class="width-full front-page-header">
 				<div class="width-content">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
-					<p><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
+					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
+					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
+					<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-hollow">Learn More</a>
 				</div>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg"> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg">
 			</section>
 
 			<section class="width-content">
@@ -57,14 +59,14 @@ get_header(); ?>
 							echo '<p class="bignumber">'.$field['front_page_explanation_case_number'].'</p>';
 							echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
 							echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
-							echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
+							echo '<img  class="front-page-explanation-case-icon" src="'.$field['front_page_explanation_case_icon'].'">';
 						echo '</div>';
 					}
 				?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Read Our Story</a>
+				<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-solid">Read Our Story</a>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
@@ -131,7 +133,7 @@ get_header(); ?>
 			?>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-hollow">Find Out More</a>
+				<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
 			</section>
 
 			<section class="width-content">
