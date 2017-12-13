@@ -20,7 +20,7 @@ get_header(); ?>
 				<h1><?php echo CFS()->get( 'who_header_title' ); ?></h1>
 			</section>
 
-            <section class="width-content who-content-wrapper">
+            <section class="who-content-wrapper">
 					<?php $fields = CFS()->get( 'who_header_case' );
 						foreach ( $fields as $field ) { ?>
 
@@ -102,7 +102,7 @@ get_header(); ?>
 
 			<section class="width-content our-impact-link">
 				<h2><?php echo CFS()->get( 'our_impact_link' ); ?></h2>
-				<div><a href="" class="contact-button button-link button-link-solid">See Our Impact</a></div>
+				<div><a href="<?php echo esc_url( home_url( 'our-impact/' ) ); ?>" class="contact-button button-link button-link-solid">See Our Impact</a></div>
 			</section>	 
 					
 		</main><!-- #main -->
