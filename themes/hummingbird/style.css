@@ -877,14 +877,15 @@ footer .wpcf7-submit {
 - page-action
 --------------------------------------------------------------*/
 .page-action .action-header {
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 4rem 0; }
   .page-action .action-header h1 {
     font-size: 28px;
     text-align: center; }
 
 .page-action .action-steps {
   max-width: 1440px;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 3rem 3rem 3rem;
   margin: 0 auto; }
   .page-action .action-steps span {
     color: #698e87;
@@ -893,6 +894,11 @@ footer .wpcf7-submit {
     font-weight: lighter; }
   .page-action .action-steps img {
     width: 50px; }
+  .page-action .action-steps h2 {
+    margin: 0 auto; }
+
+.page-action .start {
+  padding: 0 20% 0 20%; }
 
 .page-action .simple-steps {
   display: -webkit-box;
@@ -905,7 +911,8 @@ footer .wpcf7-submit {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1129px; }
+  max-width: 1129px;
+  padding-top: 1rem; }
 
 .page-action .call-to-action {
   display: -webkit-box;
@@ -917,11 +924,15 @@ footer .wpcf7-submit {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: -webkit-center; }
   .page-action .call-to-action h2 {
     font-family: "Overpass", sans-serif;
     font-weight: lighter;
     font-size: 30px; }
+  .page-action .call-to-action img {
+    height: 147px;
+    width: 147px; }
 
 .page-action .call h2 {
   font-family: "Overpass", sans-serif;
@@ -929,7 +940,7 @@ footer .wpcf7-submit {
   font-size: 30px; }
 
 .page-action .volunteer-button {
-  padding: 30px; }
+  padding: 50px 0 100px 0; }
 
 .page-action .volunteer {
   display: -webkit-box;
@@ -950,11 +961,18 @@ footer .wpcf7-submit {
       align-self: center; }
 
 @media all and (min-width: 700px) {
+  .page-action .action-header h1 {
+    font-size: 50px;
+    font-weight: bold; }
+  .page-action h2 {
+    font-size: 50px;
+    margin-bottom: 0; }
   .page-action .simple-steps {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    padding-top: 1rem; }
     .page-action .simple-steps h2 {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -966,8 +984,35 @@ footer .wpcf7-submit {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+  .page-action .action-steps span {
+    margin: 0 auto;
+    font-size: 36px; }
   .page-action .call h2 {
-    font-size: 50px; }
+    font-size: 50px;
+    padding: 0 20% 0 20%; }
+  .page-action .call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: -webkit-center; }
+    .page-action .call-to-action h2 {
+      font-family: "Overpass", sans-serif;
+      font-weight: lighter;
+      font-size: 30px; }
+    .page-action .call-to-action img {
+      padding: 1rem;
+      height: auto;
+      width: 282px; }
+  .page-action .start {
+    padding: 0;
+    margin: 0 auto; }
   .page-action .volunteer {
     -webkit-box-align: center;
         -ms-flex-align: center;
