@@ -5,7 +5,7 @@
 .page-front-page {
 
 	.front-page-header {
-		background: url("../../assets/elements/white-paint.png"), url("../../assets/photos/hero.png");
+		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/hero.png");
 		background-size: contain, cover;
 		background-repeat: no-repeat;
 		background-position: bottom, top;
@@ -62,8 +62,6 @@
 		.front-page-impact-case-icon-container {
 			width: 100px;
 			height: 100px;
-			border: 9px solid $color__green-main;
-			border-radius: 100px;
 			margin-top: 1rem;
 			margin-right: 1rem;
 		}
@@ -106,9 +104,6 @@
 					color: $color__white;
 					h3 {
 						color: $color__white;
-					}
-					.front-page-impact-case-icon-container {
-						border-color: $color__white;
 					}
 				}
 
