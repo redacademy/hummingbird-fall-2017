@@ -6,38 +6,94 @@
 .page-action {
     .action-header {
         text-align: center;
+        h1{
+            font-size: 28px;
+            text-align: center;
+        }
     }
-    .steps {
+    .action-steps {
+        max-width: 1440px;
+        padding: 3rem 2rem 3rem 2rem;
+        margin: 0 auto;
         span {
             color: $color__green-main;
             font-family: $font__main;
-            font-size: $font__size-small;
+            font-size: 22px;
+            font-weight: lighter;
         }
         img {
             width: 50px;
         }
     }
-    .call {
+    .simple-steps {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
+        max-width: 1129px;
     }
     .call-to-action {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        h2 {
+            font-family: $font__main;
+            font-weight: lighter;
+            font-size: 30px;
+        }
     }
-
+    .call {
+        h2 {
+            font-family: $font__main;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+    }
+    .volunteer-button {
+        padding: 30px;
+    }
+    .volunteer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+    .volunteer-img {
+        background-size: cover;
+		width: 230px;
+		height: 230px;
+		// margin-right: 4rem;
+        align-self: center;
+    }
 
 
 }
 @media all and (min-width: $medium__width) {
     .page-action {
-
-
-
-
+         .simple-steps {
+        flex-direction: row;
+        h2 {
+            display: flex;
+            height: 90px;
+            align-items: center;
+            justify-content: center;
+        }
+        
     }
-
-
+     .call {
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .volunteer {
+        align-items: center;
+        flex-direction: row;
+    }
+    .volunteer-img {
+        background-size: cover;
+		width: 360px;
+		min-width: 360px;
+		height: 360px;
+		margin-right: 4rem;
+    }
+    }
 }
