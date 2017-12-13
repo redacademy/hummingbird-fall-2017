@@ -19,7 +19,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
