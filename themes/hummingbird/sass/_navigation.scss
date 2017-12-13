@@ -98,7 +98,7 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $medium__width) {
 	.menu-toggle {
 		display: none;
 	}
@@ -126,7 +126,7 @@ a {
 	}
 }
 .hb-logo{
-	width: 50%;
+	width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +144,8 @@ a {
 	margin-top: 1.714285714rem;
 	text-align: center;
 	display: -webkit-inline-box;
+	background: $color__green-nav-bar;
+	display: flex;
 }
 .main-navigation li {
 	margin-top: 24px;
@@ -171,7 +173,7 @@ a {
 
 // CSS to use on mobile devices
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $medium__width) {
 
 .main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
