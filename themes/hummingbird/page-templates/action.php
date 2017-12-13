@@ -30,7 +30,9 @@ get_header(); ?>
                 <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
 				You decide how much you volunteer</span></h2>
 			</section>
+			  <div class="start">
                 <h2>Start making an impact in three simple steps.</h2>
+			  </div>
 			<section class="width-content simple-steps">
 			  <div class="call-to-action">
 				<h2>Register</h2>

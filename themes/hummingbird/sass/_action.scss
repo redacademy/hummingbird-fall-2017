@@ -6,6 +6,7 @@
 .page-action {
     .action-header {
         text-align: center;
+        padding: 2rem 4rem 0;
         h1{
             font-size: 28px;
             text-align: center;
@@ -13,7 +14,7 @@
     }
     .action-steps {
         max-width: 1440px;
-        padding: 3rem 2rem 3rem 2rem;
+        padding: 3rem 3rem 3rem 3rem;
         margin: 0 auto;
         span {
             color: $color__green-main;
@@ -24,21 +25,35 @@
         img {
             width: 50px;
         }
+        h2{
+            margin: 0 auto;
+        }
+    }
+    .start{
+        padding: 0 20% 0 20%;
+        //  margin: 0 auto;
+
     }
     .simple-steps {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         max-width: 1129px;
+        padding-top: 1rem;
     }
     .call-to-action {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: -webkit-center;
         h2 {
             font-family: $font__main;
             font-weight: lighter;
             font-size: 30px;
+        }
+        img {
+            height: 147px;
+            width: 147px;
         }
     }
     .call {
@@ -49,7 +64,7 @@
         }
     }
     .volunteer-button {
-        padding: 30px;
+        padding: 50px 0 100px 0;
     }
     .volunteer {
         display: flex;
@@ -61,7 +76,6 @@
         background-size: cover;
 		width: 230px;
 		height: 230px;
-		// margin-right: 4rem;
         align-self: center;
     }
 
@@ -69,20 +83,59 @@
 }
 @media all and (min-width: $medium__width) {
     .page-action {
+        .action-header {
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+        }
+        }
+        h2{
+            font-size: 50px;
+            margin-bottom: 0;
+        }
          .simple-steps {
         flex-direction: row;
+        padding-top: 1rem;
         h2 {
             display: flex;
             height: 90px;
             align-items: center;
             justify-content: center;
         }
-        
+
+    }
+    .action-steps {
+        span {
+            margin: 0 auto;
+            font-size: 36px;
+        }
     }
      .call {
         h2 {
             font-size: 50px;
+            padding: 0 20% 0 20%;
         }
+    }
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: -webkit-center;
+        h2 {
+            font-family: $font__main;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+        img {
+            padding: 1rem;
+            height: auto;
+            width: 282px;
+        }
+    }
+    .start{
+        padding: 0;
+        margin: 0 auto;
+
     }
     .volunteer {
         align-items: center;
