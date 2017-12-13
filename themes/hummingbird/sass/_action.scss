@@ -4,7 +4,29 @@
 
 
 .page-action {
-
+    .action-header {
+        text-align: center;
+    }
+    .steps {
+        span {
+            color: $color__green-main;
+            font-family: $font__main;
+            font-size: $font__size-small;
+        }
+        img {
+            width: 50px;
+        }
+    }
+    .call {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
 
