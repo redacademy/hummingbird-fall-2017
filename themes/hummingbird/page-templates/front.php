@@ -21,7 +21,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Become a Volunteer</a>
+				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
@@ -66,7 +66,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-solid">Read Our Story</a>
+				<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-solid">Read Our Story</a>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
@@ -133,7 +133,7 @@ get_header(); ?>
 			?>
 
 			<section class="width-content flex-horizontal-center">
-				<a href="" class="button-link button-link-hollow">Find Out More</a>
+				<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
 			</section>
 
 			<section class="width-content">
