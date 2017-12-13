@@ -789,7 +789,6 @@ object {
 
 .bignumber {
   font-size: 5rem;
-  font-weight: 700;
   color: #72acb2;
   margin: 0; }
 
@@ -1029,6 +1028,9 @@ footer .wpcf7-submit {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-gap: 2rem; }
+  .page-front-page .front-page-explanation-case .front-page-explanation-case-icon {
+    max-width: 64px;
+    max-height: 64px; }
 
 .page-front-page .front-page-impact-case {
   max-width: 1440px;

@@ -23,7 +23,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
-				<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg"> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg">
 			</section>
 
 			<section class="width-content">
@@ -57,7 +57,7 @@ get_header(); ?>
 							echo '<p class="bignumber">'.$field['front_page_explanation_case_number'].'</p>';
 							echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
 							echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
-							echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
+							echo '<img  class="front-page-explanation-case-icon" src="'.$field['front_page_explanation_case_icon'].'">';
 						echo '</div>';
 					}
 				?>
