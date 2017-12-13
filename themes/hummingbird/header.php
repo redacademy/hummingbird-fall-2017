@@ -28,7 +28,7 @@
 
 							<button class="menu-toggle">Menu</button>
 
-									<div class="hb-logo">
+									<div class="hb-logo"> 
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/SVG/hummingbird-network-logo-color.svg" alt="hummingbird header logo">
 							</div>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>							

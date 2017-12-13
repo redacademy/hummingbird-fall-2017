@@ -19,13 +19,9 @@ get_header(); ?>
 					<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-hollow">Learn More</a>
 				</div>
 			</section>
-
+			
 			<section class="width-content flex-horizontal-center">
-				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
-			</section>
-
-			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-logo-color.svg">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
 			</section>
 
 			<section class="width-content">
