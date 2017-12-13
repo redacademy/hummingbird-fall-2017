@@ -872,26 +872,34 @@ footer .wpcf7-submit {
 --------------------------------------------------------------*/
 .page-action .action-header {
   text-align: center; }
+  .page-action .action-header h1 {
+    font-size: 28px;
+    text-align: center; }
 
-.page-action .steps span {
-  color: #698e87;
-  font-family: "Overpass", sans-serif;
-  font-size: 0.7rem; }
+.page-action .action-steps {
+  max-width: 1440px;
+  padding: 3rem 2rem 3rem 2rem;
+  margin: 0 auto; }
+  .page-action .action-steps span {
+    color: #698e87;
+    font-family: "Overpass", sans-serif;
+    font-size: 22px;
+    font-weight: lighter; }
+  .page-action .action-steps img {
+    width: 50px; }
 
-.page-action .steps img {
-  width: 50px; }
-
-.page-action .call {
+.page-action .simple-steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  max-width: 1129px; }
 
 .page-action .call-to-action {
   display: -webkit-box;
@@ -904,6 +912,70 @@ footer .wpcf7-submit {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .page-action .call-to-action h2 {
+    font-family: "Overpass", sans-serif;
+    font-weight: lighter;
+    font-size: 30px; }
+
+.page-action .call h2 {
+  font-family: "Overpass", sans-serif;
+  font-weight: lighter;
+  font-size: 30px; }
+
+.page-action .volunteer-button {
+  padding: 30px; }
+
+.page-action .volunteer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-action .volunteer-img {
+  background-size: cover;
+  width: 230px;
+  height: 230px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+@media all and (min-width: 700px) {
+  .page-action .simple-steps {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .page-action .simple-steps h2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 90px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .page-action .call h2 {
+    font-size: 50px; }
+  .page-action .volunteer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-action .volunteer-img {
+    background-size: cover;
+    width: 360px;
+    min-width: 360px;
+    height: 360px;
+    margin-right: 4rem; } }
 
 /*--------------------------------------------------------------
 - page-who
