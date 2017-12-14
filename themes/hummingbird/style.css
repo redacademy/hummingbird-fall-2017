@@ -474,12 +474,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 700px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -497,27 +491,7 @@ a {
   text-align: right;
   width: 50%; }
 
-.hb-logo {
-  width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
-
 /* Navigation Menu */
-.main-navigation {
-  margin-top: 24px;
-  margin-top: 1.714285714rem;
-  text-align: center;
-  display: -webkit-inline-box;
-  background: #e8eeee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .main-navigation li {
   margin-top: 24px;
   margin-top: 1.714285714rem;
@@ -540,12 +514,19 @@ a {
 .menu-toggle {
   display: inline-block; }
 
+.hb-logowhite {
+  display: inline-block; }
+
+.hb-logogreen {
+  display: none; }
+
 @media screen and (min-width: 700px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
-    text-align: left;
-    width: 100%; }
+    text-align: right;
+    width: 100%;
+    background: #698e87; }
   .main-navigation ul {
     margin: 0;
     text-indent: 0; }
@@ -613,6 +594,18 @@ a {
     display: -ms-flexbox;
     display: flex;
     background: #e8eeee; } }
+
+@media screen and (min-width: 920px) {
+  main-navigation ul.nav-menu,
+  .main-navigation div.nav-menu > ul {
+    display: inline-block !important;
+    text-align: right;
+    width: 100%;
+    background: #e8eeee; }
+  .hb-logowhite {
+    display: none; }
+  .hb-logogreen {
+    display: inline-block; } }
 
 /*--------------------------------------------------------------
 # Accessibility

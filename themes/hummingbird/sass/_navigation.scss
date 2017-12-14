@@ -98,14 +98,14 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: $medium__width) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+// @media screen and (min-width: $medium__width) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// 	.main-navigation ul {
+// 		display: block;
+// 	}
+// }
 
 .comment-navigation,
 .posts-navigation,
@@ -125,28 +125,28 @@ a {
 		width: 50%;
 	}
 }
-.hb-logo{
-	width: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-					flex-direction: row-reverse; 				
-}
+// .hb-logo{
+// 	width: 15%;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-orient: horizontal;
+//   -webkit-box-direction: reverse;
+//       -ms-flex-direction: row-reverse;
+// 					flex-direction: row-reverse; 				
+// }
 //MOBILE NAVIGATION
 
 
 /* Navigation Menu */
-.main-navigation {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
-	text-align: center;
-	display: -webkit-inline-box;
-	background: $color__green-nav-bar;
-	display: flex;
-}
+// .main-navigation {
+// 	margin-top: 24px;
+// 	margin-top: 1.714285714rem;
+// 	text-align: center;
+// 	display: -webkit-inline-box;
+// 	background: $color__green-nav-bar;
+// 	display: flex;
+// }
 .main-navigation li {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
@@ -171,16 +171,23 @@ a {
 	display: inline-block;
 }
 
+.hb-logowhite{
+	display: inline-block;
+}
+.hb-logogreen{
+	display: none;;
+}
+
 // CSS to use on mobile devices
 
 @media screen and (min-width: $medium__width) {
 
-.main-navigation ul.nav-menu,
+	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-
 		display: inline-block !important;
-			text-align: left;
-			width: 100%;
+		text-align: right;
+		width: 100%;
+		background: $color__green-main;
 	}
 	.main-navigation ul {
 			margin: 0;
@@ -263,4 +270,23 @@ a {
 		display: flex;
 		background: $color__green-nav-bar;
 	}
+
+} 
+@media screen and (min-width: $desktop__width){
+
+	main-navigation ul.nav-menu,	
+	.main-navigation div.nav-menu > ul {	
+			display: inline-block !important;
+			text-align: right;
+			width: 100%;
+			background: $color__green-nav-bar;
+	}
+
+	.hb-logowhite{
+		display: none;;
+	}
+	.hb-logogreen {
+		display: inline-block;
+	}
+
 }
