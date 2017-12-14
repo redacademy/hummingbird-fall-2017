@@ -244,7 +244,6 @@ h2 {
   text-align: center; }
 
 h1 {
-  font-size: 4rem;
   font-weight: 400;
   text-align: left;
   margin-bottom: 0; }
@@ -288,6 +287,10 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -434,6 +437,12 @@ footer input[type=email], footer input[type=text] {
   background-color: #698e87;
   color: white;
   font-weight: 700; }
+  footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
+    color: #fff; }
+  footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  footer input[type=email]::placeholder, footer input[type=text]::placeholder {
+    color: #fff; }
 
 @media all and (min-width: 700px) {
   footer input[type=email], footer input[type=text] {
@@ -532,8 +541,7 @@ a {
 
 /* Navigation Menu */
 .main-navigation {
-  margin-top: 24px;
-  margin-top: 1.714285714rem;
+  margin-top: 0;
   text-align: center;
   display: -webkit-inline-box;
   background: #e8eeee;
@@ -811,11 +819,11 @@ object {
 --------------------------------------------------------------*/
 .width-content {
   max-width: 1440px;
-  padding: 6rem 4rem 0 4rem;
+  padding: 3rem 4rem 0 4rem;
   margin: 0 auto; }
 
 .width-full {
-  padding-top: 6rem;
+  padding-top: 3rem;
   width: 100%;
   background-color: #698e87;
   color: #fff; }
@@ -872,6 +880,12 @@ object {
 footer .wpcf7-submit {
   background-color: #698e87;
   border: 2px solid #fff; }
+
+@media screen and (min-width: 700px) {
+  .width-content {
+    padding: 6rem 4rem 0 4rem; }
+  .width-full {
+    padding-top: 6rem; } }
 
 /*--------------------------------------------------------------
 - page-action
@@ -1202,18 +1216,22 @@ footer .wpcf7-submit {
 - page-front-page
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
-  background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/hero.png");
+  background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.png");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
-  padding-bottom: 6rem; }
+  background-position: bottom, center;
+  padding-bottom: 6rem;
+  padding-top: 0; }
   .page-front-page .front-page-header .front-page-header-content {
-    font-size: 2rem;
     color: #cecece;
     font-weight: 300;
     margin: 0 0 3rem 0; }
   .page-front-page .front-page-header .button-link {
     display: none; }
+  .page-front-page .front-page-header .button-link-hollow {
+    border-color: #fff;
+    color: #fff;
+    margin-left: 1rem; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1245,8 +1263,14 @@ footer .wpcf7-submit {
     margin-right: 1rem; }
 
 @media all and (min-width: 700px) {
-  .page-front-page .front-page-header .button-link {
-    display: inline-block; }
+  .page-front-page .front-page-header {
+    height: 677px; }
+    .page-front-page .front-page-header .front-page-header-content {
+      font-size: 2rem; }
+    .page-front-page .front-page-header .button-link {
+      display: inline-block; }
+  .page-front-page .volunteer-button-container {
+    display: none; }
   .page-front-page .front-page-explanation-case {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
@@ -1291,7 +1315,8 @@ footer .wpcf7-submit {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #698e87), color-stop(50%, #1e1e1e));
   background: linear-gradient(to right, #698e87 50%, #1e1e1e 50%);
   color: #fff;
-  padding: 0; }
+  padding: 0;
+  margin-top: 6rem; }
 
 .site-footer {
   padding: 0;
@@ -1299,6 +1324,8 @@ footer .wpcf7-submit {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
+  .site-footer .width-content {
+    padding-top: 3rem; }
   .site-footer h2 {
     text-align: left;
     font-family: "Overpass", sans-serif;
@@ -1311,6 +1338,8 @@ footer .wpcf7-submit {
     background-color: #698e87;
     grid-column: 1 / 3;
     grid-row: 2; }
+    .site-footer .site-info li {
+      text-align: left; }
     .site-footer .site-info .icon-spacer {
       display: inline-block;
       width: 2rem;

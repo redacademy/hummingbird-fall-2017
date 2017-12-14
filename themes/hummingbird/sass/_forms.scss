@@ -112,6 +112,9 @@ footer {
 		background-color: $color__green-main;
 		color: white;
 		font-weight: 700;
+		&::placeholder {
+			color: $color__white;
+		}
 	}
 
 }

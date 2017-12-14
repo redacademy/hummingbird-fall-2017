@@ -5,14 +5,15 @@
 .page-front-page {
 
 	.front-page-header {
-		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/hero.png");
+		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.png");
 		background-size: contain, cover;
 		background-repeat: no-repeat;
-		background-position: bottom, top;
+		background-position: bottom, center;
 		padding-bottom: 6rem;
+		padding-top: 0;
+	
 
 		.front-page-header-content {
-			font-size: 2rem;
 			color: $color__grey;
 			font-weight: 300;
 			margin: 0 0 3rem 0;
@@ -20,6 +21,12 @@
 
 		.button-link {
 			display: none;
+		}
+
+		.button-link-hollow {
+			border-color: $color__white;
+			color: $color__white;
+			margin-left: 1rem;
 		}
 
 	}
@@ -76,10 +83,20 @@
 
 			.front-page-header {
 
+				height: 677px;
+
+				.front-page-header-content {
+					font-size: 2rem;
+				}
+
 				.button-link {
 					display: inline-block;
 				}
 
+			}
+
+			.volunteer-button-container {
+				display: none;
 			}
 
 			.front-page-explanation-case {

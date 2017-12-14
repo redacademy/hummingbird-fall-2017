@@ -7,9 +7,9 @@
 .footer-wrapper {
 	width: 100%;
 	background: linear-gradient(to right, $color__green-main 50%, $color__text-main 50%);
-
 	color: $color__white;
 	padding: 0;
+	margin-top: 6rem;
 }
 
 .site-footer {
@@ -19,6 +19,10 @@
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
+
+	.width-content {
+		padding-top: 3rem;
+	}
 	
 
 	h2 {
@@ -38,6 +42,10 @@
 		background-color: $color__green-main;	
 		grid-column: 1 / 3;
 		grid-row: 2;
+
+		li {
+			text-align: left;
+		}
 
 		.icon-spacer {
 			display: inline-block;
