@@ -23,11 +23,11 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content action-steps">
-				<h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
+				<h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/checkmark.svg">
 				Set your own schedule</span></h2>
-                <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
+                <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/checkmark.svg">
 				Work from anywhere</span></h2>
-                <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
+                <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/checkmark.svg">
 				You decide how much you volunteer</span></h2>
 			</section>
 			  <div class="start">
