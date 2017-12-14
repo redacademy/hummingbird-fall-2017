@@ -48,6 +48,10 @@
 footer .wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;
+	&:hover {
+		border: 2px solid $color__grey;
+		color: $color__orange-main;
+	}
 }
 
 // Breakpoint at 700px wide
@@ -56,6 +60,7 @@ footer .wpcf7-submit {
 
 	.width-content { // applied to pretty much every main container
 		padding: 6rem 4rem 0 4rem;
+		text-align: center;
 	}
 
 	.width-full {
