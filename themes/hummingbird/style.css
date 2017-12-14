@@ -395,9 +395,8 @@ textarea {
   color: #698e87;
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 1px dashed #1e1e1e;
-  width: 70%;
-  max-width: 200px; }
+  width: 250px;
+  padding-left: 1rem; }
   .page-front-page input[type=email]::-webkit-input-placeholder, .page-front-page input[type=text]::-webkit-input-placeholder {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
@@ -408,6 +407,10 @@ textarea {
 .page-front-page label {
   font-size: 2.25rem;
   font-weight: 700; }
+
+.page-front-page .wpcf7 .wpcf7-form-control-wrap {
+  border-bottom: 1px dashed #1e1e1e;
+  padding-bottom: .7rem; }
 
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text] {
   background-color: #96b0ab;
@@ -435,7 +438,10 @@ footer input[type=email], footer input[type=text] {
 @media all and (min-width: 700px) {
   footer input[type=email], footer input[type=text] {
     background-color: #1e1e1e;
-    width: 100%; } }
+    width: 100%; }
+  footer .wpcf7 .wpcf7-form-control-wrap {
+    border-bottom: 2px solid #698e87;
+    padding-bottom: .7rem; } }
 
 /*--------------------------------------------------------------
 # Navigation
