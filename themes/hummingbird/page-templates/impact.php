@@ -31,13 +31,14 @@ get_header(); ?>
 				foreach ( $fields as $field ) : ?>
 
 					<div class="impact-impact-content">
-						<div class="flex-horizontal-left">
+						<div class="impact-flex">
 							<div class="impact-impact-case-icon-container">
 								<img src=" <?php echo $field['impact_impact_case_icon'] ?> ">
 							</div>
 							<div>
-								<h2 class="impact-impact-case-number"><?php echo $field['impact_impact_case_number'] ?></h2>
-								<h3 class="impact-impact-case-metric"><?php echo $field['impact_impact_case_metric'] ?></h3>
+								<h1 class="impact-impact-title-metric"><?php echo $field['impact_impact_case_metric'] ?></h1>
+								<h3 class="impact-impact-case-number"><?php echo $field['impact_impact_case_number'] ?></h3>
+								<h2 class="impact-impact-case-metric"><?php echo $field['impact_impact_case_metric'] ?></h2>
 							</div>
 						</div>
 						<p><?php echo $field['impact_impact_case_content'] ?></p>
@@ -50,7 +51,7 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="width-content">
+			<section class="width-content where-we-work">
 				<h2><?php echo CFS()->get( 'impact_where_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'impact_where_content' ); ?></p>
 				<img class="maps-small" src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
