@@ -1184,8 +1184,81 @@ footer .wpcf7-submit {
         width: 10%; } }
 
 /*--------------------------------------------------------------
-- page-impact
+- page-impct
 --------------------------------------------------------------*/
+.page-impact .impact-header .impact-header-content {
+  font-size: 2rem;
+  color: #cecece;
+  font-weight: 300;
+  margin: 0 0 3rem 0; }
+
+.page-impact .impact-header .button-link {
+  display: none; }
+
+.page-impact .impact-explanation-case .impact-explanation-case-icon {
+  width: 64px;
+  height: 64px; }
+
+.page-impact .impact-impact-case {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-impact .impact-impact-case .impact-impact-content {
+    padding: 4rem 6rem; }
+  .page-impact .impact-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-impact .impact-impact-case div:nth-child(3) h3 {
+      color: #fff; }
+  .page-impact .impact-impact-case h3 {
+    font-family: "Overpass", sans-serif; }
+
+.page-impact .impact-impact-case-photo {
+  height: 551px;
+  background-size: cover;
+  background-position: center; }
+
+.page-impact .impact-impact-case-number {
+  color: #da9127; }
+
+.page-impact .impact-impact-case-metric {
+  color: #698e87;
+  font-size: 2.5rem;
+  margin: 0; }
+
+.page-impact .impact-impact-case-icon-container {
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+  margin-right: 1rem; }
+  .page-impact .impact-impact-case-icon-container img {
+    width: 100px;
+    height: 100px; }
+
+.page-impact .get-involved {
+  padding: 3rem; }
+
+@media all and (min-width: 700px) {
+  .page-impact .impact-header .button-link {
+    display: inline-block; }
+  .page-impact .impact-impact-case {
+    padding-top: 6rem; }
+    .page-impact .impact-impact-case .impact-impact-content {
+      padding: 4rem 6rem; }
+    .page-impact .impact-impact-case div:nth-child(3) {
+      background-color: #698e87;
+      color: #fff; }
+      .page-impact .impact-impact-case div:nth-child(3) h3 {
+        color: #fff; }
+    .page-impact .impact-impact-case h3 {
+      font-family: "Overpass", sans-serif; }
+    .page-impact .impact-impact-case .impact-impact-case-number {
+      font-size: 5rem;
+      margin: 0; }
+    .page-impact .impact-impact-case .impact-impact-case-icon-container {
+      width: 184px;
+      height: 184px; } }
+
 /*--------------------------------------------------------------
 - page-volunteer
 --------------------------------------------------------------*/
