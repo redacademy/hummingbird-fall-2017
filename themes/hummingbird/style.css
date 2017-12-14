@@ -1191,14 +1191,18 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-impct
 --------------------------------------------------------------*/
-.page-impact .impact-header .impact-header-content {
-  font-size: 2rem;
-  color: #cecece;
-  font-weight: 300;
-  margin: 0 0 3rem 0; }
+.page-impact h1 {
+  font-size: 28px; }
 
-.page-impact .impact-header .button-link {
-  display: none; }
+.page-impact h2 {
+  font-family: "Overpass", sans-serif;
+  font-size: 30px; }
+
+.page-impact h3 {
+  font-family: "Overpass", sans-serif; }
+
+.page-impact .case-title {
+  font-size: 30px; }
 
 .page-impact .impact-explanation-case .impact-explanation-case-icon {
   min-width: 64px;
@@ -1215,8 +1219,8 @@ footer .wpcf7-submit {
   .page-impact .impact-impact-case div:nth-child(3) {
     background-color: #698e87;
     color: #fff; }
-  .page-impact .impact-impact-case h3 {
-    font-family: "Overpass", sans-serif; }
+    .page-impact .impact-impact-case div:nth-child(3) h3 {
+      color: #fff; }
 
 .page-impact .impact-impact-case-photo {
   height: 551px;
@@ -1227,7 +1231,7 @@ footer .wpcf7-submit {
   color: #da9127; }
 
 .page-impact .impact-impact-case-metric {
-  color: #fff;
+  color: #698e87;
   font-size: 2.5rem;
   margin: 0; }
 
@@ -1239,6 +1243,9 @@ footer .wpcf7-submit {
 
 .page-impact .get-involved {
   padding: 3rem; }
+
+.page-impact .maps-large {
+  display: none; }
 
 @media all and (min-width: 700px) {
   .page-impact .impact-header .button-link {
@@ -1259,7 +1266,19 @@ footer .wpcf7-submit {
       margin: 0; }
     .page-impact .impact-impact-case .impact-impact-case-icon-container {
       width: 184px;
-      height: 184px; } }
+      height: 184px; }
+  .page-impact .maps-small {
+    display: none; }
+  .page-impact .maps-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-impact .maps-large img {
+      padding: 0 5% 0 5%; } }
 
 /*--------------------------------------------------------------
 - page-volunteer

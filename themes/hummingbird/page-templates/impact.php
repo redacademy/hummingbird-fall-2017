@@ -21,7 +21,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'impact_header_content' ); ?></p>
 			</section>
 
-			<section class="width-content">
+			<section class="width-content case-title">
 				<h1><?php echo CFS()->get( 'impact_header_case_title' ); ?></h1>
 			</section>
 
@@ -36,7 +36,7 @@ get_header(); ?>
 								<img src=" <?php echo $field['impact_impact_case_icon'] ?> ">
 							</div>
 							<div>
-								<h3 class="impact-impact-case-number"><?php echo $field['impact_impact_case_number'] ?></h3>
+								<h2 class="impact-impact-case-number"><?php echo $field['impact_impact_case_number'] ?></h2>
 								<h3 class="impact-impact-case-metric"><?php echo $field['impact_impact_case_metric'] ?></h3>
 							</div>
 						</div>
@@ -53,7 +53,12 @@ get_header(); ?>
 			<section class="width-content">
 				<h2><?php echo CFS()->get( 'impact_where_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'impact_where_content' ); ?></p>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
+				<img class="maps-small" src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
+			  <div class="maps-large">
+				<img  src="<?php echo get_template_directory_uri(); ?>/assets/elements/bc.png">
+				<img  src="<?php echo get_template_directory_uri(); ?>/assets/elements/alberta.png">
+				<img  src="<?php echo get_template_directory_uri(); ?>/assets/elements/yukon.png">
+			  </div>
 			</section>
 
 			<section class="width-content">
