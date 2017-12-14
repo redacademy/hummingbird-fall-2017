@@ -290,7 +290,8 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 4rem; } }
+    font-size: 4rem;
+    text-align: center; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -418,7 +419,7 @@ textarea {
   padding-bottom: .7rem; }
 
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text] {
-  background-color: #96b0ab;
+  background-color: #F9FAFA;
   color: #fff;
   font-size: 2rem;
   font-weight: 400;
@@ -983,7 +984,7 @@ footer .wpcf7-submit {
   font-size: 30px; }
 
 .page-action .volunteer-button {
-  padding: 50px 0 100px 0; }
+  padding: 40px 0 0px; }
 
 .page-action .volunteer {
   display: -webkit-box;
@@ -1032,7 +1033,7 @@ footer .wpcf7-submit {
     font-size: 36px; }
   .page-action .call h2 {
     font-size: 50px;
-    padding: 0 20% 0 20%; }
+    padding: 0 12% 0 12%; }
   .page-action .call-to-action {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1332,7 +1333,7 @@ footer .wpcf7-submit {
       .page-impact .impact-impact-case div:nth-child(3) h2 {
         color: #fff;
         text-align: left;
-        font-size: 36px; }
+        font-size: 28px; }
       .page-impact .impact-impact-case div:nth-child(3) h3 {
         color: #da9127;
         font-size: 64px; }
