@@ -48,6 +48,10 @@
 footer .wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;
+	&:hover {
+		border: 2px solid $color__grey;
+		color: $color__orange-main;
+	}
 }
 
 // Breakpoint at 700px wide

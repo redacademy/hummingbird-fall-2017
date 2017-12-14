@@ -598,6 +598,7 @@ a {
     font-weight: bold; }
   .menu-toggle {
     display: none; }
+<<<<<<< HEAD
   .main-navigation {
     max-width: 1440px;
     margin: 0 auto; }
@@ -621,6 +622,45 @@ a {
           border: none; }
           .main-navigation ul li:last-child a:visited {
             color: #fff; } }
+=======
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #e8eeee; }
+    ul li:last-child a {
+      padding: 1rem;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      min-width: 175px;
+      text-align: center;
+      background-color: #da9127;
+      color: #fff;
+      border: none; }
+      ul li:last-child a:hover {
+        background-color: #cecece; }
+      ul li:last-child a:visited {
+        color: #fff; }
+      ul li:last-child a:hover {
+        background-color: #9a661a; }
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
+>>>>>>> b4e6dd6189a0f76c40f582b1b25635b9a46e0a69
+
+@media screen and (min-width: 920px) {
+  main-navigation ul.nav-menu,
+  .main-navigation div.nav-menu > ul {
+    display: inline-block !important;
+    text-align: right;
+    width: 100%;
+    background: #e8eeee; }
+  .hb-logowhite {
+    display: none; }
+  .hb-logogreen {
+    display: inline-block; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -838,6 +878,9 @@ object {
   text-decoration: none;
   min-width: 175px;
   text-align: center; }
+  .button-link:hover,
+  .wpcf7-submit:hover {
+    background-color: #cecece; }
 
 .button-link-solid,
 .site-content .wpcf7-submit {
@@ -847,16 +890,25 @@ object {
   .button-link-solid:visited,
   .site-content .wpcf7-submit:visited {
     color: #fff; }
+  .button-link-solid:hover,
+  .site-content .wpcf7-submit:hover {
+    background-color: #9a661a; }
 
 .button-link-hollow {
   border: 2px solid #da9127;
   color: #da9127; }
   .button-link-hollow:visited {
     color: #da9127; }
+  .button-link-hollow:hover {
+    border: 2px solid #9a661a;
+    color: #9a661a; }
 
 footer .wpcf7-submit {
   background-color: #698e87;
   border: 2px solid #fff; }
+  footer .wpcf7-submit:hover {
+    border: 2px solid #cecece;
+    color: #da9127; }
 
 @media screen and (min-width: 700px) {
   .width-content {

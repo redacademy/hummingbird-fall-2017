@@ -213,4 +213,33 @@ a {
 		}
 	}
 
+<<<<<<< HEAD
 }
+=======
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+
+} 
+@media screen and (min-width: $desktop__width){
+
+	main-navigation ul.nav-menu,	
+	.main-navigation div.nav-menu > ul {	
+			display: inline-block !important;
+			text-align: right;
+			width: 100%;
+			background: $color__green-nav-bar;
+	}
+
+	.hb-logowhite{
+		display: none;;
+	}
+	.hb-logogreen {
+		display: inline-block;
+	}
+
+}
+>>>>>>> b4e6dd6189a0f76c40f582b1b25635b9a46e0a69
