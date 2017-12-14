@@ -33,7 +33,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-content ">
+			<section class="width-content">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
