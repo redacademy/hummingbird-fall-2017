@@ -29,7 +29,7 @@
 					<div class="site-branding hb-logo">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hb-logo">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/SVG/hummingbird-network-logo-color.svg" alt="hummingbird header logo">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/medium/logo-color-medium.png" alt="hummingbird header logo">
 						</a>
 					</div><!-- .site-branding -->
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
