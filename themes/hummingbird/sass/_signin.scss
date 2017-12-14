@@ -3,15 +3,25 @@
 --------------------------------------------------------------*/
 
 .page-signin{
-
-
-
-
-
+    .signin-header {
+        text-align: center;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    
 }
 @media all and (min-width: $medium__width) {
     .page-signin {
-
+        p {
+        margin-bottom: 1.5rem;
+        text-align: left;
+        margin-left: 12rem;
+    }
+    .signin-form label {
+        display: flex;
+   
+    }
 
 
 

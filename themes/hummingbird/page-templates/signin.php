@@ -11,11 +11,15 @@ get_header(); ?>
 	<div id="primary" class="content-area page-signin">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<section class="width-content signin-header">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
+				<h1>Sign In</h1>
+			</section>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+			<section class="signin-form width-content">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

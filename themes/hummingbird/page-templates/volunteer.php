@@ -19,7 +19,7 @@ get_header(); ?>
 			<section class="volunteer-form width-content">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-					
+					<a href="<?php echo esc_url( home_url( 'sign-in/' ) ); ?>" class="">Sign in</a>
 				<?php endwhile; // End of the loop. ?>
 			</section>
 

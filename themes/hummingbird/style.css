@@ -417,7 +417,7 @@ textarea {
 
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
-.volunteer-form input[type=text] {
+.volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
   background-color: #96b0ab;
   color: #fff;
   font-size: 2rem;
@@ -426,19 +426,19 @@ textarea {
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
   .volunteer-form input[type=email]::-webkit-input-placeholder,
-  .volunteer-form input[type=text]::-webkit-input-placeholder {
+  .volunteer-form input[type=text]::-webkit-input-placeholder, .signin-form input[type=email]::-webkit-input-placeholder, .signin-form input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   .page-template-contact .contact-form input[type=email]:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
   .volunteer-form input[type=email]:-ms-input-placeholder,
-  .volunteer-form input[type=text]:-ms-input-placeholder {
+  .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
-  .volunteer-form input[type=text]::placeholder {
+  .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
     color: #fff; }
 
 .page-template-contact .contact-form label,
-.volunteer-form label {
+.volunteer-form label, .signin-form label {
   font-size: 2.25rem;
   font-weight: 700; }
 
@@ -1341,19 +1341,32 @@ footer .wpcf7-submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 3rem;
   font-size: 1.25rem;
   font-weight: 700; }
 
 .page-volunteer .wpcf7-submit {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  margin-left: 3rem; }
+  display: flex; }
 
 /*--------------------------------------------------------------
 - page-signin
 --------------------------------------------------------------*/
+.page-signin .signin-header {
+  text-align: center; }
+  .page-signin .signin-header h1 {
+    font-size: 50px; }
+
+@media all and (min-width: 700px) {
+  .page-signin p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    margin-left: 12rem; }
+  .page-signin .signin-form label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
