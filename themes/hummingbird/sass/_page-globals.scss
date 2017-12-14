@@ -4,12 +4,12 @@
 
 .width-content { // applied to pretty much every main container
 	max-width: $full__width;
-	padding: 6rem 4rem 0 4rem;
+	padding: 3rem 4rem 0 4rem;
 	margin: 0 auto; // horizontally center the content
 }
 
 .width-full {
-	padding-top: 6rem;
+	padding-top: 3rem;
 	width: 100%;
 	background-color: $color__green-main;
 	color: $color__white;
@@ -54,7 +54,6 @@
 	&:visited {
 		color: $color__white;
 	}
-
 }
 
 .button-link-hollow {
@@ -68,4 +67,18 @@
 footer .wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;
+}
+
+// Breakpoint at 700px wide
+
+@media screen and (min-width: $medium__width) {
+
+	.width-content { // applied to pretty much every main container
+		padding: 6rem 4rem 0 4rem;
+	}
+
+	.width-full {
+		padding-top: 6rem;
+	}
+
 }
