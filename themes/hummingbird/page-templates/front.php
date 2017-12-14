@@ -19,7 +19,11 @@ get_header(); ?>
 					<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-hollow">Learn More</a>
 				</div>
 			</section>
-			
+
+			<section class="volunteer-button-container width-content flex-horizontal-center">
+				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
+			</section>
+
 			<section class="width-content flex-horizontal-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
 			</section>
@@ -29,7 +33,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-content ">
+			<section class="width-content">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 

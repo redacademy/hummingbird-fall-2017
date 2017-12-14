@@ -244,7 +244,6 @@ h2 {
   text-align: center; }
 
 h1 {
-  font-size: 4rem;
   font-weight: 400;
   text-align: left;
   margin-bottom: 0; }
@@ -288,6 +287,10 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -378,13 +381,6 @@ input[type="search"],
 textarea {
   border-radius: 5px;
   border: none; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
 
 input[type="text"],
 input[type="email"],
@@ -402,11 +398,42 @@ textarea {
   color: #698e87;
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 1px dashed #1e1e1e;
-  width: 70%;
-  max-width: 200px; }
+  width: 250px;
+  padding-left: 1rem; }
+  .page-front-page input[type=email]::-webkit-input-placeholder, .page-front-page input[type=text]::-webkit-input-placeholder {
+    color: #698e87; }
+  .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
+    color: #698e87; }
+  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
+    color: #698e87; }
+  .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
+    color: #698e87; }
 
 .page-front-page label {
+  font-size: 2.25rem;
+  font-weight: 700; }
+
+.page-front-page .wpcf7 .wpcf7-form-control-wrap {
+  border-bottom: 1px dashed #1e1e1e;
+  padding-bottom: .7rem; }
+
+.page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text] {
+  background-color: #96b0ab;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 70%;
+  padding: 1rem; }
+  .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder {
+    color: #fff; }
+  .page-template-contact .contact-form input[type=email]:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder {
+    color: #fff; }
+  .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder {
+    color: #fff; }
+
+.page-template-contact .contact-form label {
   font-size: 2.25rem;
   font-weight: 700; }
 
@@ -414,11 +441,22 @@ footer input[type=email], footer input[type=text] {
   background-color: #698e87;
   color: white;
   font-weight: 700; }
+  footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
+    color: #fff; }
+  footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
+    color: #fff; }
+  footer input[type=email]::placeholder, footer input[type=text]::placeholder {
+    color: #fff; }
 
 @media all and (min-width: 700px) {
   footer input[type=email], footer input[type=text] {
     background-color: #1e1e1e;
-    width: 100%; } }
+    width: 100%; }
+  footer .wpcf7 .wpcf7-form-control-wrap {
+    border-bottom: 2px solid #698e87;
+    padding-bottom: .7rem; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -437,7 +475,6 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
   display: block;
   width: 100%; }
   .main-navigation ul {
@@ -491,7 +528,22 @@ a {
   text-align: right;
   width: 50%; }
 
+.hb-logo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Navigation Menu */
+.main-navigation {
+  margin-top: 0;
+  text-align: center;
+  display: -webkit-inline-box;
+  background: #e8eeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .main-navigation li {
   margin-top: 24px;
   margin-top: 1.714285714rem;
@@ -514,19 +566,23 @@ a {
 .menu-toggle {
   display: inline-block; }
 
-.hb-logowhite {
-  display: inline-block; }
-
-.hb-logogreen {
-  display: none; }
-
 @media screen and (min-width: 700px) {
+  .main-navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
-    text-align: right;
-    width: 100%;
-    background: #698e87; }
+    text-align: left;
+    width: 100%; }
   .main-navigation ul {
     margin: 0;
     text-indent: 0; }
@@ -534,11 +590,6 @@ a {
   .main-navigation li {
     display: inline-block;
     text-decoration: none; }
-  .main-navigation li a {
-    color: #6a6a6a;
-    line-height: 3.692307692;
-    text-transform: uppercase;
-    white-space: nowrap; }
   .main-navigation li a:hover,
   .main-navigation li a:focus {
     color: #000; }
@@ -589,11 +640,27 @@ a {
     font-weight: bold; }
   .menu-toggle {
     display: none; }
-  .nav-menu {
+  ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #e8eeee; } }
+    background: #e8eeee; }
+    ul li:last-child a {
+      padding: 1rem;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      min-width: 175px;
+      text-align: center;
+      background-color: #da9127;
+      color: #fff;
+      border: none; }
+      ul li:last-child a:visited {
+        color: #fff; }
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
 
 @media screen and (min-width: 920px) {
   main-navigation ul.nav-menu,
@@ -781,11 +848,11 @@ object {
 --------------------------------------------------------------*/
 .width-content {
   max-width: 1440px;
-  padding: 6rem 4rem 0 4rem;
+  padding: 3rem 4rem 0 4rem;
   margin: 0 auto; }
 
 .width-full {
-  padding-top: 6rem;
+  padding-top: 3rem;
   width: 100%;
   background-color: #698e87;
   color: #fff; }
@@ -843,31 +910,52 @@ footer .wpcf7-submit {
   background-color: #698e87;
   border: 2px solid #fff; }
 
+@media screen and (min-width: 700px) {
+  .width-content {
+    padding: 6rem 4rem 0 4rem; }
+  .width-full {
+    padding-top: 6rem; } }
+
 /*--------------------------------------------------------------
 - page-action
 --------------------------------------------------------------*/
 .page-action .action-header {
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 4rem 0; }
+  .page-action .action-header h1 {
+    font-size: 28px;
+    text-align: center; }
 
-.page-action .steps span {
-  color: #698e87;
-  font-family: "Overpass", sans-serif;
-  font-size: 0.7rem; }
+.page-action .action-steps {
+  max-width: 1440px;
+  padding: 3rem 3rem 3rem 3rem;
+  margin: 0 auto; }
+  .page-action .action-steps span {
+    color: #698e87;
+    font-family: "Overpass", sans-serif;
+    font-size: 22px;
+    font-weight: lighter; }
+  .page-action .action-steps img {
+    width: 50px; }
+  .page-action .action-steps h2 {
+    margin: 0 auto; }
 
-.page-action .steps img {
-  width: 50px; }
+.page-action .start {
+  padding: 0 20% 0 20%; }
 
-.page-action .call {
+.page-action .simple-steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  max-width: 1129px;
+  padding-top: 1rem; }
 
 .page-action .call-to-action {
   display: -webkit-box;
@@ -879,7 +967,109 @@ footer .wpcf7-submit {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: -webkit-center; }
+  .page-action .call-to-action h2 {
+    font-family: "Overpass", sans-serif;
+    font-weight: lighter;
+    font-size: 30px; }
+  .page-action .call-to-action img {
+    height: 147px;
+    width: 147px; }
+
+.page-action .call h2 {
+  font-family: "Overpass", sans-serif;
+  font-weight: lighter;
+  font-size: 30px; }
+
+.page-action .volunteer-button {
+  padding: 50px 0 100px 0; }
+
+.page-action .volunteer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-action .volunteer-img {
+  background-size: cover;
+  width: 230px;
+  height: 230px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+@media all and (min-width: 700px) {
+  .page-action .action-header h1 {
+    font-size: 50px;
+    font-weight: bold; }
+  .page-action h2 {
+    font-size: 50px;
+    margin-bottom: 0; }
+  .page-action .simple-steps {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 1rem; }
+    .page-action .simple-steps h2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 90px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .page-action .action-steps span {
+    margin: 0 auto;
+    font-size: 36px; }
+  .page-action .call h2 {
+    font-size: 50px;
+    padding: 0 20% 0 20%; }
+  .page-action .call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: -webkit-center; }
+    .page-action .call-to-action h2 {
+      font-family: "Overpass", sans-serif;
+      font-weight: lighter;
+      font-size: 30px; }
+    .page-action .call-to-action img {
+      padding: 1rem;
+      height: auto;
+      width: 282px; }
+  .page-action .start {
+    padding: 0;
+    margin: 0 auto; }
+  .page-action .volunteer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-action .volunteer-img {
+    background-size: cover;
+    width: 360px;
+    min-width: 360px;
+    height: 360px;
+    margin-right: 4rem; } }
 
 /*--------------------------------------------------------------
 - page-who
@@ -1043,8 +1233,154 @@ footer .wpcf7-submit {
         width: 10%; } }
 
 /*--------------------------------------------------------------
-- page-impact
+- page-impct
 --------------------------------------------------------------*/
+.page-impact h1 {
+  font-size: 28px;
+  text-align: center; }
+
+.page-impact h2 {
+  font-family: "Overpass", sans-serif;
+  font-size: 30px; }
+
+.page-impact h3 {
+  font-family: "Overpass", sans-serif; }
+
+.page-impact .case-title {
+  font-size: 30px; }
+
+.page-impact .impact-header {
+  text-align: center;
+  max-width: 592px; }
+
+.page-impact .impact-impact-case {
+  text-align: left; }
+  .page-impact .impact-impact-case .impact-explanation-case-icon {
+    min-width: 64px;
+    min-height: 64px; }
+  .page-impact .impact-impact-case .impact-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 120%; }
+  .page-impact .impact-impact-case .impact-impact-content {
+    padding: 8rem 2rem; }
+    .page-impact .impact-impact-case .impact-impact-content p {
+      margin: 20px; }
+    .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
+      color: #da9127;
+      font-size: 30px; }
+  .page-impact .impact-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-impact .impact-impact-case div:nth-child(3) h3 {
+      color: #fff; }
+    .page-impact .impact-impact-case div:nth-child(3) h2 {
+      color: #fff;
+      text-align: left; }
+    .page-impact .impact-impact-case div:nth-child(3) h1 {
+      color: #fff;
+      margin: -80px -140px; }
+  .page-impact .impact-impact-case .impact-impact-case-photo {
+    display: none; }
+  .page-impact .impact-impact-case .impact-impact-case-metric {
+    color: #698e87;
+    font-size: 20px;
+    margin: 0;
+    text-align: left; }
+  .page-impact .impact-impact-case .impact-impact-title-metric {
+    font-size: 35px;
+    color: #1e1e1e;
+    position: absolute;
+    margin: -80px -140px; }
+  .page-impact .impact-impact-case .impact-impact-case-icon-container {
+    min-width: 130px;
+    min-height: 130px;
+    margin-top: 1rem;
+    margin-right: 1rem; }
+
+.page-impact .where-we-work {
+  text-align: center;
+  max-width: 75%; }
+  .page-impact .where-we-work h2 {
+    font-family: "Merriweather", serif;
+    font-size: 22px; }
+
+.page-impact .maps-large {
+  display: none; }
+
+.page-impact .get-involved {
+  padding: 3rem; }
+
+@media all and (min-width: 700px) {
+  .page-impact .impact-header .button-link {
+    display: inline-block; }
+  .page-impact .impact-impact-title-metric {
+    font-size: 35px;
+    color: #1e1e1e;
+    position: absolute;
+    margin: -50px 120px; }
+  .page-impact .impact-impact-case {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-impact .impact-impact-case div:nth-child(3) {
+      background-color: #698e87;
+      color: #fff; }
+      .page-impact .impact-impact-case div:nth-child(3) h1 {
+        color: #fff; }
+      .page-impact .impact-impact-case div:nth-child(3) h2 {
+        color: #fff;
+        text-align: left;
+        font-size: 36px; }
+      .page-impact .impact-impact-case div:nth-child(3) h3 {
+        color: #da9127;
+        font-size: 64px; }
+    .page-impact .impact-impact-case .impact-impact-content {
+      padding: 6rem 6rem; }
+      .page-impact .impact-impact-case .impact-impact-content h3 {
+        font-family: "Overpass", sans-serif; }
+      .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
+        margin: 0;
+        color: #da9127;
+        font-size: 64px; }
+      .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-icon-container {
+        width: 184px;
+        height: 184px; }
+    .page-impact .impact-impact-case .impact-impact-case-photo {
+      display: block;
+      height: 551px;
+      background-size: cover;
+      background-position: center; }
+    .page-impact .impact-impact-case .impact-impact-case-metric {
+      color: #698e87;
+      font-size: 36px; }
+  .page-impact .where-we-work h2 {
+    font-size: 35px; }
+  .page-impact .maps-small {
+    display: none; }
+  .page-impact .maps-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-impact .maps-large img {
+      padding: 0 5%;
+      max-height: 440px; } }
+
+@media all and (min-width: 920px) {
+  .page-impact .impact-impact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
 /*--------------------------------------------------------------
 - page-volunteer
 --------------------------------------------------------------*/
@@ -1055,18 +1391,22 @@ footer .wpcf7-submit {
 - page-front-page
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
-  background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/hero.png");
+  background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.png");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, top;
-  padding-bottom: 6rem; }
+  background-position: bottom, center;
+  padding-bottom: 6rem;
+  padding-top: 0; }
   .page-front-page .front-page-header .front-page-header-content {
-    font-size: 2rem;
     color: #cecece;
     font-weight: 300;
     margin: 0 0 3rem 0; }
   .page-front-page .front-page-header .button-link {
     display: none; }
+  .page-front-page .front-page-header .button-link-hollow {
+    border-color: #fff;
+    color: #fff;
+    margin-left: 1rem; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1094,14 +1434,18 @@ footer .wpcf7-submit {
   .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
     width: 100px;
     height: 100px;
-    border: 9px solid #698e87;
-    border-radius: 100px;
     margin-top: 1rem;
     margin-right: 1rem; }
 
 @media all and (min-width: 700px) {
-  .page-front-page .front-page-header .button-link {
-    display: inline-block; }
+  .page-front-page .front-page-header {
+    height: 677px; }
+    .page-front-page .front-page-header .front-page-header-content {
+      font-size: 2rem; }
+    .page-front-page .front-page-header .button-link {
+      display: inline-block; }
+  .page-front-page .volunteer-button-container {
+    display: none; }
   .page-front-page .front-page-explanation-case {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; }
@@ -1119,8 +1463,6 @@ footer .wpcf7-submit {
       color: #fff; }
       .page-front-page .front-page-impact-case div:nth-child(3) h3 {
         color: #fff; }
-      .page-front-page .front-page-impact-case div:nth-child(3) .front-page-impact-case-icon-container {
-        border-color: #fff; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
       grid-column: 1;
       grid-row: 2; }
@@ -1148,7 +1490,8 @@ footer .wpcf7-submit {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #698e87), color-stop(50%, #1e1e1e));
   background: linear-gradient(to right, #698e87 50%, #1e1e1e 50%);
   color: #fff;
-  padding: 0; }
+  padding: 0;
+  margin-top: 6rem; }
 
 .site-footer {
   padding: 0;
@@ -1156,6 +1499,8 @@ footer .wpcf7-submit {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
+  .site-footer .width-content {
+    padding-top: 3rem; }
   .site-footer h2 {
     text-align: left;
     font-family: "Overpass", sans-serif;
@@ -1168,6 +1513,8 @@ footer .wpcf7-submit {
     background-color: #698e87;
     grid-column: 1 / 3;
     grid-row: 2; }
+    .site-footer .site-info li {
+      text-align: left; }
     .site-footer .site-info .icon-spacer {
       display: inline-block;
       width: 2rem;

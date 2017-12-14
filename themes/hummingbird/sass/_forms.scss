@@ -4,10 +4,7 @@
 
 /* Buttons */
 
-// button,
-// input[type="button"],
 input[type="reset"],
-// input[type="submit"]
  {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
@@ -42,10 +39,6 @@ input[type="search"],
 textarea {
 	border-radius: 5px;
 	border: none;
-
-	&:focus {
-		color: #111;
-	}
 }
 
 input[type="text"],
@@ -69,9 +62,40 @@ textarea {
 		color: $color__green-main;
 		font-size: 2rem;
 		font-weight: 700;
-		border-bottom: 1px dashed $color__text-main;
+		width: 250px;
+		padding-left: 1rem;
+		&::placeholder {
+			color: $color__green-main;
+		}
+
+	}
+
+	label {
+		font-size: 2.25rem;
+		font-weight: 700;
+	}
+
+	.wpcf7 {
+		.wpcf7-form-control-wrap {
+			border-bottom: 1px dashed $color__text-main;
+			padding-bottom: .7rem;
+		}
+	}
+
+}
+
+.page-template-contact .contact-form {
+
+	input[type=email], input[type=text] {
+		background-color: $color__green-form;
+		color: $color__white;
+		font-size: 2rem;
+		font-weight: 400;
 		width: 70%;
-		max-width: 200px;
+		padding: 1rem;
+		&::placeholder {
+			color: $color__white;
+		}
 	}
 
 	label {
@@ -88,9 +112,14 @@ footer {
 		background-color: $color__green-main;
 		color: white;
 		font-weight: 700;
+		&::placeholder {
+			color: $color__white;
+		}
 	}
 
 }
+
+
 
 @media all and (min-width: $medium__width) {
 
@@ -98,7 +127,14 @@ footer {
 		input[type=email], input[type=text] {
 			background-color: $color__text-main;
 			width: 100%;
-		}	
+		}
+
+		.wpcf7 {
+			.wpcf7-form-control-wrap {
+				border-bottom: 2px solid $color__green-main;
+				padding-bottom: .7rem;
+			}
+		}
 	}
 
 }

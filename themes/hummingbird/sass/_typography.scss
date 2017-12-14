@@ -24,7 +24,6 @@ h2 {
 }
 
 h1 {
-	font-size: 4rem;
 	font-weight: 400;
 	text-align: left;
 	margin-bottom: 0;
@@ -76,4 +75,14 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+
+
+@media screen and (min-width: $medium__width) {
+
+	h1 {
+		font-size: 4rem;
+	}
+	
 }
