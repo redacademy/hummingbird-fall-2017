@@ -84,7 +84,8 @@ textarea {
 
 }
 
-.page-template-contact .contact-form {
+.page-template-contact .contact-form,
+.volunteer-form {
 
 	input[type=email], input[type=text] {
 		background-color: $color__green-form;
