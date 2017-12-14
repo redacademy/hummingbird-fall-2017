@@ -27,7 +27,6 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
 	display: block;
 	width: 100%;
 
@@ -60,13 +59,6 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -76,10 +68,6 @@ a {
 	}
 	li {
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 	a {
 		display: block;
@@ -96,15 +84,6 @@ a {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: $medium__width) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
 }
 
 .comment-navigation,
@@ -129,14 +108,10 @@ a {
 	width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-					flex-direction: row-reverse; 				
+  display: flex;				
 }
-//MOBILE NAVIGATION
 
+//MOBILE NAVIGATION
 
 /* Navigation Menu */
 .main-navigation {
@@ -170,96 +145,109 @@ a {
 	display: inline-block;
 }
 
-// CSS to use on mobile devices
+// End mobile devices
 
-@media screen and (min-width: $medium__width) {
+@media screen and (min-width: $medium__width) { // 700 px and wider
 
-.main-navigation ul.nav-menu,
+	.main-navigation {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-
 		display: inline-block !important;
-			text-align: left;
-			width: 100%;
+		text-align: left;
+		width: 100%;
 	}
 	.main-navigation ul {
-			margin: 0;
-			text-indent: 0;
+		margin: 0;
+		text-indent: 0;
 	}
 	.main-navigation li a,
 	.main-navigation li {
-			display: inline-block;
-			text-decoration: none;
+		display: inline-block;
+		text-decoration: none;
 	}
-	.main-navigation li a {
-			color: #6a6a6a;
-			line-height: 3.692307692;
-			text-transform: uppercase;
-			white-space: nowrap;
-	}
+
 	.main-navigation li a:hover,
 	.main-navigation li a:focus {
 			color: #000;
 	}
 	.main-navigation li {
-			margin: 0 40px 0 0;
-			margin: 0 2.857142857rem 0 0;
-			position: relative;
+		margin: 0 40px 0 0;
+		margin: 0 2.857142857rem 0 0;
+		position: relative;
 	}
 	.main-navigation li ul {
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			top: 100%;
-			z-index: 1;
-			height: 1px;
-			width: 1px;
-			overflow: hidden;
-			clip: rect(1px, 1px, 1px, 1px);
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 100%;
+		z-index: 1;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);
 	}
 	.main-navigation li ul ul {
-			top: 0;
-			left: 100%;
+		top: 0;
+		left: 100%;
 	}
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li:focus > ul,
 	.main-navigation .focus > ul {
-			border-left: 0;
-			clip: inherit;
-			overflow: inherit;
-			height: inherit;
-			width: inherit;
+		border-left: 0;
+		clip: inherit;
+		overflow: inherit;
+		height: inherit;
+		width: inherit;
 	}
 	.main-navigation li ul li a {
-			// background: #efefef;
-			// border-bottom: 1px solid #ededed;
-			display: block;
-			font-size: 11px;
-			font-size: 0.785714286rem;
-			line-height: 2.181818182;
-			padding: 8px 10px;
-			padding: 0.571428571rem 0.714285714rem;
-			width: 180px;
-			width: 12.85714286rem;
-			white-space: normal;
+		// background: #efefef;
+		// border-bottom: 1px solid #ededed;
+		display: block;
+		font-size: 11px;
+		font-size: 0.785714286rem;
+		line-height: 2.181818182;
+		padding: 8px 10px;
+		padding: 0.571428571rem 0.714285714rem;
+		width: 180px;
+		width: 12.85714286rem;
+		white-space: normal;
 	}
 	.main-navigation li ul li a:hover,
 	.main-navigation li ul li a:focus {
-			background: #e3e3e3;
-			color: #444;
+		background: #e3e3e3;
+		color: #444;
 	}
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
-			color: #636363;
-			font-weight: bold;
+		color: #636363;
+		font-weight: bold;
 	}
 	.menu-toggle {
-			display: none;
+		display: none;
 	}
 
-	.nav-menu{
+	ul{
 		display: flex;
 		background: $color__green-nav-bar;
+		li:last-child {
+			a {
+				@include button-link;
+				@include button-link-solid;
+			}
+		}
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
 	}
 }

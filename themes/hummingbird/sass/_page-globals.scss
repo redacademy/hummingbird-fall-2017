@@ -3,16 +3,11 @@
 --------------------------------------------------------------*/
 
 .width-content { // applied to pretty much every main container
-	max-width: $full__width;
-	padding: 3rem 4rem 0 4rem;
-	margin: 0 auto; // horizontally center the content
+	@include width-content
 }
 
 .width-full {
-	padding-top: 3rem;
-	width: 100%;
-	background-color: $color__green-main;
-	color: $color__white;
+	@include width-full
 }
 
 .bignumber {
@@ -38,30 +33,16 @@
 
 .button-link, // a basic button style to apply to all buttons and button-esque anchors
 .wpcf7-submit {
-	padding: 1rem;
-	border-radius: 5px;
-	color: $color__white;
-	text-decoration: none;
-	min-width: 175px;
-	text-align: center;
+	@include button-link
 }
 
 .button-link-solid,
 .site-content .wpcf7-submit {
-	background-color: $color__orange-main;
-	color: $color__white;
-	border: none;
-	&:visited {
-		color: $color__white;
-	}
+	@include button-link-solid
 }
 
 .button-link-hollow {
-	border: 2px solid $color__orange-main;
-	color: $color__orange-main;
-	&:visited {
-		color: $color__orange-main;
-	}
+	@include button-link-hollow
 }
 
 footer .wpcf7-submit {

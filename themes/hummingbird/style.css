@@ -469,7 +469,6 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
   display: block;
   width: 100%; }
   .main-navigation ul {
@@ -506,12 +505,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 700px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -533,11 +526,7 @@ a {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse; }
+  display: flex; }
 
 /* Navigation Menu */
 .main-navigation {
@@ -572,6 +561,17 @@ a {
   display: inline-block; }
 
 @media screen and (min-width: 700px) {
+  .main-navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
@@ -584,11 +584,6 @@ a {
   .main-navigation li {
     display: inline-block;
     text-decoration: none; }
-  .main-navigation li a {
-    color: #6a6a6a;
-    line-height: 3.692307692;
-    text-transform: uppercase;
-    white-space: nowrap; }
   .main-navigation li a:hover,
   .main-navigation li a:focus {
     color: #000; }
@@ -639,11 +634,27 @@ a {
     font-weight: bold; }
   .menu-toggle {
     display: none; }
-  .nav-menu {
+  ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #e8eeee; } }
+    background: #e8eeee; }
+    ul li:last-child a {
+      padding: 1rem;
+      border-radius: 5px;
+      color: #fff;
+      text-decoration: none;
+      min-width: 175px;
+      text-align: center;
+      background-color: #da9127;
+      color: #fff;
+      border: none; }
+      ul li:last-child a:visited {
+        color: #fff; }
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
 
 /*--------------------------------------------------------------
 # Accessibility
