@@ -143,12 +143,6 @@ a {
 
 @media screen and (min-width: $medium__width) { // 700 px and wider
 
-	.main-navigation {
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
 		display: inline-block !important;
@@ -156,53 +150,32 @@ a {
 		width: 100%;
 	}
 
-	.main-navigation li a:hover,
-	.main-navigation li a:focus {
-			color: $color__text-main;
-	}
-
-	.main-navigation li ul {
-		margin: 0;
-		padding: 0;
-		position: absolute;
-		top: 100%;
-		z-index: 1;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-		clip: rect(1px, 1px, 1px, 1px);
-	}
-
-	.main-navigation ul li:hover > ul,
-	.main-navigation ul li:focus > ul,
-	.main-navigation .focus > ul {
-		border-left: 0;
-		clip: inherit;
-		overflow: inherit;
-		height: inherit;
-		width: inherit;
-	}
-
-	.main-navigation .current-menu-item > a, // bold the current page in the navbar
-	.main-navigation .current-menu-ancestor > a,
-	.main-navigation .current_page_item > a,
-	.main-navigation .current_page_ancestor > a {
-		font-weight: bold;
-	}
-	
-	.menu-toggle {
-		display: none;
-	}
-
 	.main-navigation {
+
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
 		max-width: $full__width;
 		margin: 0 auto;
+		z-index: 1;
+
+		.current-menu-item > a, // bold the current page in the navbar
+		.current-menu-ancestor > a,
+		.current_page_item > a,
+		.current_page_ancestor > a {
+			font-weight: bold;
+		}
+
 		ul {
-			display: flex;
 			background: $color__green-nav-bar;
 			li {
 				margin: 0 2rem 0 0;
 				display: inline-block;
+				a:hover,
+				a:focus {
+					color: $color__text-main;
+				}
 				&:last-child {
 					a {
 						@include button-link;
@@ -211,31 +184,11 @@ a {
 				}
 			}
 		}
+
 	}
 
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-
-} 
-@media screen and (min-width: $desktop__width){
-
-	main-navigation ul.nav-menu,	
-	.main-navigation div.nav-menu > ul {	
-			display: inline-block !important;
-			text-align: right;
-			width: 100%;
-			background: $color__green-nav-bar;
-	}
-
-	.hb-logowhite{
-		display: none;;
-	}
-	.hb-logogreen {
-		display: inline-block;
 	}
 
 }
