@@ -51,12 +51,14 @@
 .button-link-hollow-orange {
 	@include button-link-hollow-orange
 }
-footer .wpcf7-submit {
+
+footer .wpcf7-form-control.wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;
 	&:hover {
-		border: 2px solid $color__grey;
-		color: $color__orange-main;
+		background-color: darken($color__orange-main, 15%);
+		border: 2px solid $color__orange-main;
+		color: $color__white;
 	}
 }
 
