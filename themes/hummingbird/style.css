@@ -623,7 +623,13 @@ a {
         text-align: center;
         background-color: #da9127;
         border: 2px solid #da9127;
-        color: #fff; }
+        color: #fff;
+        -webkit-transition-delay: 0;
+                transition-delay: 0;
+        -webkit-transition-property: background-color;
+        transition-property: background-color;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
         .main-navigation ul li:last-child a:visited {
           color: #fff; }
         .main-navigation ul li:last-child a:hover {
@@ -737,6 +743,13 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/*--------------------------------------------------------------
+- page-contact
+--------------------------------------------------------------*/
+.page-contact form.wpcf7-form {
+  text-align: left;
+  margin-left: 10%; }
 
 /*--------------------------------------------------------------
 # Media
@@ -855,7 +868,13 @@ object {
 .site-content .wpcf7-submit {
   background-color: #da9127;
   border: 2px solid #da9127;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-solid:visited,
   .site-content .wpcf7-submit:visited {
     color: #fff; }
@@ -865,7 +884,13 @@ object {
 
 .button-link-hollow {
   border: 2px solid #fff;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-hollow:visited {
     color: #fff; }
   .button-link-hollow:hover {
@@ -874,7 +899,13 @@ object {
 
 .button-link-hollow-orange {
   border: 2px solid #da9127;
-  color: #da9127; }
+  color: #da9127;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-hollow-orange:visited {
     color: #da9127; }
   .button-link-hollow-orange:hover {
@@ -884,7 +915,13 @@ object {
 
 footer .wpcf7-form-control.wpcf7-submit {
   background-color: #698e87;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   footer .wpcf7-form-control.wpcf7-submit:hover {
     background-color: #9a661a;
     border: 2px solid #da9127;
