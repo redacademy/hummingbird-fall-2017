@@ -245,7 +245,6 @@ h2 {
 
 h1 {
   font-weight: 400;
-  text-align: center;
   margin-bottom: 0; }
 
 /* Copy */
@@ -290,8 +289,7 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 3rem;
-    text-align: center; } }
+    font-size: 3rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -405,8 +403,6 @@ textarea {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
     color: #698e87; }
-  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
-    color: #698e87; }
   .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
     color: #698e87; }
 
@@ -435,10 +431,6 @@ textarea {
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder, .signin-form input[type=email]::-ms-input-placeholder, .signin-form input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
@@ -456,8 +448,6 @@ footer input[type=email], footer input[type=text] {
   footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
     color: #fff; }
   footer input[type=email]::placeholder, footer input[type=text]::placeholder {
     color: #fff; }
@@ -824,6 +814,11 @@ object {
   padding: 3rem 4rem 0 4rem;
   margin: 0 auto; }
 
+.width-content-left {
+  max-width: 1440px;
+  padding: 3rem 4rem 0 4rem;
+  text-align: left; }
+
 .width-full {
   padding-top: 3rem;
   width: 100%;
@@ -923,8 +918,8 @@ footer .wpcf7-form-control.wpcf7-submit {
   -webkit-transition-duration: .5s;
           transition-duration: .5s; }
   footer .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #9a661a;
-    border: 2px solid #da9127;
+    background-color: #da9127;
+    border: 2px solid #9a661a;
     color: #fff; }
 
 @media screen and (min-width: 700px) {

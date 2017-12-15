@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="width-full front-page-header">
-				<div class="width-content">
+				<div class="width-content-left">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
 					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>

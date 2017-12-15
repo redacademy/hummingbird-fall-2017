@@ -9,7 +9,9 @@
 .width-content { // applied to pretty much every main container
 	@include width-content
 }
-
+.width-content-left { // applied to every main container with left handed justification
+	@include width-content-left
+}
 .width-full {
 	@include width-full
 }
@@ -59,8 +61,8 @@ footer .wpcf7-form-control.wpcf7-submit {
 	transition-property: background-color;
 	transition-duration: .5s;
 	&:hover {
-		background-color: darken($color__orange-main, 15%);
-		border: 2px solid $color__orange-main;
+		background-color: $color__orange-main;
+		border: 2px solid darken($color__orange-main, 15%);;
 		color: $color__white;
 	}
 }

@@ -25,6 +25,12 @@
 	margin: 0 auto; // horizontally center the content
 }
 
+@mixin width-content-left {
+	max-width: $full__width;
+	padding: 3rem 4rem 0 4rem;
+	text-align: left; // justify left the content
+}
+
 @mixin width-full {
 	padding-top: 3rem;
 	width: 100%;
