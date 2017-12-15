@@ -55,6 +55,9 @@
 footer .wpcf7-form-control.wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;
+	transition-delay: 0;
+	transition-property: background-color;
+	transition-duration: .5s;
 	&:hover {
 		background-color: darken($color__orange-main, 15%);
 		border: 2px solid $color__orange-main;

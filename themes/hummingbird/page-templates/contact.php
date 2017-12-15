@@ -11,6 +11,10 @@ get_header(); ?>
 	<div id="primary" class="content-area page-contact">
 		<main id="main" class="site-main" role="main">
 
+			<section class="width-content contact-header">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/deer.svg">
+				<h1>Contact Us</h1>
+			</section>
 
 			<section class="contact-form width-content">
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -18,7 +22,6 @@ get_header(); ?>
 				<?php endwhile; // End of the loop. ?>
 			</section>
             
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
