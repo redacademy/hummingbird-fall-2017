@@ -782,7 +782,7 @@ object {
 --------------------------------------------------------------*/
 .width-column {
   max-width: 720px;
-  padding: 3rem 0 0 0;
+  padding: 3rem 4rem 0 4rem;
   margin: 0 auto; }
 
 .width-content {
@@ -862,6 +862,7 @@ footer .wpcf7-submit {
     color: #da9127; }
 
 @media screen and (min-width: 700px) {
+  .width-column,
   .width-content {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
@@ -1465,6 +1466,16 @@ footer .wpcf7-submit {
       font-size: 2rem; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
+  .page-front-page .front-page-volunteer {
+    background: url("../../assets/elements/paint-white-top.png"), url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_volunteering.png");
+    background-size: 1440px, 1440px, cover;
+    background-repeat: no-repeat;
+    background-position: top, bottom, center;
+    background-color: #698e87;
+    color: #fff; }
+    .page-front-page .front-page-volunteer div {
+      width: 50%;
+      padding-bottom: 6rem; }
   .page-front-page .volunteer-button-container {
     display: none; }
   .page-front-page .front-page-explanation-case {
