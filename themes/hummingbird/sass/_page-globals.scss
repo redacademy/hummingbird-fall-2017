@@ -62,16 +62,12 @@ footer .wpcf7-submit {
 
 @media screen and (min-width: $medium__width) {
 
-<<<<<<< HEAD
 	.width-column,
-	.width-content,
-=======
-	.width-content { // applied to pretty much every main container
+	.width-content, { // applied to pretty much every main container
 		padding: 6rem 4rem 0 4rem;
 		text-align: center;
 	}
 
->>>>>>> 76b1d76ad57e96c816f7cd1ff68c2aa74f994a11
 	.width-full {
 		padding-top: 6rem;
 	}

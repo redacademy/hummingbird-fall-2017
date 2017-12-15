@@ -15,7 +15,7 @@
 
 @mixin width-column {
 	max-width: $full__width/2;
-	padding: 3rem 0 0 0;
+	padding: 3rem 4rem 0 4rem;
 	margin: 0 auto; // horizontally center the content
 }
 
