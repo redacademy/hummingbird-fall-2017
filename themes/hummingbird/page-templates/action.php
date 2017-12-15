@@ -48,7 +48,7 @@ get_header(); ?>
 			  </div>
 			</section>
 			<div class="meet">
-                <h2>Meet our Digital Volunteers.</h2>
+                <h2>Meet our Digital Volunteers</h2>
 			  </div>
 			</section>
 

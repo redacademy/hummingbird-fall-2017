@@ -290,7 +290,7 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center; } }
 
 /*--------------------------------------------------------------
@@ -405,6 +405,8 @@ textarea {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
     color: #698e87; }
+  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
+    color: #698e87; }
   .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
     color: #698e87; }
 
@@ -419,7 +421,7 @@ textarea {
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
 .volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
-  background-color: #96b0ab;
+  background-color: #F9FAFA;
   color: #fff;
   font-size: 2rem;
   font-weight: 400;
@@ -432,6 +434,10 @@ textarea {
   .page-template-contact .contact-form input[type=email]:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
+  .volunteer-form input[type=email]::-ms-input-placeholder,
+  .volunteer-form input[type=text]::-ms-input-placeholder, .signin-form input[type=email]::-ms-input-placeholder, .signin-form input[type=text]::-ms-input-placeholder {
     color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
@@ -450,6 +456,8 @@ footer input[type=email], footer input[type=text] {
   footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
     color: #fff; }
   footer input[type=email]::placeholder, footer input[type=text]::placeholder {
     color: #fff; }
