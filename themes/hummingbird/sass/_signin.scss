@@ -2,28 +2,30 @@
 - page-signin
 --------------------------------------------------------------*/
 
-.page-signin{
+.page-signin {
     .signin-header {
         text-align: center;
         h1 {
             font-size: 50px;
         }
     }
-    
+    .signin-form input {
+        font-size: 16px;
+    }
 }
+
 @media all and (min-width: $medium__width) {
     .page-signin {
         p {
-        margin-bottom: 1.5rem;
-        text-align: left;
-        margin-left: 12rem;
-    }
-    .signin-form label {
-        display: flex;
-   
-    }
-
-
-
+            margin-bottom: 1.5rem;
+            text-align: left;
+            margin-left: 10%;
+        }
+        .signin-form label {
+            display: flex;
+        }
+        .signin-form input {
+            font-size: 30px;
+        }
     }
 }

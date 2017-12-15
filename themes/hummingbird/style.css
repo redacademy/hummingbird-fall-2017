@@ -419,11 +419,11 @@ textarea {
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
 .volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
-  background-color: #96b0ab;
+  background-color: #698e87;
   color: #fff;
   font-size: 2rem;
-  font-weight: 400;
-  width: 70%;
+  font-weight: 300;
+  width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
   .volunteer-form input[type=email]::-webkit-input-placeholder,
@@ -1338,17 +1338,28 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-volunteer
 --------------------------------------------------------------*/
+.page-volunteer .width-content {
+  text-align: center; }
+
 .page-volunteer .volunteer-form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1.25rem;
   font-weight: 700; }
 
-.page-volunteer .wpcf7-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.page-volunteer .volunteer-form input {
+  font-size: 16px; }
+
+.page-volunteer .wpcf7-form {
+  text-align: left; }
+
+.page-volunteer .sign-in {
+  color: black;
+  font-size: 30px; }
+
+@media all and (min-width: 700px) {
+  .page-volunteer .wpcf7-form {
+    margin-left: 10%; }
+  .page-volunteer .volunteer-form input {
+    font-size: 30px; } }
 
 /*--------------------------------------------------------------
 - page-signin
@@ -1358,15 +1369,20 @@ footer .wpcf7-submit {
   .page-signin .signin-header h1 {
     font-size: 50px; }
 
+.page-signin .signin-form input {
+  font-size: 16px; }
+
 @media all and (min-width: 700px) {
   .page-signin p {
     margin-bottom: 1.5rem;
     text-align: left;
-    margin-left: 12rem; }
+    margin-left: 10%; }
   .page-signin .signin-form label {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .page-signin .signin-form input {
+    font-size: 30px; } }
 
 /*--------------------------------------------------------------
 - page-front-page
