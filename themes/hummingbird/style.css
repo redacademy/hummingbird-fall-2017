@@ -290,7 +290,7 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center; } }
 
 /*--------------------------------------------------------------
@@ -862,8 +862,14 @@ footer .wpcf7-submit {
     color: #da9127; }
 
 @media screen and (min-width: 700px) {
+<<<<<<< HEAD
   .width-column,
   .width-content,
+=======
+  .width-content {
+    padding: 6rem 4rem 0 4rem;
+    text-align: center; }
+>>>>>>> 76b1d76ad57e96c816f7cd1ff68c2aa74f994a11
   .width-full {
     padding-top: 6rem; } }
 
@@ -1489,6 +1495,27 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
+.address-icon {
+  position: relative;
+  right: 40px;
+  top: 45px; }
+
+.contact-details-one {
+  position: relative;
+  height: 180px;
+  line-height: .5;
+  margin-left: 100px; }
+
+.contact-details-two {
+  position: relative;
+  height: 180px;
+  line-height: .5;
+  margin-left: 100px; }
+
+.phone-number {
+  position: relative;
+  top: -48px; }
+
 .footer-wrapper {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #698e87), color-stop(50%, #1e1e1e));
@@ -1503,10 +1530,10 @@ footer .wpcf7-submit {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
-  .site-footer .width-content {
-    padding-top: 3rem; }
   .site-footer h2 {
-    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-family: "Overpass", sans-serif;
     font-size: 1.25rem; }
   .site-footer .footer-form {
@@ -1527,10 +1554,10 @@ footer .wpcf7-submit {
     .site-footer .site-info .logo-large {
       display: none; }
     .site-footer .site-info .logo-white {
-      position: absolute;
+      position: relative;
       width: 92px;
-      right: 4rem;
-      margin-top: 15px; }
+      right: -20rem;
+      top: 4rem; }
     .site-footer .site-info .contact-button {
       display: none; }
   .site-footer .copyrights {
@@ -1557,6 +1584,17 @@ footer .wpcf7-submit {
     display: none; }
 
 @media all and (min-width: 700px) {
+  .contact-details-one {
+    position: relative;
+    width: 200px;
+    top: -35px; }
+  .contact-details-two {
+    position: relative;
+    width: 180px;
+    margin-left: 20px; }
+  .phone-number {
+    position: relative;
+    top: -48px; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1577,10 +1615,10 @@ footer .wpcf7-submit {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+            -ms-flex-direction: row;
+                flex-direction: row; }
       .site-footer .site-info .contact-button {
         display: inline-block; }
     .site-footer .copyrights-one {
@@ -1617,9 +1655,6 @@ footer .wpcf7-submit {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-      .site-footer .site-info .contact-details-container div:nth-child(2) {
-        margin-left: 3rem;
-        padding-top: 3rem; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-one {

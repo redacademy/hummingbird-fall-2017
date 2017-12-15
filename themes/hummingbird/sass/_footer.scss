@@ -4,6 +4,32 @@
 
 // Mobile first, baby!!
 
+// .contact-details-container {
+// 	text-align: center;
+// }
+.address-icon {
+	position: relative;
+	right: 40px;
+	top: 45px;
+}
+.contact-details-one {
+	position: relative;
+	// top: -50px;
+	height: 180px;
+	line-height: .5;
+	margin-left: 100px;
+}
+.contact-details-two {
+	position: relative;
+	// top: -43px;
+	height: 180px;
+	line-height: .5;
+	margin-left: 100px;
+}
+.phone-number {
+	position: relative;
+	top: -48px;
+}
 .footer-wrapper {
 	width: 100%;
 	background: linear-gradient(to right, $color__green-main 50%, $color__text-main 50%);
@@ -21,12 +47,13 @@
 	grid-template-rows: auto auto;
 
 	.width-content {
-		padding-top: 3rem;
+		// padding: 3rem 4rem 3rem 4rem;
 	}
 	
 
 	h2 {
-		text-align: left;
+		width: fit-content;
+		// margin: 0 auto;
 		font-family: $font__main;
 		font-size: 1.25rem;
 	}
@@ -59,10 +86,10 @@
 		}
 
 		.logo-white {
-			position: absolute;
-			width: 92px;
-			right: 4rem;
-			margin-top: 15px;
+			position: relative;
+    		width: 92px;
+    		right: -20rem;
+    		top: 4rem;
 		}
 
 		.contact-button {
@@ -105,6 +132,22 @@
 
 @media all and (min-width: $medium__width) {
 
+.contact-details-one {
+	position: relative;
+	// top: -50px;
+	width: 200px;
+	top: -35px;
+}
+.contact-details-two {
+	position: relative;
+	// top: -43px;
+	width: 180px;
+	margin-left: 20px;
+}
+.phone-number {
+	position: relative;
+	top: -48px;
+}
 	.site-footer {
 
 		display: grid;
@@ -132,7 +175,7 @@
 
 			.contact-details-container {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
 			}
 
 			.contact-button {
@@ -181,8 +224,8 @@
 				flex-direction: row;
 				justify-content: flex-end;
 				div:nth-child(2) {
-					margin-left: 3rem;
-					padding-top: 3rem;
+					// margin-left: 3rem;
+					// padding-top: 3rem;
 				}
 			}
 		}
