@@ -4,11 +4,19 @@
 	font-size: $sizeValue * 1rem;
 }
 
-// Center block
+// Center block - deprecate?
 @mixin center-block {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+// content formatting
+
+@mixin width-column {
+	max-width: $full__width/2;
+	padding: 3rem 0 0 0;
+	margin: 0 auto; // horizontally center the content
 }
 
 @mixin width-content {
@@ -23,6 +31,8 @@
 	background-color: $color__green-main;
 	color: $color__white;
 }
+
+// buttons
 
 @mixin button-link {
 	padding: 1rem;

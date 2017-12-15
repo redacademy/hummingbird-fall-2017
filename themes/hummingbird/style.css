@@ -421,11 +421,15 @@ textarea {
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
 .volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
+<<<<<<< HEAD
   background-color: #F9FAFA;
+=======
+  background-color: #698e87;
+>>>>>>> 34aff877775b786927e167b4ba37256a44abb2a1
   color: #fff;
   font-size: 2rem;
-  font-weight: 400;
-  width: 70%;
+  font-weight: 300;
+  width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
   .volunteer-form input[type=email]::-webkit-input-placeholder,
@@ -571,13 +575,14 @@ a {
 .menu-toggle {
   display: inline-block; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 920px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
     text-align: left;
     width: 100%; }
   .main-navigation {
+    padding: .5rem 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -599,7 +604,7 @@ a {
     .main-navigation ul {
       background: #e8eeee; }
       .main-navigation ul li {
-        margin: 0 2rem 0 0;
+        margin: 0 0 0 2rem;
         display: inline-block; }
         .main-navigation ul li a:hover,
         .main-navigation ul li a:focus {
@@ -672,14 +677,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -795,6 +792,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.width-column {
+  max-width: 720px;
+  padding: 3rem 0 0 0;
+  margin: 0 auto; }
+
 .width-content {
   max-width: 1440px;
   padding: 3rem 4rem 0 4rem;
@@ -872,9 +874,14 @@ footer .wpcf7-submit {
     color: #da9127; }
 
 @media screen and (min-width: 700px) {
+<<<<<<< HEAD
+  .width-column,
+  .width-content,
+=======
   .width-content {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
+>>>>>>> cd6067123e370857f5342868a542a64cf8dc90de
   .width-full {
     padding-top: 6rem; } }
 
@@ -1346,17 +1353,28 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-volunteer
 --------------------------------------------------------------*/
+.page-volunteer .width-content {
+  text-align: center; }
+
 .page-volunteer .volunteer-form label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1.25rem;
   font-weight: 700; }
 
-.page-volunteer .wpcf7-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.page-volunteer .volunteer-form input {
+  font-size: 16px; }
+
+.page-volunteer .wpcf7-form {
+  text-align: left; }
+
+.page-volunteer .sign-in {
+  color: black;
+  font-size: 30px; }
+
+@media all and (min-width: 700px) {
+  .page-volunteer .wpcf7-form {
+    margin-left: 10%; }
+  .page-volunteer .volunteer-form input {
+    font-size: 30px; } }
 
 /*--------------------------------------------------------------
 - page-signin
@@ -1366,22 +1384,27 @@ footer .wpcf7-submit {
   .page-signin .signin-header h1 {
     font-size: 50px; }
 
+.page-signin .signin-form input {
+  font-size: 16px; }
+
 @media all and (min-width: 700px) {
   .page-signin p {
     margin-bottom: 1.5rem;
     text-align: left;
-    margin-left: 12rem; }
+    margin-left: 10%; }
   .page-signin .signin-form label {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .page-signin .signin-form input {
+    font-size: 30px; } }
 
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.png");
-  background-size: contain, cover;
+  background-size: 1440px, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   padding-bottom: 6rem;
