@@ -62,13 +62,10 @@
 					
 					</div><!-- .site-info -->
 
-					<div class="copyrights copyrights-one">
-						<span>Blog</span>
-						<span>FAQ</span>
-						<span>Site Map</span>
-						<span>Privacy Policy</span>
-						<span>c 2017 Hummingbird Network</span>
-					</div>
+					<div class="bottomMenu">
+              <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>  
+    </div>
+
 
 					<div class="copyrights copyrights-two">
 						<div>Designed by<br>Dream Team</div>

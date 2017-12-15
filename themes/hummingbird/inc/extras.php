@@ -20,3 +20,5 @@ function hummingbird_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'hummingbird_body_classes' );
+
+
