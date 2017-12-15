@@ -41,9 +41,11 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 			</section>
 
-			<section class="width-content">
-				<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
-				<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
+			<section class="width-content front-page-volunteer">
+				<div class="width-column">
+					<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
+					<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
+				</div>
 			</section>
 
 			<section class="width-column">

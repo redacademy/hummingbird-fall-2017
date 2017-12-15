@@ -12,7 +12,6 @@
 		padding-bottom: 6rem;
 		padding-top: 0;
 	
-
 		.front-page-header-content {
 			color: $color__grey;
 			font-weight: 300;
@@ -29,6 +28,18 @@
 			margin-left: 1rem;
 		}
 
+	}
+
+	.front-page-volunteer {
+		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_volunteering.png");
+		background-size: $full__width, contain;
+		background-repeat: no-repeat;
+		background-position: bottom, right;
+		background-color: $color__green-main;
+		color: $color__white;
+		.width-column {
+			margin-left: 0;
+		}
 	}
 
 	.front-page-explanation-case {
