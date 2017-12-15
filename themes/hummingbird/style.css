@@ -1432,6 +1432,32 @@ footer .wpcf7-submit {
     margin-top: 1rem;
     margin-right: 1rem; }
 
+.page-front-page .volunteer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-front-page .volunteer-img {
+  background-size: cover;
+  width: 230px;
+  height: 230px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.page-front-page .you-can-join-text {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
     height: 677px; }
@@ -1470,7 +1496,30 @@ footer .wpcf7-submit {
       width: 184px;
       height: 184px; }
     .page-front-page .front-page-impact-case .front-page-impact-case-photo {
-      height: 100%; } }
+      height: 100%; }
+  .page-front-page .volunteer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-front-page .volunteer-img {
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .page-front-page .you-can-join-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
@@ -1480,26 +1529,8 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
-.address-icon {
-  position: relative;
-  right: 40px;
-  top: 45px; }
-
-.contact-details-one {
-  position: relative;
-  height: 180px;
-  line-height: .5;
-  margin-left: 100px; }
-
-.contact-details-two {
-  position: relative;
-  height: 180px;
-  line-height: .5;
-  margin-left: 100px; }
-
-.phone-number {
-  position: relative;
-  top: -48px; }
+.social-media-icon {
+  margin: 20px 10px 0 0; }
 
 .footer-wrapper {
   width: 100%;
@@ -1515,10 +1546,10 @@ footer .wpcf7-submit {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
+  .site-footer .width-content {
+    padding-top: 3rem; }
   .site-footer h2 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    text-align: left;
     font-family: "Overpass", sans-serif;
     font-size: 1.25rem; }
   .site-footer .footer-form {
@@ -1539,10 +1570,10 @@ footer .wpcf7-submit {
     .site-footer .site-info .logo-large {
       display: none; }
     .site-footer .site-info .logo-white {
-      position: relative;
+      position: absolute;
       width: 92px;
-      right: -20rem;
-      top: 4rem; }
+      right: 4rem;
+      margin-top: 15px; }
     .site-footer .site-info .contact-button {
       display: none; }
   .site-footer .copyrights {
@@ -1569,17 +1600,6 @@ footer .wpcf7-submit {
     display: none; }
 
 @media all and (min-width: 700px) {
-  .contact-details-one {
-    position: relative;
-    width: 200px;
-    top: -35px; }
-  .contact-details-two {
-    position: relative;
-    width: 180px;
-    margin-left: 20px; }
-  .phone-number {
-    position: relative;
-    top: -48px; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1600,10 +1620,10 @@ footer .wpcf7-submit {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
+            -ms-flex-direction: column;
+                flex-direction: column; }
       .site-footer .site-info .contact-button {
         display: inline-block; }
     .site-footer .copyrights-one {
@@ -1640,6 +1660,9 @@ footer .wpcf7-submit {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
+      .site-footer .site-info .contact-details-container div:nth-child(2) {
+        margin-left: 3rem;
+        padding-top: 3rem; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-one {
