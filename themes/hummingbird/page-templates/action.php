@@ -32,7 +32,7 @@ get_header(); ?>
 			</section>
 			  <div class="start">
                 <h2>Start making an impact in three simple steps.</h2>
-			  </div>
+				</div>
 			<section class="width-content simple-steps">
 			  <div class="call-to-action">
 				<h2>Register</h2>
@@ -47,7 +47,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-magnify.png">
 			  </div>
 			</section>
-
+			<div class="meet">
+                <h2>Meet our Digital Volunteers.</h2>
+			  </div>
 			</section>
 
 			<?php $fields = CFS()->get('front_page_volunteer_case', 2 );

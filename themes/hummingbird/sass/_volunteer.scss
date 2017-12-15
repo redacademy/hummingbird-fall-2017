@@ -2,18 +2,33 @@
 - page-volunteer
 --------------------------------------------------------------*/
 
-.page-volunteer{
-
-
-
-
-
+.page-volunteer {
+    .width-content {
+        text-align: center;
+    }
+    .volunteer-form label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    .volunteer-form input {
+        font-size: 16px;
+    }
+    .wpcf7-form {
+        text-align: left;
+    }
+    .sign-in {
+        color: black;
+        font-size: 30px;
+    }
 }
+
 @media all and (min-width: $medium__width) {
     .page-volunteer {
-
-
-
-
+        .wpcf7-form {
+            margin-left: 10%;
+        }
+        .volunteer-form input {
+            font-size: 30px;
+        }
     }
 }

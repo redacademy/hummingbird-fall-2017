@@ -84,14 +84,15 @@ textarea {
 
 }
 
-.page-template-contact .contact-form {
+.page-template-contact .contact-form,
+.volunteer-form, .signin-form {
 
 	input[type=email], input[type=text] {
-		background-color: $color__green-form;
+		background-color: $color__green-main;
 		color: $color__white;
 		font-size: 2rem;
-		font-weight: 400;
-		width: 70%;
+		font-weight: 300;
+		width: 85%;
 		padding: 1rem;
 		&::placeholder {
 			color: $color__white;

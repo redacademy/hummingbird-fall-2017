@@ -11,14 +11,18 @@ get_header(); ?>
 	<div id="primary" class="content-area page-volunteer">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<section class="width-content volunteer-header">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
+				<h1>Start Making an Impact!</h1>
+			</section>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			
-
-			<?php endwhile; // End of the loop. ?>
-
+			<section class="volunteer-form width-content">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					
+				<?php endwhile; // End of the loop. ?>
+			</section>
+				
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
