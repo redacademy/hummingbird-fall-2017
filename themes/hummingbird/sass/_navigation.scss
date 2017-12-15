@@ -141,7 +141,7 @@ a {
 
 // End mobile devices
 
-@media screen and (min-width: $medium__width) { // 700 px and wider
+@media screen and (min-width: $desktop__width) { // 920 px and wider
 
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
@@ -152,6 +152,7 @@ a {
 
 	.main-navigation {
 
+		padding: .5rem 2rem;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
@@ -170,7 +171,7 @@ a {
 		ul {
 			background: $color__green-nav-bar;
 			li {
-				margin: 0 2rem 0 0;
+				margin: 0 0 0 2rem;
 				display: inline-block;
 				a:hover,
 				a:focus {

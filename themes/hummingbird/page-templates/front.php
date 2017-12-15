@@ -28,12 +28,12 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
 			</section>
 
-			<section class="width-content">
+			<section class="width-column">
 				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-content">
+			<section class="width-column">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
@@ -46,7 +46,7 @@ get_header(); ?>
 				<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
 			</section>
 
-			<section class="width-content">
+			<section class="width-column">
 				<h2><?php echo CFS()->get( 'front_page_explanation_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_explanation_content' ); ?></p>
 			</section>
@@ -73,7 +73,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
 			</section>
 
-			<section class="width-content">
+			<section class="width-column">
 				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
 				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
@@ -112,7 +112,7 @@ get_header(); ?>
 			if(isset($fields)):
 
 				foreach ( $fields as $field ) : ?>
-					<section class="width-content flex-horizontal-center"> <!-- Hi, I'm Paula! -->
+					<section class="width-column flex-horizontal-center"> <!-- Hi, I'm Paula! -->
 						<div
 							style="	background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);
 											background-size: cover;
@@ -136,7 +136,7 @@ get_header(); ?>
 				<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
 			</section>
 
-			<section class="width-content">
+			<section class="width-column">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>

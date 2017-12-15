@@ -2,6 +2,10 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.width-column {
+	@include width-column
+}
+
 .width-content { // applied to pretty much every main container
 	@include width-content
 }
@@ -58,10 +62,8 @@ footer .wpcf7-submit {
 
 @media screen and (min-width: $medium__width) {
 
-	.width-content { // applied to pretty much every main container
-		padding: 6rem 4rem 0 4rem;
-	}
-
+	.width-column,
+	.width-content,
 	.width-full {
 		padding-top: 6rem;
 	}
