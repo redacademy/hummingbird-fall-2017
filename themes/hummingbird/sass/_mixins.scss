@@ -41,15 +41,13 @@
 	text-decoration: none;
 	min-width: 175px;
 	text-align: center;
-	&:hover {
-		background-color: $color__grey;
-	}
 }
 
 @mixin button-link-solid {
 	background-color: $color__orange-main;
+	border: 2px solid $color__orange-main;
 	color: $color__white;
-	border: none;
+	// border: none;
 	&:visited {
 		color: $color__white;
 	}
@@ -59,6 +57,18 @@
 }
 
 @mixin button-link-hollow {
+	border: 2px solid $color__white;
+	color: $color__white;
+	&:visited {
+		color: $color__white;
+	}
+	&:hover {
+		background-color: darken($color__orange-main, 15%);
+		border: 2px solid $color__orange-main;
+	}
+}
+
+@mixin button-link-hollow-orange {
 	border: 2px solid $color__orange-main;
 	color: $color__orange-main;
 	&:visited {
@@ -66,6 +76,7 @@
 	}
 	&:hover {
 		border: 2px solid darken($color__orange-main, 15%);
-		color: darken($color__orange-main, 15%);
+		color: $color__white;
+		background-color: $color__orange-main;
 	}
 }

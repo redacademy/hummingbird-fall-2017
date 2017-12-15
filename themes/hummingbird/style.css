@@ -614,10 +614,8 @@ a {
         min-width: 175px;
         text-align: center;
         background-color: #da9127;
-        color: #fff;
-        border: none; }
-        .main-navigation ul li:last-child a:hover {
-          background-color: #cecece; }
+        border: 2px solid #da9127;
+        color: #fff; }
         .main-navigation ul li:last-child a:visited {
           color: #fff; }
         .main-navigation ul li:last-child a:hover {
@@ -844,15 +842,12 @@ object {
   text-decoration: none;
   min-width: 175px;
   text-align: center; }
-  .button-link:hover,
-  .wpcf7-submit:hover {
-    background-color: #cecece; }
 
 .button-link-solid,
 .site-content .wpcf7-submit {
   background-color: #da9127;
-  color: #fff;
-  border: none; }
+  border: 2px solid #da9127;
+  color: #fff; }
   .button-link-solid:visited,
   .site-content .wpcf7-submit:visited {
     color: #fff; }
@@ -861,13 +856,23 @@ object {
     background-color: #9a661a; }
 
 .button-link-hollow {
+  border: 2px solid #fff;
+  color: #fff; }
+  .button-link-hollow:visited {
+    color: #fff; }
+  .button-link-hollow:hover {
+    background-color: #9a661a;
+    border: 2px solid #da9127; }
+
+.button-link-hollow-orange {
   border: 2px solid #da9127;
   color: #da9127; }
-  .button-link-hollow:visited {
+  .button-link-hollow-orange:visited {
     color: #da9127; }
-  .button-link-hollow:hover {
+  .button-link-hollow-orange:hover {
     border: 2px solid #9a661a;
-    color: #9a661a; }
+    color: #fff;
+    background-color: #da9127; }
 
 footer .wpcf7-submit {
   background-color: #698e87;
@@ -1414,10 +1419,6 @@ footer .wpcf7-submit {
     margin: 0 0 3rem 0; }
   .page-front-page .front-page-header .button-link {
     display: none; }
-  .page-front-page .front-page-header .button-link-hollow {
-    border-color: #fff;
-    color: #fff;
-    margin-left: 1rem; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1469,10 +1470,26 @@ footer .wpcf7-submit {
       -ms-flex-order: 2;
           order: 2; }
 
+.page-front-page .volunteer-text {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
 .page-front-page .you-can-join-text {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3; }
+  .page-front-page .you-can-join-text p {
+    text-align: center; }
+
+.page-front-page .find-out-button {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  height: 20px;
+  width: 140px;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
@@ -1527,16 +1544,29 @@ footer .wpcf7-submit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 430px;
+    width: 80%; }
+  .page-front-page .volunteer-text {
+    width: 70%;
+    font-size: 14px; }
+    .page-front-page .volunteer-text p {
+      text-align: left;
+      padding-right: 2rem;
+      margin-bottom: 0; }
   .page-front-page .volunteer-img {
     background-size: cover;
-    width: 230px;
-    height: 230px;
+    width: 330px;
+    height: 390px;
+    margin: 0 3rem 0 0;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 0;
@@ -1545,7 +1575,13 @@ footer .wpcf7-submit {
   .page-front-page .you-can-join-text {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; } }
+            order: 2;
+    width: 70%; }
+    .page-front-page .you-can-join-text p {
+      text-align: left;
+      padding-right: 2rem;
+      font-weight: bolder;
+      margin-top: 0; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
