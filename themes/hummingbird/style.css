@@ -563,13 +563,14 @@ a {
 .menu-toggle {
   display: inline-block; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 920px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
     display: inline-block !important;
     text-align: left;
     width: 100%; }
   .main-navigation {
+    padding: .5rem 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -591,7 +592,7 @@ a {
     .main-navigation ul {
       background: #e8eeee; }
       .main-navigation ul li {
-        margin: 0 2rem 0 0;
+        margin: 0 0 0 2rem;
         display: inline-block; }
         .main-navigation ul li a:hover,
         .main-navigation ul li a:focus {
@@ -664,14 +665,6 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -787,6 +780,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.width-column {
+  max-width: 720px;
+  padding: 3rem 0 0 0;
+  margin: 0 auto; }
+
 .width-content {
   max-width: 1440px;
   padding: 3rem 4rem 0 4rem;
@@ -864,9 +862,14 @@ footer .wpcf7-submit {
     color: #da9127; }
 
 @media screen and (min-width: 700px) {
+<<<<<<< HEAD
+  .width-column,
+  .width-content,
+=======
   .width-content {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
+>>>>>>> cd6067123e370857f5342868a542a64cf8dc90de
   .width-full {
     padding-top: 6rem; } }
 
@@ -1389,7 +1392,7 @@ footer .wpcf7-submit {
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.png");
-  background-size: contain, cover;
+  background-size: 1440px, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   padding-bottom: 6rem;
