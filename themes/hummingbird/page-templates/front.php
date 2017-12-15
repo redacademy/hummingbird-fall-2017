@@ -42,7 +42,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-content front-page-volunteer">
-				<div class="width-column">
+				<div>
 					<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
 					<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
 				</div>
