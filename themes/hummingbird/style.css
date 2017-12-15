@@ -421,11 +421,7 @@ textarea {
 .page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
 .volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
-<<<<<<< HEAD
-  background-color: #F9FAFA;
-=======
   background-color: #698e87;
->>>>>>> 34aff877775b786927e167b4ba37256a44abb2a1
   color: #fff;
   font-size: 2rem;
   font-weight: 300;
@@ -874,14 +870,9 @@ footer .wpcf7-submit {
     color: #da9127; }
 
 @media screen and (min-width: 700px) {
-<<<<<<< HEAD
-  .width-column,
-  .width-content,
-=======
   .width-content {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
->>>>>>> cd6067123e370857f5342868a542a64cf8dc90de
   .width-full {
     padding-top: 6rem; } }
 
