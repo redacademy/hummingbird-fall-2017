@@ -4,32 +4,10 @@
 
 // Mobile first, baby!!
 
-// .contact-details-container {
-// 	text-align: center;
-// }
-.address-icon {
-	position: relative;
-	right: 40px;
-	top: 45px;
+.social-media-icon {
+	margin: 20px 10px 0 0;
 }
-.contact-details-one {
-	position: relative;
-	// top: -50px;
-	height: 180px;
-	line-height: .5;
-	margin-left: 100px;
-}
-.contact-details-two {
-	position: relative;
-	// top: -43px;
-	height: 180px;
-	line-height: .5;
-	margin-left: 100px;
-}
-.phone-number {
-	position: relative;
-	top: -48px;
-}
+
 .footer-wrapper {
 	width: 100%;
 	background: linear-gradient(to right, $color__green-main 50%, $color__text-main 50%);
@@ -39,65 +17,50 @@
 }
 
 .site-footer {
-
 	padding: 0; // override the default padding from .content-width
 	color: $color__white;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
-
 	.width-content {
-		// padding: 3rem 4rem 3rem 4rem;
+		padding-top: 3rem;
 	}
-	
-
 	h2 {
-		width: fit-content;
-		// margin: 0 auto;
+		text-align: left;
 		font-family: $font__main;
 		font-size: 1.25rem;
 	}
-
 	.footer-form {
 		grid-column: 1 / 3;
 		grid-row: 1;
 		background-color: $color__green-main;
 	} // end .footer-form
-
 	.site-info {
-
-		background-color: $color__green-main;	
+		background-color: $color__green-main;
 		grid-column: 1 / 3;
 		grid-row: 2;
-
 		li {
 			text-align: left;
 		}
-
 		.icon-spacer {
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
 			vertical-align: middle;
 		}
-
 		.logo-large {
 			display: none;
 		}
-
 		.logo-white {
-			position: relative;
-    		width: 92px;
-    		right: -20rem;
-    		top: 4rem;
+			position: absolute;
+			width: 92px;
+			right: 4rem;
+			margin-top: 15px;
 		}
-
 		.contact-button {
 			display: none;
 		}
-
 	} // end .site-info
-
 	.copyrights {
 		font-size: $font__size-small;
 		background-color: $color__text-main;
@@ -105,55 +68,29 @@
 		width: 100%;
 		display: flex;
 		padding-bottom: 1rem;
-
 		span {
 			padding: .5rem 0 0 2rem;
 		}
-
 		div {
 			padding: .5rem 2rem 0 0;
 		}
-
 	}
-
 	.copyrights-one {
 		flex-wrap: wrap;
 	}
-
 	.copyrights-two {
 		justify-content: flex-end;
 	}
-
 	.footer-logo-large {
 		display: none;
 	}
-
 }
 
 @media all and (min-width: $medium__width) {
-
-.contact-details-one {
-	position: relative;
-	// top: -50px;
-	width: 200px;
-	top: -35px;
-}
-.contact-details-two {
-	position: relative;
-	// top: -43px;
-	width: 180px;
-	margin-left: 20px;
-}
-.phone-number {
-	position: relative;
-	top: -48px;
-}
 	.site-footer {
-
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		grid-template-rows: auto auto;
-
 		.footer-form {
 			grid-column: 2;
 			grid-row: 1;
@@ -163,40 +100,31 @@
 				border-color: $color__green-main;
 			}
 		} // end .footer-form
-
 		.site-info {
-
 			grid-column: 1;
 			grid-row: 1;
-
 			.logo-white {
 				display: none;
 			}
-
 			.contact-details-container {
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 			}
-
 			.contact-button {
 				display: inline-block;
 			}
-
 		} // end .site-info
-
 		.copyrights-one {
 			background-color: $color__green-main;
 			grid-column: 1;
 			grid-row: 2;
 			justify-content: flex-end;
 		}
-
 		.copyrights-two {
 			grid-column: 2;
 			grid-row: 2;
 			justify-content: flex-start;
 		}
-
 		.copyrights {
 			span {
 				padding: .5rem 2rem 0 0;
@@ -205,18 +133,14 @@
 				padding: .5rem 0 0 2rem;
 			}
 		}
-
 	}
-
 }
 
 @media all and (min-width: $desktop__width) {
 	.site-footer {
-
 		br {
 			display: none;
 		}
-
 		.site-info {
 			background: none;
 			.contact-details-container {
@@ -224,25 +148,21 @@
 				flex-direction: row;
 				justify-content: flex-end;
 				div:nth-child(2) {
-					// margin-left: 3rem;
-					// padding-top: 3rem;
+					margin-left: 3rem;
+					padding-top: 3rem;
 				}
 			}
 		}
-
 		.copyrights {
 			background: none;
 		}
-
 		.copyrights-one {
 			padding-right: 2rem;
 		}
-
 		.copyrights-two {
 			background-color: $color__text-main;
 			padding-left: 2rem;
 		}
-
 		.footer-logo-large {
 			display: block;
 			background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
@@ -253,7 +173,6 @@
 			grid-column: 1;
 			grid-row: 1 / 3;
 		}
-
 	}
 }
 

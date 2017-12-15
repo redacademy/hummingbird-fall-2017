@@ -2,13 +2,17 @@
 # Navigation
 --------------------------------------------------------------*/
 
+.site-header {
+	background: $color__green-nav-bar;
+}
+
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color__text-main;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $color__text-main;
 	}
 	&:hover,
 	&:focus,
@@ -118,7 +122,6 @@ a {
 	margin-top: 0;
 	text-align: center;
 	display: -webkit-inline-box;
-	background: $color__green-nav-bar;
 	display: flex;
 }
 .main-navigation li {
@@ -156,7 +159,6 @@ a {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-
 		max-width: $full__width;
 		margin: 0 auto;
 		z-index: 1;
