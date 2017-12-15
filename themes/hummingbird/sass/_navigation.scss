@@ -3,7 +3,11 @@
 --------------------------------------------------------------*/
 
 .site-header {
-	background: $color__green-nav-bar;
+	background: $color__green-main;
+}
+
+html body #responsive-menu-button {
+	right: 2rem;
 }
 
 /* Links */
@@ -29,10 +33,11 @@ a {
 }
 
 /* Menus */
-
+		
 .main-navigation {
 	display: block;
 	width: 100%;
+	padding: .5rem 2rem;
 
 	ul {
 		display: none;
@@ -108,10 +113,8 @@ a {
 		width: 50%;
 	}
 }
-.hb-logo{
+.site-branding{
 	width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;				
 }
 
@@ -142,6 +145,13 @@ a {
 	display: inline-block;
 }
 
+	.logo-color {
+		display: none;
+	}
+	.logo-white {
+		display: inline-block;
+	}
+
 // End mobile devices
 
 @media screen and (min-width: $desktop__width) { // 920 px and wider
@@ -154,8 +164,6 @@ a {
 	}
 
 	.main-navigation {
-
-		padding: .5rem 2rem;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
@@ -171,7 +179,6 @@ a {
 		}
 
 		ul {
-			background: $color__green-nav-bar;
 			li {
 				margin: 0 0 0 2rem;
 				display: inline-block;
@@ -191,6 +198,17 @@ a {
 	}
 
 	.menu-toggle {
+		display: none;
+	}
+
+	.site-header {
+	background: $color__green-nav-bar;
+	}
+
+	.logo-color {
+		display: inline-block;
+	}
+	.logo-white {
 		display: none;
 	}
 

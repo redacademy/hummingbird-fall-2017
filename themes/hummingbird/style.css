@@ -466,7 +466,10 @@ footer input[type=email], footer input[type=text] {
 # Navigation
 --------------------------------------------------------------*/
 .site-header {
-  background: #e8eeee; }
+  background: #698e87; }
+
+html body #responsive-menu-button {
+  right: 2rem; }
 
 /* Links */
 a {
@@ -483,7 +486,8 @@ a {
 /* Menus */
 .main-navigation {
   display: block;
-  width: 100%; }
+  width: 100%;
+  padding: .5rem 2rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -535,7 +539,7 @@ a {
   text-align: right;
   width: 50%; }
 
-.hb-logo {
+.site-branding {
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -565,6 +569,12 @@ a {
 .menu-toggle {
   display: inline-block; }
 
+.logo-color {
+  display: none; }
+
+.logo-white {
+  display: inline-block; }
+
 @media screen and (min-width: 920px) {
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
@@ -572,7 +582,6 @@ a {
     text-align: left;
     width: 100%; }
   .main-navigation {
-    padding: .5rem 2rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -591,29 +600,33 @@ a {
     .main-navigation .current_page_item > a,
     .main-navigation .current_page_ancestor > a {
       font-weight: bold; }
-    .main-navigation ul {
-      background: #e8eeee; }
-      .main-navigation ul li {
-        margin: 0 0 0 2rem;
-        display: inline-block; }
-        .main-navigation ul li a:hover,
-        .main-navigation ul li a:focus {
-          color: #1e1e1e; }
-        .main-navigation ul li:last-child a {
-          padding: 1rem;
-          border-radius: 5px;
-          color: #fff;
-          text-decoration: none;
-          min-width: 175px;
-          text-align: center;
-          background-color: #da9127;
-          border: 2px solid #da9127;
+    .main-navigation ul li {
+      margin: 0 0 0 2rem;
+      display: inline-block; }
+      .main-navigation ul li a:hover,
+      .main-navigation ul li a:focus {
+        color: #1e1e1e; }
+      .main-navigation ul li:last-child a {
+        padding: 1rem;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        min-width: 175px;
+        text-align: center;
+        background-color: #da9127;
+        border: 2px solid #da9127;
+        color: #fff; }
+        .main-navigation ul li:last-child a:visited {
           color: #fff; }
-          .main-navigation ul li:last-child a:visited {
-            color: #fff; }
-          .main-navigation ul li:last-child a:hover {
-            background-color: #9a661a; }
+        .main-navigation ul li:last-child a:hover {
+          background-color: #9a661a; }
   .menu-toggle {
+    display: none; }
+  .site-header {
+    background: #e8eeee; }
+  .logo-color {
+    display: inline-block; }
+  .logo-white {
     display: none; } }
 
 /*--------------------------------------------------------------

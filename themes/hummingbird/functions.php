@@ -182,9 +182,3 @@ function myprefix_enqueue_google_fonts() {
 	wp_enqueue_style( 'overpass', 'https://fonts.googleapis.com/css?family=Overpass' ); 
 }
 add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_google_fonts' ); 
-
-// This theme uses wp_nav_menu() in two locations.  
-register_nav_menus( array(  
-  'primary' => __( 'Primary Navigation', 'twentyten' ),  
-  'secondary' => __('Secondary Navigation', 'twentyten')  
-) );
