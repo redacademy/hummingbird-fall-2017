@@ -62,9 +62,9 @@
 					
 					</div><!-- .site-info -->
 
-					<div class="bottomMenu">
+					<div class="copyrights copyrights-one">
               <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>  
-    </div>
+    			</div>
 
 
 					<div class="copyrights copyrights-two">
