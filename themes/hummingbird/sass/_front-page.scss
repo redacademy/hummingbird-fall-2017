@@ -86,8 +86,21 @@
         align-self: center;
 		order: 2;
     }
+	.volunteer-text {
+		order: -1;
+	}
 	.you-can-join-text {
 		order: 3;
+		p {
+		text-align: center;
+		}
+	}
+	.find-out-button {
+		order: 4;
+		height: 20px;
+		width: 140px;
+		align-self: center;
+	
 	}
 
 }
@@ -178,20 +191,39 @@
 			}
 	.volunteer {
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: column;
+		flex-wrap: wrap;
+		height: 430px;
+		width: 80%;
         
     }
+	.volunteer-text {
+		width: 70%;
+		font-size: 14px;
+		p {
+		text-align: left;
+		padding-right: 2rem;
+		}
+	}
     .volunteer-img {
         background-size: cover;
-		width: 230px;
-		height: 230px;
+		width: 330px;
+    	height: 390px;
+    	margin: 0 3rem 0 0;
         align-self: center;
 		order: -1;
     }
 	.you-can-join-text {
 		order: 2;
-	}		
+		width: 70%;
+		p {
+		text-align: left;
+		padding-right: 2rem;
+		font-weight: bolder;
+		}
+	}
+	
     }
 
 }

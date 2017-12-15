@@ -1454,10 +1454,26 @@ footer .wpcf7-submit {
       -ms-flex-order: 2;
           order: 2; }
 
+.page-front-page .volunteer-text {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
 .page-front-page .you-can-join-text {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3; }
+  .page-front-page .you-can-join-text p {
+    text-align: center; }
+
+.page-front-page .find-out-button {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  height: 20px;
+  width: 140px;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
@@ -1512,16 +1528,28 @@ footer .wpcf7-submit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 430px;
+    width: 80%; }
+  .page-front-page .volunteer-text {
+    width: 70%;
+    font-size: 14px; }
+    .page-front-page .volunteer-text p {
+      text-align: left;
+      padding-right: 2rem; }
   .page-front-page .volunteer-img {
     background-size: cover;
-    width: 230px;
-    height: 230px;
+    width: 330px;
+    height: 390px;
+    margin: 0 3rem 0 0;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 0;
@@ -1530,7 +1558,12 @@ footer .wpcf7-submit {
   .page-front-page .you-can-join-text {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-            order: 2; } }
+            order: 2;
+    width: 70%; }
+    .page-front-page .you-can-join-text p {
+      text-align: left;
+      padding-right: 2rem;
+      font-weight: bolder; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
