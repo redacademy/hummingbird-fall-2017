@@ -48,7 +48,9 @@
 .button-link-hollow {
 	@include button-link-hollow
 }
-
+.button-link-hollow-orange {
+	@include button-link-hollow-orange
+}
 footer .wpcf7-submit {
 	background-color: $color__green-main;
 	border: 2px solid $color__white;

@@ -130,7 +130,7 @@ get_header(); ?>
 							</div>
 
 							<section class="find-out-button">
-								<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
+								<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow-orange">Find Out More</a>
 							</section>
 						
 					</section>
