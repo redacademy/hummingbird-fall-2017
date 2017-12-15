@@ -114,29 +114,28 @@ get_header(); ?>
 			if(isset($fields)):
 
 				foreach ( $fields as $field ) : ?>
-					<section class="width-column flex-horizontal-center"> <!-- Hi, I'm Paula! -->
-						<div
-							style="	background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);
-											background-size: cover;
-											width: 360px;
-											min-width: 360px;
-											height: 360px;
-											margin-right: 4rem;">
+					<section class="width-content volunteer"> <!-- Hi, I'm Paula! -->
+						<div class="volunteer-img"
+							 style="background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);"> 				
 						</div>
-						<div>
+						<div class="volunteer-text">
 							<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
 							<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
+						</div>
+						<div class="you-can-join-text">
 							<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
 						</div>
+
+						<section class="width-content flex-horizontal-center">
+							<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
+						</section>
 					</section>
 				<?php 
 				endforeach;
 			endif;
 			?>
 
-			<section class="width-content flex-horizontal-center">
-				<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow">Find Out More</a>
-			</section>
+			
 
 			<section class="width-column">
 				<?php while ( have_posts() ) : the_post(); ?>

@@ -73,6 +73,22 @@
 		}
 
 	}
+	.volunteer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+    .volunteer-img {
+        background-size: cover;
+		width: 230px;
+		height: 230px;
+        align-self: center;
+		order: 2;
+    }
+	.you-can-join-text {
+		order: 3;
+	}
 
 }
 
@@ -160,7 +176,22 @@
 				}
 
 			}
-
+	.volunteer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        
+    }
+    .volunteer-img {
+        background-size: cover;
+		width: 230px;
+		height: 230px;
+        align-self: center;
+		order: -1;
+    }
+	.you-can-join-text {
+		order: 2;
+	}		
     }
 
 }
