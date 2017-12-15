@@ -23,7 +23,8 @@ function hummingbird_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html( 'Primary Menu' ),
+		'primary' => __( 'Primary Navigation' ),  
+		'secondary' => __('Secondary Navigation') 
 	) );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
