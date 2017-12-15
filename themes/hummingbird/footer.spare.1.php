@@ -23,28 +23,27 @@
 
 					<div class="site-info">
 
+						<div class="logo-white">
+							<img class="logo-small" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-white-large.png" alt="The Hummingbird Network logo">
+						</div>
+					
 						<div class="contact-details-container width-content">
 
-							<div class="logo-white">
-								<img class="logo-small" src="<?php echo get_template_directory_uri(); ?>/assets/logos/large/symbol-white-large.png" alt="The Hummingbird Network logo">
-							</div>
-
 							<div> <!-- container div for flexbox purposes -->
+								<h2>Contact Details</h2>
 								<ul class="contact-details-one">
-									<h2>Contact Details</h2>
-									<li class="street-address">
-										<span class="icon-spacer location address-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="Location"></span>
-										<p><?php echo CFS()->get( 'front_page_address_1', 2 ); ?></p>
+									<li>
+										<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/location-marker.svg" alt="Location"></span><p><?php echo CFS()->get( 'front_page_address_1', 2 ); ?></p>
 								</ul><!-- contact-details-one -->
 							</div>
 				
 							<div> <!-- container div for flexbox purposes -->
 								<ul class="contact-details-two">
-									<li class="email-address">
-										<span class="icon-spacer email address-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"></span><p><?php echo CFS()->get( 'front_page_address_2', 2 ); ?></p>
+									<li>
+										<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/email-icon.svg" alt="email icon"></span><p><?php echo CFS()->get( 'front_page_address_2', 2 ); ?></p>
 									</li>
-									<li class="phone-number">
-										<span class="icon-spacer phone address-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"></span><p><?php echo CFS()->get( 'front_page_address_3', 2 ); ?></p>
+									<li>
+										<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"></span>
 									</li>
 									<li>
 										<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon"></span>

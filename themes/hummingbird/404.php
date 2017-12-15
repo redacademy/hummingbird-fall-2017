@@ -14,10 +14,10 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<section class="width-content flex-horizontal-center">
+					<section class="width-content">
 				      <img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
-			        </section>
 					  <h1 class="page-title"><?php echo esc_html( 'Oops! We can’t seem to find the page you’re looking for.' ); ?></h1>
+					</section>
 				</header><!-- .page-header -->
 
                 <section class="width-content flex-horizontal-center back-button">

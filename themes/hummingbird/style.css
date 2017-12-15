@@ -405,8 +405,6 @@ textarea {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
     color: #698e87; }
-  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
-    color: #698e87; }
   .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
     color: #698e87; }
 
@@ -435,10 +433,6 @@ textarea {
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder, .signin-form input[type=email]::-ms-input-placeholder, .signin-form input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
@@ -456,8 +450,6 @@ footer input[type=email], footer input[type=text] {
   footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
     color: #fff; }
   footer input[type=email]::placeholder, footer input[type=text]::placeholder {
     color: #fff; }
@@ -1488,6 +1480,27 @@ footer .wpcf7-submit {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
+.address-icon {
+  position: relative;
+  right: 40px;
+  top: 45px; }
+
+.contact-details-one {
+  position: relative;
+  height: 180px;
+  line-height: .5;
+  margin-left: 100px; }
+
+.contact-details-two {
+  position: relative;
+  height: 180px;
+  line-height: .5;
+  margin-left: 100px; }
+
+.phone-number {
+  position: relative;
+  top: -48px; }
+
 .footer-wrapper {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #698e87), color-stop(50%, #1e1e1e));
@@ -1502,10 +1515,10 @@ footer .wpcf7-submit {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto; }
-  .site-footer .width-content {
-    padding-top: 3rem; }
   .site-footer h2 {
-    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     font-family: "Overpass", sans-serif;
     font-size: 1.25rem; }
   .site-footer .footer-form {
@@ -1526,10 +1539,10 @@ footer .wpcf7-submit {
     .site-footer .site-info .logo-large {
       display: none; }
     .site-footer .site-info .logo-white {
-      position: absolute;
+      position: relative;
       width: 92px;
-      right: 4rem;
-      margin-top: 15px; }
+      right: -20rem;
+      top: 4rem; }
     .site-footer .site-info .contact-button {
       display: none; }
   .site-footer .copyrights {
@@ -1556,6 +1569,17 @@ footer .wpcf7-submit {
     display: none; }
 
 @media all and (min-width: 700px) {
+  .contact-details-one {
+    position: relative;
+    width: 200px;
+    top: -35px; }
+  .contact-details-two {
+    position: relative;
+    width: 180px;
+    margin-left: 20px; }
+  .phone-number {
+    position: relative;
+    top: -48px; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1576,10 +1600,10 @@ footer .wpcf7-submit {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+            -ms-flex-direction: row;
+                flex-direction: row; }
       .site-footer .site-info .contact-button {
         display: inline-block; }
     .site-footer .copyrights-one {
@@ -1616,9 +1640,6 @@ footer .wpcf7-submit {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
-      .site-footer .site-info .contact-details-container div:nth-child(2) {
-        margin-left: 3rem;
-        padding-top: 3rem; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-one {
