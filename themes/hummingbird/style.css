@@ -465,11 +465,14 @@ footer input[type=email], footer input[type=text] {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header {
+  background: #e8eeee; }
+
 /* Links */
 a {
-  color: royalblue; }
+  color: #1e1e1e; }
   a:visited {
-    color: purple; }
+    color: #1e1e1e; }
   a:hover, a:focus, a:active {
     color: white; }
   a:focus {
@@ -543,7 +546,6 @@ a {
   margin-top: 0;
   text-align: center;
   display: -webkit-inline-box;
-  background: #e8eeee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
