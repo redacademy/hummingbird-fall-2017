@@ -175,3 +175,17 @@
 		}
 	}
 }
+
+.bottomMenu { display: block; width:960px;}
+.bottomMenu ul { display:inline; }
+.bottomMenu li { list-style-type: none; display: inline; font-size: 12px; }
+.bottomMenu li a {
+	color:#FFFFFF;
+	line-height:15px;
+	text-decoration:none;
+	font-weight:normal;
+	border-right: thin solid transparent;
+	padding: 0 7px 0 3px;
+}
+.bottomMenu li a:hover { color:#ccc; text-decoration:underline;}
+.bottomMenu li:last-child > a {border-right: none;} 
