@@ -12,7 +12,6 @@
 		padding-bottom: 6rem;
 		padding-top: 0;
 	
-
 		.front-page-header-content {
 			color: $color__grey;
 			font-weight: 300;
@@ -93,6 +92,19 @@
 					display: inline-block;
 				}
 
+			}
+
+			.front-page-volunteer {
+				background: url("../../assets/elements/paint-white-top.png"), url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_volunteering.png");
+				background-size: $full__width, $full__width, cover;
+				background-repeat: no-repeat;
+				background-position: top, bottom, center;
+				background-color: $color__green-main;
+				color: $color__white;
+				div {
+					width: 50%;
+					padding-bottom: 6rem;
+				}
 			}
 
 			.volunteer-button-container {
