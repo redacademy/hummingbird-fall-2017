@@ -245,7 +245,6 @@ h2 {
 
 h1 {
   font-weight: 400;
-  text-align: center;
   margin-bottom: 0; }
 
 /* Copy */
@@ -405,8 +404,6 @@ textarea {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
     color: #698e87; }
-  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
-    color: #698e87; }
   .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
     color: #698e87; }
 
@@ -435,10 +432,6 @@ textarea {
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder, .signin-form input[type=email]::-ms-input-placeholder, .signin-form input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
@@ -456,8 +449,6 @@ footer input[type=email], footer input[type=text] {
   footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
     color: #fff; }
   footer input[type=email]::placeholder, footer input[type=text]::placeholder {
     color: #fff; }
@@ -477,7 +468,8 @@ footer input[type=email], footer input[type=text] {
   background: #698e87; }
 
 html body #responsive-menu-button {
-  right: 2rem; }
+  right: 2rem;
+  background: none; }
 
 /* Links */
 a {
@@ -548,7 +540,7 @@ a {
   width: 50%; }
 
 .site-branding {
-  width: 200px;
+  width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -803,24 +795,22 @@ object {
 --------------------------------------------------------------*/
 .width-column {
   max-width: 720px;
-  padding: 3rem 4rem 0 4rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto; }
 
 .width-content {
   max-width: 1440px;
-  padding: 3rem 4rem 0 4rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto; }
 
 .width-full {
-  padding-top: 3rem;
+  padding-top: 2rem;
   width: 100%;
   background-color: #698e87;
   color: #fff; }
 
-.bignumber {
-  font-size: 5rem;
-  color: #72acb2;
-  margin: 0; }
+.text-center {
+  text-align: center; }
 
 .flex-horizontal-left {
   display: -webkit-box;
@@ -841,6 +831,11 @@ object {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.bignumber {
+  font-size: 5rem;
+  color: #72acb2;
+  margin: 0; }
 
 .button-link,
 .wpcf7-submit {
@@ -1417,17 +1412,20 @@ footer .wpcf7-form-control.wpcf7-submit {
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
-  background-size: 1440px, cover;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   padding-top: 0; }
   .page-front-page .front-page-header .front-page-header-content {
-    color: #cecece;
     font-weight: 300;
     margin: 0 0 3rem 0; }
   .page-front-page .front-page-header .button-link {
     display: none; }
+
+.page-front-page .symbol-color {
+  width: 150px;
+  height: 139px; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1502,9 +1500,11 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
-    height: 677px; }
+    height: 677px;
+    background-size: 1440px, cover; }
     .page-front-page .front-page-header .front-page-header-content {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
   .page-front-page .front-page-volunteer {

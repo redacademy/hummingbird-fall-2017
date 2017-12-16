@@ -24,28 +24,28 @@ get_header(); ?>
 				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
-			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
+			<section class="width-content flex-horizontal-center"> <!-- Orange logo without text -->
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/logos/medium/hummingbird-network-symbol-color.png">
 			</section>
 
-			<section class="width-column">
-				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
+			<section class="width-column"> <!-- Hummingbird Network -->
+				<h1 class="text-center"><?php echo CFS()->get( 'front_page_description_title' ); ?></h1>
 				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-column">
+			<section class="width-column"> <!-- Maps -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
-			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
-			</section>
-
-			<section class="width-content front-page-volunteer">
+			<section class="width-content front-page-volunteer"> <!-- What is Digital Volunteering? -->
 				<div>
 					<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
 					<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
 				</div>
+			</section>
+
+			<section class="width-content flex-horizontal-center"> <!-- Bear -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 			</section>
 
 			<section class="width-column">
@@ -87,7 +87,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="front-page-impact-content">
+					<div class="width-content front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
