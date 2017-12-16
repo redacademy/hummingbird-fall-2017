@@ -1734,7 +1734,8 @@ footer .wpcf7-form-control.wpcf7-submit {
   .paint {
     display: block;
     position: relative;
-    top: 105px; }
+    top: 97px;
+    padding-left: 20vw; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
