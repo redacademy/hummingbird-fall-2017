@@ -12,6 +12,9 @@
     .signin-form input {
         font-size: 16px;
     }
+    input.wpcf7-form-control.wpcf7-submit {
+    font-size: 16px;
+    }
 }
 
 @media all and (min-width: $medium__width) {
