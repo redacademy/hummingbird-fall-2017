@@ -1225,8 +1225,7 @@ footer .wpcf7-form-control.wpcf7-submit {
   .page-template-who .who_header_case-photo {
     height: auto;
     min-width: 47%;
-    background-size: cover;
-    background-position: 50%; }
+    background-size: cover; }
   .page-template-who .front-page-explanation-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1261,7 +1260,7 @@ footer .wpcf7-form-control.wpcf7-submit {
       .page-template-who .front-page-explanation-case div img {
         width: 10%; }
   .page-template-who .single-team-member {
-    max-width: 300px; } }
+    max-width: 250px; } }
 
 /*--------------------------------------------------------------
 - page-impct
