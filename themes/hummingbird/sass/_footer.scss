@@ -3,9 +3,9 @@
 --------------------------------------------------------------*/
 
 // Mobile first, baby!!
+
 .paint {
-    position: relative;
-    top: 105px;
+	display: none;
 }
 .social-media-icon {
 	margin: 20px 10px 0 0;
@@ -95,6 +95,12 @@
 }
 
 @media all and (min-width: $medium__width) {
+
+	.paint {
+	display: block;
+    position: relative;
+    top: 105px;
+	}
 	.site-footer {
 		display: grid;
 		grid-template-columns: 2fr 1fr;

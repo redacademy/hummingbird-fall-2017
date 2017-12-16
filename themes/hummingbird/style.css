@@ -1656,8 +1656,7 @@ footer .wpcf7-form-control.wpcf7-submit {
 - page-footer
 --------------------------------------------------------------*/
 .paint {
-  position: relative;
-  top: 105px; }
+  display: none; }
 
 .social-media-icon {
   margin: 20px 10px 0 0; }
@@ -1732,6 +1731,10 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: none; }
 
 @media all and (min-width: 700px) {
+  .paint {
+    display: block;
+    position: relative;
+    top: 105px; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
