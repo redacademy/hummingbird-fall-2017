@@ -853,7 +853,8 @@ object {
 .bignumber {
   font-size: 5rem;
   color: #72acb2;
-  margin: 0; }
+  margin: 0;
+  font-weight: 700; }
 
 .button-link,
 .wpcf7-submit {
@@ -933,7 +934,9 @@ footer .wpcf7-form-control.wpcf7-submit {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
   .width-full {
-    padding-top: 6rem; } }
+    padding-top: 6rem; }
+  .bignumber {
+    font-weight: 400; } }
 
 /*--------------------------------------------------------------
 - page-action
@@ -1482,6 +1485,11 @@ footer .wpcf7-form-control.wpcf7-submit {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto; }
+  .page-front-page .front-page-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-front-page .front-page-impact-case div:nth-child(3) h3 {
+      color: #fff; }
   .page-front-page .front-page-impact-case .front-page-impact-case-photo {
     height: 391px;
     background-size: cover;
@@ -1540,6 +1548,9 @@ footer .wpcf7-form-control.wpcf7-submit {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.page-front-page .volunteer-form {
+  display: none; }
+
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
     height: 677px;
@@ -1573,11 +1584,7 @@ footer .wpcf7-form-control.wpcf7-submit {
       grid-column: span 2;
       padding: 4rem 6rem; }
     .page-front-page .front-page-impact-case div:nth-child(3) {
-      grid-column: 2 / 4;
-      background-color: #698e87;
-      color: #fff; }
-      .page-front-page .front-page-impact-case div:nth-child(3) h3 {
-        color: #fff; }
+      grid-column: 2 / 4; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
       grid-column: 1;
       grid-row: 2; }
@@ -1632,7 +1639,11 @@ footer .wpcf7-form-control.wpcf7-submit {
       text-align: left;
       padding-right: 2rem;
       font-weight: bolder;
-      margin-top: 0; } }
+      margin-top: 0; }
+  .page-front-page .volunteer-form {
+    display: block; }
+  .page-front-page .volunteer-button-container {
+    display: none; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {

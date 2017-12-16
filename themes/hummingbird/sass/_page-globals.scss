@@ -39,6 +39,7 @@
 	font-size: 5rem;
 	color: $color__blue-numbers;
 	margin: 0;
+	font-weight: 700;
 }
 
 // Buttons and anchors in button's clothing
@@ -85,6 +86,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 	.width-full {
 		padding-top: 6rem;
+	}
+
+	.bignumber {
+		font-weight: 400;
 	}
 
 }
