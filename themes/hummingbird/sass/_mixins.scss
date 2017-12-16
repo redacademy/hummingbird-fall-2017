@@ -25,6 +25,12 @@
 	margin: 0 auto; // horizontally center the content
 }
 
+@mixin width-content-left {
+	max-width: $full__width;
+	padding: 3rem 4rem 0 4rem;
+	text-align: left; // justify left the content
+}
+
 @mixin width-full {
 	padding-top: 2rem;
 	width: 100%;
@@ -47,17 +53,24 @@
 	background-color: $color__orange-main;
 	border: 2px solid $color__orange-main;
 	color: $color__white;
+	transition-delay: 0;
+	transition-property: background-color;
+	transition-duration: .5s;
 	&:visited {
 		color: $color__white;
 	}
 	&:hover {
 		background-color: darken($color__orange-main, 15%);
+		
 	}
 }
 
 @mixin button-link-hollow {
 	border: 2px solid $color__white;
 	color: $color__white;
+	transition-delay: 0;
+	transition-property: background-color;
+	transition-duration: .5s;
 	&:visited {
 		color: $color__white;
 	}
@@ -70,6 +83,9 @@
 @mixin button-link-hollow-orange {
 	border: 2px solid $color__orange-main;
 	color: $color__orange-main;
+	transition-delay: 0;
+	transition-property: background-color;
+	transition-duration: .5s;
 	&:visited {
 		color: $color__orange-main;
 	}

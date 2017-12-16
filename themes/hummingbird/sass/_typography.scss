@@ -19,14 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font__headings;
 }
 
-h2 {
-	text-align: center;
-}
-
 h1 {
 	font-weight: 400;
 	margin-bottom: 0;
 }
+
+h2 {
+	text-align: center;
+}
+
+
 
 /* Copy */
 
@@ -82,7 +84,7 @@ big {
 
 	h1 {
 		font-size: 3rem;
-		text-align: center;
+		// text-align: center;
 	}
 	
 }

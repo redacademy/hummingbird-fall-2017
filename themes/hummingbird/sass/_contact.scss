@@ -3,17 +3,14 @@
 --------------------------------------------------------------*/
 
 .page-contact{
-
-
-
-
-
+    form.wpcf7-form {
+            text-align: left;
+            margin-left: 10%;
+            }       
+   
 }
 @media all and (min-width: $medium__width) {
     .page-contact {
-
-
-
-
+       
     }
 }

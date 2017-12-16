@@ -240,12 +240,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif; }
 
-h2 {
-  text-align: center; }
-
 h1 {
   font-weight: 400;
   margin-bottom: 0; }
+
+h2 {
+  text-align: center; }
 
 /* Copy */
 p {
@@ -289,8 +289,7 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 3rem;
-    text-align: center; } }
+    font-size: 3rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -615,7 +614,13 @@ a {
         text-align: center;
         background-color: #da9127;
         border: 2px solid #da9127;
-        color: #fff; }
+        color: #fff;
+        -webkit-transition-delay: 0;
+                transition-delay: 0;
+        -webkit-transition-property: background-color;
+        transition-property: background-color;
+        -webkit-transition-duration: .5s;
+                transition-duration: .5s; }
         .main-navigation ul li:last-child a:visited {
           color: #fff; }
         .main-navigation ul li:last-child a:hover {
@@ -731,6 +736,13 @@ a {
   display: block; }
 
 /*--------------------------------------------------------------
+- page-contact
+--------------------------------------------------------------*/
+.page-contact form.wpcf7-form {
+  text-align: left;
+  margin-left: 10%; }
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -803,6 +815,11 @@ object {
   padding: 2rem 2rem 0 2rem;
   margin: 0 auto; }
 
+.width-content-left {
+  max-width: 1440px;
+  padding: 3rem 4rem 0 4rem;
+  text-align: left; }
+
 .width-full {
   padding-top: 2rem;
   width: 100%;
@@ -850,7 +867,13 @@ object {
 .site-content .wpcf7-submit {
   background-color: #da9127;
   border: 2px solid #da9127;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-solid:visited,
   .site-content .wpcf7-submit:visited {
     color: #fff; }
@@ -860,7 +883,13 @@ object {
 
 .button-link-hollow {
   border: 2px solid #fff;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-hollow:visited {
     color: #fff; }
   .button-link-hollow:hover {
@@ -869,7 +898,13 @@ object {
 
 .button-link-hollow-orange {
   border: 2px solid #da9127;
-  color: #da9127; }
+  color: #da9127;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   .button-link-hollow-orange:visited {
     color: #da9127; }
   .button-link-hollow-orange:hover {
@@ -879,10 +914,16 @@ object {
 
 footer .wpcf7-form-control.wpcf7-submit {
   background-color: #698e87;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
   footer .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #9a661a;
-    border: 2px solid #da9127;
+    background-color: #da9127;
+    border: 2px solid #9a661a;
     color: #fff; }
 
 @media screen and (min-width: 700px) {
