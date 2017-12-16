@@ -14,6 +14,7 @@
     .who-content-wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .who-title-content {
@@ -37,6 +38,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
         div {
         h2 {
             text-align: center;
@@ -52,6 +54,7 @@
     .team-case {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
     .who_team_case-photo {
         margin: 0 auto;
@@ -65,11 +68,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 450px;
+        
     }
     .our-impact-link {
         margin: 0 auto;
-        height: 400px;
+        // height: 400px;
         h2 {
             margin: 40px auto;
             max-width: 300px;
@@ -82,6 +85,8 @@
         .team-case {
             display: flex;
             flex-direction: row;
+            justify-content: space-around;
+            overflow: hidden;
         }
         .our-impact-link {
             margin: 0 auto;
@@ -109,8 +114,8 @@
             order: 4;
         } 
         .who_header_case-photo {
-            height: 391px;
-            min-width: 50%;
+            height: auto;
+            min-width: 47%;
             background-size: cover;
             background-position: 50%;
         }
@@ -118,11 +123,12 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: space-between;
             div {
             display: flex;
             flex-direction: column;
             width: 40%;
-            margin: 20px 40px 30px 40px;
+            margin: 20px 15px 30px;
             padding: 20px 20px 0px 20px;
             text-align: left;
             box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
@@ -135,7 +141,10 @@
             img {
             width: 10%;
             }
-        }
-     }    
+            }
+            }    
+    .single-team-member {
+        max-width: 300px;
+    }        
     }
 }

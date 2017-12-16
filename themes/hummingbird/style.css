@@ -1104,7 +1104,10 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .page-template-who .who-title-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1135,7 +1138,9 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     .page-template-who .front-page-explanation-case div h2 {
       text-align: center; }
     .page-template-who .front-page-explanation-case span {
@@ -1149,7 +1154,9 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
@@ -1167,11 +1174,9 @@ footer .wpcf7-form-control.wpcf7-submit {
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 450px; }
+            justify-content: center; }
   .page-template-who .our-impact-link {
-    margin: 0 auto;
-    height: 400px; }
+    margin: 0 auto; }
     .page-template-who .our-impact-link h2 {
       margin: 40px auto;
       max-width: 300px; }
@@ -1184,7 +1189,10 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    overflow: hidden; }
   .page-template-who .our-impact-link {
     margin: 0 auto;
     height: 300px; }
@@ -1215,8 +1223,8 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-order: 4;
             order: 4; }
   .page-template-who .who_header_case-photo {
-    height: 391px;
-    min-width: 50%;
+    height: auto;
+    min-width: 47%;
     background-size: cover;
     background-position: 50%; }
   .page-template-who .front-page-explanation-case {
@@ -1228,7 +1236,10 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1238,7 +1249,7 @@ footer .wpcf7-form-control.wpcf7-submit {
           -ms-flex-direction: column;
               flex-direction: column;
       width: 40%;
-      margin: 20px 40px 30px 40px;
+      margin: 20px 15px 30px;
       padding: 20px 20px 0px 20px;
       text-align: left;
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
@@ -1248,7 +1259,9 @@ footer .wpcf7-form-control.wpcf7-submit {
       .page-template-who .front-page-explanation-case div span {
         display: block; }
       .page-template-who .front-page-explanation-case div img {
-        width: 10%; } }
+        width: 10%; }
+  .page-template-who .single-team-member {
+    max-width: 300px; } }
 
 /*--------------------------------------------------------------
 - page-impct
@@ -1741,7 +1754,8 @@ footer .wpcf7-form-control.wpcf7-submit {
             -ms-flex-direction: column;
                 flex-direction: column; }
       .site-footer .site-info .contact-button {
-        display: inline-block; }
+        display: inline-block;
+        margin-top: 5px; }
     .site-footer .copyrights-one {
       background-color: #698e87;
       grid-column: 1;
