@@ -15,13 +15,13 @@
 
 @mixin width-column {
 	max-width: $full__width/2;
-	padding: 3rem 4rem 0 4rem;
+	padding: 2rem 2rem 0 2rem;
 	margin: 0 auto; // horizontally center the content
 }
 
 @mixin width-content {
 	max-width: $full__width;
-	padding: 3rem 4rem 0 4rem;
+	padding: 2rem 2rem 0 2rem;
 	margin: 0 auto; // horizontally center the content
 }
 
@@ -32,7 +32,7 @@
 }
 
 @mixin width-full {
-	padding-top: 3rem;
+	padding-top: 2rem;
 	width: 100%;
 	background-color: $color__green-main;
 	color: $color__white;
