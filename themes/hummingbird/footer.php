@@ -9,8 +9,14 @@
 
 			</div><!-- #content -->
 
+<div class="paint-footer">
+						<img class="paint" src="<?php echo get_template_directory_uri(); ?>/assets/elements/paint-footer.png" alt="Paint Streak">
+					</div>
+
 			<div class="footer-wrapper">
 				<footer id="colophon" class="site-footer page-footer width-content" role="contentinfo">
+
+					
 
 					<div class="footer-form">
 						<div class="width-content">
