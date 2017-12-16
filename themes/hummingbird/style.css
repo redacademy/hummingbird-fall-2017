@@ -468,7 +468,8 @@ footer input[type=email], footer input[type=text] {
 
 html body #responsive-menu-button {
   right: 2rem;
-  background: none; }
+  background: none;
+  height: 2.5rem; }
 
 /* Links */
 a {
