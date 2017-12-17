@@ -1126,6 +1126,10 @@ footer .wpcf7-form-control.wpcf7-submit {
   .page-action .action-header h1 {
     font-size: 28px;
     text-align: center; }
+  .page-action .action-header p {
+    max-width: 800px;
+    font-size: 20px;
+    margin: 3rem auto; }
 
 .page-action .action-steps {
   max-width: 1440px;
@@ -1206,6 +1210,12 @@ footer .wpcf7-form-control.wpcf7-submit {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.page-action .volunteer-text {
+  max-width: 500px;
+  margin: 0 auto; }
+  .page-action .volunteer-text p {
+    text-align: center; }
+
 @media all and (min-width: 700px) {
   .page-action .action-header h1 {
     font-size: 50px;
@@ -1266,13 +1276,19 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    max-width: 1000px; }
   .page-action .volunteer-img {
     background-size: cover;
     width: 360px;
     min-width: 360px;
     height: 360px;
-    margin-right: 4rem; } }
+    margin-right: 4rem; }
+  .page-action .volunteer-text {
+    max-width: 500px; }
+  .page-action .meet h2 {
+    font-size: 35px;
+    margin-top: 6rem; } }
 
 /*--------------------------------------------------------------
 - page-who

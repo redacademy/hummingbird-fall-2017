@@ -10,6 +10,11 @@
             font-size: 28px;
             text-align: center;
         }
+        p{
+            max-width: 800px;
+            font-size: 20px;
+            margin: 3rem auto;
+        }
     }
     .action-steps {
         max-width: 1440px;
@@ -76,6 +81,13 @@
         height: 230px;
         align-self: center;
     }
+    .volunteer-text {
+        max-width: 500px;
+        margin: 0 auto;
+        p {
+            text-align: center;
+        }
+    }
 }
 
 @media all and (min-width: $medium__width) {
@@ -135,6 +147,7 @@
         .volunteer {
             align-items: center;
             flex-direction: row;
+            max-width: 1000px;
         }
         .volunteer-img {
             background-size: cover;
@@ -143,6 +156,14 @@
             height: 360px;
             margin-right: 4rem;
         }
-        .meet {}
+        .volunteer-text {
+            max-width: 500px;
+        }
+        .meet {
+            h2 {
+                font-size: 35px;
+                margin-top: 6rem;
+            }
+        }
     }
 }
