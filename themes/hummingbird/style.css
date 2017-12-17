@@ -1803,13 +1803,12 @@ footer .wpcf7-form-control.wpcf7-submit {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 430px;
-    width: 80%;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto; }
-    .page-front-page .volunteer p {
-      max-width: 300px;
-      margin: 0 auto; }
   .page-front-page .volunteer-text {
     width: 70%;
+    max-width: 300px;
     font-size: 14px; }
     .page-front-page .volunteer-text p {
       text-align: left;
@@ -1819,7 +1818,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     background-size: cover;
     width: 335px;
     height: 390px;
-    margin: 0 3rem 0 0;
+    margin: 0 1rem 0 0;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 0;
@@ -1829,7 +1828,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 70%; }
+    width: 70%;
+    max-width: 300px; }
     .page-front-page .you-can-join-text p {
       text-align: left;
       padding-right: 2rem;

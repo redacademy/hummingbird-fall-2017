@@ -166,16 +166,17 @@
 			flex-direction: column;
 			flex-wrap: wrap;
 			height: 430px;
-			width: 80%;
+			width: 100%;
+			max-width: 900px;
 			margin: 0 auto;
-			p{
-				max-width: 300px;
-				margin: 0 auto;
-
-			}
 		}
 		.volunteer-text {
+			// h2 {
+			// 	width: 200px;
+			// 	margin: 0 auto;
+			// }
 			width: 70%;
+			max-width: 300px;
 			font-size: 14px;
 			p {
 				text-align: left;
@@ -187,13 +188,14 @@
 			background-size: cover;
 			width: 335px;
 			height: 390px;
-			margin: 0 3rem 0 0;
+			margin: 0 1rem 0 0;
 			align-self: center;
 			order: -1;
 		}
 		.you-can-join-text {
 			order: 2;
 			width: 70%;
+			max-width: 300px;
 			p {
 				text-align: left;
 				padding-right: 2rem;
