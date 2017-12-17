@@ -1457,7 +1457,8 @@ footer .wpcf7-form-control.wpcf7-submit {
 - page-impct
 --------------------------------------------------------------*/
 .page-impact h1 {
-  font-size: 28px;
+  font-size: 50px;
+  font-weight: 700;
   text-align: center; }
 
 .page-impact h2 {
@@ -1467,8 +1468,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 .page-impact h3 {
   font-family: "Overpass", sans-serif; }
 
-.page-impact .case-title {
-  font-size: 30px; }
+.page-impact .case-title h1 {
+  font-size: 35px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 4rem; }
 
 .page-impact .impact-header {
   text-align: center;
@@ -1575,7 +1578,8 @@ footer .wpcf7-form-control.wpcf7-submit {
       background-position: center; }
     .page-impact .impact-impact-case .impact-impact-case-metric {
       color: #698e87;
-      font-size: 36px; }
+      font-size: 36px;
+      text-align: center; }
   .page-impact .where-we-work h2 {
     font-size: 35px; }
   .page-impact .maps-small {
