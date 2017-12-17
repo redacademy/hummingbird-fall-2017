@@ -2,22 +2,24 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+// Basic reusable layout styles
+
 .width-column {
 	@include width-column
 }
 
-.width-content { // applied to pretty much every main container
+.width-content {
 	@include width-content
 }
-
+.width-content-left { // applied to every main container with left handed justification
+	@include width-content-left
+}
 .width-full {
 	@include width-full
 }
 
-.bignumber {
-	font-size: 5rem;
-	color: $color__blue-numbers;
-	margin: 0;
+.text-center {
+	text-align: center;
 }
 
 // sections that feature a left-justified horizontal layout
@@ -31,6 +33,13 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+}
+
+.bignumber {
+	font-size: 5rem;
+	color: $color__blue-numbers;
+	margin: 0;
+	font-weight: 700;
 }
 
 // Buttons and anchors in button's clothing
@@ -59,8 +68,8 @@ footer .wpcf7-form-control.wpcf7-submit {
 	transition-property: background-color;
 	transition-duration: .5s;
 	&:hover {
-		background-color: darken($color__orange-main, 15%);
-		border: 2px solid $color__orange-main;
+		background-color: $color__orange-main;
+		border: 2px solid darken($color__orange-main, 15%);;
 		color: $color__white;
 	}
 }
@@ -77,6 +86,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 	.width-full {
 		padding-top: 6rem;
+	}
+
+	.bignumber {
+		font-weight: 400;
 	}
 
 }

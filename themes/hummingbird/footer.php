@@ -9,6 +9,9 @@
 
 			</div><!-- #content -->
 
+			<div class="width-content paint-footer">
+			</div>
+
 			<div class="footer-wrapper">
 				<footer id="colophon" class="site-footer page-footer width-content" role="contentinfo">
 

@@ -240,13 +240,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif; }
 
-h2 {
-  text-align: center; }
-
 h1 {
   font-weight: 400;
-  text-align: center;
   margin-bottom: 0; }
+
+h2 {
+  text-align: center; }
 
 /* Copy */
 p {
@@ -290,8 +289,7 @@ big {
 
 @media screen and (min-width: 700px) {
   h1 {
-    font-size: 3rem;
-    text-align: center; } }
+    font-size: 3rem; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -405,8 +403,6 @@ textarea {
     color: #698e87; }
   .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
     color: #698e87; }
-  .page-front-page input[type=email]::-ms-input-placeholder, .page-front-page input[type=text]::-ms-input-placeholder {
-    color: #698e87; }
   .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
     color: #698e87; }
 
@@ -435,10 +431,6 @@ textarea {
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder, .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder, .signin-form input[type=email]::-ms-input-placeholder, .signin-form input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
@@ -456,8 +448,6 @@ footer input[type=email], footer input[type=text] {
   footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
   footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  footer input[type=email]::-ms-input-placeholder, footer input[type=text]::-ms-input-placeholder {
     color: #fff; }
   footer input[type=email]::placeholder, footer input[type=text]::placeholder {
     color: #fff; }
@@ -477,7 +467,9 @@ footer input[type=email], footer input[type=text] {
   background: #698e87; }
 
 html body #responsive-menu-button {
-  right: 2rem; }
+  right: 2rem;
+  background: none;
+  height: 2.5rem; }
 
 /* Links */
 a {
@@ -548,7 +540,7 @@ a {
   width: 50%; }
 
 .site-branding {
-  width: 200px;
+  width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -816,24 +808,27 @@ object {
 --------------------------------------------------------------*/
 .width-column {
   max-width: 720px;
-  padding: 3rem 4rem 0 4rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto; }
 
 .width-content {
   max-width: 1440px;
-  padding: 3rem 4rem 0 4rem;
+  padding: 2rem 2rem 0 2rem;
   margin: 0 auto; }
 
+.width-content-left {
+  max-width: 1440px;
+  padding: 3rem 4rem 0 4rem;
+  text-align: left; }
+
 .width-full {
-  padding-top: 3rem;
+  padding-top: 2rem;
   width: 100%;
   background-color: #698e87;
   color: #fff; }
 
-.bignumber {
-  font-size: 5rem;
-  color: #72acb2;
-  margin: 0; }
+.text-center {
+  text-align: center; }
 
 .flex-horizontal-left {
   display: -webkit-box;
@@ -854,6 +849,12 @@ object {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.bignumber {
+  font-size: 5rem;
+  color: #72acb2;
+  margin: 0;
+  font-weight: 700; }
 
 .button-link,
 .wpcf7-submit {
@@ -923,8 +924,8 @@ footer .wpcf7-form-control.wpcf7-submit {
   -webkit-transition-duration: .5s;
           transition-duration: .5s; }
   footer .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #9a661a;
-    border: 2px solid #da9127;
+    background-color: #da9127;
+    border: 2px solid #9a661a;
     color: #fff; }
 
 @media screen and (min-width: 700px) {
@@ -933,7 +934,9 @@ footer .wpcf7-form-control.wpcf7-submit {
     padding: 6rem 4rem 0 4rem;
     text-align: center; }
   .width-full {
-    padding-top: 6rem; } }
+    padding-top: 6rem; }
+  .bignumber {
+    font-weight: 400; } }
 
 /*--------------------------------------------------------------
 - page-action
@@ -1105,7 +1108,10 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .page-template-who .who-title-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1136,7 +1142,9 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     .page-template-who .front-page-explanation-case div h2 {
       text-align: center; }
     .page-template-who .front-page-explanation-case span {
@@ -1150,7 +1158,9 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
@@ -1168,11 +1178,9 @@ footer .wpcf7-form-control.wpcf7-submit {
             flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 450px; }
+            justify-content: center; }
   .page-template-who .our-impact-link {
-    margin: 0 auto;
-    height: 400px; }
+    margin: 0 auto; }
     .page-template-who .our-impact-link h2 {
       margin: 40px auto;
       max-width: 300px; }
@@ -1185,7 +1193,10 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    overflow: hidden; }
   .page-template-who .our-impact-link {
     margin: 0 auto;
     height: 300px; }
@@ -1203,7 +1214,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 40%;
+    width: 38%;
     margin: 20px 40px 30px 40px;
     padding: 20px 20px 0px 20px;
     text-align: left;
@@ -1216,10 +1227,9 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-order: 4;
             order: 4; }
   .page-template-who .who_header_case-photo {
-    height: 391px;
+    height: auto;
     min-width: 50%;
-    background-size: cover;
-    background-position: 50%; }
+    background-size: cover; }
   .page-template-who .front-page-explanation-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1229,7 +1239,10 @@ footer .wpcf7-form-control.wpcf7-submit {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1239,7 +1252,7 @@ footer .wpcf7-form-control.wpcf7-submit {
           -ms-flex-direction: column;
               flex-direction: column;
       width: 40%;
-      margin: 20px 40px 30px 40px;
+      margin: 20px 15px 30px;
       padding: 20px 20px 0px 20px;
       text-align: left;
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
@@ -1249,7 +1262,9 @@ footer .wpcf7-form-control.wpcf7-submit {
       .page-template-who .front-page-explanation-case div span {
         display: block; }
       .page-template-who .front-page-explanation-case div img {
-        width: 10%; } }
+        width: 10%; }
+  .page-template-who .single-team-member {
+    max-width: 250px; } }
 
 /*--------------------------------------------------------------
 - page-impct
@@ -1437,6 +1452,9 @@ footer .wpcf7-form-control.wpcf7-submit {
 .page-signin .signin-form input {
   font-size: 16px; }
 
+.page-signin input.wpcf7-form-control.wpcf7-submit {
+  font-size: 16px; }
+
 @media all and (min-width: 700px) {
   .page-signin p {
     margin-bottom: 1.5rem;
@@ -1454,17 +1472,19 @@ footer .wpcf7-form-control.wpcf7-submit {
 --------------------------------------------------------------*/
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
-  background-size: 1440px, cover;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
-  padding-bottom: 6rem;
-  padding-top: 0; }
+  padding: 8em 0 6rem 3rem; }
   .page-front-page .front-page-header .front-page-header-content {
-    color: #cecece;
     font-weight: 300;
     margin: 0 0 3rem 0; }
   .page-front-page .front-page-header .button-link {
     display: none; }
+
+.page-front-page .symbol-color {
+  width: 150px;
+  height: 139px; }
 
 .page-front-page .front-page-explanation-case {
   display: grid;
@@ -1479,6 +1499,11 @@ footer .wpcf7-form-control.wpcf7-submit {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto; }
+  .page-front-page .front-page-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-front-page .front-page-impact-case div:nth-child(3) h3 {
+      color: #fff; }
   .page-front-page .front-page-impact-case .front-page-impact-case-photo {
     height: 391px;
     background-size: cover;
@@ -1537,11 +1562,16 @@ footer .wpcf7-form-control.wpcf7-submit {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.page-front-page .volunteer-form {
+  display: none; }
+
 @media all and (min-width: 700px) {
   .page-front-page .front-page-header {
-    height: 677px; }
+    height: 677px;
+    background-size: 1440px, cover; }
     .page-front-page .front-page-header .front-page-header-content {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
   .page-front-page .front-page-volunteer {
@@ -1568,11 +1598,7 @@ footer .wpcf7-form-control.wpcf7-submit {
       grid-column: span 2;
       padding: 4rem 6rem; }
     .page-front-page .front-page-impact-case div:nth-child(3) {
-      grid-column: 2 / 4;
-      background-color: #698e87;
-      color: #fff; }
-      .page-front-page .front-page-impact-case div:nth-child(3) h3 {
-        color: #fff; }
+      grid-column: 2 / 4; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
       grid-column: 1;
       grid-row: 2; }
@@ -1627,7 +1653,11 @@ footer .wpcf7-form-control.wpcf7-submit {
       text-align: left;
       padding-right: 2rem;
       font-weight: bolder;
-      margin-top: 0; } }
+      margin-top: 0; }
+  .page-front-page .volunteer-form {
+    display: block; }
+  .page-front-page .volunteer-button-container {
+    display: none; } }
 
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
@@ -1637,6 +1667,9 @@ footer .wpcf7-form-control.wpcf7-submit {
 /*--------------------------------------------------------------
 - page-footer
 --------------------------------------------------------------*/
+.paint {
+  display: none; }
+
 .social-media-icon {
   margin: 20px 10px 0 0; }
 
@@ -1664,6 +1697,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     grid-column: 1 / 3;
     grid-row: 1;
     background-color: #698e87; }
+    .site-footer .footer-form input {
+      width: 100%; }
   .site-footer .site-info {
     background-color: #698e87;
     grid-column: 1 / 3;
@@ -1708,6 +1743,15 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: none; }
 
 @media all and (min-width: 700px) {
+  .footer-wrapper {
+    margin-top: 0; }
+  .paint-footer {
+    background: url("../../assets/elements/paint-footer4x-recolour.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 2rem;
+    margin-top: 6rem; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1733,7 +1777,8 @@ footer .wpcf7-form-control.wpcf7-submit {
             -ms-flex-direction: column;
                 flex-direction: column; }
       .site-footer .site-info .contact-button {
-        display: inline-block; }
+        display: inline-block;
+        margin-top: 5px; }
     .site-footer .copyrights-one {
       background-color: #698e87;
       grid-column: 1;

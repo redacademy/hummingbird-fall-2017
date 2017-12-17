@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="width-full front-page-header">
-				<div class="width-content">
+				<div class="width-content-left">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
 					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
@@ -24,33 +24,33 @@ get_header(); ?>
 				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
-			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/hummingbird-network-symbol-color.svg">
+			<section class="width-content flex-horizontal-center"> <!-- Orange logo without text -->
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/logos/medium/hummingbird-network-symbol-color.png">
 			</section>
 
-			<section class="width-column">
-				<h2><?php echo CFS()->get( 'front_page_description_title' ); ?></h2>
-				<p><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
+			<section class="width-column"> <!-- Hummingbird Network -->
+				<h1 class="text-center"><?php echo CFS()->get( 'front_page_description_title' ); ?></h1>
+				<p class="text-center"><?php echo CFS()->get( 'front_page_description_content' ); ?></p>
 			</section>
 
-			<section class="width-column">
+			<section class="width-column"> <!-- Maps -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
-			<section class="width-content flex-horizontal-center">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
-			</section>
-
-			<section class="width-content front-page-volunteer">
+			<section class="width-content front-page-volunteer"> <!-- What is Digital Volunteering? -->
 				<div>
 					<h2><?php echo CFS()->get( 'front_page_volunteer_title' ); ?></h2>
-					<p><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
+					<p class="text-center"><?php echo CFS()->get( 'front_page_volunteer_content' ); ?></p>
 				</div>
 			</section>
 
-			<section class="width-column">
+			<section class="width-content flex-horizontal-center"> <!-- Bear -->
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
+			</section>
+
+			<section class="width-column"> <!-- Here's how it works -->
 				<h2><?php echo CFS()->get( 'front_page_explanation_title' ); ?></h2>
-				<p><?php echo CFS()->get( 'front_page_explanation_content' ); ?></p>
+				<p class="text-center"><?php echo CFS()->get( 'front_page_explanation_content' ); ?></p>
 			</section>
 
 			<section class="width-content front-page-explanation-case">
@@ -75,9 +75,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
 			</section>
 
-			<section class="width-column">
+			<section class="width-column"> <!-- Out Impact -->
 				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
-				<p><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
+				<p class="text-center"><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
 
 			<section class="front-page-impact-case"> <!-- The three impact metrics -->
@@ -87,7 +87,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="front-page-impact-content">
+					<div class="width-content front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
@@ -107,44 +107,38 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<?php $fields = CFS()->get('front_page_volunteer_case' );
-
-			// d($fields);
-
-			if(isset($fields)):
-
-				foreach ( $fields as $field ) : ?>
-					<section class="width-content volunteer"> <!-- Hi, I'm Paula! -->
-
+			<section class="width-content volunteer">								<!-- Hi, I'm Paula! -->
+				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
+					// d($fields);
+					if(isset($fields)):
+						foreach ( $fields as $field ) : ?>
 							<div class="volunteer-img"
 								style="background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);"> 				
 							</div>
-						
 							<div class="volunteer-text">
 								<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
 								<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
 							</div>
-						
 							<div class="you-can-join-text">
 								<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
 							</div>
-
-							<section class="find-out-button">
+							<div class="find-out-button">
 								<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow-orange">Find Out More</a>
-							</section>
-						
-					</section>
-				<?php 
-				endforeach;
-			endif;
-			?>
+							</div>
+						<?php 
+						endforeach;
+					endif;
+				?>
+			</section>
 
-			
-
-			<section class="width-column">
+			<section class="volunteer-form width-column"> <!-- "Become a Volunteer" form -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>
+			</section>
+
+			<section class="volunteer-button-container width-content flex-horizontal-center"> <!-- "Become a Volunteer" button for when the form is hidden on mobile -->
+				<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 			</section>
 
 		</main><!-- #main -->

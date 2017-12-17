@@ -6,8 +6,10 @@
 	background: $color__green-main;
 }
 
-html body #responsive-menu-button {
+html body #responsive-menu-button { // Hamburger (yes, you do need this much specificity)
 	right: 2rem;
+	background: none;
+	height: 2.5rem;
 }
 
 /* Links */
@@ -114,7 +116,7 @@ a {
 	}
 }
 .site-branding{
-	width: 200px;
+	width: 125px;
   display: flex;				
 }
 
