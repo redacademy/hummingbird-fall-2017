@@ -1616,12 +1616,13 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: -ms-flexbox;
     display: flex;
     padding: 5rem 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .page-impact .maps-large img {
-      padding: 0 5%;
-      max-height: 440px; } }
+      padding: 0 3%;
+      max-height: 350px;
+      max-width: 35%; } }
 
 @media all and (min-width: 920px) {
   .page-impact .impact-impact-content {
