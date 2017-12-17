@@ -66,13 +66,15 @@
 					</div><!-- .site-info -->
 
 					<div class="copyrights copyrights-one">
-              <?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>  
+              <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'nav-menu' ) ); ?>  
     			</div>
 
 
 					<div class="copyrights copyrights-two">
-						<div>Designed by<br>Dream Team</div>
-						<div>Powered by<br>Coffee</div>
+						<div>Designed by<br>
+							Dream Team</div>
+						<div>Powered by<br>
+							Coffee</div>
 					</div>
 
 				</footer><!-- #colophon -->
