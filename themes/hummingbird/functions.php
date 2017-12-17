@@ -156,11 +156,11 @@ wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigat
 function hn_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/large/logo-color-large.png);
-		height:65px;
-		width:320px;
-		background-size: 320px 120px;
-		background-repeat: no-repeat;
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/large/logo-color-large.png);
+					height:65px;
+					width:320px;
+					background-size: 320px 95px;
+					background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
     </style>
