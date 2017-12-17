@@ -119,7 +119,7 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="width-content-left volunteer">								<!-- Hi, I'm Paula! -->
+			<section class="volunteer width-content text-left">								<!-- Hi, I'm Paula! -->
 				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
 					// d($fields);
 					if(isset($fields)):
@@ -143,7 +143,7 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section class="volunteer-form width-content-left"> <!-- "I want to be part of the community!" form -->
+			<section class="volunteer-form width-content text-left"> <!-- "I want to be part of the community!" form -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>

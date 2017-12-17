@@ -1754,7 +1754,8 @@ object {
       -ms-flex-order: 3;
           order: 3; }
   .page-front-page .you-can-join-text p {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
 
 .page-front-page .find-out-button {
   -webkit-box-ordinal-group: 5;
