@@ -1289,7 +1289,8 @@ footer .wpcf7-form-control.wpcf7-submit {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-top: 4rem; }
   .page-template-who .who-title-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1438,9 +1439,14 @@ footer .wpcf7-form-control.wpcf7-submit {
       .page-template-who .front-page-explanation-case div h2 {
         text-align: center; }
       .page-template-who .front-page-explanation-case div span {
-        display: block; }
+        display: block;
+        margin-bottom: 2rem; }
       .page-template-who .front-page-explanation-case div img {
-        width: 10%; }
+        width: 20%;
+        max-height: 40px; }
+  .page-template-who .bignumber {
+    color: #72acb2;
+    text-align: left; }
   .page-template-who .single-team-member {
     max-width: 250px; } }
 
