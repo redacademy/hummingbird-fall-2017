@@ -1501,10 +1501,9 @@ footer .wpcf7-form-control.wpcf7-submit {
   .page-impact .impact-impact-case .impact-flex {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 120%; }
+    display: flex; }
   .page-impact .impact-impact-case .impact-impact-content {
-    padding: 8rem 2rem; }
+    padding: 8rem 2rem 1rem 2rem; }
     .page-impact .impact-impact-case .impact-impact-content p {
       margin: 20px; }
     .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
@@ -1520,7 +1519,8 @@ footer .wpcf7-form-control.wpcf7-submit {
       text-align: left; }
     .page-impact .impact-impact-case div:nth-child(3) h1 {
       color: #fff;
-      margin: -80px -140px; }
+      margin: -80px -140px;
+      left: 40%; }
   .page-impact .impact-impact-case .impact-impact-case-photo {
     display: none; }
   .page-impact .impact-impact-case .impact-impact-case-metric {
@@ -1532,7 +1532,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     font-size: 35px;
     color: #1e1e1e;
     position: absolute;
-    margin: -80px -140px; }
+    margin: -80px -140px;
+    left: 50%; }
   .page-impact .impact-impact-case .impact-impact-case-icon-container {
     min-width: 130px;
     min-height: 130px;
@@ -1540,8 +1541,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     margin-right: 1rem; }
 
 .page-impact .where-we-work {
-  text-align: center;
-  max-width: 75%; }
+  text-align: center; }
   .page-impact .where-we-work h2 {
     font-family: "Merriweather", serif;
     font-size: 22px; }
@@ -1577,9 +1577,18 @@ footer .wpcf7-form-control.wpcf7-submit {
         color: #da9127;
         font-size: 64px; }
     .page-impact .impact-impact-case .impact-impact-content {
-      padding: 6rem 6rem; }
+      padding: 6rem 4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
       .page-impact .impact-impact-case .impact-impact-content h3 {
         font-family: "Overpass", sans-serif; }
+      .page-impact .impact-impact-case .impact-impact-content p {
+        font-size: 12px;
+        margin: 20px;
+        max-width: 400px; }
       .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
         margin: 0;
         color: #da9127;
@@ -1594,20 +1603,22 @@ footer .wpcf7-form-control.wpcf7-submit {
       background-position: center; }
     .page-impact .impact-impact-case .impact-impact-case-metric {
       color: #698e87;
-      font-size: 36px;
-      text-align: center; }
+      font-size: 36px; }
   .page-impact .where-we-work h2 {
     font-size: 35px; }
+  .page-impact .where-we-work p {
+    max-width: 500px;
+    margin: auto; }
   .page-impact .maps-small {
     display: none; }
   .page-impact .maps-large {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    padding: 5rem 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .page-impact .maps-large img {
       padding: 0 5%;
       max-height: 440px; } }

@@ -32,10 +32,10 @@
 		}
 		.impact-flex {
 			display: flex;
-			width: 120%;
+			// width: 120%;
 		}
 		.impact-impact-content {
-			padding: 8rem 2rem;
+			padding: 8rem 2rem 1rem 2rem;
 			p {
 				margin: 20px;
 			}
@@ -57,6 +57,7 @@
 			h1 {
 				color: $color__white;
 				margin: -80px -140px;
+				left: 40%;
 			}
 		}
 		.impact-impact-case-photo {
@@ -73,6 +74,7 @@
 			color: $color__text-main;
 			position: absolute;
 			margin: -80px -140px;
+			left: 50%;
 		}
 		.impact-impact-case-icon-container {
 			min-width: 130px;
@@ -83,7 +85,7 @@
 	}
 	.where-we-work {
 		text-align: center;
-		max-width: 75%;
+		// max-width: 75%;
 		h2 {
 			font-family: $font__headings;
 			font-size: 22px;
@@ -131,10 +133,16 @@
 				}
 			}
 			.impact-impact-content {
-				
-				padding: 6rem 6rem;
+				padding: 6rem 4rem;
+				display: flex;
+				justify-content: space-around;
 				h3 {
 					font-family: $font__main;
+				}
+				p {
+					font-size: 12px;
+					margin: 20px;
+					max-width: 400px;
 				}
 				.impact-impact-case-number {
 					margin: 0;
@@ -155,12 +163,16 @@
 			.impact-impact-case-metric {
 				color: $color__green-main;
 				font-size: 36px; 
-				text-align: center;
+				// text-align: center;
 			}
 		}
 		.where-we-work {
 			h2 {
 				font-size: 35px;
+			}
+			p {
+				max-width: 500px;
+				margin: auto;
 			}
 		}
 		.maps-small {
@@ -168,8 +180,8 @@
 		}
 		.maps-large {
 			display: flex;
-			padding: 5rem;
-			justify-content: center;
+			padding: 5rem 0;
+			justify-content: space-between;
 			img {
 				padding: 0 5%;
 				max-height: 440px;
