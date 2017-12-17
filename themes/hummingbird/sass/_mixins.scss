@@ -1,5 +1,22 @@
+<<<<<<< HEAD
 // Content widths
 
+=======
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block - deprecate?
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// content formatting
+>>>>>>> 834e902fbdcd4d4f8910685b32061e99625dd998
 @mixin width-column {
 	max-width: $full__width/2;
 	padding: 2rem 2rem 0 2rem;
@@ -14,7 +31,7 @@
 
 @mixin width-content-left {
 	max-width: $full__width;
-	padding: 3rem 4rem 0 4rem;
+	padding: 6rem 4rem 0 4rem;
 	text-align: left; // justify left the content
 }
 
@@ -25,8 +42,12 @@
 	color: $color__white;
 }
 
+<<<<<<< HEAD
 // Buttons
 
+=======
+// buttons
+>>>>>>> 834e902fbdcd4d4f8910685b32061e99625dd998
 @mixin button-link {
 	padding: 1rem;
 	border-radius: 5px;

@@ -369,7 +369,8 @@ input[type="reset"] {
   input[type="reset"]:active, input[type="reset"]:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+    outline: none; }
 
 /* Fields */
 input[type="text"],
@@ -379,7 +380,8 @@ input[type="password"],
 input[type="search"],
 textarea {
   border-radius: 5px;
-  border: none; }
+  border: none;
+  outline: none; }
 
 input[type="text"],
 input[type="email"],
@@ -392,70 +394,229 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.page-front-page input[type=email], .page-front-page input[type=text] {
+.page-front-page .volunteer-form input[type=email],
+.page-front-page .volunteer-form input[type=text] {
   background-color: #e8eeee;
   color: #698e87;
   font-size: 2rem;
-  font-weight: 700;
-  width: 250px;
-  padding-left: 1rem; }
-  .page-front-page input[type=email]::-webkit-input-placeholder, .page-front-page input[type=text]::-webkit-input-placeholder {
-    color: #698e87; }
-  .page-front-page input[type=email]:-ms-input-placeholder, .page-front-page input[type=text]:-ms-input-placeholder {
-    color: #698e87; }
-  .page-front-page input[type=email]::placeholder, .page-front-page input[type=text]::placeholder {
-    color: #698e87; }
+  font-weight: 300;
+  height: 40px;
+  width: 370px;
+  padding-left: 1rem;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s; }
+  .page-front-page .volunteer-form input[type=email]::-webkit-input-placeholder,
+  .page-front-page .volunteer-form input[type=text]::-webkit-input-placeholder {
+    color: #698e87;
+    text-transform: lowercase; }
+  .page-front-page .volunteer-form input[type=email]:-ms-input-placeholder,
+  .page-front-page .volunteer-form input[type=text]:-ms-input-placeholder {
+    color: #698e87;
+    text-transform: lowercase; }
+  .page-front-page .volunteer-form input[type=email]::placeholder,
+  .page-front-page .volunteer-form input[type=text]::placeholder {
+    color: #698e87;
+    text-transform: lowercase; }
+  .page-front-page .volunteer-form input[type=email]:placeholder-shown,
+  .page-front-page .volunteer-form input[type=text]:placeholder-shown {
+    width: 200px; }
+  .page-front-page .volunteer-form input[type=email]:focus, .page-front-page .volunteer-form input[type=email]:active,
+  .page-front-page .volunteer-form input[type=text]:focus,
+  .page-front-page .volunteer-form input[type=text]:active {
+    width: 370px; }
+  .page-front-page .volunteer-form input[type=email]:active, .page-front-page .volunteer-form input[type=email]:focus, .page-front-page .volunteer-form input[type=email]:hover,
+  .page-front-page .volunteer-form input[type=text]:active,
+  .page-front-page .volunteer-form input[type=text]:focus,
+  .page-front-page .volunteer-form input[type=text]:hover {
+    background-color: #94b0aa;
+    font-style: italic;
+    outline: none;
+    color: #fff; }
+    .page-front-page .volunteer-form input[type=email]:active::-webkit-input-placeholder, .page-front-page .volunteer-form input[type=email]:focus::-webkit-input-placeholder, .page-front-page .volunteer-form input[type=email]:hover::-webkit-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:active::-webkit-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:focus::-webkit-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:hover::-webkit-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-front-page .volunteer-form input[type=email]:active:-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:focus:-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:hover:-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:active:-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:focus:-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:hover:-ms-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-front-page .volunteer-form input[type=email]:active::placeholder, .page-front-page .volunteer-form input[type=email]:focus::placeholder, .page-front-page .volunteer-form input[type=email]:hover::placeholder,
+    .page-front-page .volunteer-form input[type=text]:active::placeholder,
+    .page-front-page .volunteer-form input[type=text]:focus::placeholder,
+    .page-front-page .volunteer-form input[type=text]:hover::placeholder {
+      color: #5c857e;
+      color: #cecece; }
 
-.page-front-page label {
+.page-front-page .volunteer-form label {
   font-size: 2.25rem;
-  font-weight: 700; }
+  font-weight: 300; }
 
-.page-front-page .wpcf7 .wpcf7-form-control-wrap {
-  border-bottom: 1px dashed #1e1e1e;
-  padding-bottom: .7rem; }
+.page-front-page .volunteer-form .wpcf7 .wpcf7-form-control-wrap {
+  border-bottom: 2px dashed #1e1e1e;
+  padding-bottom: .3rem; }
 
-.page-template-contact .contact-form input[type=email], .page-template-contact .contact-form input[type=text],
+.page-template-contact .contact-form input[type=email],
+.page-template-contact .contact-form input[type=text],
 .volunteer-form input[type=email],
-.volunteer-form input[type=text], .signin-form input[type=email], .signin-form input[type=text] {
+.volunteer-form input[type=text],
+.signin-form input[type=email],
+.signin-form input[type=text] {
   background-color: #698e87;
   color: #fff;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: lighter;
   width: 85%;
   padding: 1rem; }
-  .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
+  .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
+  .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
   .volunteer-form input[type=email]::-webkit-input-placeholder,
-  .volunteer-form input[type=text]::-webkit-input-placeholder, .signin-form input[type=email]::-webkit-input-placeholder, .signin-form input[type=text]::-webkit-input-placeholder {
+  .volunteer-form input[type=text]::-webkit-input-placeholder,
+  .signin-form input[type=email]::-webkit-input-placeholder,
+  .signin-form input[type=text]::-webkit-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
+  .page-template-contact .contact-form input[type=email]:-ms-input-placeholder,
+  .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
   .volunteer-form input[type=email]:-ms-input-placeholder,
-  .volunteer-form input[type=text]:-ms-input-placeholder, .signin-form input[type=email]:-ms-input-placeholder, .signin-form input[type=text]:-ms-input-placeholder {
+  .volunteer-form input[type=text]:-ms-input-placeholder,
+  .signin-form input[type=email]:-ms-input-placeholder,
+  .signin-form input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  .page-template-contact .contact-form input[type=email]::placeholder, .page-template-contact .contact-form input[type=text]::placeholder,
+  .page-template-contact .contact-form input[type=email]::placeholder,
+  .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
-  .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
+  .volunteer-form input[type=text]::placeholder,
+  .signin-form input[type=email]::placeholder,
+  .signin-form input[type=text]::placeholder {
     color: #fff; }
+  .page-template-contact .contact-form input[type=email]:active, .page-template-contact .contact-form input[type=email]:focus, .page-template-contact .contact-form input[type=email]:hover,
+  .page-template-contact .contact-form input[type=text]:active,
+  .page-template-contact .contact-form input[type=text]:focus,
+  .page-template-contact .contact-form input[type=text]:hover,
+  .volunteer-form input[type=email]:active,
+  .volunteer-form input[type=email]:focus,
+  .volunteer-form input[type=email]:hover,
+  .volunteer-form input[type=text]:active,
+  .volunteer-form input[type=text]:focus,
+  .volunteer-form input[type=text]:hover,
+  .signin-form input[type=email]:active,
+  .signin-form input[type=email]:focus,
+  .signin-form input[type=email]:hover,
+  .signin-form input[type=text]:active,
+  .signin-form input[type=text]:focus,
+  .signin-form input[type=text]:hover {
+    background-color: #94b0aa;
+    font-style: italic;
+    outline: none; }
+    .page-template-contact .contact-form input[type=email]:active::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-webkit-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:active::-webkit-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:focus::-webkit-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:hover::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:active::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:focus::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:hover::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:active::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:focus::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:hover::-webkit-input-placeholder,
+    .signin-form input[type=email]:active::-webkit-input-placeholder,
+    .signin-form input[type=email]:focus::-webkit-input-placeholder,
+    .signin-form input[type=email]:hover::-webkit-input-placeholder,
+    .signin-form input[type=text]:active::-webkit-input-placeholder,
+    .signin-form input[type=text]:focus::-webkit-input-placeholder,
+    .signin-form input[type=text]:hover::-webkit-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover:-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:active:-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:focus:-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:hover:-ms-input-placeholder,
+    .volunteer-form input[type=email]:active:-ms-input-placeholder,
+    .volunteer-form input[type=email]:focus:-ms-input-placeholder,
+    .volunteer-form input[type=email]:hover:-ms-input-placeholder,
+    .volunteer-form input[type=text]:active:-ms-input-placeholder,
+    .volunteer-form input[type=text]:focus:-ms-input-placeholder,
+    .volunteer-form input[type=text]:hover:-ms-input-placeholder,
+    .signin-form input[type=email]:active:-ms-input-placeholder,
+    .signin-form input[type=email]:focus:-ms-input-placeholder,
+    .signin-form input[type=email]:hover:-ms-input-placeholder,
+    .signin-form input[type=text]:active:-ms-input-placeholder,
+    .signin-form input[type=text]:focus:-ms-input-placeholder,
+    .signin-form input[type=text]:hover:-ms-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder,
+    .page-template-contact .contact-form input[type=text]:active::placeholder,
+    .page-template-contact .contact-form input[type=text]:focus::placeholder,
+    .page-template-contact .contact-form input[type=text]:hover::placeholder,
+    .volunteer-form input[type=email]:active::placeholder,
+    .volunteer-form input[type=email]:focus::placeholder,
+    .volunteer-form input[type=email]:hover::placeholder,
+    .volunteer-form input[type=text]:active::placeholder,
+    .volunteer-form input[type=text]:focus::placeholder,
+    .volunteer-form input[type=text]:hover::placeholder,
+    .signin-form input[type=email]:active::placeholder,
+    .signin-form input[type=email]:focus::placeholder,
+    .signin-form input[type=email]:hover::placeholder,
+    .signin-form input[type=text]:active::placeholder,
+    .signin-form input[type=text]:focus::placeholder,
+    .signin-form input[type=text]:hover::placeholder {
+      color: #5c857e;
+      color: #cecece; }
 
 .page-template-contact .contact-form label,
-.volunteer-form label, .signin-form label {
+.volunteer-form label,
+.signin-form label {
   font-size: 2.25rem;
   font-weight: 700; }
 
-footer input[type=email], footer input[type=text] {
+footer input[type=email],
+footer input[type=text] {
   background-color: #698e87;
   color: white;
   font-weight: 700; }
-  footer input[type=email]::-webkit-input-placeholder, footer input[type=text]::-webkit-input-placeholder {
+  footer input[type=email]::-webkit-input-placeholder,
+  footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
-  footer input[type=email]:-ms-input-placeholder, footer input[type=text]:-ms-input-placeholder {
+  footer input[type=email]:-ms-input-placeholder,
+  footer input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  footer input[type=email]::placeholder, footer input[type=text]::placeholder {
+  footer input[type=email]::placeholder,
+  footer input[type=text]::placeholder {
     color: #fff; }
 
 @media all and (min-width: 700px) {
-  footer input[type=email], footer input[type=text] {
+  footer input[type=email],
+  footer input[type=text] {
     background-color: #1e1e1e;
     width: 100%; }
+    footer input[type=email]:active, footer input[type=email]:focus, footer input[type=email]:hover,
+    footer input[type=text]:active,
+    footer input[type=text]:focus,
+    footer input[type=text]:hover {
+      font-style: italic; }
+      footer input[type=email]:active::-webkit-input-placeholder, footer input[type=email]:focus::-webkit-input-placeholder, footer input[type=email]:hover::-webkit-input-placeholder,
+      footer input[type=text]:active::-webkit-input-placeholder,
+      footer input[type=text]:focus::-webkit-input-placeholder,
+      footer input[type=text]:hover::-webkit-input-placeholder {
+        color: #5c857e;
+        color: #cecece; }
+      footer input[type=email]:active:-ms-input-placeholder, footer input[type=email]:focus:-ms-input-placeholder, footer input[type=email]:hover:-ms-input-placeholder,
+      footer input[type=text]:active:-ms-input-placeholder,
+      footer input[type=text]:focus:-ms-input-placeholder,
+      footer input[type=text]:hover:-ms-input-placeholder {
+        color: #5c857e;
+        color: #cecece; }
+      footer input[type=email]:active::placeholder, footer input[type=email]:focus::placeholder, footer input[type=email]:hover::placeholder,
+      footer input[type=text]:active::placeholder,
+      footer input[type=text]:focus::placeholder,
+      footer input[type=text]:hover::placeholder {
+        color: #5c857e;
+        color: #cecece; }
   footer .wpcf7 .wpcf7-form-control-wrap {
     border-bottom: 2px solid #698e87;
     padding-bottom: .7rem; } }
@@ -463,11 +624,22 @@ footer input[type=email], footer input[type=text] {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+a.hb-logo {
+  min-width: 220px;
+  -webkit-transition-property: border-bottom-color;
+  transition-property: border-bottom-color;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  border-bottom: 1.5px solid transparent; }
+  a.hb-logo:hover {
+    border-bottom-color: #da9127; }
+
 .site-header {
   background: #698e87; }
 
 html body #responsive-menu-button {
   right: 2rem;
+  top: 1.5rem;
   background: none;
   height: 2.5rem; }
 
@@ -603,9 +775,16 @@ a {
     .main-navigation ul li {
       margin: 0 0 0 2rem;
       display: inline-block; }
+      .main-navigation ul li a {
+        -webkit-transition-property: border-bottom;
+        transition-property: border-bottom;
+        -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+        border-bottom: 1.5px solid transparent; }
       .main-navigation ul li a:hover,
       .main-navigation ul li a:focus {
-        color: #1e1e1e; }
+        color: #1e1e1e;
+        border-bottom: 1.5px solid #da9127; }
       .main-navigation ul li:last-child a {
         padding: 1rem;
         border-radius: 5px;
@@ -631,7 +810,8 @@ a {
   .site-header {
     background: #e8eeee; }
   .logo-color {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 100%; }
   .logo-white {
     display: none; } }
 
@@ -799,7 +979,7 @@ object {
 
 .width-content-left {
   max-width: 1440px;
-  padding: 3rem 4rem 0 4rem;
+  padding: 6rem 4rem 0 4rem;
   text-align: left; }
 
 .width-full {
@@ -917,6 +1097,10 @@ object {
   .page-action .action-header h1 {
     font-size: 28px;
     text-align: center; }
+  .page-action .action-header p {
+    max-width: 800px;
+    font-size: 20px;
+    margin: 3rem auto; }
 
 .page-action .action-steps {
   max-width: 1440px;
@@ -928,7 +1112,9 @@ object {
     font-size: 22px;
     font-weight: lighter; }
   .page-action .action-steps img {
-    width: 50px; }
+    width: 50px;
+    position: relative;
+    top: 8px; }
   .page-action .action-steps h2 {
     margin: 0 auto; }
 
@@ -995,6 +1181,12 @@ object {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.page-action .volunteer-text {
+  max-width: 500px;
+  margin: 0 auto; }
+  .page-action .volunteer-text p {
+    text-align: center; }
+
 @media all and (min-width: 700px) {
   .page-action .action-header h1 {
     font-size: 50px;
@@ -1055,13 +1247,19 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    max-width: 1000px; }
   .page-action .volunteer-img {
     background-size: cover;
     width: 360px;
     min-width: 360px;
     height: 360px;
-    margin-right: 4rem; } }
+    margin-right: 4rem; }
+  .page-action .volunteer-text {
+    max-width: 500px; }
+  .page-action .meet h2 {
+    font-size: 35px;
+    margin-top: 6rem; } }
 
 /*--------------------------------------------------------------
 - page-who
@@ -1081,7 +1279,8 @@ object {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-top: 4rem; }
   .page-template-who .who-title-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1120,7 +1319,8 @@ object {
     .page-template-who .front-page-explanation-case span {
       display: none; }
     .page-template-who .front-page-explanation-case img {
-      width: 10%; }
+      width: 45px;
+      max-height: 45px; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1230,9 +1430,14 @@ object {
       .page-template-who .front-page-explanation-case div h2 {
         text-align: center; }
       .page-template-who .front-page-explanation-case div span {
-        display: block; }
+        display: block;
+        margin-bottom: 2rem; }
       .page-template-who .front-page-explanation-case div img {
-        width: 10%; }
+        width: 50px;
+        max-height: 35px; }
+  .page-template-who .bignumber {
+    color: #72acb2;
+    text-align: left; }
   .page-template-who .single-team-member {
     max-width: 250px; } }
 
@@ -1240,7 +1445,8 @@ object {
 - page-impct
 --------------------------------------------------------------*/
 .page-impact h1 {
-  font-size: 28px;
+  font-size: 50px;
+  font-weight: 700;
   text-align: center; }
 
 .page-impact h2 {
@@ -1250,8 +1456,10 @@ object {
 .page-impact h3 {
   font-family: "Overpass", sans-serif; }
 
-.page-impact .case-title {
-  font-size: 30px; }
+.page-impact .case-title h1 {
+  font-size: 35px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 4rem; }
 
 .page-impact .impact-header {
   text-align: center;
@@ -1265,10 +1473,9 @@ object {
   .page-impact .impact-impact-case .impact-flex {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 120%; }
+    display: flex; }
   .page-impact .impact-impact-case .impact-impact-content {
-    padding: 8rem 2rem; }
+    padding: 8rem 2rem 1rem 2rem; }
     .page-impact .impact-impact-case .impact-impact-content p {
       margin: 20px; }
     .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
@@ -1284,7 +1491,8 @@ object {
       text-align: left; }
     .page-impact .impact-impact-case div:nth-child(3) h1 {
       color: #fff;
-      margin: -80px -140px; }
+      margin: -80px -140px;
+      left: 45%; }
   .page-impact .impact-impact-case .impact-impact-case-photo {
     display: none; }
   .page-impact .impact-impact-case .impact-impact-case-metric {
@@ -1296,7 +1504,8 @@ object {
     font-size: 35px;
     color: #1e1e1e;
     position: absolute;
-    margin: -80px -140px; }
+    margin: -80px -140px;
+    left: 50%; }
   .page-impact .impact-impact-case .impact-impact-case-icon-container {
     min-width: 130px;
     min-height: 130px;
@@ -1304,8 +1513,7 @@ object {
     margin-right: 1rem; }
 
 .page-impact .where-we-work {
-  text-align: center;
-  max-width: 75%; }
+  text-align: center; }
   .page-impact .where-we-work h2 {
     font-family: "Merriweather", serif;
     font-size: 22px; }
@@ -1341,9 +1549,18 @@ object {
         color: #da9127;
         font-size: 64px; }
     .page-impact .impact-impact-case .impact-impact-content {
-      padding: 6rem 6rem; }
+      padding: 6rem 4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
       .page-impact .impact-impact-case .impact-impact-content h3 {
         font-family: "Overpass", sans-serif; }
+      .page-impact .impact-impact-case .impact-impact-content p {
+        font-size: 12px;
+        margin: 20px;
+        max-width: 400px; }
       .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
         margin: 0;
         color: #da9127;
@@ -1361,19 +1578,23 @@ object {
       font-size: 36px; }
   .page-impact .where-we-work h2 {
     font-size: 35px; }
+  .page-impact .where-we-work p {
+    max-width: 500px;
+    margin: auto; }
   .page-impact .maps-small {
     display: none; }
   .page-impact .maps-large {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5rem;
+    padding: 5rem 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     .page-impact .maps-large img {
-      padding: 0 5%;
-      max-height: 440px; } }
+      padding: 0 3%;
+      max-height: 350px;
+      max-width: 35%; } }
 
 @media all and (min-width: 920px) {
   .page-impact .impact-impact-content {
@@ -1534,11 +1755,53 @@ object {
   display: none; }
 
 @media all and (min-width: 700px) {
+  .page-front-page .wild-fire-count {
+    position: absolute;
+    right: 3%;
+    top: 44%;
+    width: 236px;
+    height: 186px;
+    border: 3px solid #fff;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(121, 121, 121, 0.3); }
+    .page-front-page .wild-fire-count h3 {
+      font-family: "Overpass", sans-serif;
+      font-size: 22px;
+      margin: 10px 0; }
+    .page-front-page .wild-fire-count .wild-fire-count-maps {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img {
+        width: 50px;
+        max-height: 50px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img:nth-child(2) {
+        width: 25px; }
+    .page-front-page .wild-fire-count .count {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 0 25px;
+      color: #da9127; }
+      .page-front-page .wild-fire-count .count h2 {
+        font-family: "Overpass", sans-serif;
+        font-size: 40px;
+        margin: 5px 0; }
   .page-front-page .front-page-header {
     height: 677px;
     background-size: 1440px, cover; }
+    .page-front-page .front-page-header .we-detect-fires {
+      padding: 3rem 4rem 0; }
     .page-front-page .front-page-header .front-page-header-content {
-      font-size: 2rem;
+      font-size: 1.7rem;
+      font-weight: lighter;
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
@@ -1584,9 +1847,8 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1594,9 +1856,12 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 430px;
-    width: 80%; }
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto; }
   .page-front-page .volunteer-text {
     width: 70%;
+    max-width: 300px;
     font-size: 14px; }
     .page-front-page .volunteer-text p {
       text-align: left;
@@ -1604,9 +1869,9 @@ object {
       margin-bottom: 0; }
   .page-front-page .volunteer-img {
     background-size: cover;
-    width: 330px;
+    width: 335px;
     height: 390px;
-    margin: 0 3rem 0 0;
+    margin: 0 1rem 0 0;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 0;
@@ -1616,14 +1881,20 @@ object {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 70%; }
+    width: 70%;
+    max-width: 300px; }
     .page-front-page .you-can-join-text p {
       text-align: left;
       padding-right: 2rem;
       font-weight: bolder;
       margin-top: 0; }
   .page-front-page .volunteer-form {
-    display: block; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .page-front-page .volunteer-button-container {
     display: none; } }
 
@@ -1811,7 +2082,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     background-color: #698e87;
     background-repeat: no-repeat;
     background-size: 35rem;
-    background-position: left -19rem top -5rem;
+    background-position: left -18rem top -5rem;
     grid-column: 1;
     grid-row: 1 / 3; } }
 

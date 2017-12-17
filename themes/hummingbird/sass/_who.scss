@@ -15,6 +15,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: 4rem;
     }
     
     .who-title-content {
@@ -48,7 +49,8 @@
             display: none;
         }
         img {
-            width: 10%;
+            width: 45px;
+            max-height: 45px;
         }
      }    
     .team-case {
@@ -82,6 +84,7 @@
 
 @media all and (min-width: $medium__width) {
     .page-template-who {
+
         .team-case {
             display: flex;
             flex-direction: row;
@@ -136,12 +139,18 @@
             }
             span {
             display: block;
+            margin-bottom: 2rem;
             }
             img {
-            width: 10%;
+                width: 50px;
+                max-height: 35px;
+                }
             }
-            }
-            }    
+        }
+    .bignumber {
+        color: $color__blue-numbers;
+        text-align: left;
+    }    
     .single-team-member {
         max-width: 250px;
     }        

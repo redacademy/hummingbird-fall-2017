@@ -11,8 +11,20 @@ get_header(); ?>
 	<div id="primary" class="content-area page-front-page">
 		<main id="main" class="site-main" role="main">
 
+			<div class="wild-fire-count"> <!-- Wild fire count -->
+				<h3>Wild Fire Count</h3>
+			  <div class="wild-fire-count-maps">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/bc-mini-map.png">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/alberta-mini-map.png">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/yukon-mini-map.png">
+			  </div>
+			  <div class="count">
+			    <h2>29</h2><h2>17</h2><h2>7</h2>
+			  </div>
+			</div>
+
 			<section class="width-full front-page-header">
-				<div class="width-content-left">
+				<div class="width-content-left we-detect-fires">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
 					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
@@ -87,7 +99,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="width-content front-page-impact-content">
+					<div class="front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
@@ -107,7 +119,7 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="width-content volunteer">								<!-- Hi, I'm Paula! -->
+			<section class="width-content-left volunteer">								<!-- Hi, I'm Paula! -->
 				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
 					// d($fields);
 					if(isset($fields)):
@@ -131,7 +143,7 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section class="volunteer-form width-column"> <!-- "Become a Volunteer" form -->
+			<section class="volunteer-form width-content-left"> <!-- "I want to be part of the community!" form -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>

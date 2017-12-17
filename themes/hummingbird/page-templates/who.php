@@ -51,8 +51,8 @@ get_header(); ?>
 					if(isset($fields)):	
 						foreach ( $fields as $field ) {
 							echo '<div>';
-								echo '<p class="bignumber">'.$field['front_page_explanation_case_number'].'</p>';
-								echo '<img src="'.$field['front_page_explanation_case_icon'].'">';
+								echo '<p class="bignumber">'.$field['front_page_explanation_case_number'];
+								echo '<img src="'.$field['front_page_explanation_case_icon'].'">'.'</p>';
 								echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
 								echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
 								echo '<span>'.$field['front_page_explanation_case_content'].'</span>';

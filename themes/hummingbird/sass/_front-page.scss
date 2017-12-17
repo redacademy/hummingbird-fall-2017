@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 .page-front-page {
-
 	.front-page-header {
 		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
 		background-size: contain, cover;
@@ -18,12 +17,10 @@
 			display: none;
 		}
 	}
-
 	.symbol-color {
 		width: 150px;
 		height: 139px;
 	}
-
 	.front-page-explanation-case {
 		display: grid;
 		grid-template-columns: 100%;
@@ -34,13 +31,10 @@
 			max-height: 64px;
 		}
 	}
-
 	.front-page-impact-case {
-
 		max-width: $full__width;
 		margin-left: auto;
 		margin-right: auto;
-
 		div:nth-child(3) {
 			background-color: $color__green-main;
 			color: $color__white;
@@ -48,7 +42,6 @@
 				color: $color__white;
 			}
 		}
-	
 		.front-page-impact-case-photo {
 			height: 391px;
 			background-size: cover;
@@ -69,7 +62,6 @@
 			margin-right: 1rem;
 		}
 	}
-
 	.volunteer {
 		display: flex;
 		justify-content: space-around;
@@ -95,7 +87,6 @@
 		order: 4;
 		align-self: center;
 	}
-
 	.volunteer-form {
 		display: none;
 	}
@@ -103,11 +94,54 @@
 
 @media all and (min-width: $medium__width) {
 	.page-front-page {
+		.wild-fire-count {
+			position: absolute;
+			right: 3%;
+    		top: 44%;
+			width: 236px;
+			height: 186px;
+			border: 3px solid $color__white;
+			text-align: center;
+			color: $color__white;
+			background-color: rgba(121, 121, 121, 0.3);
+			h3 {
+				font-family: $font__main;
+				font-size: 22px;
+				margin: 10px 0;
+				}
+			.wild-fire-count-maps {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 20px;
+				img {
+				width: 50px;
+				max-height: 50px;
+				}
+				img:nth-child(2){
+					width: 25px;
+				}
+			}
+			.count {
+				display: flex;
+				justify-content: space-around;
+				padding: 0 25px;
+				color: $color__orange-main;
+				h2 {
+				font-family: $font__main;
+				font-size: 40px;
+				margin: 5px 0;
+				}
+			}
+		}
 		.front-page-header {
 			height: 677px;
 			background-size: $full__width, cover;
+			.we-detect-fires {
+				padding: 3rem 4rem 0;
+			}
 			.front-page-header-content {
-				font-size: 2rem;
+				font-size: 1.7rem;
+				font-weight: lighter;
 				color: $color__grey;
 			}
 			.button-link {
@@ -166,14 +200,17 @@
 		}
 		.volunteer {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			flex-direction: column;
 			flex-wrap: wrap;
 			height: 430px;
-			width: 80%;
+			width: 100%;
+			max-width: 900px;
+			margin: 0 auto;
 		}
 		.volunteer-text {
 			width: 70%;
+			max-width: 300px;
 			font-size: 14px;
 			p {
 				text-align: left;
@@ -183,15 +220,16 @@
 		}
 		.volunteer-img {
 			background-size: cover;
-			width: 330px;
+			width: 335px;
 			height: 390px;
-			margin: 0 3rem 0 0;
+			margin: 0 1rem 0 0;
 			align-self: center;
 			order: -1;
 		}
 		.you-can-join-text {
 			order: 2;
 			width: 70%;
+			max-width: 300px;
 			p {
 				text-align: left;
 				padding-right: 2rem;
@@ -199,16 +237,13 @@
 				margin-top: 0;
 			}
 		}
-
 		.volunteer-form {
-			display: block;
+			display: flex;
+			justify-content: center; // padding: 10rem 0 0 25rem;
 		}
-
 		.volunteer-button-container {
 			display: none;
 		}
-
-
 	}
 }
 

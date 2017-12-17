@@ -4,7 +4,8 @@
 
 .page-impact {
 	h1 {
-		font-size: 28px;
+		font-size: 50px;
+		font-weight: 700;
 		text-align: center;
 	}
 	h2 {
@@ -14,8 +15,10 @@
 	h3 {
 		font-family: $font__main;
 	}
-	.case-title {
-		font-size: 30px;
+	.case-title h1 {
+		font-size: 35px;
+		font-family: $font__headings;
+		margin-bottom: 4rem;
 	}
 	.impact-header {
 		text-align: center;
@@ -29,10 +32,9 @@
 		}
 		.impact-flex {
 			display: flex;
-			width: 120%;
 		}
 		.impact-impact-content {
-			padding: 8rem 2rem;
+			padding: 8rem 2rem 1rem 2rem;
 			p {
 				margin: 20px;
 			}
@@ -54,6 +56,7 @@
 			h1 {
 				color: $color__white;
 				margin: -80px -140px;
+				left: 45%;
 			}
 		}
 		.impact-impact-case-photo {
@@ -70,6 +73,7 @@
 			color: $color__text-main;
 			position: absolute;
 			margin: -80px -140px;
+			left: 50%;
 		}
 		.impact-impact-case-icon-container {
 			min-width: 130px;
@@ -79,8 +83,7 @@
 		}
 	}
 	.where-we-work {
-		text-align: center;
-		max-width: 75%;
+		text-align: center; // max-width: 75%;
 		h2 {
 			font-family: $font__headings;
 			font-size: 22px;
@@ -128,10 +131,16 @@
 				}
 			}
 			.impact-impact-content {
-				
-				padding: 6rem 6rem;
+				padding: 6rem 4rem;
+				display: flex;
+				justify-content: space-around;
 				h3 {
 					font-family: $font__main;
+				}
+				p {
+					font-size: 12px;
+					margin: 20px;
+					max-width: 400px;
 				}
 				.impact-impact-case-number {
 					margin: 0;
@@ -151,12 +160,16 @@
 			}
 			.impact-impact-case-metric {
 				color: $color__green-main;
-				font-size: 36px; // margin-right: 2rem;
+				font-size: 36px;
 			}
 		}
 		.where-we-work {
 			h2 {
 				font-size: 35px;
+			}
+			p {
+				max-width: 500px;
+				margin: auto;
 			}
 		}
 		.maps-small {
@@ -164,11 +177,12 @@
 		}
 		.maps-large {
 			display: flex;
-			padding: 5rem;
+			padding: 5rem 0;
 			justify-content: center;
 			img {
-				padding: 0 5%;
-				max-height: 440px;
+				padding: 0 3%;
+				max-height: 350px;
+   			    max-width: 35%;
 			}
 		}
 	}
