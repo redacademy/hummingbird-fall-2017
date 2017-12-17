@@ -93,12 +93,20 @@
 }
 
 @media all and (min-width: $medium__width) {
-	.paint {
-		display: block;
-		position: relative;
-		top: 97px;
-    	padding-left: 20vw;
+
+	.footer-wrapper {
+		margin-top: 0;
 	}
+
+	.paint-footer {
+		background: url("../../assets/elements/paint-footer4x-recolour.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		height: 2rem;
+		margin-top: 6rem;
+	}
+
 	.site-footer {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
