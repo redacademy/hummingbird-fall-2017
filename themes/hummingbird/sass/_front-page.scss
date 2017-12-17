@@ -96,6 +96,45 @@
 
 @media all and (min-width: $medium__width) {
 	.page-front-page {
+		.wild-fire-count {
+			position: absolute;
+			right: 3%;
+    		top: 44%;
+			width: 236px;
+			height: 186px;
+			border: 3px solid $color__white;
+			text-align: center;
+			color: $color__white;
+			background-color: rgba(121, 121, 121, 0.3);
+			h3 {
+				font-family: $font__main;
+				font-size: 22px;
+				margin: 10px 0;
+				}
+			.wild-fire-count-maps {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 20px;
+				img {
+				width: 50px;
+				max-height: 50px;
+				}
+				img:nth-child(2){
+					width: 25px;
+				}
+			}
+			.count {
+				display: flex;
+				justify-content: space-around;
+				padding: 0 25px;
+				color: $color__orange-main;
+				h2 {
+				font-family: $font__main;
+				font-size: 40px;
+				margin: 5px 0;
+				}
+			}
+		}
 		.front-page-header {
 			height: 677px;
 			background-size: $full__width, cover;

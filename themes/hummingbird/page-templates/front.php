@@ -11,6 +11,18 @@ get_header(); ?>
 	<div id="primary" class="content-area page-front-page">
 		<main id="main" class="site-main" role="main">
 
+			<div class="wild-fire-count"> <!-- Wild fire count -->
+				<h3>Wild Fire Count</h3>
+			  <div class="wild-fire-count-maps">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/bc-mini-map.png">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/alberta-mini-map.png">
+				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/yukon-mini-map.png">
+			  </div>
+			  <div class="count">
+			    <h2>29</h2><h2>17</h2><h2>7</h2>
+			  </div>
+			</div>
+
 			<section class="width-full front-page-header">
 				<div class="width-content-left we-detect-fires">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>

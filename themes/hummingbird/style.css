@@ -1787,6 +1787,45 @@ footer .wpcf7-form-control.wpcf7-submit {
   display: none; }
 
 @media all and (min-width: 700px) {
+  .page-front-page .wild-fire-count {
+    position: absolute;
+    right: 3%;
+    top: 44%;
+    width: 236px;
+    height: 186px;
+    border: 3px solid #fff;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(121, 121, 121, 0.3); }
+    .page-front-page .wild-fire-count h3 {
+      font-family: "Overpass", sans-serif;
+      font-size: 22px;
+      margin: 10px 0; }
+    .page-front-page .wild-fire-count .wild-fire-count-maps {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img {
+        width: 50px;
+        max-height: 50px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img:nth-child(2) {
+        width: 25px; }
+    .page-front-page .wild-fire-count .count {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 0 25px;
+      color: #da9127; }
+      .page-front-page .wild-fire-count .count h2 {
+        font-family: "Overpass", sans-serif;
+        font-size: 40px;
+        margin: 5px 0; }
   .page-front-page .front-page-header {
     height: 677px;
     background-size: 1440px, cover; }
