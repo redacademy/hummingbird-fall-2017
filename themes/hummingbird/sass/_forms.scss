@@ -92,12 +92,22 @@ textarea {
 		background-color: $color__green-main;
 		color: $color__white;
 		font-size: 2rem;
-		font-weight: 300;
+		font-weight: lighter;
 		width: 85%;
 		padding: 1rem;
 		&::placeholder {
 			color: $color__white;
 		}
+		&:active,
+		&:focus,
+		&:hover {
+		background-color: lighten($color__green-main, 15%);
+		font-style: italic;
+		&::placeholder {
+			color: lighten($color__green-loading-page, 15%);
+			color: $color__grey;
+			}
+	}
 	}
 
 	label {

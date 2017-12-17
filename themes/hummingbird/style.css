@@ -420,7 +420,7 @@ textarea {
   background-color: #698e87;
   color: #fff;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: lighter;
   width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
@@ -435,6 +435,42 @@ textarea {
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder, .signin-form input[type=email]::placeholder, .signin-form input[type=text]::placeholder {
     color: #fff; }
+  .page-template-contact .contact-form input[type=email]:active, .page-template-contact .contact-form input[type=email]:focus, .page-template-contact .contact-form input[type=email]:hover, .page-template-contact .contact-form input[type=text]:active, .page-template-contact .contact-form input[type=text]:focus, .page-template-contact .contact-form input[type=text]:hover,
+  .volunteer-form input[type=email]:active,
+  .volunteer-form input[type=email]:focus,
+  .volunteer-form input[type=email]:hover,
+  .volunteer-form input[type=text]:active,
+  .volunteer-form input[type=text]:focus,
+  .volunteer-form input[type=text]:hover, .signin-form input[type=email]:active, .signin-form input[type=email]:focus, .signin-form input[type=email]:hover, .signin-form input[type=text]:active, .signin-form input[type=text]:focus, .signin-form input[type=text]:hover {
+    background-color: #94b0aa;
+    font-style: italic; }
+    .page-template-contact .contact-form input[type=email]:active::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]:active::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]:focus::-webkit-input-placeholder, .page-template-contact .contact-form input[type=text]:hover::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:active::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:focus::-webkit-input-placeholder,
+    .volunteer-form input[type=email]:hover::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:active::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:focus::-webkit-input-placeholder,
+    .volunteer-form input[type=text]:hover::-webkit-input-placeholder, .signin-form input[type=email]:active::-webkit-input-placeholder, .signin-form input[type=email]:focus::-webkit-input-placeholder, .signin-form input[type=email]:hover::-webkit-input-placeholder, .signin-form input[type=text]:active::-webkit-input-placeholder, .signin-form input[type=text]:focus::-webkit-input-placeholder, .signin-form input[type=text]:hover::-webkit-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:active:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:focus:-ms-input-placeholder, .page-template-contact .contact-form input[type=text]:hover:-ms-input-placeholder,
+    .volunteer-form input[type=email]:active:-ms-input-placeholder,
+    .volunteer-form input[type=email]:focus:-ms-input-placeholder,
+    .volunteer-form input[type=email]:hover:-ms-input-placeholder,
+    .volunteer-form input[type=text]:active:-ms-input-placeholder,
+    .volunteer-form input[type=text]:focus:-ms-input-placeholder,
+    .volunteer-form input[type=text]:hover:-ms-input-placeholder, .signin-form input[type=email]:active:-ms-input-placeholder, .signin-form input[type=email]:focus:-ms-input-placeholder, .signin-form input[type=email]:hover:-ms-input-placeholder, .signin-form input[type=text]:active:-ms-input-placeholder, .signin-form input[type=text]:focus:-ms-input-placeholder, .signin-form input[type=text]:hover:-ms-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder, .page-template-contact .contact-form input[type=text]:active::placeholder, .page-template-contact .contact-form input[type=text]:focus::placeholder, .page-template-contact .contact-form input[type=text]:hover::placeholder,
+    .volunteer-form input[type=email]:active::placeholder,
+    .volunteer-form input[type=email]:focus::placeholder,
+    .volunteer-form input[type=email]:hover::placeholder,
+    .volunteer-form input[type=text]:active::placeholder,
+    .volunteer-form input[type=text]:focus::placeholder,
+    .volunteer-form input[type=text]:hover::placeholder, .signin-form input[type=email]:active::placeholder, .signin-form input[type=email]:focus::placeholder, .signin-form input[type=email]:hover::placeholder, .signin-form input[type=text]:active::placeholder, .signin-form input[type=text]:focus::placeholder, .signin-form input[type=text]:hover::placeholder {
+      color: #5c857e;
+      color: #cecece; }
 
 .page-template-contact .contact-form label,
 .volunteer-form label, .signin-form label {
