@@ -639,6 +639,7 @@ a.hb-logo {
 
 html body #responsive-menu-button {
   right: 2rem;
+  top: 1.5rem;
   background: none;
   height: 2.5rem; }
 
@@ -1348,7 +1349,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     .page-template-who .front-page-explanation-case span {
       display: none; }
     .page-template-who .front-page-explanation-case img {
-      width: 10%; }
+      width: 45px;
+      max-height: 45px; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1461,7 +1463,7 @@ footer .wpcf7-form-control.wpcf7-submit {
         display: block;
         margin-bottom: 2rem; }
       .page-template-who .front-page-explanation-case div img {
-        width: 15%;
+        width: 50px;
         max-height: 35px; }
   .page-template-who .bignumber {
     color: #72acb2;
