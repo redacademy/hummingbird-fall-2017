@@ -2,31 +2,32 @@
 # Navigation
 --------------------------------------------------------------*/
 
-a.hb-logo{
-        min-width: 220px;
-		transition-property: border-bottom-color;
-		transition-duration: .3s;
-		border-bottom: 1.5px solid transparent;
-        &:hover {
-			border-bottom-color: $color__orange-main;
-		}
-    }
+a.hb-logo {
+	min-width: 220px;
+	transition-property: border-bottom-color;
+	transition-duration: .3s;
+	border-bottom: 1.5px solid transparent;
+	&:hover {
+		border-bottom-color: $color__orange-main;
+	}
+}
 
 .site-header {
 	background: $color__green-main;
 }
 
-html body #responsive-menu-button { // Hamburger (yes, you do need this much specificity)
+html body #responsive-menu-button {
+	// Hamburger (yes, you do need this much specificity)
 	right: 2rem;
 	background: none;
 	height: 2.5rem;
 }
 
+
 /* Links */
 
 a {
 	color: $color__text-main;
-
 	&:visited {
 		color: $color__text-main;
 	}
@@ -44,46 +45,40 @@ a {
 	}
 }
 
+
 /* Menus */
-		
+
 .main-navigation {
 	display: block;
 	width: 100%;
 	padding: .5rem 2rem;
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
@@ -94,14 +89,14 @@ a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
+
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -110,35 +105,35 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		width: 50%;
 	}
-
 	.nav-next {
 		text-align: right;
 		width: 50%;
 	}
 }
-.site-branding{
+
+.site-branding {
 	width: 125px;
-  display: flex;				
+	display: flex;
 }
 
 //MOBILE NAVIGATION
 
 /* Navigation Menu */
+
 .main-navigation {
 	margin-top: 0;
 	text-align: center;
 	display: -webkit-inline-box;
 	display: flex;
 }
+
 .main-navigation li {
 	margin-top: 24px;
 	margin-top: 1.714285714rem;
@@ -148,7 +143,7 @@ a {
 }
 
 .main-navigation ul.nav-menu,
-.main-navigation div.nav-menu > ul {
+.main-navigation div.nav-menu>ul {
 	display: none;
 }
 
@@ -157,24 +152,23 @@ a {
 	display: inline-block;
 }
 
-	.logo-color {
-		display: none;
-	}
-	.logo-white {
-		display: inline-block;
-	}
+.logo-color {
+	display: none;
+}
+
+.logo-white {
+	display: inline-block;
+}
 
 // End mobile devices
-
-@media screen and (min-width: $desktop__width) { // 920 px and wider
-
+@media screen and (min-width: $desktop__width) {
+	// 920 px and wider
 	.main-navigation ul.nav-menu,
-	.main-navigation div.nav-menu > ul {
+	.main-navigation div.nav-menu>ul {
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
 	}
-
 	.main-navigation {
 		flex-direction: row;
 		justify-content: space-between;
@@ -182,26 +176,23 @@ a {
 		max-width: $full__width;
 		margin: 0 auto;
 		z-index: 1;
-		
-
-		.current-menu-item > a, // bold the current page in the navbar
-		.current-menu-ancestor > a,
-		.current_page_item > a,
-		.current_page_ancestor > a {
+		.current-menu-item>a, // bold the current page in the navbar
+		.current-menu-ancestor>a,
+		.current_page_item>a,
+		.current_page_ancestor>a {
 			font-weight: bold;
 		}
-
 		ul {
 			li {
 				margin: 0 0 0 2rem;
 				display: inline-block;
-				a{
+				a {
 					transition-property: color;
 					transition-duration: .3s;
 				}
 				a:hover,
 				a:focus {
-					color: $color__orange-main;	
+					color: $color__orange-main;
 					text-decoration: underline;
 				}
 				&:last-child {
@@ -212,17 +203,13 @@ a {
 				}
 			}
 		}
-
 	}
-
 	.menu-toggle {
 		display: none;
 	}
-
 	.site-header {
-	background: $color__green-nav-bar;
+		background: $color__green-nav-bar;
 	}
-
 	.logo-color {
 		display: inline-block;
 		max-width: 100%;
@@ -230,5 +217,4 @@ a {
 	.logo-white {
 		display: none;
 	}
-
 }
