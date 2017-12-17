@@ -12,7 +12,6 @@
 }
 
 // content formatting
-
 @mixin width-column {
 	max-width: $full__width/2;
 	padding: 2rem 2rem 0 2rem;
@@ -27,7 +26,7 @@
 
 @mixin width-content-left {
 	max-width: $full__width;
-	padding: 3rem 4rem 0 4rem;
+	padding: 6rem 4rem 0 4rem;
 	text-align: left; // justify left the content
 }
 
@@ -39,7 +38,6 @@
 }
 
 // buttons
-
 @mixin button-link {
 	padding: 1rem;
 	border-radius: 5px;
@@ -61,7 +59,6 @@
 	}
 	&:hover {
 		background-color: darken($color__orange-main, 15%);
-		
 	}
 }
 

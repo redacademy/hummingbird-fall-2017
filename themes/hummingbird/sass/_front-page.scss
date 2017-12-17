@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 .page-front-page {
-
 	.front-page-header {
 		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
 		background-size: contain, cover;
@@ -18,12 +17,10 @@
 			display: none;
 		}
 	}
-
 	.symbol-color {
 		width: 150px;
 		height: 139px;
 	}
-
 	.front-page-explanation-case {
 		display: grid;
 		grid-template-columns: 100%;
@@ -34,13 +31,10 @@
 			max-height: 64px;
 		}
 	}
-
 	.front-page-impact-case {
-
 		max-width: $full__width;
 		margin-left: auto;
 		margin-right: auto;
-
 		div:nth-child(3) {
 			background-color: $color__green-main;
 			color: $color__white;
@@ -48,7 +42,6 @@
 				color: $color__white;
 			}
 		}
-	
 		.front-page-impact-case-photo {
 			height: 391px;
 			background-size: cover;
@@ -69,7 +62,6 @@
 			margin-right: 1rem;
 		}
 	}
-
 	.volunteer {
 		display: flex;
 		justify-content: space-around;
@@ -97,7 +89,6 @@
 		width: 140px;
 		align-self: center;
 	}
-
 	.volunteer-form {
 		display: none;
 	}
@@ -201,16 +192,14 @@
 				margin-top: 0;
 			}
 		}
-
 		.volunteer-form {
-			display: block;
+			display: flex;
+			// justify-content: center;
+			padding: 10rem 0 0 25rem;
 		}
-
 		.volunteer-button-container {
 			display: none;
 		}
-
-
 	}
 }
 
