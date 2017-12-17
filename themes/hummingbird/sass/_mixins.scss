@@ -1,17 +1,4 @@
-// Rem output with px fallback
-@mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
-}
-
-// Center block - deprecate?
-@mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-// content formatting
+// Content widths
 
 @mixin width-column {
 	max-width: $full__width/2;
@@ -38,14 +25,14 @@
 	color: $color__white;
 }
 
-// buttons
+// Buttons
 
 @mixin button-link {
 	padding: 1rem;
 	border-radius: 5px;
 	color: $color__white;
 	text-decoration: none;
-	min-width: 175px;
+	min-width: 180px;
 	text-align: center;
 }
 
@@ -61,7 +48,6 @@
 	}
 	&:hover {
 		background-color: darken($color__orange-main, 15%);
-		
 	}
 }
 
@@ -94,4 +80,19 @@
 		color: $color__white;
 		background-color: $color__orange-main;
 	}
+}
+
+// Rem output with px fallback
+
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block - deprecate?
+
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }

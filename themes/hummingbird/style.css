@@ -611,7 +611,7 @@ a {
         border-radius: 5px;
         color: #fff;
         text-decoration: none;
-        min-width: 175px;
+        min-width: 180px;
         text-align: center;
         background-color: #da9127;
         border: 2px solid #da9127;
@@ -665,25 +665,6 @@ a {
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -827,6 +808,9 @@ object {
   background-color: #698e87;
   color: #fff; }
 
+.text-left {
+  text-align: left; }
+
 .text-center {
   text-align: center; }
 
@@ -862,7 +846,7 @@ object {
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  min-width: 175px;
+  min-width: 180px;
   text-align: center; }
 
 .button-link-solid,
@@ -913,20 +897,6 @@ object {
     border: 2px solid #9a661a;
     color: #fff;
     background-color: #da9127; }
-
-footer .wpcf7-form-control.wpcf7-submit {
-  background-color: #698e87;
-  border: 2px solid #fff;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s; }
-  footer .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #da9127;
-    border: 2px solid #9a661a;
-    color: #fff; }
 
 @media screen and (min-width: 700px) {
   .width-column,
@@ -1557,8 +1527,6 @@ footer .wpcf7-form-control.wpcf7-submit {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-  height: 20px;
-  width: 140px;
   -ms-flex-item-align: center;
       align-self: center; }
 
@@ -1680,6 +1648,20 @@ footer .wpcf7-form-control.wpcf7-submit {
   color: #fff;
   padding: 0;
   margin-top: 6rem; }
+
+footer .wpcf7-form-control.wpcf7-submit {
+  background-color: #698e87;
+  border: 2px solid #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
+  footer .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #da9127;
+    border: 2px solid #9a661a;
+    color: #fff; }
 
 .site-footer {
   padding: 0;

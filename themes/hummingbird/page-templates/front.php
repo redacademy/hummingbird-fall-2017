@@ -116,7 +116,7 @@ get_header(); ?>
 								style="background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);"> 				
 							</div>
 							<div class="volunteer-text">
-								<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
+								<h2 class="text-left">Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
 								<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
 							</div>
 							<div class="you-can-join-text">

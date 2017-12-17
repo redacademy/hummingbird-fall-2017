@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-// Basic reusable layout styles
+// Content width
 
 .width-column {
 	@include width-column
@@ -16,6 +16,12 @@
 }
 .width-full {
 	@include width-full
+}
+
+// Content alignment
+
+.text-left {
+	text-align: left;
 }
 
 .text-center {
@@ -61,22 +67,7 @@
 	@include button-link-hollow-orange
 }
 
-footer .wpcf7-form-control.wpcf7-submit {
-	background-color: $color__green-main;
-	border: 2px solid $color__white;
-	transition-delay: 0;
-	transition-property: background-color;
-	transition-duration: .5s;
-	&:hover {
-		background-color: $color__orange-main;
-		border: 2px solid darken($color__orange-main, 15%);;
-		color: $color__white;
-	}
-}
-
-// Breakpoint at 700px wide
-
-@media screen and (min-width: $medium__width) {
+@media screen and (min-width: $medium__width) { // Breakpoint at 700px wide
 
 	.width-column,
 	.width-content, { // applied to pretty much every main container
