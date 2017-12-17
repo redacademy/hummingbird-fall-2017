@@ -187,13 +187,16 @@ a {
 				margin: 0 0 0 2rem;
 				display: inline-block;
 				a {
-					transition-property: color;
+					transition-property: border-bottom;
 					transition-duration: .3s;
+					border-bottom: 1.5px solid transparent;
 				}
 				a:hover,
 				a:focus {
-					color: $color__orange-main;
-					text-decoration: underline;
+					color: $color__text-main;
+					// text-decoration: underline;
+					border-bottom: 1.5px solid $color__orange-main;
+
 				}
 				&:last-child {
 					a {

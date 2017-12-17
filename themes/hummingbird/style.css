@@ -775,14 +775,15 @@ a {
       margin: 0 0 0 2rem;
       display: inline-block; }
       .main-navigation ul li a {
-        -webkit-transition-property: color;
-        transition-property: color;
+        -webkit-transition-property: border-bottom;
+        transition-property: border-bottom;
         -webkit-transition-duration: .3s;
-                transition-duration: .3s; }
+                transition-duration: .3s;
+        border-bottom: 1.5px solid transparent; }
       .main-navigation ul li a:hover,
       .main-navigation ul li a:focus {
-        color: #da9127;
-        text-decoration: underline; }
+        color: #1e1e1e;
+        border-bottom: 1.5px solid #da9127; }
       .main-navigation ul li:last-child a {
         padding: 1rem;
         border-radius: 5px;
