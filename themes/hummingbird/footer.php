@@ -63,7 +63,7 @@
 					</div><!-- .site-info -->
 
 					<div class="copyrights copyrights-one">
-              <?php wp_nav_menu( array( 'theme_location' => 'Footer' ) ); ?>  
+              <?php wp_nav_menu( array( 'theme_location' => 'Footer Menu' ) ); ?>  
     			</div>
 
 
