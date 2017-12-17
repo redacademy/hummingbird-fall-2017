@@ -631,7 +631,8 @@ a {
   .site-header {
     background: #e8eeee; }
   .logo-color {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 130%; }
   .logo-white {
     display: none; } }
 
