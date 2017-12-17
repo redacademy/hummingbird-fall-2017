@@ -2,10 +2,7 @@
 - page-front-page
 --------------------------------------------------------------*/
 
-
-
 .page-front-page {
-
 	.front-page-header {
 		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
 		background-size: contain, cover;
@@ -171,10 +168,6 @@
 			margin: 0 auto;
 		}
 		.volunteer-text {
-			// h2 {
-			// 	width: 200px;
-			// 	margin: 0 auto;
-			// }
 			width: 70%;
 			max-width: 300px;
 			font-size: 14px;
@@ -205,8 +198,7 @@
 		}
 		.volunteer-form {
 			display: flex;
-			justify-content: center;
-			// padding: 10rem 0 0 25rem;
+			justify-content: center; // padding: 10rem 0 0 25rem;
 		}
 		.volunteer-button-container {
 			display: none;
