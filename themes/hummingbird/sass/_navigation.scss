@@ -2,6 +2,16 @@
 # Navigation
 --------------------------------------------------------------*/
 
+a.hb-logo{
+        min-width: 220px;
+		transition-property: border-bottom-color;
+		transition-duration: .3s;
+		border-bottom: 1.5px solid transparent;
+        &:hover {
+			border-bottom-color: $color__orange-main;
+		}
+    }
+
 .site-header {
 	background: $color__green-main;
 }
@@ -172,6 +182,7 @@ a {
 		max-width: $full__width;
 		margin: 0 auto;
 		z-index: 1;
+		
 
 		.current-menu-item > a, // bold the current page in the navbar
 		.current-menu-ancestor > a,
@@ -184,9 +195,14 @@ a {
 			li {
 				margin: 0 0 0 2rem;
 				display: inline-block;
+				a{
+					transition-property: color;
+					transition-duration: .3s;
+				}
 				a:hover,
 				a:focus {
-					color: $color__text-main;
+					color: $color__orange-main;	
+					text-decoration: underline;
 				}
 				&:last-child {
 					a {
@@ -209,7 +225,7 @@ a {
 
 	.logo-color {
 		display: inline-block;
-		max-width: 130%;
+		max-width: 100%;
 	}
 	.logo-white {
 		display: none;

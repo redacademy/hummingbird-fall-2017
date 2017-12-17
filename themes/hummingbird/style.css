@@ -624,6 +624,16 @@ footer input[type=text] {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+a.hb-logo {
+  min-width: 220px;
+  -webkit-transition-property: border-bottom-color;
+  transition-property: border-bottom-color;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  border-bottom: 1.5px solid transparent; }
+  a.hb-logo:hover {
+    border-bottom-color: #da9127; }
+
 .site-header {
   background: #698e87; }
 
@@ -764,9 +774,15 @@ a {
     .main-navigation ul li {
       margin: 0 0 0 2rem;
       display: inline-block; }
+      .main-navigation ul li a {
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: .3s;
+                transition-duration: .3s; }
       .main-navigation ul li a:hover,
       .main-navigation ul li a:focus {
-        color: #1e1e1e; }
+        color: #da9127;
+        text-decoration: underline; }
       .main-navigation ul li:last-child a {
         padding: 1rem;
         border-radius: 5px;
@@ -793,7 +809,7 @@ a {
     background: #e8eeee; }
   .logo-color {
     display: inline-block;
-    max-width: 130%; }
+    max-width: 100%; }
   .logo-white {
     display: none; } }
 
