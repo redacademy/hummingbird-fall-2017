@@ -87,7 +87,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="width-content front-page-impact-content">
+					<div class="front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
@@ -107,7 +107,7 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="width-content volunteer">								<!-- Hi, I'm Paula! -->
+			<section class="width-content-left volunteer">								<!-- Hi, I'm Paula! -->
 				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
 					// d($fields);
 					if(isset($fields)):
@@ -131,7 +131,7 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section class="volunteer-form width-column"> <!-- "Become a Volunteer" form -->
+			<section class="volunteer-form width-content-left"> <!-- "I want to be part of the community!" form -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>

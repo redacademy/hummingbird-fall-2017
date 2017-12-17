@@ -4,7 +4,8 @@
 
 .page-impact {
 	h1 {
-		font-size: 28px;
+		font-size: 50px;
+    	font-weight: 700;
 		text-align: center;
 	}
 	h2 {
@@ -14,8 +15,10 @@
 	h3 {
 		font-family: $font__main;
 	}
-	.case-title {
-		font-size: 30px;
+	.case-title h1{
+		font-size: 35px;
+		font-family: $font__headings;
+		margin-bottom: 4rem;
 	}
 	.impact-header {
 		text-align: center;
@@ -151,7 +154,8 @@
 			}
 			.impact-impact-case-metric {
 				color: $color__green-main;
-				font-size: 36px; // margin-right: 2rem;
+				font-size: 36px; 
+				text-align: center;
 			}
 		}
 		.where-we-work {

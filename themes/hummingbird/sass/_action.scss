@@ -2,12 +2,11 @@
 - page-action
 --------------------------------------------------------------*/
 
-
 .page-action {
     .action-header {
         text-align: center;
         padding: 2rem 4rem 0;
-        h1{
+        h1 {
             font-size: 28px;
             text-align: center;
         }
@@ -24,15 +23,15 @@
         }
         img {
             width: 50px;
+            position: relative;
+            top: 8px;
         }
-        h2{
+        h2 {
             margin: 0 auto;
         }
     }
-    .start{
+    .start {
         padding: 0 20% 0 20%;
-        //  margin: 0 auto;
-
     }
     .simple-steps {
         display: flex;
@@ -70,86 +69,80 @@
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        
     }
     .volunteer-img {
         background-size: cover;
-		width: 230px;
-		height: 230px;
+        width: 230px;
+        height: 230px;
         align-self: center;
     }
-
-
 }
+
 @media all and (min-width: $medium__width) {
     .page-action {
         .action-header {
-        h1{
-            font-size: 50px;
-            font-weight: bold;
+            h1 {
+                font-size: 50px;
+                font-weight: bold;
+            }
         }
-        }
-        h2{
+        h2 {
             font-size: 50px;
             margin-bottom: 0;
         }
-         .simple-steps {
-        flex-direction: row;
-        padding-top: 1rem;
-        h2 {
+        .simple-steps {
+            flex-direction: row;
+            padding-top: 1rem;
+            h2 {
+                display: flex;
+                height: 90px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .action-steps {
+            span {
+                margin: 0 auto;
+                font-size: 36px;
+            }
+        }
+        .call {
+            h2 {
+                font-size: 50px;
+                padding: 0 12% 0 12%;
+            }
+        }
+        .call-to-action {
             display: flex;
-            height: 90px;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
+            text-align: -webkit-center;
+            h2 {
+                font-family: $font__main;
+                font-weight: lighter;
+                font-size: 30px;
+            }
+            img {
+                padding: 1rem;
+                height: auto;
+                width: 282px;
+            }
         }
-
-    }
-    .action-steps {
-        span {
+        .start {
+            padding: 0;
             margin: 0 auto;
-            font-size: 36px;
         }
-    }
-     .call {
-        h2 {
-            font-size: 50px;
-            padding: 0 12% 0 12%;
+        .volunteer {
+            align-items: center;
+            flex-direction: row;
         }
-    }
-    .call-to-action {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: -webkit-center;
-        h2 {
-            font-family: $font__main;
-            font-weight: lighter;
-            font-size: 30px;
+        .volunteer-img {
+            background-size: cover;
+            width: 360px;
+            min-width: 360px;
+            height: 360px;
+            margin-right: 4rem;
         }
-        img {
-            padding: 1rem;
-            height: auto;
-            width: 282px;
-        }
-    }
-    .start{
-        padding: 0;
-        margin: 0 auto;
-
-    }
-    .volunteer {
-        align-items: center;
-        flex-direction: row;
-    }
-    .volunteer-img {
-        background-size: cover;
-		width: 360px;
-		min-width: 360px;
-		height: 360px;
-        margin-right: 4rem;
-    }
-    .meet{
-       
-    }
+        .meet {}
     }
 }
