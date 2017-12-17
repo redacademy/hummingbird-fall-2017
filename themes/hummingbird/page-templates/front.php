@@ -99,7 +99,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="front-page-impact-content">
+					<div class="width-content front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
