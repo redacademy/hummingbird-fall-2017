@@ -99,8 +99,12 @@
 		.front-page-header {
 			height: 677px;
 			background-size: $full__width, cover;
+			.we-detect-fires {
+				padding: 3rem 4rem 0;
+			}
 			.front-page-header-content {
-				font-size: 2rem;
+				font-size: 1.7rem;
+				font-weight: lighter;
 				color: $color__grey;
 			}
 			.button-link {
