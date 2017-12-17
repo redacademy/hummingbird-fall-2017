@@ -194,10 +194,8 @@ a {
 				}
 				a:hover,
 				a:focus {
-					color: $color__text-main;
-					// text-decoration: underline;
+					color: $color__text-main; // text-decoration: underline;
 					border-bottom: 1.5px solid $color__orange-main;
-
 				}
 				&:last-child {
 					a {
