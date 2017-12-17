@@ -19,6 +19,19 @@
 	margin-top: 6rem;
 }
 
+footer .wpcf7-form-control.wpcf7-submit {
+	background-color: $color__green-main;
+	border: 2px solid $color__white;
+	transition-delay: 0;
+	transition-property: background-color;
+	transition-duration: .5s;
+	&:hover {
+		background-color: $color__orange-main;
+		border: 2px solid darken($color__orange-main, 15%);;
+		color: $color__white;
+	}
+}
+
 .site-footer {
 	padding: 0; // override the default padding from .content-width
 	color: $color__white;
