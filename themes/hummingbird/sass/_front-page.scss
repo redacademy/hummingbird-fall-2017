@@ -162,11 +162,17 @@
 		}
 		.volunteer {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			flex-direction: column;
 			flex-wrap: wrap;
 			height: 430px;
 			width: 80%;
+			margin: 0 auto;
+			p{
+				max-width: 300px;
+				margin: 0 auto;
+
+			}
 		}
 		.volunteer-text {
 			width: 70%;
@@ -179,7 +185,7 @@
 		}
 		.volunteer-img {
 			background-size: cover;
-			width: 330px;
+			width: 335px;
 			height: 390px;
 			margin: 0 3rem 0 0;
 			align-self: center;
@@ -197,8 +203,8 @@
 		}
 		.volunteer-form {
 			display: flex;
-			// justify-content: center;
-			padding: 10rem 0 0 25rem;
+			justify-content: center;
+			// padding: 10rem 0 0 25rem;
 		}
 		.volunteer-button-container {
 			display: none;

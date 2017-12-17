@@ -401,7 +401,7 @@ textarea {
   font-size: 2rem;
   font-weight: 300;
   height: 40px;
-  width: 450px;
+  width: 370px;
   padding-left: 1rem;
   -webkit-transition-property: width;
   transition-property: width;
@@ -425,7 +425,7 @@ textarea {
   .page-front-page .volunteer-form input[type=email]:focus, .page-front-page .volunteer-form input[type=email]:active,
   .page-front-page .volunteer-form input[type=text]:focus,
   .page-front-page .volunteer-form input[type=text]:active {
-    width: 450px; }
+    width: 370px; }
   .page-front-page .volunteer-form input[type=email]:active, .page-front-page .volunteer-form input[type=email]:focus, .page-front-page .volunteer-form input[type=email]:hover,
   .page-front-page .volunteer-form input[type=text]:active,
   .page-front-page .volunteer-form input[type=text]:focus,
@@ -1794,9 +1794,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1804,7 +1803,11 @@ footer .wpcf7-form-control.wpcf7-submit {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 430px;
-    width: 80%; }
+    width: 80%;
+    margin: 0 auto; }
+    .page-front-page .volunteer p {
+      max-width: 300px;
+      margin: 0 auto; }
   .page-front-page .volunteer-text {
     width: 70%;
     font-size: 14px; }
@@ -1814,7 +1817,7 @@ footer .wpcf7-form-control.wpcf7-submit {
       margin-bottom: 0; }
   .page-front-page .volunteer-img {
     background-size: cover;
-    width: 330px;
+    width: 335px;
     height: 390px;
     margin: 0 3rem 0 0;
     -ms-flex-item-align: center;
@@ -1836,7 +1839,9 @@ footer .wpcf7-form-control.wpcf7-submit {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10rem 0 0 25rem; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .page-front-page .volunteer-button-container {
     display: none; } }
 
