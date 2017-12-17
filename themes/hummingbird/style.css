@@ -683,6 +683,7 @@ a.hb-logo {
 
 html body #responsive-menu-button {
   right: 2rem;
+  top: 1.5rem;
   background: none;
   height: 2.5rem; }
 
@@ -833,7 +834,7 @@ a {
         border-radius: 5px;
         color: #fff;
         text-decoration: none;
-        min-width: 175px;
+        min-width: 180px;
         text-align: center;
         background-color: #da9127;
         border: 2px solid #da9127;
@@ -888,25 +889,6 @@ a {
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1050,6 +1032,9 @@ object {
   background-color: #698e87;
   color: #fff; }
 
+.text-left {
+  text-align: left; }
+
 .text-center {
   text-align: center; }
 
@@ -1085,7 +1070,7 @@ object {
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  min-width: 175px;
+  min-width: 180px;
   text-align: center; }
 
 .button-link-solid,
@@ -1137,20 +1122,6 @@ object {
     color: #fff;
     background-color: #da9127; }
 
-footer .wpcf7-form-control.wpcf7-submit {
-  background-color: #698e87;
-  border: 2px solid #fff;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s; }
-  footer .wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #da9127;
-    border: 2px solid #9a661a;
-    color: #fff; }
-
 @media screen and (min-width: 700px) {
   .width-column,
   .width-content {
@@ -1170,6 +1141,10 @@ footer .wpcf7-form-control.wpcf7-submit {
   .page-action .action-header h1 {
     font-size: 28px;
     text-align: center; }
+  .page-action .action-header p {
+    max-width: 800px;
+    font-size: 20px;
+    margin: 3rem auto; }
 
 .page-action .action-steps {
   max-width: 1440px;
@@ -1250,6 +1225,12 @@ footer .wpcf7-form-control.wpcf7-submit {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.page-action .volunteer-text {
+  max-width: 500px;
+  margin: 0 auto; }
+  .page-action .volunteer-text p {
+    text-align: center; }
+
 @media all and (min-width: 700px) {
   .page-action .action-header h1 {
     font-size: 50px;
@@ -1310,13 +1291,19 @@ footer .wpcf7-form-control.wpcf7-submit {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    max-width: 1000px; }
   .page-action .volunteer-img {
     background-size: cover;
     width: 360px;
     min-width: 360px;
     height: 360px;
-    margin-right: 4rem; } }
+    margin-right: 4rem; }
+  .page-action .volunteer-text {
+    max-width: 500px; }
+  .page-action .meet h2 {
+    font-size: 35px;
+    margin-top: 6rem; } }
 
 /*--------------------------------------------------------------
 - page-who
@@ -1376,7 +1363,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     .page-template-who .front-page-explanation-case span {
       display: none; }
     .page-template-who .front-page-explanation-case img {
-      width: 10%; }
+      width: 45px;
+      max-height: 45px; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1489,7 +1477,7 @@ footer .wpcf7-form-control.wpcf7-submit {
         display: block;
         margin-bottom: 2rem; }
       .page-template-who .front-page-explanation-case div img {
-        width: 15%;
+        width: 50px;
         max-height: 35px; }
   .page-template-who .bignumber {
     color: #72acb2;
@@ -1529,10 +1517,9 @@ footer .wpcf7-form-control.wpcf7-submit {
   .page-impact .impact-impact-case .impact-flex {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 120%; }
+    display: flex; }
   .page-impact .impact-impact-case .impact-impact-content {
-    padding: 8rem 2rem; }
+    padding: 8rem 2rem 1rem 2rem; }
     .page-impact .impact-impact-case .impact-impact-content p {
       margin: 20px; }
     .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
@@ -1548,7 +1535,8 @@ footer .wpcf7-form-control.wpcf7-submit {
       text-align: left; }
     .page-impact .impact-impact-case div:nth-child(3) h1 {
       color: #fff;
-      margin: -80px -140px; }
+      margin: -80px -140px;
+      left: 45%; }
   .page-impact .impact-impact-case .impact-impact-case-photo {
     display: none; }
   .page-impact .impact-impact-case .impact-impact-case-metric {
@@ -1560,7 +1548,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     font-size: 35px;
     color: #1e1e1e;
     position: absolute;
-    margin: -80px -140px; }
+    margin: -80px -140px;
+    left: 50%; }
   .page-impact .impact-impact-case .impact-impact-case-icon-container {
     min-width: 130px;
     min-height: 130px;
@@ -1568,8 +1557,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     margin-right: 1rem; }
 
 .page-impact .where-we-work {
-  text-align: center;
-  max-width: 75%; }
+  text-align: center; }
   .page-impact .where-we-work h2 {
     font-family: "Merriweather", serif;
     font-size: 22px; }
@@ -1605,9 +1593,18 @@ footer .wpcf7-form-control.wpcf7-submit {
         color: #da9127;
         font-size: 64px; }
     .page-impact .impact-impact-case .impact-impact-content {
-      padding: 6rem 6rem; }
+      padding: 6rem 4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
       .page-impact .impact-impact-case .impact-impact-content h3 {
         font-family: "Overpass", sans-serif; }
+      .page-impact .impact-impact-case .impact-impact-content p {
+        font-size: 12px;
+        margin: 20px;
+        max-width: 400px; }
       .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {
         margin: 0;
         color: #da9127;
@@ -1622,23 +1619,26 @@ footer .wpcf7-form-control.wpcf7-submit {
       background-position: center; }
     .page-impact .impact-impact-case .impact-impact-case-metric {
       color: #698e87;
-      font-size: 36px;
-      text-align: center; }
+      font-size: 36px; }
   .page-impact .where-we-work h2 {
     font-size: 35px; }
+  .page-impact .where-we-work p {
+    max-width: 500px;
+    margin: auto; }
   .page-impact .maps-small {
     display: none; }
   .page-impact .maps-large {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 5rem;
+    padding: 5rem 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     .page-impact .maps-large img {
-      padding: 0 5%;
-      max-height: 440px; } }
+      padding: 0 3%;
+      max-height: 350px;
+      max-width: 35%; } }
 
 @media all and (min-width: 920px) {
   .page-impact .impact-impact-content {
@@ -1705,6 +1705,9 @@ footer .wpcf7-form-control.wpcf7-submit {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+.page-front-page .wild-fire-count {
+  display: none; }
+
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
   background-size: contain, cover;
@@ -1792,8 +1795,6 @@ footer .wpcf7-form-control.wpcf7-submit {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-  height: 20px;
-  width: 140px;
   -ms-flex-item-align: center;
       align-self: center; }
 
@@ -1801,11 +1802,54 @@ footer .wpcf7-form-control.wpcf7-submit {
   display: none; }
 
 @media all and (min-width: 700px) {
+  .page-front-page .wild-fire-count {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 170px;
+    width: 236px;
+    height: 186px;
+    border: 3px solid #fff;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(121, 121, 121, 0.3); }
+    .page-front-page .wild-fire-count h3 {
+      font-family: "Overpass", sans-serif;
+      font-size: 22px;
+      margin: 10px 0; }
+    .page-front-page .wild-fire-count .wild-fire-count-maps {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img {
+        width: 50px;
+        max-height: 50px; }
+      .page-front-page .wild-fire-count .wild-fire-count-maps img:nth-child(2) {
+        width: 25px; }
+    .page-front-page .wild-fire-count .count {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 0 25px;
+      color: #da9127; }
+      .page-front-page .wild-fire-count .count h2 {
+        font-family: "Overpass", sans-serif;
+        font-size: 40px;
+        margin: 5px 0; }
   .page-front-page .front-page-header {
     height: 677px;
     background-size: 1440px, cover; }
+    .page-front-page .front-page-header .we-detect-fires {
+      padding: 3rem 4rem 0; }
     .page-front-page .front-page-header .front-page-header-content {
-      font-size: 2rem;
+      font-size: 1.7rem;
+      font-weight: lighter;
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
@@ -1923,6 +1967,20 @@ footer .wpcf7-form-control.wpcf7-submit {
   color: #fff;
   padding: 0;
   margin-top: 6rem; }
+
+footer .wpcf7-form-control.wpcf7-submit {
+  background-color: #698e87;
+  border: 2px solid #fff;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s; }
+  footer .wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #da9127;
+    border: 2px solid #9a661a;
+    color: #fff; }
 
 .site-footer {
   padding: 0;

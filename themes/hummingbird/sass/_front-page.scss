@@ -3,6 +3,9 @@
 --------------------------------------------------------------*/
 
 .page-front-page {
+	.wild-fire-count {
+		display: none;
+	}
 	.front-page-header {
 		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
 		background-size: contain, cover;
@@ -85,8 +88,6 @@
 	}
 	.find-out-button {
 		order: 4;
-		height: 20px;
-		width: 140px;
 		align-self: center;
 	}
 	.volunteer-form {
@@ -96,11 +97,55 @@
 
 @media all and (min-width: $medium__width) {
 	.page-front-page {
+		.wild-fire-count {
+			display: block;
+			position: absolute;
+			right: 50px;
+			top: 170px;
+			width: 236px;
+			height: 186px;
+			border: 3px solid $color__white;
+			text-align: center;
+			color: $color__white;
+			background-color: rgba(121, 121, 121, 0.3);
+			h3 {
+				font-family: $font__main;
+				font-size: 22px;
+				margin: 10px 0;
+			}
+			.wild-fire-count-maps {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 20px;
+				img {
+					width: 50px;
+					max-height: 50px;
+				}
+				img:nth-child(2) {
+					width: 25px;
+				}
+			}
+			.count {
+				display: flex;
+				justify-content: space-around;
+				padding: 0 25px;
+				color: $color__orange-main;
+				h2 {
+					font-family: $font__main;
+					font-size: 40px;
+					margin: 5px 0;
+				}
+			}
+		}
 		.front-page-header {
 			height: 677px;
 			background-size: $full__width, cover;
+			.we-detect-fires {
+				padding: 3rem 4rem 0;
+			}
 			.front-page-header-content {
-				font-size: 2rem;
+				font-size: 1.7rem;
+				font-weight: lighter;
 				color: $color__grey;
 			}
 			.button-link {

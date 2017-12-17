@@ -67,7 +67,6 @@ get_header(); ?>
 						<div class="volunteer-text">
 							<h2>Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
 							<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
-							<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
 						</div>
 					</section>
 				<?php 
