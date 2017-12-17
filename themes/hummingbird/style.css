@@ -1691,6 +1691,9 @@ footer .wpcf7-form-control.wpcf7-submit {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+.page-front-page .wild-fire-count {
+  display: none; }
+
 .page-front-page .front-page-header {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
   background-size: contain, cover;
@@ -1788,9 +1791,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 @media all and (min-width: 700px) {
   .page-front-page .wild-fire-count {
+    display: block;
     position: absolute;
-    right: 3%;
-    top: 44%;
+    right: 50px;
+    top: 170px;
     width: 236px;
     height: 186px;
     border: 3px solid #fff;
