@@ -399,7 +399,7 @@ textarea {
   background-color: #e8eeee;
   color: #698e87;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 200;
   height: 40px;
   width: 370px;
   padding-left: 1rem;
@@ -455,7 +455,7 @@ textarea {
 
 .page-front-page .volunteer-form label {
   font-size: 2.25rem;
-  font-weight: 300; }
+  font-weight: 200; }
 
 .page-front-page .volunteer-form .wpcf7 .wpcf7-form-control-wrap {
   border-bottom: 2px dashed #1e1e1e;
@@ -470,7 +470,7 @@ textarea {
   background-color: #698e87;
   color: #fff;
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 200;
   width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
