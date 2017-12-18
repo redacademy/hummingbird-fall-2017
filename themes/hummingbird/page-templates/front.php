@@ -11,20 +11,22 @@ get_header(); ?>
 	<div id="primary" class="content-area page-front-page">
 		<main id="main" class="site-main" role="main">
 
-			<div class="wild-fire-count"> <!-- Wild fire count -->
-				<h3>Wild Fire Count</h3>
-			  <div class="wild-fire-count-maps">
-				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/bc-mini-map.png">
-				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/alberta-mini-map.png">
-				<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/yukon-mini-map.png">
-			  </div>
-			  <div class="count">
-			    <h2>29</h2><h2>17</h2><h2>7</h2>
-			  </div>
+			<div class="wild-fire-count-container">
+				<div class="wild-fire-count"> <!-- Wild fire count -->
+					<h3>Wild Fire Count</h3>
+						<div class="wild-fire-count-maps">
+						<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/bc-mini-map.png">
+						<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/alberta-mini-map.png">
+						<img class="symbol-color" src="<?php echo get_template_directory_uri(); ?>/assets/elements/yukon-mini-map.png">
+					</div>
+					<div class="count">
+						<h2>29</h2><h2>17</h2><h2>7</h2>
+					</div>
+				</div>
 			</div>
 
 			<section class="width-full front-page-header">
-				<div class="width-content-left we-detect-fires">
+				<div class="width-content text-left we-detect-fires">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
 					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
 					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
@@ -46,7 +48,7 @@ get_header(); ?>
 			</section>
 
 			<section class="width-column"> <!-- Maps -->
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
+				<img class="front-page-maps" src="<?php echo get_template_directory_uri(); ?>/assets/elements/maps-home-page.png">
 			</section>
 
 			<section class="width-content front-page-volunteer"> <!-- What is Digital Volunteering? -->
