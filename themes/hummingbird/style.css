@@ -1271,6 +1271,10 @@ object {
     color: #1e1e1e; }
   .page-template-who .bignumber {
     color: #72acb2; }
+  .page-template-who .icon-one {
+    display: none; }
+  .page-template-who .icon-two {
+    display: inline; }
   .page-template-who .who-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1313,7 +1317,10 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    text-align: left; }
+    .page-template-who .front-page-explanation-case p {
+      text-align: left; }
     .page-template-who .front-page-explanation-case div h2 {
       text-align: center; }
     .page-template-who .front-page-explanation-case span {
@@ -1356,6 +1363,10 @@ object {
       max-width: 300px; }
 
 @media all and (min-width: 700px) {
+  .page-template-who .icon-one {
+    display: inline; }
+  .page-template-who .icon-two {
+    display: none; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1413,6 +1424,9 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .page-template-who .front-page-explanation-case p {
+      color: #698e87;
+      margin: 10px 0; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1429,6 +1443,8 @@ object {
               box-shadow: 3px 3px 15px 1px #bababa; }
       .page-template-who .front-page-explanation-case div h2 {
         text-align: center; }
+      .page-template-who .front-page-explanation-case div h3 {
+        margin-bottom: 0; }
       .page-template-who .front-page-explanation-case div span {
         display: block;
         margin-bottom: 2rem; }
