@@ -85,11 +85,11 @@ get_header(); ?>
 						echo $field['who_team_case_title'];
 						echo '</h4>'; ?>
 
-						<p>
+						<span>
 						    <span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon-black.svg" alt="facebook icon"></span>
 							<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon-black.svg" alt="instagram icon"></span>
 							<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon-black.svg" alt="twitter icon"></span>
-						</p>
+						</span>
 						
 						<?php	
 						echo '<p>';
@@ -98,14 +98,17 @@ get_header(); ?>
 						?>
 					</div>						
 						<?php } ?>
-					
+			</section>
+
+			<section class="width-content who-impact-statement">
+					<h2><?php echo CFS()->get( 'who_impact_statement' ); ?></h2>
 			</section>
 
 			<section class="width-content our-impact-link">
 				<h2><?php echo CFS()->get( 'our_impact_link' ); ?></h2>
 				<div><a href="<?php echo esc_url( home_url( 'our-impact/' ) ); ?>" class="contact-button button-link button-link-solid">See Our Impact</a></div>
 			</section>	 
-					
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
