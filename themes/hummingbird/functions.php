@@ -117,8 +117,13 @@ function cfp($atts, $content = null) {
 	foreach($pwd as $p) {
 			$p = trim($p);
 
-add_shortcode('cfp', 'cfp');
+			$cf7 = preg_replace('/<input type="text" name="' . $p . '"/usi', '<input type="password" name="' . $p . '"', $cf7);
 	}
+
+	return $cf7;
+}
+add_shortcode('cfp', 'cfp');
+
 // wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
 
 function hn_login_logo() { ?>
