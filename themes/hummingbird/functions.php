@@ -103,10 +103,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu', 11 );
- 
-
  
 // SIGN IN PAGE (PASSWORD IS SHOWING. NEEDS TO BE FIXED)
 // http://smallenvelop.com/how-to-get-password-fields-in-contact-form-7/
@@ -128,9 +124,8 @@ function cfp($atts, $content = null) {
 }
 add_shortcode('cfp', 'cfp');
 
-}
-wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
-}
+// wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
+
 function hn_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
