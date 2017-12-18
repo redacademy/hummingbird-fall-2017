@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<section class="width-content"> <!-- "I want to be part of the community!" form -->
+			<section class="width-content">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
