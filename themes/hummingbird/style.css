@@ -399,7 +399,7 @@ textarea {
   background-color: #e8eeee;
   color: #698e87;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 200;
   height: 40px;
   width: 370px;
   padding-left: 1rem;
@@ -455,7 +455,7 @@ textarea {
 
 .page-front-page .volunteer-form label {
   font-size: 2.25rem;
-  font-weight: 300; }
+  font-weight: 200; }
 
 .page-front-page .volunteer-form .wpcf7 .wpcf7-form-control-wrap {
   border-bottom: 2px dashed #1e1e1e;
@@ -470,7 +470,7 @@ textarea {
   background-color: #698e87;
   color: #fff;
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: 200;
   width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
@@ -578,7 +578,7 @@ footer input[type=email],
 footer input[type=text] {
   background-color: #698e87;
   color: white;
-  font-weight: 700; }
+  font-weight: 200; }
   footer input[type=email]::-webkit-input-placeholder,
   footer input[type=text]::-webkit-input-placeholder {
     color: #fff; }
@@ -786,11 +786,11 @@ a {
         color: #1e1e1e;
         border-bottom: 1.5px solid #da9127; }
       .main-navigation ul li:last-child a {
-        padding: 1rem;
+        padding: .7rem;
         border-radius: 5px;
         color: #fff;
         text-decoration: none;
-        min-width: 180px;
+        min-width: 150px;
         text-align: center;
         display: inline-block;
         background-color: #da9127;
@@ -1023,11 +1023,11 @@ object {
 
 .button-link,
 .wpcf7-submit {
-  padding: 1rem;
+  padding: .7rem;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
-  min-width: 180px;
+  min-width: 150px;
   text-align: center;
   display: inline-block; }
 
@@ -1083,7 +1083,7 @@ object {
 @media screen and (min-width: 700px) {
   .width-column,
   .width-content {
-    padding: 6rem 4rem 0 4rem;
+    padding: 2rem 4rem 0;
     text-align: center; }
   .width-full {
     padding-top: 6rem; }
@@ -1161,7 +1161,7 @@ object {
 
 .page-action .call h2 {
   font-family: "Overpass", sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 30px; }
 
 .page-action .volunteer-button {
@@ -1373,7 +1373,7 @@ object {
     overflow: hidden; }
   .page-template-who .our-impact-link {
     margin: 0 auto;
-    height: 300px; }
+    height: 90px; }
     .page-template-who .our-impact-link h2 {
       margin: 40px auto;
       max-width: 810px; }
@@ -1438,7 +1438,7 @@ object {
         margin-bottom: 2rem; }
       .page-template-who .front-page-explanation-case div img {
         width: 50px;
-        max-height: 35px; }
+        max-height: 50px; }
   .page-template-who .bignumber {
     color: #72acb2;
     text-align: left; }
@@ -1562,7 +1562,7 @@ object {
       .page-impact .impact-impact-case .impact-impact-content h3 {
         font-family: "Overpass", sans-serif; }
       .page-impact .impact-impact-case .impact-impact-content p {
-        font-size: 12px;
+        font-size: 16px;
         margin: 20px;
         max-width: 400px; }
       .page-impact .impact-impact-case .impact-impact-content .impact-impact-case-number {

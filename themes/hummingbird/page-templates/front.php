@@ -146,7 +146,7 @@ get_header(); ?>
 				?>
 			</section>
 
-			<section class="volunteer-form width-content text-left"> <!-- "I want to be part of the community!" form -->
+			<section class="volunteer-form width-content-left text-left"> <!-- "I want to be part of the community!" form -->
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>
