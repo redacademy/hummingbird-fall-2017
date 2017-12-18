@@ -38,6 +38,7 @@
 		max-width: $full__width;
 		margin-left: auto;
 		margin-right: auto;
+		font-family: $font__main;
 		div:nth-child(3) {
 			background-color: $color__green-main;
 			color: $color__white;
@@ -52,11 +53,17 @@
 		}
 		.front-page-impact-case-number {
 			color: $color__orange-main;
+			font-size: 2rem;
+			margin: 0 0 .5rem 0;
+			font-family: $font__main;
+			letter-spacing: 0.1em;
 		}
 		.front-page-impact-case-metric {
 			color: $color__green-main;
-			font-size: 2.5rem;
 			margin: 0;
+			font-family: $font__main;
+			font-size: 1.5rem;
+			letter-spacing: 0.1em;
 		}
 		.front-page-impact-case-icon-container {
 			width: 100px;
@@ -64,7 +71,11 @@
 			margin-top: 1rem;
 			margin-right: 1rem;
 		}
+		.front-page-impact-content {
+			padding-bottom: 1.5rem;
+		}
 	}
+
 	.volunteer {
 		display: flex;
 		justify-content: space-around;
@@ -84,6 +95,7 @@
 		order: 3;
 		p {
 			text-align: center;
+			font-size: 1.5rem;
 		}
 	}
 	.find-out-button {
@@ -193,6 +205,10 @@
 			.front-page-impact-case-number {
 				font-size: 5rem;
 				margin: 0;
+			}
+			.front-page-impact-case-metric {
+				color: $color__green-main;
+				font-size: 2.5rem;
 			}
 			.front-page-impact-case-icon-container {
 				width: 184px;
