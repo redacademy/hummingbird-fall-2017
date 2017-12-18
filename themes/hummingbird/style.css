@@ -1841,7 +1841,8 @@ object {
     padding-top: 6rem; }
     .page-front-page .front-page-impact-case .front-page-impact-content {
       grid-column: span 2;
-      padding: 4rem 6rem; }
+      padding: 4rem 6rem;
+      margin: 0; }
     .page-front-page .front-page-impact-case div:nth-child(3) {
       grid-column: 2 / 4; }
     .page-front-page .front-page-impact-case div:nth-child(4) {

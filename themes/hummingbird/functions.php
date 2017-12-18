@@ -103,33 +103,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu', 11 );
- 
-/**
- * Custom function that changes the value of the greeting in the backend of wordpress.
- */
-
-function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
-$user_id = get_current_user_id();
-$current_user = wp_get_current_user();
-$profile_url = get_edit_profile_url( $user_id );
- 
-if ( 0 != $user_id ) {
-/* Add the "My Account" menu */
-$avatar = get_avatar( $user_id, 28 );
-$howdy = sprintf( __('Aloha, %1$s'), $current_user->display_name );
-$class = empty( $avatar ) ? '' : 'with-avatar';
- 
-$wp_admin_bar->add_menu( array(
-'id' => 'my-account',
-'parent' => 'top-secondary',
-'title' => $howdy . $avatar,
-'href' => $profile_url,
-'meta' => array(
-'class' => $class,
-),
-) );
  
 // SIGN IN PAGE (PASSWORD IS SHOWING. NEEDS TO BE FIXED)
 // http://smallenvelop.com/how-to-get-password-fields-in-contact-form-7/
@@ -151,9 +124,8 @@ function cfp($atts, $content = null) {
 }
 add_shortcode('cfp', 'cfp');
 
-}
-wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
-}
+// wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
+
 function hn_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
