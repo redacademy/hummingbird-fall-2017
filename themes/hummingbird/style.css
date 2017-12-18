@@ -836,6 +836,7 @@ a {
         text-decoration: none;
         min-width: 150px;
         text-align: center;
+        display: inline-block;
         background-color: #da9127;
         border: 2px solid #da9127;
         color: #fff;
@@ -1071,7 +1072,8 @@ object {
   color: #fff;
   text-decoration: none;
   min-width: 150px;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
 
 .button-link-solid,
 .site-content .wpcf7-submit {
@@ -1130,7 +1132,9 @@ object {
   .width-full {
     padding-top: 6rem; }
   .bignumber {
-    font-weight: 400; } }
+    font-weight: 400; }
+  .text-left {
+    text-align: left; } }
 
 /*--------------------------------------------------------------
 - page-action
@@ -1315,6 +1319,10 @@ object {
     color: #1e1e1e; }
   .page-template-who .bignumber {
     color: #72acb2; }
+  .page-template-who .icon-one {
+    display: none; }
+  .page-template-who .icon-two {
+    display: inline; }
   .page-template-who .who-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1357,7 +1365,10 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    text-align: left; }
+    .page-template-who .front-page-explanation-case p {
+      text-align: left; }
     .page-template-who .front-page-explanation-case div h2 {
       text-align: center; }
     .page-template-who .front-page-explanation-case span {
@@ -1400,6 +1411,10 @@ object {
       max-width: 300px; }
 
 @media all and (min-width: 700px) {
+  .page-template-who .icon-one {
+    display: inline; }
+  .page-template-who .icon-two {
+    display: none; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1457,6 +1472,9 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .page-template-who .front-page-explanation-case p {
+      color: #698e87;
+      margin: 10px 0; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1473,6 +1491,8 @@ object {
               box-shadow: 3px 3px 15px 1px #bababa; }
       .page-template-who .front-page-explanation-case div h2 {
         text-align: center; }
+      .page-template-who .front-page-explanation-case div h3 {
+        margin-bottom: 0; }
       .page-template-who .front-page-explanation-case div span {
         display: block;
         margin-bottom: 2rem; }
@@ -1713,7 +1733,7 @@ object {
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
-  padding: 8em 0 6rem 3rem; }
+  padding: 8em 0 6rem 0; }
   .page-front-page .front-page-header .front-page-header-content {
     font-weight: 300;
     margin: 0 0 3rem 0; }
@@ -1812,46 +1832,6 @@ object {
   display: none; }
 
 @media all and (min-width: 700px) {
-  .page-front-page .wild-fire-count {
-    display: block;
-    position: absolute;
-    right: 50px;
-    top: 170px;
-    width: 236px;
-    height: 186px;
-    border: 3px solid #fff;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(121, 121, 121, 0.3); }
-    .page-front-page .wild-fire-count h3 {
-      font-family: "Overpass", sans-serif;
-      font-size: 22px;
-      margin: 10px 0; }
-    .page-front-page .wild-fire-count .wild-fire-count-maps {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding: 0 20px; }
-      .page-front-page .wild-fire-count .wild-fire-count-maps img {
-        width: 50px;
-        max-height: 50px; }
-      .page-front-page .wild-fire-count .wild-fire-count-maps img:nth-child(2) {
-        width: 25px; }
-    .page-front-page .wild-fire-count .count {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      padding: 0 25px;
-      color: #da9127; }
-      .page-front-page .wild-fire-count .count h2 {
-        font-family: "Overpass", sans-serif;
-        font-size: 40px;
-        margin: 5px 0; }
   .page-front-page .front-page-header {
     height: 677px;
     background-size: 1440px, cover; }
@@ -1863,6 +1843,8 @@ object {
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
+  .page-front-page .front-page-maps {
+    padding-bottom: 6rem; }
   .page-front-page .front-page-volunteer {
     background: url("../../assets/elements/paint-white-top.png"), url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_volunteering.png");
     background-size: 1440px, 1440px, cover;
@@ -1963,7 +1945,53 @@ object {
 @media all and (min-width: 920px) {
   .page-front-page .front-page-explanation-case {
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto; } }
+    grid-template-rows: auto; }
+  .page-front-page .wild-fire-count-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    height: 0; }
+    .page-front-page .wild-fire-count-container .wild-fire-count {
+      display: block;
+      position: absolute;
+      right: 2rem;
+      top: 4rem;
+      width: 236px;
+      height: 186px;
+      border: 3px solid #fff;
+      text-align: center;
+      color: #fff;
+      background-color: rgba(121, 121, 121, 0.3); }
+      .page-front-page .wild-fire-count-container .wild-fire-count h3 {
+        font-family: "Overpass", sans-serif;
+        font-size: 22px;
+        margin: 10px 0; }
+      .page-front-page .wild-fire-count-container .wild-fire-count .wild-fire-count-maps {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 20px; }
+        .page-front-page .wild-fire-count-container .wild-fire-count .wild-fire-count-maps img {
+          width: 50px;
+          max-height: 50px; }
+        .page-front-page .wild-fire-count-container .wild-fire-count .wild-fire-count-maps img:nth-child(2) {
+          width: 25px; }
+      .page-front-page .wild-fire-count-container .wild-fire-count .count {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 0 25px;
+        color: #da9127; }
+        .page-front-page .wild-fire-count-container .wild-fire-count .count h2 {
+          font-family: "Overpass", sans-serif;
+          font-size: 40px;
+          margin: 5px 0; } }
 
 /*--------------------------------------------------------------
 - page-footer
