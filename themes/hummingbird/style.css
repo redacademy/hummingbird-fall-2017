@@ -643,6 +643,9 @@ html body #responsive-menu-button {
   background: none;
   height: 2.5rem; }
 
+#responsive-menu-container.slide-right {
+  background: none; }
+
 /* Links */
 a {
   color: #1e1e1e; }
@@ -1083,7 +1086,7 @@ object {
 @media screen and (min-width: 700px) {
   .width-column,
   .width-content {
-    padding: 2rem 4rem 0;
+    padding: 6rem 4rem 0;
     text-align: center; }
   .width-full {
     padding-top: 6rem; }
@@ -1777,6 +1780,8 @@ object {
     background-size: 1440px, cover; }
     .page-front-page .front-page-header .we-detect-fires {
       padding: 3rem 4rem 0; }
+      .page-front-page .front-page-header .we-detect-fires .button-link-solid {
+        margin-right: 1rem; }
     .page-front-page .front-page-header .front-page-header-content {
       font-size: 1.7rem;
       font-weight: 300;
@@ -1793,7 +1798,7 @@ object {
     background-color: #698e87;
     color: #fff; }
     .page-front-page .front-page-volunteer div {
-      width: 50%;
+      width: 45%;
       padding-bottom: 6rem; }
   .page-front-page .volunteer-button-container {
     display: none; }

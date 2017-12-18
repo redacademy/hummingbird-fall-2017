@@ -117,6 +117,9 @@
 			background-size: $full__width, cover;
 			.we-detect-fires {
 				padding: 3rem 4rem 0;
+				.button-link-solid {
+					margin-right: 1rem;
+				}
 			}
 			.front-page-header-content {
 				font-size: 1.7rem;
@@ -140,7 +143,7 @@
 			background-color: $color__green-main;
 			color: $color__white;
 			div {
-				width: 50%;
+				width: 45%;
 				padding-bottom: 6rem;
 			}
 		}
