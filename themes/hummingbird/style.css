@@ -415,10 +415,6 @@ textarea {
   .page-front-page .volunteer-form input[type=text]:-ms-input-placeholder {
     color: #698e87;
     text-transform: lowercase; }
-  .page-front-page .volunteer-form input[type=email]::-ms-input-placeholder,
-  .page-front-page .volunteer-form input[type=text]::-ms-input-placeholder {
-    color: #698e87;
-    text-transform: lowercase; }
   .page-front-page .volunteer-form input[type=email]::placeholder,
   .page-front-page .volunteer-form input[type=text]::placeholder {
     color: #698e87;
@@ -448,12 +444,6 @@ textarea {
     .page-front-page .volunteer-form input[type=text]:active:-ms-input-placeholder,
     .page-front-page .volunteer-form input[type=text]:focus:-ms-input-placeholder,
     .page-front-page .volunteer-form input[type=text]:hover:-ms-input-placeholder {
-      color: #5c857e;
-      color: #cecece; }
-    .page-front-page .volunteer-form input[type=email]:active::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:focus::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:hover::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:active::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:focus::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:hover::-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
     .page-front-page .volunteer-form input[type=email]:active::placeholder, .page-front-page .volunteer-form input[type=email]:focus::placeholder, .page-front-page .volunteer-form input[type=email]:hover::placeholder,
@@ -496,13 +486,6 @@ textarea {
   .volunteer-form input[type=text]:-ms-input-placeholder,
   .signin-form input[type=email]:-ms-input-placeholder,
   .signin-form input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder,
-  .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder,
-  .signin-form input[type=email]::-ms-input-placeholder,
-  .signin-form input[type=text]::-ms-input-placeholder {
     color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder,
   .page-template-contact .contact-form input[type=text]::placeholder,
@@ -566,24 +549,6 @@ textarea {
     .signin-form input[type=text]:hover:-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
-    .page-template-contact .contact-form input[type=email]:active::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:active::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:focus::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:hover::-ms-input-placeholder,
-    .volunteer-form input[type=email]:active::-ms-input-placeholder,
-    .volunteer-form input[type=email]:focus::-ms-input-placeholder,
-    .volunteer-form input[type=email]:hover::-ms-input-placeholder,
-    .volunteer-form input[type=text]:active::-ms-input-placeholder,
-    .volunteer-form input[type=text]:focus::-ms-input-placeholder,
-    .volunteer-form input[type=text]:hover::-ms-input-placeholder,
-    .signin-form input[type=email]:active::-ms-input-placeholder,
-    .signin-form input[type=email]:focus::-ms-input-placeholder,
-    .signin-form input[type=email]:hover::-ms-input-placeholder,
-    .signin-form input[type=text]:active::-ms-input-placeholder,
-    .signin-form input[type=text]:focus::-ms-input-placeholder,
-    .signin-form input[type=text]:hover::-ms-input-placeholder {
-      color: #5c857e;
-      color: #cecece; }
     .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder,
     .page-template-contact .contact-form input[type=text]:active::placeholder,
     .page-template-contact .contact-form input[type=text]:focus::placeholder,
@@ -620,9 +585,6 @@ footer input[type=text] {
   footer input[type=email]:-ms-input-placeholder,
   footer input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  footer input[type=email]::-ms-input-placeholder,
-  footer input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   footer input[type=email]::placeholder,
   footer input[type=text]::placeholder {
     color: #fff; }
@@ -647,12 +609,6 @@ footer input[type=text] {
       footer input[type=text]:active:-ms-input-placeholder,
       footer input[type=text]:focus:-ms-input-placeholder,
       footer input[type=text]:hover:-ms-input-placeholder {
-        color: #5c857e;
-        color: #cecece; }
-      footer input[type=email]:active::-ms-input-placeholder, footer input[type=email]:focus::-ms-input-placeholder, footer input[type=email]:hover::-ms-input-placeholder,
-      footer input[type=text]:active::-ms-input-placeholder,
-      footer input[type=text]:focus::-ms-input-placeholder,
-      footer input[type=text]:hover::-ms-input-placeholder {
         color: #5c857e;
         color: #cecece; }
       footer input[type=email]:active::placeholder, footer input[type=email]:focus::placeholder, footer input[type=email]:hover::placeholder,
@@ -1349,6 +1305,8 @@ object {
     padding: 20px 20px 0px 20px; }
     .page-template-who .who-title-content h2 {
       text-align: center; }
+  .page-template-who .front-page-explanation p {
+    margin: 20px auto; }
   .page-template-who .who_header_case-photo {
     height: 259px;
     min-width: 100%;
@@ -1358,19 +1316,15 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left; }
     .page-template-who .front-page-explanation-case p {
       text-align: left; }
     .page-template-who .front-page-explanation-case div h2 {
-      text-align: center; }
+      text-align: left; }
     .page-template-who .front-page-explanation-case span {
       display: none; }
     .page-template-who .front-page-explanation-case img {
@@ -1462,6 +1416,8 @@ object {
             box-shadow: 3px 3px 15px 1px #bababa; }
     .page-template-who .who-title-content h2 {
       text-align: center; }
+  .page-template-who .front-page-explanation p {
+    max-width: 700px; }
   .page-template-who .who-title-content:nth-child(3) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -1483,6 +1439,8 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .page-template-who .front-page-explanation-case .green-text {
+      font-size: 20px; }
     .page-template-who .front-page-explanation-case p {
       color: #698e87;
       margin: 10px 0; }
@@ -1501,9 +1459,10 @@ object {
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
               box-shadow: 3px 3px 15px 1px #bababa; }
       .page-template-who .front-page-explanation-case div h2 {
-        text-align: center; }
-      .page-template-who .front-page-explanation-case div h3 {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: left;
+        font-size: 35px; }
       .page-template-who .front-page-explanation-case div span {
         display: block;
         margin-bottom: 2rem; }
