@@ -1082,7 +1082,8 @@ object {
   .width-column,
   .width-content {
     padding: 6rem 4rem 0 4rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .width-full {
     padding-top: 6rem; }
   .bignumber {
