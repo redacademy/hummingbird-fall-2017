@@ -102,7 +102,8 @@ get_header(); ?>
 					<div class="width-content front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
-								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
+								<!-- Working example of how to get custom image sizes from CFS. Don't forgot to set it to ID. -->
+								<img src=" <?php echo wp_get_attachment_image_src($field['front_page_impact_case_icon'], 'default')[0] ?> ">
 							</div>
 							<div>
 								<h3 class="front-page-impact-case-number"><?php echo $field['front_page_impact_case_number'] ?></h3>
