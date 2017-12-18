@@ -415,6 +415,10 @@ textarea {
   .page-front-page .volunteer-form input[type=text]:-ms-input-placeholder {
     color: #698e87;
     text-transform: lowercase; }
+  .page-front-page .volunteer-form input[type=email]::-ms-input-placeholder,
+  .page-front-page .volunteer-form input[type=text]::-ms-input-placeholder {
+    color: #698e87;
+    text-transform: lowercase; }
   .page-front-page .volunteer-form input[type=email]::placeholder,
   .page-front-page .volunteer-form input[type=text]::placeholder {
     color: #698e87;
@@ -444,6 +448,12 @@ textarea {
     .page-front-page .volunteer-form input[type=text]:active:-ms-input-placeholder,
     .page-front-page .volunteer-form input[type=text]:focus:-ms-input-placeholder,
     .page-front-page .volunteer-form input[type=text]:hover:-ms-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
+    .page-front-page .volunteer-form input[type=email]:active::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:focus::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:hover::-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:active::-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:focus::-ms-input-placeholder,
+    .page-front-page .volunteer-form input[type=text]:hover::-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
     .page-front-page .volunteer-form input[type=email]:active::placeholder, .page-front-page .volunteer-form input[type=email]:focus::placeholder, .page-front-page .volunteer-form input[type=email]:hover::placeholder,
@@ -486,6 +496,13 @@ textarea {
   .volunteer-form input[type=text]:-ms-input-placeholder,
   .signin-form input[type=email]:-ms-input-placeholder,
   .signin-form input[type=text]:-ms-input-placeholder {
+    color: #fff; }
+  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder,
+  .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
+  .volunteer-form input[type=email]::-ms-input-placeholder,
+  .volunteer-form input[type=text]::-ms-input-placeholder,
+  .signin-form input[type=email]::-ms-input-placeholder,
+  .signin-form input[type=text]::-ms-input-placeholder {
     color: #fff; }
   .page-template-contact .contact-form input[type=email]::placeholder,
   .page-template-contact .contact-form input[type=text]::placeholder,
@@ -549,6 +566,24 @@ textarea {
     .signin-form input[type=text]:hover:-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:active::-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:focus::-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:hover::-ms-input-placeholder,
+    .volunteer-form input[type=email]:active::-ms-input-placeholder,
+    .volunteer-form input[type=email]:focus::-ms-input-placeholder,
+    .volunteer-form input[type=email]:hover::-ms-input-placeholder,
+    .volunteer-form input[type=text]:active::-ms-input-placeholder,
+    .volunteer-form input[type=text]:focus::-ms-input-placeholder,
+    .volunteer-form input[type=text]:hover::-ms-input-placeholder,
+    .signin-form input[type=email]:active::-ms-input-placeholder,
+    .signin-form input[type=email]:focus::-ms-input-placeholder,
+    .signin-form input[type=email]:hover::-ms-input-placeholder,
+    .signin-form input[type=text]:active::-ms-input-placeholder,
+    .signin-form input[type=text]:focus::-ms-input-placeholder,
+    .signin-form input[type=text]:hover::-ms-input-placeholder {
+      color: #5c857e;
+      color: #cecece; }
     .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder,
     .page-template-contact .contact-form input[type=text]:active::placeholder,
     .page-template-contact .contact-form input[type=text]:focus::placeholder,
@@ -585,6 +620,9 @@ footer input[type=text] {
   footer input[type=email]:-ms-input-placeholder,
   footer input[type=text]:-ms-input-placeholder {
     color: #fff; }
+  footer input[type=email]::-ms-input-placeholder,
+  footer input[type=text]::-ms-input-placeholder {
+    color: #fff; }
   footer input[type=email]::placeholder,
   footer input[type=text]::placeholder {
     color: #fff; }
@@ -609,6 +647,12 @@ footer input[type=text] {
       footer input[type=text]:active:-ms-input-placeholder,
       footer input[type=text]:focus:-ms-input-placeholder,
       footer input[type=text]:hover:-ms-input-placeholder {
+        color: #5c857e;
+        color: #cecece; }
+      footer input[type=email]:active::-ms-input-placeholder, footer input[type=email]:focus::-ms-input-placeholder, footer input[type=email]:hover::-ms-input-placeholder,
+      footer input[type=text]:active::-ms-input-placeholder,
+      footer input[type=text]:focus::-ms-input-placeholder,
+      footer input[type=text]:hover::-ms-input-placeholder {
         color: #5c857e;
         color: #cecece; }
       footer input[type=email]:active::placeholder, footer input[type=email]:focus::placeholder, footer input[type=email]:hover::placeholder,
@@ -1238,7 +1282,7 @@ object {
     text-align: -webkit-center; }
     .page-action .call-to-action h2 {
       font-family: "Overpass", sans-serif;
-      font-weight: lighter;
+      font-weight: 500;
       font-size: 30px; }
     .page-action .call-to-action img {
       padding: 1rem;
@@ -1278,6 +1322,10 @@ object {
     color: #1e1e1e; }
   .page-template-who .bignumber {
     color: #72acb2; }
+  .page-template-who .icon-one {
+    display: none; }
+  .page-template-who .icon-two {
+    display: inline; }
   .page-template-who .who-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1320,7 +1368,10 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    text-align: left; }
+    .page-template-who .front-page-explanation-case p {
+      text-align: left; }
     .page-template-who .front-page-explanation-case div h2 {
       text-align: center; }
     .page-template-who .front-page-explanation-case span {
@@ -1356,6 +1407,17 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .page-template-who .single-team-member h3 {
+      margin-bottom: 5px; }
+    .page-template-who .single-team-member h4 {
+      margin: 0; }
+    .page-template-who .single-team-member span {
+      margin-top: 10px; }
+  .page-template-who .who-impact-statement {
+    max-width: 600px; }
+    .page-template-who .who-impact-statement h2 {
+      font-family: "Overpass", sans-serif;
+      font-weight: 300; }
   .page-template-who .our-impact-link {
     margin: 0 auto; }
     .page-template-who .our-impact-link h2 {
@@ -1363,6 +1425,10 @@ object {
       max-width: 300px; }
 
 @media all and (min-width: 700px) {
+  .page-template-who .icon-one {
+    display: inline; }
+  .page-template-who .icon-two {
+    display: none; }
   .page-template-who .team-case {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1420,6 +1486,9 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .page-template-who .front-page-explanation-case p {
+      color: #698e87;
+      margin: 10px 0; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1436,6 +1505,8 @@ object {
               box-shadow: 3px 3px 15px 1px #bababa; }
       .page-template-who .front-page-explanation-case div h2 {
         text-align: center; }
+      .page-template-who .front-page-explanation-case div h3 {
+        margin-bottom: 0; }
       .page-template-who .front-page-explanation-case div span {
         display: block;
         margin-bottom: 2rem; }
@@ -1445,6 +1516,11 @@ object {
   .page-template-who .bignumber {
     color: #72acb2;
     text-align: left; }
+  .page-template-who .who-impact-statement {
+    max-width: 900px; }
+    .page-template-who .who-impact-statement h2 {
+      font-family: "Merriweather", serif;
+      font-weight: 700; }
   .page-template-who .single-team-member {
     max-width: 250px; } }
 
