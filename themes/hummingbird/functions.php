@@ -104,27 +104,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
  
-// SIGN IN PAGE (PASSWORD IS SHOWING. NEEDS TO BE FIXED)
-// http://smallenvelop.com/how-to-get-password-fields-in-contact-form-7/
-function cfp($atts, $content = null) {
-	extract(shortcode_atts(array( "id" => "", "title" => "", "pwd" => "" ), $atts));
-
-	if(empty($id) || empty($title)) return "";
-
-	$cf7 = do_shortcode('[contact-form-7 404 "Not Found"]');
-
-	$pwd = explode(',', $pwd);
-	foreach($pwd as $p) {
-			$p = trim($p);
-
-			$cf7 = preg_replace('/<input type="text" name="' . $p . '"/usi', '<input type="password" name="' . $p . '"', $cf7);
-	}
-
-	return $cf7;
-}
-add_shortcode('cfp', 'cfp');
-
-
 function hn_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
