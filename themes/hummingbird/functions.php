@@ -153,32 +153,32 @@ add_shortcode('cfp', 'cfp');
 }
 wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true );
 }
-function my_login_logo() { ?>
+function hn_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/large/logo-color-large.png);
-		height:65px;
-		width:320px;
-		background-size: 320px 120px;
-		background-repeat: no-repeat;
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/logos/large/logo-color-large.png);
+					height:65px;
+					width:320px;
+					background-size: 320px 95px;
+					background-repeat: no-repeat;
         	padding-bottom: 30px;
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'hn_login_logo' );
 
-function my_login_logo_url() {
+function hn_login_logo_url() {
     return home_url();
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headerurl', 'hn_login_logo_url' );
 
-function my_login_logo_url_title() {
-    return 'Your Site Name and Info';
+function hn_login_logo_url_title() {
+    return 'Visit Hummingbird Network';
 }
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_filter( 'login_headertitle', 'hn_login_logo_url_title' );
 
 function myprefix_enqueue_google_fonts() { 
 	wp_enqueue_style( 'merriweather', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700' ); 
 	wp_enqueue_style( 'overpass', 'https://fonts.googleapis.com/css?family=Overpass:300,400,400i,700' ); 
 }
-add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_google_fonts' ); 
+add_action( 'wp_enqueue_scripts', 'hn_enqueue_google_fonts' ); 
