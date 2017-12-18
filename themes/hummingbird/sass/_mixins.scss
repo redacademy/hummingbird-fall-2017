@@ -28,11 +28,11 @@
 // Buttons
 
 @mixin button-link {
-	padding: 1rem;
+	padding: .7rem;
 	border-radius: 5px;
 	color: $color__white;
 	text-decoration: none;
-	min-width: 180px;
+	min-width: 150px;
 	text-align: center;
 }
 
