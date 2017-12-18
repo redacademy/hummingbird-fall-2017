@@ -157,7 +157,7 @@
 			}
 			.front-page-header-content {
 				font-size: 1.7rem;
-				font-weight: lighter;
+				font-weight: 300;
 				color: $color__grey;
 			}
 			.button-link {
@@ -191,6 +191,7 @@
 			.front-page-impact-content {
 				grid-column: span 2;
 				padding: 4rem 6rem;
+				margin: 0;
 			}
 			div:nth-child(3) {
 				grid-column: 2 / 4;
@@ -240,7 +241,7 @@
 		}
 		.volunteer-img {
 			background-size: cover;
-			width: 335px;
+			width: 390px;
 			height: 390px;
 			margin: 0 1rem 0 0;
 			align-self: center;

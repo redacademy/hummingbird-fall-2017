@@ -1859,7 +1859,7 @@ object {
       padding: 3rem 4rem 0; }
     .page-front-page .front-page-header .front-page-header-content {
       font-size: 1.7rem;
-      font-weight: lighter;
+      font-weight: 300;
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
@@ -1885,7 +1885,8 @@ object {
     padding-top: 6rem; }
     .page-front-page .front-page-impact-case .front-page-impact-content {
       grid-column: span 2;
-      padding: 4rem 6rem; }
+      padding: 4rem 6rem;
+      margin: 0; }
     .page-front-page .front-page-impact-case div:nth-child(3) {
       grid-column: 2 / 4; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
@@ -1930,7 +1931,7 @@ object {
       margin-bottom: 0; }
   .page-front-page .volunteer-img {
     background-size: cover;
-    width: 335px;
+    width: 390px;
     height: 390px;
     margin: 0 1rem 0 0;
     -ms-flex-item-align: center;
