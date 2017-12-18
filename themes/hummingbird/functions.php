@@ -177,8 +177,8 @@ function hn_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'hn_login_logo_url_title' );
 
-function myprefix_enqueue_google_fonts() { 
+function hn_enqueue_google_fonts() { 
 	wp_enqueue_style( 'merriweather', 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700' ); 
-	wp_enqueue_style( 'overpass', 'https://fonts.googleapis.com/css?family=Overpass:300,400,400i,700' ); 
+	wp_enqueue_style( 'overpass', 'https://fonts.googleapis.com/css?family=Overpass:200,300,400,400i,700' ); 
 }
 add_action( 'wp_enqueue_scripts', 'hn_enqueue_google_fonts' ); 

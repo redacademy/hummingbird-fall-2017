@@ -1815,7 +1815,7 @@ object {
       padding: 3rem 4rem 0; }
     .page-front-page .front-page-header .front-page-header-content {
       font-size: 1.7rem;
-      font-weight: lighter;
+      font-weight: 300;
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }

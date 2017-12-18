@@ -99,7 +99,7 @@ get_header(); ?>
 				
 				foreach ( $fields as $field ) : ?>
 
-					<div class="width-content front-page-impact-content">
+					<div class="front-page-impact-content">
 						<div class="flex-horizontal-left">
 							<div class="front-page-impact-case-icon-container">
 								<img src=" <?php echo $field['front_page_impact_case_icon'] ?> ">
@@ -119,7 +119,7 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="volunteer width-content text-left">								<!-- Hi, I'm Paula! -->
+			<section class="volunteer text-left"><!-- Hi, I'm Paula! -->
 				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
 					// d($fields);
 					if(isset($fields)):
