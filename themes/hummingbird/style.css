@@ -792,6 +792,7 @@ a {
         text-decoration: none;
         min-width: 180px;
         text-align: center;
+        display: inline-block;
         background-color: #da9127;
         border: 2px solid #da9127;
         color: #fff;
@@ -1027,7 +1028,8 @@ object {
   color: #fff;
   text-decoration: none;
   min-width: 180px;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
 
 .button-link-solid,
 .site-content .wpcf7-submit {
@@ -1819,6 +1821,8 @@ object {
       color: #cecece; }
     .page-front-page .front-page-header .button-link {
       display: inline-block; }
+  .page-front-page .front-page-maps {
+    padding-bottom: 6rem; }
   .page-front-page .front-page-volunteer {
     background: url("../../assets/elements/paint-white-top.png"), url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_volunteering.png");
     background-size: 1440px, 1440px, cover;
