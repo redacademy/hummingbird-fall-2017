@@ -61,7 +61,7 @@ get_header(); ?>
 				foreach ( $fields as $field ) : ?>
 					<section class="width-content volunteer"> <!-- Hi, I'm Paula! -->
 						<div class="volunteer-img"
-							 style="background-image: url(<?php echo $field['front_page_volunteer_case_photo'] ?>);">
+							 style="background-image: url(<?php echo wp_get_attachment_image_src($field['front_page_volunteer_case_photo'], 'medium_large')[0] ?>);">
 							 				
 						</div>
 						<div class="volunteer-text">

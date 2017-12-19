@@ -33,7 +33,7 @@ get_header(); ?>
 					<div class="impact-impact-content">
 						<div class="impact-flex">
 							<div class="impact-impact-case-icon-container">
-								<img src=" <?php echo $field['impact_impact_case_icon'] ?> ">
+								<img src=" <?php echo wp_get_attachment_image_src($field['impact_impact_case_icon'], 'medium')[0] ?> ">
 							</div>
 							<div>
 								<h1 class="impact-impact-title-metric"><?php echo $field['impact_impact_case_metric'] ?></h1>
@@ -45,7 +45,7 @@ get_header(); ?>
 					</div>
 					<div
 						class="width-full impact-impact-case-photo"
-						style="background-image: url(<?php echo $field['impact_impact_case_photo'] ?>);">
+						style="background-image: url(<?php echo wp_get_attachment_image_src($field['impact_impact_case_photo'], 'full')[0] ?>);">
 					</div>
 
 				<?php endforeach; ?>

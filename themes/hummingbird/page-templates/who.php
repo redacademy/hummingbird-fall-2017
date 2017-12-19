@@ -20,23 +20,23 @@ get_header(); ?>
 				<h1><?php echo CFS()->get( 'who_header_title' ); ?></h1>
 			</section>
 
-            <section class="who-content-wrapper">
-					<?php $fields = CFS()->get( 'who_header_case' );
-						foreach ( $fields as $field ) { ?>
+			<section class="who-content-wrapper">
+				<?php $fields = CFS()->get( 'who_header_case' );
+					foreach ( $fields as $field ) { ?>
 
 					<div class="who-title-content">
 						<h2 class="who_header_case_title"><?php echo $field['who_header_case_title'] ?></h2>	
 						<p><?php echo $field['who_header_case_content'] ?></p>
 					</div>
 					<div
-								<?php if(isset($field['who_header_case_photo'])): ?>
-									class="who_header_case-photo"
-									style="background-image: url(<?php echo $field['who_header_case_photo'] ?>);">
-								<?php endif; ?>
+						<?php if(isset($field['who_header_case_photo'])): ?>
+							class="who_header_case-photo"
+							style="background-image: url(<?php echo wp_get_attachment_image_src($field['who_header_case_photo'], 'medium_large')[0] ?>);">
+						<?php endif; ?>
 					</div>
 				
-						<?php } ?>
-            </section>
+				<?php } ?>
+			</section>
 
 			<section class="width-content front-page-explanation">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
@@ -75,9 +75,10 @@ get_header(); ?>
 					<div class="single-team-member">
 						<div
 							class="who_team_case-photo"
-							style="background-image: url(<?php echo $field['who_team_case_photo'] ?>);">
+							style="background-image: url(<?php echo wp_get_attachment_image_src($field['who_team_case_photo'], 'medium')[0] ?>);">
 						</div>
-				        <?php
+
+						<?php
 						echo '<h3>';
 						echo $field['who_team_case_name'];
 						echo '</h3>';
@@ -86,7 +87,7 @@ get_header(); ?>
 						echo '</h4>'; ?>
 
 						<span>
-						    <span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon-black.svg" alt="facebook icon"></span>
+							<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon-black.svg" alt="facebook icon"></span>
 							<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon-black.svg" alt="instagram icon"></span>
 							<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon-black.svg" alt="twitter icon"></span>
 						</span>
