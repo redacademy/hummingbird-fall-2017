@@ -2075,7 +2075,8 @@ object {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 0 auto; }
   .page-front-page .volunteer-button-container {
     display: none; } }
 
