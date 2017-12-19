@@ -49,12 +49,9 @@ get_header(); ?>
 			</section>
 			<div class="meet">
                 <h2>Meet our Digital Volunteers</h2>
-			  </div>
-			</section>
+			</div>
 
 			<?php $fields = CFS()->get('front_page_volunteer_case', 2 );
-
-			// d($fields);
 
 			if(isset($fields)):
 
@@ -73,8 +70,6 @@ get_header(); ?>
 				endforeach;
 			endif;
 			?>
-
-			
 
 			<section class="width-content call">
 				<h2><?php echo CFS()->get( 'action_call' ); ?></h2>
