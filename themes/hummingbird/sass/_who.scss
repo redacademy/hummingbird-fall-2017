@@ -129,9 +129,7 @@
 		}
 		.our-impact-link {
 			margin: 0 auto;
-			height: 90px;
-			h2 {
-				margin: 40px auto;
+			span {
 				max-width: 810px;
 			}
 		}
@@ -214,6 +212,7 @@
 			h2 {
 				font-family: $font__headings;
 				font-weight: 700;
+				margin-bottom: 0;
 			}
 		}
 		.who_team_case-photo {
