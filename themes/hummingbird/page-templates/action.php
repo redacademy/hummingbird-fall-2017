@@ -30,32 +30,34 @@ get_header(); ?>
                 <h2><span><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/checkmark.svg">
 				You decide how much you volunteer</span></h2>
 			</section>
-			  <div class="start">
-                <h2>Start making an impact in three simple steps.</h2>
-				</div>
+
+			<div class="start">
+				<h2>Start making an impact in three simple steps.</h2>
+			</div>
+
 			<section class="width-content simple-steps">
 			  <div class="call-to-action">
-				<h2>Register</h2>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-clipboard.png">
-			  </div>
-			  <div class="call-to-action">
-				<h2>Analyze Photos</h2>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-phone.png">
-			  </div>
-			  <div class="call-to-action">
-				<h2>Save communities</h2>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-magnify.png">
+					<h2>Register</h2>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-clipboard.png">
+				</div>
+				<div class="call-to-action">
+					<h2>Analyze Photos</h2>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-phone.png">
+				</div>
+				<div class="call-to-action">
+					<h2>Save communities</h2>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/logos/svg/circle-magnify.png">
 			  </div>
 			</section>
+
 			<div class="meet">
-                <h2>Meet our Digital Volunteers</h2>
+        <h2>Meet our Digital Volunteers</h2>
 			</div>
 
 			<?php $fields = CFS()->get('front_page_volunteer_case', 2 );
-
 			if(isset($fields)):
-
 				foreach ( $fields as $field ) : ?>
+
 					<section class="width-content volunteer"> <!-- Hi, I'm Paula! -->
 						<div class="volunteer-img"
 							 style="background-image: url(<?php echo wp_get_attachment_image_src($field['front_page_volunteer_case_photo'], 'medium_large')[0] ?>);">
@@ -66,6 +68,7 @@ get_header(); ?>
 							<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
 						</div>
 					</section>
+					
 				<?php 
 				endforeach;
 			endif;

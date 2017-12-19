@@ -1255,7 +1255,7 @@ object {
   .page-action .action-header p {
     max-width: 800px;
     font-size: 20px;
-    margin: 3rem auto; }
+    margin: 3rem auto 0; }
 
 .page-action .action-steps {
   max-width: 1440px;
@@ -1318,6 +1318,9 @@ object {
 .page-action .volunteer-button {
   padding: 40px 0 0px; }
 
+.page-action .meet {
+  padding-top: 4rem; }
+
 .page-action .volunteer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1353,45 +1356,42 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    padding-top: 1rem; }
-    .page-action .simple-steps h2 {
+            flex-direction: row; }
+    .page-action .simple-steps .call-to-action {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 90px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      margin: 0 1rem; }
+      .page-action .simple-steps .call-to-action h2 {
+        font-family: "Overpass", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        height: 90px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .page-action .simple-steps .call-to-action img {
+        height: auto;
+        width: 282px; }
   .page-action .action-steps span {
     margin: 0 auto;
     font-size: 36px; }
   .page-action .call h2 {
     font-size: 50px;
     padding: 0 12% 0 12%; }
-  .page-action .call-to-action {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: -webkit-center; }
-    .page-action .call-to-action h2 {
-      font-family: "Overpass", sans-serif;
-      font-weight: 500;
-      font-size: 30px; }
-    .page-action .call-to-action img {
-      padding: 1rem;
-      height: auto;
-      width: 282px; }
   .page-action .start {
     padding: 0;
     margin: 0 auto; }
