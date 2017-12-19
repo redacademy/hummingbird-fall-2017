@@ -1527,6 +1527,9 @@ object {
       max-width: 300px; }
 
 @media all and (min-width: 700px) {
+  .page-template-who .who-content-wrapper {
+    max-width: 1440px;
+    margin: 6rem auto 0 auto; }
   .page-template-who .icon-one {
     display: inline; }
   .page-template-who .icon-two {
@@ -2072,7 +2075,8 @@ object {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 0 auto; }
   .page-front-page .volunteer-button-container {
     display: none; } }
 
