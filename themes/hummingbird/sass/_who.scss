@@ -15,7 +15,7 @@
 		display: none;
 	}
 	.icon-two {
-		display: inline;
+		display: inline-block;
 	}
 	.who-content-wrapper {
 		display: flex;
@@ -115,8 +115,9 @@
 			max-width: 1440px;
 			margin: 6rem auto 0 auto;
 		}
-		.icon-one {
-			display: inline;
+		span.icon-one {
+			display: inline-block;
+			margin: 0;
 		}
 		.icon-two {
 			display: none;
@@ -171,17 +172,21 @@
 			min-width: 50%;
 			background-size: cover;
 		}
+
 		.front-page-explanation-case {
+
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
+
 			.green-text {
 				font-size: 20px;
 				color: $color__green-main;
 				margin: 10px 0;
 			}
-			div {
+
+			.explanation_case {
 				display: flex;
 				flex-direction: column;
 				width: 40%;
@@ -195,16 +200,13 @@
 					text-align: left;
 					font-size: 35px;
 				}
-				span {
-					display: block;
-					margin-bottom: 2rem;
-				}
 				img {
 					width: 50px;
 					max-height: 50px;
 				}
 			}
 		}
+		
 		.bignumber {
 			color: $color__blue-numbers;
 			text-align: left;

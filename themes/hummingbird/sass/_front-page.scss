@@ -2,6 +2,14 @@
 - page-front-page
 --------------------------------------------------------------*/
 
+.front-page-explanation-case-icon {
+	width: 64px;
+	height: 64px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left bottom;
+}
+
 .page-front-page {
 
 	.wild-fire-count {
@@ -31,13 +39,6 @@
 		grid-template-columns: 100%;
 		grid-template-rows: auto;
 		grid-gap: 2rem;
-		.front-page-explanation-case-icon {
-			width: 64px;
-			height: 64px;
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: left bottom;
-		}
 	}
 	.front-page-impact-case {
 		max-width: $full__width;

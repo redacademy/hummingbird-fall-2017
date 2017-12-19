@@ -1429,7 +1429,7 @@ object {
   .page-template-who .icon-one {
     display: none; }
   .page-template-who .icon-two {
-    display: inline; }
+    display: inline-block; }
   .page-template-who .who-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1530,8 +1530,9 @@ object {
   .page-template-who .who-content-wrapper {
     max-width: 1440px;
     margin: 6rem auto 0 auto; }
-  .page-template-who .icon-one {
-    display: inline; }
+  .page-template-who span.icon-one {
+    display: inline-block;
+    margin: 0; }
   .page-template-who .icon-two {
     display: none; }
   .page-template-who .team-case {
@@ -1612,7 +1613,7 @@ object {
       font-size: 20px;
       color: #698e87;
       margin: 10px 0; }
-    .page-template-who .front-page-explanation-case div {
+    .page-template-who .front-page-explanation-case .explanation_case {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1626,15 +1627,12 @@ object {
       text-align: left;
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
               box-shadow: 3px 3px 15px 1px #bababa; }
-      .page-template-who .front-page-explanation-case div h2 {
+      .page-template-who .front-page-explanation-case .explanation_case h2 {
         margin-bottom: 0;
         margin-top: 0;
         text-align: left;
         font-size: 35px; }
-      .page-template-who .front-page-explanation-case div span {
-        display: block;
-        margin-bottom: 2rem; }
-      .page-template-who .front-page-explanation-case div img {
+      .page-template-who .front-page-explanation-case .explanation_case img {
         width: 50px;
         max-height: 50px; }
   .page-template-who .bignumber {
@@ -1880,6 +1878,13 @@ object {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+.front-page-explanation-case-icon {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom; }
+
 .page-front-page .wild-fire-count {
   display: none; }
 
@@ -1904,12 +1909,6 @@ object {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-gap: 2rem; }
-  .page-front-page .front-page-explanation-case .front-page-explanation-case-icon {
-    width: 64px;
-    height: 64px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left bottom; }
 
 .page-front-page .front-page-impact-case {
   max-width: 1440px;
