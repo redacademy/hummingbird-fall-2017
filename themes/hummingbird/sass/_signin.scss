@@ -14,6 +14,10 @@
         a {
         font-family: $font__main;
         text-decoration: none;
+        &:hover {
+            color: $color__grey;
+            text-decoration: underline;
+        }
     }
     }
     .signin-form input {

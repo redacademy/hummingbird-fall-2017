@@ -905,8 +905,6 @@ a {
         background-color: #da9127;
         border: 2px solid #da9127;
         color: #fff;
-        -webkit-transition-delay: 0;
-                transition-delay: 0;
         -webkit-transition-property: background-color;
         transition-property: background-color;
         -webkit-transition-duration: .5s;
@@ -1191,8 +1189,6 @@ object {
   background-color: #da9127;
   border: 2px solid #da9127;
   color: #fff;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: .5s;
@@ -1836,6 +1832,9 @@ object {
 .page-signin .signin-form a {
   font-family: "Overpass", sans-serif;
   text-decoration: none; }
+  .page-signin .signin-form a:hover {
+    color: #cecece;
+    text-decoration: underline; }
 
 .page-signin .signin-form input {
   font-size: 16px; }
