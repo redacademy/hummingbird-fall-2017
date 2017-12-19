@@ -52,7 +52,7 @@ get_header(); ?>
 						foreach ( $fields as $field ) {
 							echo '<div class="explanation_case">';
 								echo '<p class="bignumber">'.$field['front_page_explanation_case_number'];
-								echo '<img class="icon-one" src="'.$field['front_page_explanation_case_icon'].'">'.'</p>';
+								echo '<img class="icon-one" src="'.wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0].'">'.'</p>';
 								echo '<h2>'.$field['front_page_explanation_case_title'].'</h2>';
 								echo '<p class="green-text">'.$field['front_page_explanation_case_abstract'].'</p>';
 								echo '<span>'.$field['front_page_explanation_case_content'].'</span>';
