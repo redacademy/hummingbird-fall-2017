@@ -24,16 +24,19 @@ get_header(); ?>
 				<?php $fields = CFS()->get( 'who_header_case' );
 					foreach ( $fields as $field ) { ?>
 
-					<div class="who-title-content">
+			<div class="who-title-content">
+					<div class="who-title-case">
 						<h2 class="who_header_case_title"><?php echo $field['who_header_case_title'] ?></h2>	
 						<p><?php echo $field['who_header_case_content'] ?></p>
 					</div>
-					<div
-						<?php if(isset($field['who_header_case_photo'])): ?>
+			</div>
+			
+			<div
+				<?php if(isset($field['who_header_case_photo'])): ?>
 							class="who_header_case-photo"
 							style="background-image: url(<?php echo wp_get_attachment_image_src($field['who_header_case_photo'], 'medium_large')[0] ?>);">
-						<?php endif; ?>
-					</div>
+				<?php endif; ?>
+			</div>
 				
 				<?php } ?>
 			</section>

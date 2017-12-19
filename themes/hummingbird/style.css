@@ -1489,15 +1489,15 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
     width: 300px;
     background-size: cover;
-    background-color: transparent;
-    text-align: center; }
+    background-color: transparent; }
   .page-template-who .single-team-member {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1562,14 +1562,29 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 38%;
+    width: 50%;
+    padding: 0;
+    margin: 0; }
+  .page-template-who .who-title-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px 40px 30px 40px;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 40px 0px 40px;
     text-align: left;
     -webkit-box-shadow: 3px 3px 15px 1px #bababa;
             box-shadow: 3px 3px 15px 1px #bababa; }
-    .page-template-who .who-title-content h2 {
-      text-align: center; }
+    .page-template-who .who-title-case p {
+      text-align: left; }
+    .page-template-who .who-title-case h2 {
+      text-align: left; }
   .page-template-who .front-page-explanation p {
     max-width: 700px; }
   .page-template-who .who-title-content:nth-child(3) {
@@ -1607,7 +1622,7 @@ object {
               flex-direction: column;
       width: 40%;
       margin: 20px 15px 30px;
-      padding: 20px 20px 0px 20px;
+      padding: 20px 40px 0px;
       text-align: left;
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
               box-shadow: 3px 3px 15px 1px #bababa; }
@@ -1630,8 +1645,13 @@ object {
     .page-template-who .who-impact-statement h2 {
       font-family: "Merriweather", serif;
       font-weight: 700; }
+  .page-template-who .who_team_case-photo {
+    height: 233px;
+    width: 233px; }
   .page-template-who .single-team-member {
-    max-width: 250px; } }
+    max-width: 33%; }
+    .page-template-who .single-team-member p {
+      margin: 20px; } }
 
 /*--------------------------------------------------------------
 - page-impct

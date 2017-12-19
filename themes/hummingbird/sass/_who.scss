@@ -34,6 +34,7 @@
 			text-align: center;
 		}
 	}
+	
 	.front-page-explanation {
 		p {
 			margin: 20px auto;
@@ -68,7 +69,7 @@
 	.team-case {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: center;
 	}
 	.who_team_case-photo {
 		margin: 0 auto;
@@ -76,7 +77,6 @@
 		width: 300px;
 		background-size: cover;
 		background-color: transparent;
-		text-align: center;
 	}
 	.single-team-member {
 		display: flex;
@@ -139,13 +139,23 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			width: 38%;
+			width: 50%;
+			padding: 0;
+			margin: 0;
+		}
+		.who-title-case {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 			margin: 20px 40px 30px 40px;
-			padding: 20px 20px 0px 20px;
+			padding: 20px 40px 0px 40px;
 			text-align: left;
 			box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
+			p {
+				text-align: left;
+			}
 			h2 {
-				text-align: center;
+				text-align: left;
 			}
 		}
 		.front-page-explanation {
@@ -176,7 +186,7 @@
 				flex-direction: column;
 				width: 40%;
 				margin: 20px 15px 30px;
-				padding: 20px 20px 0px 20px;
+				padding: 20px 40px 0px;
 				text-align: left;
 				box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
 				h2 {
@@ -206,8 +216,16 @@
 				font-weight: 700;
 			}
 		}
-		.single-team-member {
-			max-width: 250px;
+		.who_team_case-photo {
+			height: 233px;
+    	width: 233px;
 		}
+		.single-team-member {
+			max-width: 33%;
+			p {
+				margin: 20px;
+			}
+		}
+		
 	}
 }
