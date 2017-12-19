@@ -112,12 +112,12 @@ textarea {
 	input[type=text] {
 		background-color: $color__green-main;
 		color: $color__white;
-		font-size: 2rem;
-		font-weight: 200;
+		font-size: 1rem;
+		font-weight: 300;
 		width: 85%;
 		padding: 1rem;
 		&::placeholder {
-			color: $color__white;
+			color: $color__grey;
 		}
 		&:active,
 		&:focus,
@@ -132,7 +132,7 @@ textarea {
 		}
 	}
 	label {
-		font-size: 2.25rem;
+		font-size: 1.25rem;
 		font-weight: 700;
 	}
 }
@@ -151,6 +151,32 @@ footer {
 }
 
 @media all and (min-width: $medium__width) {
+	.page-template-contact .contact-form,
+	.volunteer-form,
+	.signin-form {
+	input[type=email],
+	input[type=text] {
+		font-size: 2rem;
+		font-weight: 200;
+		&::placeholder {
+			color: $color__grey;
+		}
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: lighten($color__green-main, 15%);
+			font-style: italic;
+			outline: none;
+			&::placeholder {
+				color: lighten($color__green-loading-page, 15%);
+				color: $color__grey;
+			}
+		}
+	}
+	label {
+		font-size: 2.25rem;
+	}
+}
 	footer {
 		input[type=email],
 		input[type=text] {
