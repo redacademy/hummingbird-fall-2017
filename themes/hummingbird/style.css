@@ -1547,10 +1547,8 @@ object {
         justify-content: space-around;
     overflow: hidden; }
   .page-template-who .our-impact-link {
-    margin: 0 auto;
-    height: 90px; }
-    .page-template-who .our-impact-link h2 {
-      margin: 40px auto;
+    margin: 0 auto; }
+    .page-template-who .our-impact-link span {
       max-width: 810px; }
   .page-template-who .who-title-content {
     display: -webkit-box;
@@ -1621,7 +1619,7 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      width: 40%;
+      width: 44%;
       margin: 20px 15px 30px;
       padding: 20px 40px 0px;
       text-align: left;
@@ -1642,7 +1640,8 @@ object {
     max-width: 900px; }
     .page-template-who .who-impact-statement h2 {
       font-family: "Merriweather", serif;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 0; }
   .page-template-who .who_team_case-photo {
     height: 233px;
     width: 233px; }
@@ -2229,8 +2228,8 @@ footer .wpcf7-form-control.wpcf7-submit {
     .site-footer .site-info .logo-white {
       position: absolute;
       width: 92px;
-      right: 4rem;
-      margin-top: 15px; }
+      right: 7%;
+      margin-top: 60px; }
     .site-footer .site-info .contact-button {
       display: none; }
   .site-footer .copyrights {
@@ -2264,8 +2263,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 2rem;
-    margin-top: 6rem; }
+    height: 2rem; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -2289,7 +2287,8 @@ footer .wpcf7-form-control.wpcf7-submit {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        text-align: left; }
       .site-footer .site-info .contact-button {
         display: inline-block;
         margin-top: 5px; }
@@ -2313,7 +2312,8 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 @media all and (min-width: 920px) {
   .site-footer br {
-    display: none; }
+    display: none;
+    color: #ccc; }
   .site-footer .site-info {
     background: none; }
     .site-footer .site-info .contact-details-container {
@@ -2329,7 +2329,8 @@ footer .wpcf7-form-control.wpcf7-submit {
               justify-content: flex-end; }
       .site-footer .site-info .contact-details-container div:nth-child(2) {
         margin-left: 3rem;
-        padding-top: 3rem; }
+        padding-top: 3rem;
+        text-align: left; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-one {
@@ -2339,11 +2340,12 @@ footer .wpcf7-form-control.wpcf7-submit {
     padding-left: 2rem; }
   .site-footer .footer-logo-large {
     display: block;
-    background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
+    background: url("../../assets/logos/large/symbol-white-large.png");
     background-color: #698e87;
     background-repeat: no-repeat;
-    background-size: 35rem;
-    background-position: left -18rem top -5rem;
+    background-size: 0rem;
+    background-position-x: 4rem;
+    background-position-y: 3rem;
     grid-column: 1;
     grid-row: 1 / 3; } }
 
@@ -2377,6 +2379,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 .copyrights-one li:last-child > a {
   border-right: none; }
+
+@media all and (min-width: 1180px) {
+  .site-footer .footer-logo-large {
+    background-size: 10rem; } }
 
 /*--------------------------------------------------------------
 - page-404
