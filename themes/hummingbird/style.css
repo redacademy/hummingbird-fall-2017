@@ -1046,12 +1046,14 @@ a {
   .page-contact .contact-details-wrapper {
     padding-top: 20px;
     left: 30%;
-    font-size: 22px; }
+    font-size: 22px;
+    width: 400px; }
     .page-contact .contact-details-wrapper li {
       font-weight: 300; }
   .page-contact .contact-details-wrapper-two {
     left: 30%;
-    font-size: 22px; }
+    font-size: 22px;
+    width: 400px; }
     .page-contact .contact-details-wrapper-two li {
       font-weight: 300; }
   .page-contact form.wpcf7-form {
