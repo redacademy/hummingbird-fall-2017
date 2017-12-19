@@ -1020,14 +1020,14 @@ a {
 
 .page-contact .contact-details-wrapper {
   position: relative;
-  left: 10%;
+  left: 15%;
   text-align: left; }
   .page-contact .contact-details-wrapper li {
     font-weight: 700; }
 
 .page-contact .contact-details-wrapper-two {
   position: relative;
-  left: 10%;
+  left: 15%;
   text-align: left; }
   .page-contact .contact-details-wrapper-two li {
     font-weight: 700; }
@@ -1044,13 +1044,14 @@ a {
 
 @media all and (min-width: 700px) {
   .page-contact .contact-details-wrapper {
+    padding-top: 20px;
     left: 30%;
-    font-size: 2rem; }
+    font-size: 22px; }
     .page-contact .contact-details-wrapper li {
       font-weight: 300; }
   .page-contact .contact-details-wrapper-two {
     left: 30%;
-    font-size: 2rem; }
+    font-size: 22px; }
     .page-contact .contact-details-wrapper-two li {
       font-weight: 300; }
   .page-contact form.wpcf7-form {
