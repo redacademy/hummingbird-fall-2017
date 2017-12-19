@@ -38,9 +38,9 @@ get_header(); ?>
 						<?php } ?>
             </section>
 
-			<section class="width-content">
+			<section class="width-content front-page-explanation">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
-				<h2><?php echo CFS()->get( 'front_page_explanation_title', 2 ); ?></h2>
+				<h1><?php echo CFS()->get( 'front_page_explanation_title', 2 ); ?></h1>
 				<p><?php echo CFS()->get( 'front_page_explanation_content', 2 ); ?></p>
 			</section>
 
@@ -53,8 +53,8 @@ get_header(); ?>
 							echo '<div class="explanation_case">';
 								echo '<p class="bignumber">'.$field['front_page_explanation_case_number'];
 								echo '<img class="icon-one" src="'.$field['front_page_explanation_case_icon'].'">'.'</p>';
-								echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
-								echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
+								echo '<h2>'.$field['front_page_explanation_case_title'].'</h2>';
+								echo '<p class="green-text">'.$field['front_page_explanation_case_abstract'].'</p>';
 								echo '<span>'.$field['front_page_explanation_case_content'].'</span>';
 								echo '<p class="icon-two">'.'<img src="'.$field['front_page_explanation_case_icon'].'">'.'</p>';
 							echo '</div>';

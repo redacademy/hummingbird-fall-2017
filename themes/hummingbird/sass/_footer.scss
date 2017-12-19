@@ -27,9 +27,17 @@ footer .wpcf7-form-control.wpcf7-submit {
 	transition-duration: .5s;
 	&:hover {
 		background-color: $color__orange-main;
-		border: 2px solid darken($color__orange-main, 15%);;
+		border: 2px solid darken($color__orange-main, 15%);
+		;
 		color: $color__white;
 	}
+}
+
+.icon-spacer {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
 }
 
 .site-footer {
@@ -60,12 +68,6 @@ footer .wpcf7-form-control.wpcf7-submit {
 		grid-row: 2;
 		li {
 			text-align: left;
-		}
-		.icon-spacer {
-			display: inline-block;
-			width: 2rem;
-			height: 2rem;
-			vertical-align: middle;
 		}
 		.logo-large {
 			display: none;
@@ -106,11 +108,9 @@ footer .wpcf7-form-control.wpcf7-submit {
 }
 
 @media all and (min-width: $medium__width) {
-
 	.footer-wrapper {
 		margin-top: 0;
 	}
-
 	.paint-footer {
 		background: url("../../assets/elements/paint-footer4x-recolour.png");
 		background-size: contain;
@@ -119,7 +119,6 @@ footer .wpcf7-form-control.wpcf7-submit {
 		height: 2rem;
 		margin-top: 6rem;
 	}
-
 	.site-footer {
 		display: grid;
 		grid-template-columns: 2fr 1fr;

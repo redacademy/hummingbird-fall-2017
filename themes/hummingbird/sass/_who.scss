@@ -23,7 +23,6 @@
         justify-content: space-between;
         margin-top: 4rem;
     }
-    
     .who-title-content {
         display: flex;
         flex-direction: column;
@@ -35,6 +34,11 @@
             text-align: center;
         }
     }
+    .front-page-explanation {
+        p {
+            margin: 20px auto;
+        }
+    }
     .who_header_case-photo {
         height: 259px;
         min-width: 100%;
@@ -43,17 +47,15 @@
     }
     .front-page-explanation-case {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
         text-align: left;
         p {
             text-align: left;
         }
         div {
-        h2 {
-            text-align: center;
-        }
+            h2 {
+                text-align: left;
+            }
         }
         span {
             display: none;
@@ -62,7 +64,7 @@
             width: 45px;
             max-height: 45px;
         }
-     }    
+    }
     .team-case {
         display: flex;
         flex-direction: column;
@@ -97,7 +99,6 @@
             font-weight: 300;
         }
     }
-    
     .our-impact-link {
         margin: 0 auto;
         h2 {
@@ -110,10 +111,10 @@
 @media all and (min-width: $medium__width) {
     .page-template-who {
         .icon-one {
-        display: inline;
+            display: inline;
         }
         .icon-two {
-        display: none;
+            display: none;
         }
         .team-case {
             display: flex;
@@ -128,7 +129,6 @@
                 margin: 40px auto;
                 max-width: 810px;
             }
-           
         }
         .who-title-content {
             display: flex;
@@ -143,9 +143,14 @@
                 text-align: center;
             }
         }
+        .front-page-explanation {
+            p {
+                max-width: 700px;
+            }
+        }
         .who-title-content:nth-child(3) {
             order: 4;
-        } 
+        }
         .who_header_case-photo {
             height: auto;
             min-width: 50%;
@@ -156,47 +161,50 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            .green-text {
+                font-size: 20px;
+            }
             p {
                 color: $color__green-main;
                 margin: 10px 0;
             }
             div {
-            display: flex;
-            flex-direction: column;
-            width: 40%;
-            margin: 20px 15px 30px;
-            padding: 20px 20px 0px 20px;
-            text-align: left;
-            box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
-            h2 {
-                text-align: center;
-            }
-            h3{
-                margin-bottom: 0;
-            }
-            span {
-            display: block;
-            margin-bottom: 2rem;
-            }
-            img {
-                width: 50px;
-                max-height: 50px;
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                margin: 20px 15px 30px;
+                padding: 20px 20px 0px 20px;
+                text-align: left;
+                box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
+                h2 {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    text-align: left;
+                    font-size: 35px;
+                }
+                span {
+                    display: block;
+                    margin-bottom: 2rem;
+                }
+                img {
+                    width: 50px;
+                    max-height: 50px;
                 }
             }
         }
-    .bignumber {
-        color: $color__blue-numbers;
-        text-align: left;
-    }
-    .who-impact-statement {
-        max-width: 900px;
-        h2 {
-            font-family: $font__headings;
-            font-weight: 700;
+        .bignumber {
+            color: $color__blue-numbers;
+            text-align: left;
         }
-    }    
-    .single-team-member {
-        max-width: 250px;
-    }        
+        .who-impact-statement {
+            max-width: 900px;
+            h2 {
+                font-family: $font__headings;
+                font-weight: 700;
+            }
+        }
+        .single-team-member {
+            max-width: 250px;
+        }
     }
 }
