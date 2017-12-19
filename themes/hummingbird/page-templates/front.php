@@ -70,15 +70,16 @@ get_header(); ?>
 			<section class="width-content front-page-explanation-case">
 				<?php
 					$fields = CFS()->get( 'front_page_explanation_case' );
-					foreach ( $fields as $field ) {
-						echo '<div>';
-							echo '<p class="bignumber">'.$field['front_page_explanation_case_number'].'</p>';
-							echo '<h3>'.$field['front_page_explanation_case_title'].'</h3>';
-							echo '<p>'.$field['front_page_explanation_case_abstract'].'</p>';
-							echo '<img  class="front-page-explanation-case-icon" src="'.wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0].'">';
-						echo '</div>';
-					}
-				?>
+					foreach ( $fields as $field ) { ?>
+						<div>
+							<p class="bignumber"><?php echo $field['front_page_explanation_case_number'] ?></p>
+							<h3><?php echo $field['front_page_explanation_case_title'] ?></h3>
+							<p><?php echo$field['front_page_explanation_case_abstract'] ?></p>
+							<div class="front-page-explanation-case-icon"
+								style="background-image: url( <?php echo wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0] ?>);">
+							</div>
+						</div>
+					<?php } ?>
 			</section>
 
 			<section class="width-content flex-horizontal-center">
