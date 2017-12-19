@@ -3,33 +3,26 @@
 --------------------------------------------------------------*/
 
 .page-template-who {
-
 	text-align: center;
-
 	p {
 		text-align: center;
 		color: $color__text-main;
 	}
-
 	.bignumber {
 		color: $color__blue-numbers;
 	}
-
 	.icon-one {
 		display: none;
 	}
-
 	.icon-two {
 		display: inline;
 	}
-
 	.who-content-wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 4rem;
 	}
-
 	.who-title-content {
 		display: flex;
 		flex-direction: column;
@@ -38,10 +31,9 @@
 		margin: 0 auto;
 		padding: 20px 20px 0px 20px;
 		h2 {
-				text-align: center;
+			text-align: center;
 		}
 	}
-
 	.front-page-explanation {
 		p {
 			margin: 20px auto;
@@ -53,7 +45,6 @@
 		background-size: cover;
 		background-position: 50%;
 	}
-
 	.front-page-explanation-case {
 		display: flex;
 		flex-direction: column;
@@ -74,13 +65,11 @@
 			max-height: 45px;
 		}
 	}
-
 	.team-case {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 	}
-
 	.who_team_case-photo {
 		margin: 0 auto;
 		height: 300px;
@@ -89,7 +78,6 @@
 		background-color: transparent;
 		text-align: center;
 	}
-
 	.single-team-member {
 		display: flex;
 		flex-direction: column;
@@ -104,7 +92,6 @@
 			margin-top: 10px;
 		}
 	}
-
 	.who-impact-statement {
 		max-width: 600px;
 		h2 {
@@ -112,7 +99,6 @@
 			font-weight: 300;
 		}
 	}
-
 	.our-impact-link {
 		margin: 0 auto;
 		h2 {
@@ -159,18 +145,17 @@
 		}
 		.front-page-explanation {
 			p {
-					max-width: 700px;
+				max-width: 700px;
 			}
 		}
 		.who-title-content:nth-child(3) {
-				order: 4;
+			order: 4;
 		}
 		.who_header_case-photo {
-				height: auto;
-				min-width: 50%;
-				background-size: cover;
+			height: auto;
+			min-width: 50%;
+			background-size: cover;
 		}
-
 		.front-page-explanation-case {
 			display: flex;
 			flex-direction: row;
@@ -181,37 +166,34 @@
 				color: $color__green-main;
 				margin: 10px 0;
 			}
-		}
-
-		div {
-			display: flex;
-			flex-direction: column;
-			width: 40%;
-			margin: 20px 15px 30px;
-			padding: 20px 20px 0px 20px;
-			text-align: left;
-			box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
-			h2 {
-				margin-bottom: 0;
-				margin-top: 0;
+			div {
+				display: flex;
+				flex-direction: column;
+				width: 40%;
+				margin: 20px 15px 30px;
+				padding: 20px 20px 0px 20px;
 				text-align: left;
-				font-size: 35px;
-			}
-			span {
-				display: block;
-				margin-bottom: 2rem;
-			}
-			img {
-				width: 50px;
-				max-height: 50px;
+				box-shadow: 3px 3px 15px 1px rgba(186, 186, 186, 1);
+				h2 {
+					margin-bottom: 0;
+					margin-top: 0;
+					text-align: left;
+					font-size: 35px;
+				}
+				span {
+					display: block;
+					margin-bottom: 2rem;
+				}
+				img {
+					width: 50px;
+					max-height: 50px;
+				}
 			}
 		}
-				
 		.bignumber {
 			color: $color__blue-numbers;
 			text-align: left;
 		}
-
 		.who-impact-statement {
 			max-width: 900px;
 			h2 {
@@ -219,9 +201,8 @@
 				font-weight: 700;
 			}
 		}
-
 		.single-team-member {
-				max-width: 250px;
+			max-width: 250px;
 		}
 	}
 }
