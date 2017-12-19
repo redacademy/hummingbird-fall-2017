@@ -308,22 +308,20 @@
                 }
             }
         }
+    }
+    .bignumber {
+        color: $color__blue-numbers;
+        text-align: left;
+    }
+    .who-impact-statement {
+        max-width: 900px;
+        h2 {
+            font-family: $font__headings;
+            font-weight: 700;
         }
-        .bignumber {
-            color: $color__blue-numbers;
-            text-align: left;
-        }
-        .who-impact-statement {
-            max-width: 900px;
-            h2 {
-                font-family: $font__headings;
-                font-weight: 700;
-            }
-        }
-        .single-team-member {
-            max-width: 250px;
-        }
-    
-    
+    }
+    .single-team-member {
+        max-width: 250px;
+    }
 }
 >>>>>>> c8b35b96dcef359e627619402687152154664657
