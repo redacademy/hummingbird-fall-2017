@@ -29,21 +29,21 @@
         text-align: left;
     }
     .contact-details-three {
-    text-align: center;
+        text-align: center;
     }
     .page-template-contact.contact-form label {
         font-size: 16px;
     }
     form.wpcf7-form {
-            text-align: left;
-            margin-left: 10%;
-            }       
-   
+        text-align: left;
+        margin-left: 10%;
+    }
 }
+
 @media all and (min-width: $medium__width) {
     .page-contact {
-       .contact-details-wrapper {
-           padding-top: 20px;
+        .contact-details-wrapper {
+            padding-top: 20px;
             left: 30%;
             font-size: 22px;
             li {
@@ -60,6 +60,6 @@
         form.wpcf7-form {
             text-align: left;
             margin-left: 10%;
-        }       
+        }
     }
 }
