@@ -20,6 +20,8 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>
+				<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" >Forgot your password?</a></p>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

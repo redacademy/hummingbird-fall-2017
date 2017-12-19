@@ -3,11 +3,22 @@
 --------------------------------------------------------------*/
 
 .page-signin {
+    
     .signin-header {
         text-align: center;
         h1 {
             font-size: 50px;
         }
+    }
+    .signin-form {
+        a {
+        font-family: $font__main;
+        text-decoration: none;
+        &:hover {
+            color: $color__grey;
+            text-decoration: underline;
+        }
+    }
     }
     .signin-form input {
         font-size: 16px;

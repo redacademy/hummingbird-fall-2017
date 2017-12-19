@@ -69,4 +69,3 @@ function cfp($atts, $content = null) {
 	return $cf7;
 }
 add_shortcode('cfp', 'cfp');
-

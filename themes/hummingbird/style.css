@@ -415,10 +415,6 @@ textarea {
   .page-front-page .volunteer-form input[type=text]:-ms-input-placeholder {
     color: #698e87;
     text-transform: lowercase; }
-  .page-front-page .volunteer-form input[type=email]::-ms-input-placeholder,
-  .page-front-page .volunteer-form input[type=text]::-ms-input-placeholder {
-    color: #698e87;
-    text-transform: lowercase; }
   .page-front-page .volunteer-form input[type=email]::placeholder,
   .page-front-page .volunteer-form input[type=text]::placeholder {
     color: #698e87;
@@ -450,12 +446,6 @@ textarea {
     .page-front-page .volunteer-form input[type=text]:hover:-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
-    .page-front-page .volunteer-form input[type=email]:active::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:focus::-ms-input-placeholder, .page-front-page .volunteer-form input[type=email]:hover::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:active::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:focus::-ms-input-placeholder,
-    .page-front-page .volunteer-form input[type=text]:hover::-ms-input-placeholder {
-      color: #5c857e;
-      color: #cecece; }
     .page-front-page .volunteer-form input[type=email]:active::placeholder, .page-front-page .volunteer-form input[type=email]:focus::placeholder, .page-front-page .volunteer-form input[type=email]:hover::placeholder,
     .page-front-page .volunteer-form input[type=text]:active::placeholder,
     .page-front-page .volunteer-form input[type=text]:focus::placeholder,
@@ -479,8 +469,8 @@ textarea {
 .signin-form input[type=text] {
   background-color: #698e87;
   color: #fff;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 300;
   width: 85%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
@@ -489,28 +479,21 @@ textarea {
   .volunteer-form input[type=text]::-webkit-input-placeholder,
   .signin-form input[type=email]::-webkit-input-placeholder,
   .signin-form input[type=text]::-webkit-input-placeholder {
-    color: #fff; }
+    color: #cecece; }
   .page-template-contact .contact-form input[type=email]:-ms-input-placeholder,
   .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
   .volunteer-form input[type=email]:-ms-input-placeholder,
   .volunteer-form input[type=text]:-ms-input-placeholder,
   .signin-form input[type=email]:-ms-input-placeholder,
   .signin-form input[type=text]:-ms-input-placeholder {
-    color: #fff; }
-  .page-template-contact .contact-form input[type=email]::-ms-input-placeholder,
-  .page-template-contact .contact-form input[type=text]::-ms-input-placeholder,
-  .volunteer-form input[type=email]::-ms-input-placeholder,
-  .volunteer-form input[type=text]::-ms-input-placeholder,
-  .signin-form input[type=email]::-ms-input-placeholder,
-  .signin-form input[type=text]::-ms-input-placeholder {
-    color: #fff; }
+    color: #cecece; }
   .page-template-contact .contact-form input[type=email]::placeholder,
   .page-template-contact .contact-form input[type=text]::placeholder,
   .volunteer-form input[type=email]::placeholder,
   .volunteer-form input[type=text]::placeholder,
   .signin-form input[type=email]::placeholder,
   .signin-form input[type=text]::placeholder {
-    color: #fff; }
+    color: #cecece; }
   .page-template-contact .contact-form input[type=email]:active, .page-template-contact .contact-form input[type=email]:focus, .page-template-contact .contact-form input[type=email]:hover,
   .page-template-contact .contact-form input[type=text]:active,
   .page-template-contact .contact-form input[type=text]:focus,
@@ -566,24 +549,6 @@ textarea {
     .signin-form input[type=text]:hover:-ms-input-placeholder {
       color: #5c857e;
       color: #cecece; }
-    .page-template-contact .contact-form input[type=email]:active::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:active::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:focus::-ms-input-placeholder,
-    .page-template-contact .contact-form input[type=text]:hover::-ms-input-placeholder,
-    .volunteer-form input[type=email]:active::-ms-input-placeholder,
-    .volunteer-form input[type=email]:focus::-ms-input-placeholder,
-    .volunteer-form input[type=email]:hover::-ms-input-placeholder,
-    .volunteer-form input[type=text]:active::-ms-input-placeholder,
-    .volunteer-form input[type=text]:focus::-ms-input-placeholder,
-    .volunteer-form input[type=text]:hover::-ms-input-placeholder,
-    .signin-form input[type=email]:active::-ms-input-placeholder,
-    .signin-form input[type=email]:focus::-ms-input-placeholder,
-    .signin-form input[type=email]:hover::-ms-input-placeholder,
-    .signin-form input[type=text]:active::-ms-input-placeholder,
-    .signin-form input[type=text]:focus::-ms-input-placeholder,
-    .signin-form input[type=text]:hover::-ms-input-placeholder {
-      color: #5c857e;
-      color: #cecece; }
     .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder,
     .page-template-contact .contact-form input[type=text]:active::placeholder,
     .page-template-contact .contact-form input[type=text]:focus::placeholder,
@@ -606,7 +571,7 @@ textarea {
 .page-template-contact .contact-form label,
 .volunteer-form label,
 .signin-form label {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 700; }
 
 footer input[type=email],
@@ -620,14 +585,117 @@ footer input[type=text] {
   footer input[type=email]:-ms-input-placeholder,
   footer input[type=text]:-ms-input-placeholder {
     color: #fff; }
-  footer input[type=email]::-ms-input-placeholder,
-  footer input[type=text]::-ms-input-placeholder {
-    color: #fff; }
   footer input[type=email]::placeholder,
   footer input[type=text]::placeholder {
     color: #fff; }
 
 @media all and (min-width: 700px) {
+  .page-template-contact .contact-form input[type=email],
+  .page-template-contact .contact-form input[type=text],
+  .volunteer-form input[type=email],
+  .volunteer-form input[type=text],
+  .signin-form input[type=email],
+  .signin-form input[type=text] {
+    font-size: 2rem;
+    font-weight: 200; }
+    .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
+    .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
+    .volunteer-form input[type=email]::-webkit-input-placeholder,
+    .volunteer-form input[type=text]::-webkit-input-placeholder,
+    .signin-form input[type=email]::-webkit-input-placeholder,
+    .signin-form input[type=text]::-webkit-input-placeholder {
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:-ms-input-placeholder,
+    .page-template-contact .contact-form input[type=text]:-ms-input-placeholder,
+    .volunteer-form input[type=email]:-ms-input-placeholder,
+    .volunteer-form input[type=text]:-ms-input-placeholder,
+    .signin-form input[type=email]:-ms-input-placeholder,
+    .signin-form input[type=text]:-ms-input-placeholder {
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]::placeholder,
+    .page-template-contact .contact-form input[type=text]::placeholder,
+    .volunteer-form input[type=email]::placeholder,
+    .volunteer-form input[type=text]::placeholder,
+    .signin-form input[type=email]::placeholder,
+    .signin-form input[type=text]::placeholder {
+      color: #cecece; }
+    .page-template-contact .contact-form input[type=email]:active, .page-template-contact .contact-form input[type=email]:focus, .page-template-contact .contact-form input[type=email]:hover,
+    .page-template-contact .contact-form input[type=text]:active,
+    .page-template-contact .contact-form input[type=text]:focus,
+    .page-template-contact .contact-form input[type=text]:hover,
+    .volunteer-form input[type=email]:active,
+    .volunteer-form input[type=email]:focus,
+    .volunteer-form input[type=email]:hover,
+    .volunteer-form input[type=text]:active,
+    .volunteer-form input[type=text]:focus,
+    .volunteer-form input[type=text]:hover,
+    .signin-form input[type=email]:active,
+    .signin-form input[type=email]:focus,
+    .signin-form input[type=email]:hover,
+    .signin-form input[type=text]:active,
+    .signin-form input[type=text]:focus,
+    .signin-form input[type=text]:hover {
+      background-color: #94b0aa;
+      font-style: italic;
+      outline: none; }
+      .page-template-contact .contact-form input[type=email]:active::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:focus::-webkit-input-placeholder, .page-template-contact .contact-form input[type=email]:hover::-webkit-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:active::-webkit-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:focus::-webkit-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:hover::-webkit-input-placeholder,
+      .volunteer-form input[type=email]:active::-webkit-input-placeholder,
+      .volunteer-form input[type=email]:focus::-webkit-input-placeholder,
+      .volunteer-form input[type=email]:hover::-webkit-input-placeholder,
+      .volunteer-form input[type=text]:active::-webkit-input-placeholder,
+      .volunteer-form input[type=text]:focus::-webkit-input-placeholder,
+      .volunteer-form input[type=text]:hover::-webkit-input-placeholder,
+      .signin-form input[type=email]:active::-webkit-input-placeholder,
+      .signin-form input[type=email]:focus::-webkit-input-placeholder,
+      .signin-form input[type=email]:hover::-webkit-input-placeholder,
+      .signin-form input[type=text]:active::-webkit-input-placeholder,
+      .signin-form input[type=text]:focus::-webkit-input-placeholder,
+      .signin-form input[type=text]:hover::-webkit-input-placeholder {
+        color: #5c857e;
+        color: #cecece; }
+      .page-template-contact .contact-form input[type=email]:active:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:focus:-ms-input-placeholder, .page-template-contact .contact-form input[type=email]:hover:-ms-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:active:-ms-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:focus:-ms-input-placeholder,
+      .page-template-contact .contact-form input[type=text]:hover:-ms-input-placeholder,
+      .volunteer-form input[type=email]:active:-ms-input-placeholder,
+      .volunteer-form input[type=email]:focus:-ms-input-placeholder,
+      .volunteer-form input[type=email]:hover:-ms-input-placeholder,
+      .volunteer-form input[type=text]:active:-ms-input-placeholder,
+      .volunteer-form input[type=text]:focus:-ms-input-placeholder,
+      .volunteer-form input[type=text]:hover:-ms-input-placeholder,
+      .signin-form input[type=email]:active:-ms-input-placeholder,
+      .signin-form input[type=email]:focus:-ms-input-placeholder,
+      .signin-form input[type=email]:hover:-ms-input-placeholder,
+      .signin-form input[type=text]:active:-ms-input-placeholder,
+      .signin-form input[type=text]:focus:-ms-input-placeholder,
+      .signin-form input[type=text]:hover:-ms-input-placeholder {
+        color: #5c857e;
+        color: #cecece; }
+      .page-template-contact .contact-form input[type=email]:active::placeholder, .page-template-contact .contact-form input[type=email]:focus::placeholder, .page-template-contact .contact-form input[type=email]:hover::placeholder,
+      .page-template-contact .contact-form input[type=text]:active::placeholder,
+      .page-template-contact .contact-form input[type=text]:focus::placeholder,
+      .page-template-contact .contact-form input[type=text]:hover::placeholder,
+      .volunteer-form input[type=email]:active::placeholder,
+      .volunteer-form input[type=email]:focus::placeholder,
+      .volunteer-form input[type=email]:hover::placeholder,
+      .volunteer-form input[type=text]:active::placeholder,
+      .volunteer-form input[type=text]:focus::placeholder,
+      .volunteer-form input[type=text]:hover::placeholder,
+      .signin-form input[type=email]:active::placeholder,
+      .signin-form input[type=email]:focus::placeholder,
+      .signin-form input[type=email]:hover::placeholder,
+      .signin-form input[type=text]:active::placeholder,
+      .signin-form input[type=text]:focus::placeholder,
+      .signin-form input[type=text]:hover::placeholder {
+        color: #5c857e;
+        color: #cecece; }
+  .page-template-contact .contact-form label,
+  .volunteer-form label,
+  .signin-form label {
+    font-size: 2.25rem; }
   footer input[type=email],
   footer input[type=text] {
     background-color: #1e1e1e;
@@ -647,12 +715,6 @@ footer input[type=text] {
       footer input[type=text]:active:-ms-input-placeholder,
       footer input[type=text]:focus:-ms-input-placeholder,
       footer input[type=text]:hover:-ms-input-placeholder {
-        color: #5c857e;
-        color: #cecece; }
-      footer input[type=email]:active::-ms-input-placeholder, footer input[type=email]:focus::-ms-input-placeholder, footer input[type=email]:hover::-ms-input-placeholder,
-      footer input[type=text]:active::-ms-input-placeholder,
-      footer input[type=text]:focus::-ms-input-placeholder,
-      footer input[type=text]:hover::-ms-input-placeholder {
         color: #5c857e;
         color: #cecece; }
       footer input[type=email]:active::placeholder, footer input[type=email]:focus::placeholder, footer input[type=email]:hover::placeholder,
@@ -686,6 +748,9 @@ html body #responsive-menu-button {
   top: 1.5rem;
   background: none;
   height: 2.5rem; }
+
+#responsive-menu-container.slide-right {
+  background: none; }
 
 /* Links */
 a {
@@ -840,8 +905,6 @@ a {
         background-color: #da9127;
         border: 2px solid #da9127;
         color: #fff;
-        -webkit-transition-delay: 0;
-                transition-delay: 0;
         -webkit-transition-property: background-color;
         transition-property: background-color;
         -webkit-transition-duration: .5s;
@@ -945,9 +1008,55 @@ a {
 /*--------------------------------------------------------------
 - page-contact
 --------------------------------------------------------------*/
+.page-contact .contact-header {
+  text-align: center; }
+
+.page-contact .contact-details-container {
+  line-height: 1.5; }
+  .page-contact .contact-details-container h2 {
+    font-family: "Overpass", sans-serif; }
+
+.page-contact .contact-details-wrapper {
+  position: relative;
+  left: 15%;
+  text-align: left; }
+  .page-contact .contact-details-wrapper li {
+    font-weight: 700; }
+
+.page-contact .contact-details-wrapper-two {
+  position: relative;
+  left: 15%;
+  text-align: left; }
+  .page-contact .contact-details-wrapper-two li {
+    font-weight: 700; }
+
+.page-contact .contact-details-three {
+  text-align: center; }
+
+.page-contact .page-template-contact.contact-form label {
+  font-size: 16px; }
+
 .page-contact form.wpcf7-form {
   text-align: left;
   margin-left: 10%; }
+
+@media all and (min-width: 700px) {
+  .page-contact .contact-details-wrapper {
+    padding-top: 20px;
+    left: 30%;
+    font-size: 22px;
+    width: 400px; }
+    .page-contact .contact-details-wrapper li {
+      font-weight: 300; }
+  .page-contact .contact-details-wrapper-two {
+    left: 30%;
+    font-size: 22px;
+    width: 400px; }
+    .page-contact .contact-details-wrapper-two li {
+      font-weight: 300; }
+  .page-contact form.wpcf7-form {
+    text-align: left;
+    margin-left: 10%; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1080,8 +1189,6 @@ object {
   background-color: #da9127;
   border: 2px solid #da9127;
   color: #fff;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: .5s;
@@ -1127,7 +1234,7 @@ object {
 @media screen and (min-width: 700px) {
   .width-column,
   .width-content {
-    padding: 2rem 4rem 0;
+    padding: 6rem 4rem 0;
     text-align: center; }
   .width-full {
     padding-top: 6rem; }
@@ -1148,7 +1255,7 @@ object {
   .page-action .action-header p {
     max-width: 800px;
     font-size: 20px;
-    margin: 3rem auto; }
+    margin: 3rem auto 0; }
 
 .page-action .action-steps {
   max-width: 1440px;
@@ -1211,6 +1318,9 @@ object {
 .page-action .volunteer-button {
   padding: 40px 0 0px; }
 
+.page-action .meet {
+  padding-top: 4rem; }
+
 .page-action .volunteer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,45 +1356,42 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    padding-top: 1rem; }
-    .page-action .simple-steps h2 {
+            flex-direction: row; }
+    .page-action .simple-steps .call-to-action {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 90px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      margin: 0 1rem; }
+      .page-action .simple-steps .call-to-action h2 {
+        font-family: "Overpass", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        height: 90px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .page-action .simple-steps .call-to-action img {
+        height: auto;
+        width: 282px; }
   .page-action .action-steps span {
     margin: 0 auto;
     font-size: 36px; }
   .page-action .call h2 {
     font-size: 50px;
     padding: 0 12% 0 12%; }
-  .page-action .call-to-action {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: -webkit-center; }
-    .page-action .call-to-action h2 {
-      font-family: "Overpass", sans-serif;
-      font-weight: 500;
-      font-size: 30px; }
-    .page-action .call-to-action img {
-      padding: 1rem;
-      height: auto;
-      width: 282px; }
   .page-action .start {
     padding: 0;
     margin: 0 auto; }
@@ -1322,7 +1429,7 @@ object {
   .page-template-who .icon-one {
     display: none; }
   .page-template-who .icon-two {
-    display: inline; }
+    display: inline-block; }
   .page-template-who .who-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1349,6 +1456,8 @@ object {
     padding: 20px 20px 0px 20px; }
     .page-template-who .who-title-content h2 {
       text-align: center; }
+  .page-template-who .front-page-explanation p {
+    margin: 20px auto; }
   .page-template-who .who_header_case-photo {
     height: 259px;
     min-width: 100%;
@@ -1358,19 +1467,15 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left; }
     .page-template-who .front-page-explanation-case p {
       text-align: left; }
     .page-template-who .front-page-explanation-case div h2 {
-      text-align: center; }
+      text-align: left; }
     .page-template-who .front-page-explanation-case span {
       display: none; }
     .page-template-who .front-page-explanation-case img {
@@ -1384,15 +1489,15 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .page-template-who .who_team_case-photo {
     margin: 0 auto;
     height: 300px;
     width: 300px;
     background-size: cover;
-    background-color: transparent;
-    text-align: center; }
+    background-color: transparent; }
   .page-template-who .single-team-member {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1422,8 +1527,12 @@ object {
       max-width: 300px; }
 
 @media all and (min-width: 700px) {
-  .page-template-who .icon-one {
-    display: inline; }
+  .page-template-who .who-content-wrapper {
+    max-width: 1440px;
+    margin: 6rem auto 0 auto; }
+  .page-template-who span.icon-one {
+    display: inline-block;
+    margin: 0; }
   .page-template-who .icon-two {
     display: none; }
   .page-template-who .team-case {
@@ -1438,10 +1547,8 @@ object {
         justify-content: space-around;
     overflow: hidden; }
   .page-template-who .our-impact-link {
-    margin: 0 auto;
-    height: 90px; }
-    .page-template-who .our-impact-link h2 {
-      margin: 40px auto;
+    margin: 0 auto; }
+    .page-template-who .our-impact-link span {
       max-width: 810px; }
   .page-template-who .who-title-content {
     display: -webkit-box;
@@ -1454,14 +1561,31 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 38%;
+    width: 50%;
+    padding: 0;
+    margin: 0; }
+  .page-template-who .who-title-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px 40px 30px 40px;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 40px 0px 40px;
     text-align: left;
     -webkit-box-shadow: 3px 3px 15px 1px #bababa;
             box-shadow: 3px 3px 15px 1px #bababa; }
-    .page-template-who .who-title-content h2 {
-      text-align: center; }
+    .page-template-who .who-title-case p {
+      text-align: left; }
+    .page-template-who .who-title-case h2 {
+      text-align: left; }
+  .page-template-who .front-page-explanation p {
+    max-width: 700px; }
   .page-template-who .who-title-content:nth-child(3) {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -1483,10 +1607,11 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .page-template-who .front-page-explanation-case p {
+    .page-template-who .front-page-explanation-case .green-text {
+      font-size: 20px;
       color: #698e87;
       margin: 10px 0; }
-    .page-template-who .front-page-explanation-case div {
+    .page-template-who .front-page-explanation-case .explanation_case {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1494,20 +1619,18 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      width: 40%;
+      width: 44%;
       margin: 20px 15px 30px;
-      padding: 20px 20px 0px 20px;
+      padding: 20px 40px 0px;
       text-align: left;
       -webkit-box-shadow: 3px 3px 15px 1px #bababa;
               box-shadow: 3px 3px 15px 1px #bababa; }
-      .page-template-who .front-page-explanation-case div h2 {
-        text-align: center; }
-      .page-template-who .front-page-explanation-case div h3 {
-        margin-bottom: 0; }
-      .page-template-who .front-page-explanation-case div span {
-        display: block;
-        margin-bottom: 2rem; }
-      .page-template-who .front-page-explanation-case div img {
+      .page-template-who .front-page-explanation-case .explanation_case h2 {
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: left;
+        font-size: 35px; }
+      .page-template-who .front-page-explanation-case .explanation_case img {
         width: 50px;
         max-height: 50px; }
   .page-template-who .bignumber {
@@ -1517,9 +1640,15 @@ object {
     max-width: 900px; }
     .page-template-who .who-impact-statement h2 {
       font-family: "Merriweather", serif;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 0; }
+  .page-template-who .who_team_case-photo {
+    height: 233px;
+    width: 233px; }
   .page-template-who .single-team-member {
-    max-width: 250px; } }
+    max-width: 33%; }
+    .page-template-who .single-team-member p {
+      margin: 20px; } }
 
 /*--------------------------------------------------------------
 - page-impct
@@ -1720,6 +1849,13 @@ object {
   .page-signin .signin-header h1 {
     font-size: 50px; }
 
+.page-signin .signin-form a {
+  font-family: "Overpass", sans-serif;
+  text-decoration: none; }
+  .page-signin .signin-form a:hover {
+    color: #cecece;
+    text-decoration: underline; }
+
 .page-signin .signin-form input {
   font-size: 16px; }
 
@@ -1741,6 +1877,13 @@ object {
 /*--------------------------------------------------------------
 - page-front-page
 --------------------------------------------------------------*/
+.front-page-explanation-case-icon {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom; }
+
 .page-front-page .wild-fire-count {
   display: none; }
 
@@ -1765,9 +1908,6 @@ object {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-gap: 2rem; }
-  .page-front-page .front-page-explanation-case .front-page-explanation-case-icon {
-    max-width: 64px;
-    max-height: 64px; }
 
 .page-front-page .front-page-impact-case {
   max-width: 1440px;
@@ -1853,6 +1993,8 @@ object {
     background-size: 1440px, cover; }
     .page-front-page .front-page-header .we-detect-fires {
       padding: 3rem 4rem 0; }
+      .page-front-page .front-page-header .we-detect-fires .button-link-solid {
+        margin-right: 1rem; }
     .page-front-page .front-page-header .front-page-header-content {
       font-size: 1.7rem;
       font-weight: 300;
@@ -1869,7 +2011,7 @@ object {
     background-color: #698e87;
     color: #fff; }
     .page-front-page .front-page-volunteer div {
-      width: 50%;
+      width: 45%;
       padding-bottom: 6rem; }
   .page-front-page .volunteer-button-container {
     display: none; }
@@ -1918,7 +2060,7 @@ object {
     height: 430px;
     width: 100%;
     max-width: 900px;
-    margin: 0 auto; }
+    margin: 6rem auto 0 auto; }
   .page-front-page .volunteer-text {
     width: 70%;
     max-width: 300px;
@@ -1954,7 +2096,8 @@ object {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 0 auto; }
   .page-front-page .volunteer-button-container {
     display: none; } }
 
@@ -1962,6 +2105,16 @@ object {
   .page-front-page .front-page-explanation-case {
     grid-template-columns: repeat(5, auto);
     grid-template-rows: auto; }
+    .page-front-page .front-page-explanation-case div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .page-front-page .front-page-explanation-case div .front-page-explanation-case-icon {
+        margin-top: auto; }
   .page-front-page .wild-fire-count-container {
     position: relative;
     margin-left: auto;
@@ -2040,6 +2193,12 @@ footer .wpcf7-form-control.wpcf7-submit {
     border: 2px solid #9a661a;
     color: #fff; }
 
+.icon-spacer {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle; }
+
 .site-footer {
   padding: 0;
   color: #fff;
@@ -2064,18 +2223,13 @@ footer .wpcf7-form-control.wpcf7-submit {
     grid-row: 2; }
     .site-footer .site-info li {
       text-align: left; }
-    .site-footer .site-info .icon-spacer {
-      display: inline-block;
-      width: 2rem;
-      height: 2rem;
-      vertical-align: middle; }
     .site-footer .site-info .logo-large {
       display: none; }
     .site-footer .site-info .logo-white {
       position: absolute;
       width: 92px;
-      right: 4rem;
-      margin-top: 15px; }
+      right: 7%;
+      margin-top: 60px; }
     .site-footer .site-info .contact-button {
       display: none; }
   .site-footer .copyrights {
@@ -2109,8 +2263,7 @@ footer .wpcf7-form-control.wpcf7-submit {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 2rem;
-    margin-top: 6rem; }
+    height: 2rem; }
   .site-footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -2134,7 +2287,8 @@ footer .wpcf7-form-control.wpcf7-submit {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        text-align: left; }
       .site-footer .site-info .contact-button {
         display: inline-block;
         margin-top: 5px; }
@@ -2158,7 +2312,8 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 @media all and (min-width: 920px) {
   .site-footer br {
-    display: none; }
+    display: none;
+    color: #ccc; }
   .site-footer .site-info {
     background: none; }
     .site-footer .site-info .contact-details-container {
@@ -2174,7 +2329,8 @@ footer .wpcf7-form-control.wpcf7-submit {
               justify-content: flex-end; }
       .site-footer .site-info .contact-details-container div:nth-child(2) {
         margin-left: 3rem;
-        padding-top: 3rem; }
+        padding-top: 3rem;
+        text-align: left; }
   .site-footer .copyrights {
     background: none; }
   .site-footer .copyrights-one {
@@ -2184,11 +2340,12 @@ footer .wpcf7-form-control.wpcf7-submit {
     padding-left: 2rem; }
   .site-footer .footer-logo-large {
     display: block;
-    background: url("../../assets/logos/svg/hummingbird-network-symbol-color.svg");
+    background: url("../../assets/logos/large/symbol-white-large.png");
     background-color: #698e87;
     background-repeat: no-repeat;
-    background-size: 35rem;
-    background-position: left -18rem top -5rem;
+    background-size: 0rem;
+    background-position-x: 4rem;
+    background-position-y: 3rem;
     grid-column: 1;
     grid-row: 1 / 3; } }
 
@@ -2222,6 +2379,10 @@ footer .wpcf7-form-control.wpcf7-submit {
 
 .copyrights-one li:last-child > a {
   border-right: none; }
+
+@media all and (min-width: 1180px) {
+  .site-footer .footer-logo-large {
+    background-size: 10rem; } }
 
 /*--------------------------------------------------------------
 - page-404
