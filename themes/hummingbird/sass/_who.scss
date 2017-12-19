@@ -166,7 +166,6 @@
                 color: $color__green-main;
                 margin: 10px 0;
             }
-            }
             div {
                 display: flex;
                 flex-direction: column;
@@ -190,6 +189,7 @@
                     max-height: 50px;
                 }
             }
+        }
         }
         .bignumber {
             color: $color__blue-numbers;
