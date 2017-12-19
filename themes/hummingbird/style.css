@@ -1598,9 +1598,6 @@ object {
       font-size: 20px;
       color: #698e87;
       margin: 10px 0; }
-    .page-template-who .front-page-explanation-case .explanation-case:nth-child(3) p {
-      color: #698e87;
-      margin: 10px 0; }
     .page-template-who .front-page-explanation-case div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1626,15 +1623,15 @@ object {
       .page-template-who .front-page-explanation-case div img {
         width: 50px;
         max-height: 50px; }
-  .page-template-who .bignumber {
+  .bignumber {
     color: #72acb2;
     text-align: left; }
-  .page-template-who .who-impact-statement {
+  .who-impact-statement {
     max-width: 900px; }
-    .page-template-who .who-impact-statement h2 {
+    .who-impact-statement h2 {
       font-family: "Merriweather", serif;
       font-weight: 700; }
-  .page-template-who .single-team-member {
+  .single-team-member {
     max-width: 250px; } }
 
 /*--------------------------------------------------------------
@@ -1835,6 +1832,10 @@ object {
   text-align: center; }
   .page-signin .signin-header h1 {
     font-size: 50px; }
+
+.page-signin .signin-form a {
+  font-family: "Overpass", sans-serif;
+  text-decoration: none; }
 
 .page-signin .signin-form input {
   font-size: 16px; }

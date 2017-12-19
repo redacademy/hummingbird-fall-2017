@@ -20,6 +20,9 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>
+			</section>
+
+			<h4 class="signin-form width-content"><a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" >Forgot your password?</a></h4>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
