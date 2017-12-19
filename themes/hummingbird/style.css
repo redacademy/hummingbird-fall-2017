@@ -1595,8 +1595,10 @@ object {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .page-template-who .front-page-explanation-case .green-text {
-      font-size: 20px; }
-    .page-template-who .front-page-explanation-case p {
+      font-size: 20px;
+      color: #698e87;
+      margin: 10px 0; }
+    .page-template-who .front-page-explanation-case .explanation-case:nth-child(3) p {
       color: #698e87;
       margin: 10px 0; }
     .page-template-who .front-page-explanation-case div {
