@@ -15,55 +15,63 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
-			<section class="width-content">
+			<section class="width-content"> <!-- Moose -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/moose.svg">
 				<h1><?php echo CFS()->get( 'who_header_title' ); ?></h1>
 			</section>
 
-			<section class="who-content-wrapper">
+			<section class="who-content-wrapper"> <!-- Who We Are -->
 				<?php $fields = CFS()->get( 'who_header_case' );
 					foreach ( $fields as $field ) { ?>
 
-			<div class="who-title-content">
-					<div class="who-title-case">
-						<h2 class="who_header_case_title"><?php echo $field['who_header_case_title'] ?></h2>	
-						<p><?php echo $field['who_header_case_content'] ?></p>
+					<div class="who-title-content">
+						<div class="who-title-case">
+							<h2 class="who_header_case_title"><?php echo $field['who_header_case_title'] ?></h2>	
+							<p><?php echo $field['who_header_case_content'] ?></p>
+						</div>
 					</div>
-			</div>
 			
-			<div
-				<?php if(isset($field['who_header_case_photo'])): ?>
-							class="who_header_case-photo"
-							style="background-image: url(<?php echo wp_get_attachment_image_src($field['who_header_case_photo'], 'medium_large')[0] ?>);">
-				<?php endif; ?>
-			</div>
+					<div
+						<?php if(isset($field['who_header_case_photo'])): ?>
+									class="who_header_case-photo"
+									style="background-image: url(<?php echo wp_get_attachment_image_src($field['who_header_case_photo'], 'medium_large')[0] ?>);">
+						<?php endif; ?>
+					</div>
 				
 				<?php } ?>
 			</section>
 
-			<section class="width-content front-page-explanation">
+			<section class="width-content front-page-explanation"> <!-- Bear -->
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/bear.svg">
 				<h1><?php echo CFS()->get( 'front_page_explanation_title', 2 ); ?></h1>
 				<p><?php echo CFS()->get( 'front_page_explanation_content', 2 ); ?></p>
 			</section>
 
-			<section class="width-content front-page-explanation-case">
+			<section class="width-content front-page-explanation-case"> <!-- Here's How It Works -->
 				<?php
 					$fields = CFS()->get( 'front_page_explanation_case', 2 );
 
 					if(isset($fields)):	
-						foreach ( $fields as $field ) {
-							echo '<div class="explanation_case">';
-								echo '<p class="bignumber">'.$field['front_page_explanation_case_number'];
-								echo '<img class="icon-one" src="'.wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0].'">'.'</p>';
-								echo '<h2>'.$field['front_page_explanation_case_title'].'</h2>';
-								echo '<p class="green-text">'.$field['front_page_explanation_case_abstract'].'</p>';
-								echo '<span>'.$field['front_page_explanation_case_content'].'</span>';
-								echo '<p class="icon-two">'.'<img src="'.$field['front_page_explanation_case_icon'].'">'.'</p>';
-							echo '</div>';
-						}
-					endif;
-				?>
+						foreach ( $fields as $field ) { ?>
+							<div class="explanation_case">
+
+								<p class="bignumber"><?php echo $field['front_page_explanation_case_number'] ?>
+									<span class="front-page-explanation-case-icon icon-one"
+										style="background-image: url( <?php echo wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0] ?>);">
+									</span>
+								</p>
+
+								<h2><?php echo $field['front_page_explanation_case_title'] ?></h2>
+								<p class="green-text"><?php echo $field['front_page_explanation_case_abstract'] ?></p>
+								<p><?php echo $field['front_page_explanation_case_content'] ?></p>
+
+								<div class="front-page-explanation-case-icon icon-two"
+									style="background-image: url( <?php echo wp_get_attachment_image_src($field['front_page_explanation_case_icon'], 'thumbnail')[0] ?>);">
+								</div>
+
+							</div>
+					<? }
+				endif; ?>
 			</section>
 
 			<section class="width-content">
