@@ -28,7 +28,7 @@ get_header(); ?>
 			<section class="width-full front-page-header">
 				<div class="width-content text-left we-detect-fires">
 					<h1><?php echo CFS()->get( 'front_page_header_title' ); ?></h1>
-					<p class="front-page-header-content"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
+					<p class="front-page-header-content text-shadow"><?php echo CFS()->get( 'front_page_header_content' ); ?></p>
 					<a href="<?php echo esc_url( home_url( 'become-a-volunteer/' ) ); ?>" class="button-link button-link-solid">Become a Volunteer</a>
 					<a href="<?php echo esc_url( home_url( 'who-we-are/' ) ); ?>" class="button-link button-link-hollow">Learn More</a>
 				</div>

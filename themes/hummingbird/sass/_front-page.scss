@@ -20,7 +20,7 @@
 		background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
 		background-size: contain, cover;
 		background-repeat: no-repeat;
-		background-position: bottom, center;
+		background-position: bottom, 50% 35%;
 		padding: 8em 0 6rem 0;
 		.front-page-header-content {
 			font-weight: 300;
@@ -250,7 +250,6 @@
 		.front-page-explanation-case {
 			grid-template-columns: repeat(5, auto);
 			grid-template-rows: auto;
-
 			div {
 				display: flex;
 				flex-direction: column;
@@ -258,8 +257,12 @@
 					margin-top: auto;
 				}
 			}
-
 		}
+
+		.front-page-impact-case-number, 
+		.front-page-impact-case-metric {
+			text-align: left;
+		} 
 
 		.wild-fire-count-container {
 			position: relative;
