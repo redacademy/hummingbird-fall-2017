@@ -70,7 +70,7 @@ get_header(); ?>
 								</div>
 
 							</div>
-					<? }
+					<?php }
 				endif; ?>
 			</section>
 
