@@ -4,7 +4,7 @@ A WordPress site designed and created for Hummingbird Network, an organization d
 
 This project is part of Red Academy coursework.
 
-![](./screenshot.jpg)
+![](./themes/hummingbird/screenshot.jpg)
 
 
 ## Code
@@ -14,7 +14,11 @@ This site is built using:
 - SASS
 - CSS Grid and Flexbox
 - PHP
-- jQuery
+- Javascript / jQuery
+
+Development Environment:
+- Gulp
+- Git / Github
 
 
 ## Features
@@ -25,6 +29,19 @@ This site is built using:
 
 
 ## Credits
+
+Design
+
+- Jayson Postle
+- Puja Prakash
+- Nijhum
+- Kajetan Maczkowski
+
+Development
+
+- Hamdy Farah
+- Nathan Moseley
+- Travis Rempel
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, see license.
