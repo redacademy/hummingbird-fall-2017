@@ -25,7 +25,7 @@ get_header(); ?>
 					foreach ( $fields as $field ) { ?>
 
 					<div class="who-title-content">
-						<div class="who-title-case">
+						<div class="who-title-case box-shadow">
 							<h2 class="who_header_case_title"><?php echo $field['who_header_case_title'] ?></h2>	
 							<p><?php echo $field['who_header_case_content'] ?></p>
 						</div>
@@ -53,7 +53,7 @@ get_header(); ?>
 
 					if(isset($fields)):	
 						foreach ( $fields as $field ) { ?>
-							<div class="explanation_case">
+							<div class="explanation-case box-shadow">
 
 								<p class="bignumber"><?php echo $field['front_page_explanation_case_number'] ?>
 									<span class="front-page-explanation-case-icon icon-one"
