@@ -34,7 +34,7 @@ Design
 
 - Jayson Postle
 - Puja Prakash
-- Nijhum Nijhu
+- Nijhum Nijhum
 - Kajetan Maczkowski
 
 Development
