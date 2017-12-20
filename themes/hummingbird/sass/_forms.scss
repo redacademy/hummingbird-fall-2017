@@ -64,7 +64,7 @@ textarea {
 		color: $color__green-main;
 		font-size: 2rem;
 		font-weight: 200;
-		height: 40px;
+		// height: 40px; /* Removed for Safari */
 		width: 370px;
 		padding-left: 1rem;
 		transition-property: width;
@@ -100,7 +100,7 @@ textarea {
 	.wpcf7 {
 		.wpcf7-form-control-wrap {
 			border-bottom: 2px dashed $color__text-main;
-			padding-bottom: .3rem;
+			// padding-bottom: .3rem;
 		}
 	}
 }
