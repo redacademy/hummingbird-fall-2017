@@ -53,9 +53,12 @@
 										<span class="icon-spacer"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/phone-icon.svg" alt="phone icon"></span><?php echo CFS()->get( 'front_page_phone_number', 2 ); ?>
 									</li>
 									<li>
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon"></span>
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon.svg" alt="instagram icon"></span>
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon"></span>
+										<a href="https://www.facebook.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon.svg" alt="facebook icon"></span></a>
+										<a href="https://www.instagram.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon.svg" alt="instagram icon"></span></a>
+										<a href="https://www.twitter.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon.svg" alt="twitter icon"></span></a>
 									</li>
 								</ul><!-- contact-details-two -->
 								<a href="<?php echo esc_url( home_url( '/contact-us' ) ); ?>" class="contact-button button-link button-link-solid">Contact Us</a>

@@ -42,9 +42,12 @@ get_header(); ?>
 							</div>
 
 							<div class="contact-details-three">
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon-orange.svg" alt="facebook icon"></span>
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon-orange.svg" alt="instagram icon"></span>
-										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon-orange.svg" alt="twitter icon"></span>
+										<a href="https://www.facebook.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/facebook-icon-orange.svg" alt="facebook icon"></span></a>
+										<a href="https://www.instagram.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/instagram-icon-orange.svg" alt="instagram icon"></span></a>
+										<a href="https://www.twitter.com">
+										<span class="icon-spacer social-media-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/elements/twitter-icon-orange.svg" alt="twitter icon"></span></a>
 							</div><!-- contact-details-three -->
 
 						</div><!-- contact-details -->
