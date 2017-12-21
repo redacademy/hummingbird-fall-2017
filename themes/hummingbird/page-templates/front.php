@@ -122,28 +122,39 @@ get_header(); ?>
 				<?php endforeach; ?>
 			</section>
 
-			<section class="volunteer text-left"><!-- Hi, I'm Paula! -->
+			<section class="volunteer width-content text-left"><!-- Hi, I'm Paula! -->
+
 				<?php $fields = CFS()->get('front_page_volunteer_case' ); 
 					// d($fields);
 					if(isset($fields)):
 						foreach ( $fields as $field ) : ?>
+
 							<div class="volunteer-img"
 								style="background-image: url(<?php echo wp_get_attachment_image_src($field['front_page_volunteer_case_photo'], 'medium_large')[0] ?>);"> 				
 							</div>
-							<div class="volunteer-text">
-								<h2 class="text-left">Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
-								<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
+
+							<div>
+
+								<div class="volunteer-text">
+									<h2 class="text-left">Hi! I'm <?php echo $field['front_page_volunteer_case_name']; ?></h2>
+									<p><?php echo $field['front_page_volunteer_case_content']; ?></p>
+								</div>
+
+								<div class="you-can-join-text">
+									<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
+								</div>
+
+								<div class="find-out-button text-center">
+									<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow-orange">Find Out More</a>
+								</div>
+
 							</div>
-							<div class="you-can-join-text">
-								<p>You can join <?php echo $field['front_page_volunteer_case_name']; ?> and 5000 other digital volunteers to prevent wildfires.</p>
-							</div>
-							<div class="find-out-button">
-								<a href="<?php echo esc_url( home_url( 'take-action/' ) ); ?>" class="button-link button-link-hollow-orange">Find Out More</a>
-							</div>
+
 						<?php 
 						endforeach;
 					endif;
 				?>
+
 			</section>
 
 			<section class="volunteer-form width-content-left text-left"> <!-- "I want to be part of the community!" form -->
