@@ -45,24 +45,20 @@
 		margin-left: auto;
 		margin-right: auto;
 		font-family: $font__main;
-		div:nth-child(3) {
-			background-color: $color__green-main;
-			color: $color__white;
-			h3 {
-				color: $color__white;
-			}
-		}
 		.front-page-impact-case-photo {
 			height: 391px;
 			background-size: cover;
 			background-position: center;
 		}
 		.front-page-impact-case-number {
+			font-family: $font__main;
 			color: $color__orange-main;
 			font-size: 2rem;
 			margin: 0 0 .5rem 0;
-			font-family: $font__main;
 			letter-spacing: 0.1em;
+			line-height: 5rem;
+			padding-top: 1.75rem;
+
 		}
 		.front-page-impact-case-metric {
 			color: $color__green-main;
@@ -70,15 +66,22 @@
 			font-family: $font__main;
 			font-size: 1.5rem;
 			letter-spacing: 0.1em;
+			line-height: 3rem;
 		}
 		.front-page-impact-case-icon-container {
 			width: 100px;
 			height: 100px;
-			margin-top: 1rem;
-			margin-right: 1rem;
+			margin-right: 2rem;
 		}
 		.front-page-impact-content {
 			padding-bottom: 1.5rem;
+		}
+		div:nth-child(3) {
+			background-color: $color__green-main;
+			color: $color__white;
+			.front-page-impact-case-metric {
+				color: $color__white;
+			}
 		}
 	}
 
@@ -207,7 +210,6 @@
 		.volunteer-text {
 			width: 70%;
 			max-width: 300px;
-			font-size: 14px;
 			p {
 				text-align: left;
 				padding-right: 2rem;
@@ -218,7 +220,7 @@
 			background-size: cover;
 			width: 390px;
 			height: 390px;
-			margin: 0 1rem 0 0;
+			margin: 0 2rem 0 0;
 			align-self: center;
 			order: -1;
 		}

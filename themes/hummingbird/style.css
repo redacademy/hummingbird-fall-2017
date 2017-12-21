@@ -1915,34 +1915,36 @@ object {
   margin-left: auto;
   margin-right: auto;
   font-family: "Overpass", sans-serif; }
-  .page-front-page .front-page-impact-case div:nth-child(3) {
-    background-color: #698e87;
-    color: #fff; }
-    .page-front-page .front-page-impact-case div:nth-child(3) h3 {
-      color: #fff; }
   .page-front-page .front-page-impact-case .front-page-impact-case-photo {
     height: 391px;
     background-size: cover;
     background-position: center; }
   .page-front-page .front-page-impact-case .front-page-impact-case-number {
+    font-family: "Overpass", sans-serif;
     color: #da9127;
     font-size: 2rem;
     margin: 0 0 .5rem 0;
-    font-family: "Overpass", sans-serif;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 5rem;
+    padding-top: 1.75rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-metric {
     color: #698e87;
     margin: 0;
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 3rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
     width: 100px;
     height: 100px;
-    margin-top: 1rem;
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .page-front-page .front-page-impact-case .front-page-impact-content {
     padding-bottom: 1.5rem; }
+  .page-front-page .front-page-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-front-page .front-page-impact-case div:nth-child(3) .front-page-impact-case-metric {
+      color: #fff; }
 
 .page-front-page .volunteer {
   display: -webkit-box;
@@ -2064,8 +2066,7 @@ object {
     margin: 6rem auto 0 auto; }
   .page-front-page .volunteer-text {
     width: 70%;
-    max-width: 300px;
-    font-size: 14px; }
+    max-width: 300px; }
     .page-front-page .volunteer-text p {
       text-align: left;
       padding-right: 2rem;
@@ -2074,7 +2075,7 @@ object {
     background-size: cover;
     width: 390px;
     height: 390px;
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
     -ms-flex-item-align: center;
         align-self: center;
     -webkit-box-ordinal-group: 0;
