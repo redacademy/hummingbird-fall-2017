@@ -454,7 +454,7 @@ textarea {
 
 .page-front-page .volunteer-form label {
   font-size: 2.25rem;
-  font-weight: 200; }
+  font-weight: 400; }
 
 .page-front-page .volunteer-form .wpcf7 .wpcf7-form-control-wrap {
   border-bottom: 2px dashed #1e1e1e; }
@@ -1759,7 +1759,6 @@ object {
         color: #da9127;
         font-size: 64px; }
     .page-impact .impact-impact-case .impact-impact-content {
-      padding: 6rem 4rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1915,75 +1914,62 @@ object {
   margin-left: auto;
   margin-right: auto;
   font-family: "Overpass", sans-serif; }
-  .page-front-page .front-page-impact-case div:nth-child(3) {
-    background-color: #698e87;
-    color: #fff; }
-    .page-front-page .front-page-impact-case div:nth-child(3) h3 {
-      color: #fff; }
   .page-front-page .front-page-impact-case .front-page-impact-case-photo {
     height: 391px;
     background-size: cover;
     background-position: center; }
   .page-front-page .front-page-impact-case .front-page-impact-case-number {
+    font-family: "Overpass", sans-serif;
     color: #da9127;
     font-size: 2rem;
     margin: 0 0 .5rem 0;
-    font-family: "Overpass", sans-serif;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 5rem;
+    padding-top: 1.75rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-metric {
     color: #698e87;
     margin: 0;
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 3rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
     width: 100px;
     height: 100px;
-    margin-top: 1rem;
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .page-front-page .front-page-impact-case .front-page-impact-content {
     padding-bottom: 1.5rem; }
+  .page-front-page .front-page-impact-case div:nth-child(3) {
+    background-color: #698e87;
+    color: #fff; }
+    .page-front-page .front-page-impact-case div:nth-child(3) .front-page-impact-case-metric {
+      color: #fff; }
 
 .page-front-page .volunteer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-front-page .volunteer .volunteer-text {
+    text-align: center; }
+    .page-front-page .volunteer .volunteer-text h2 {
+      text-align: center; }
+  .page-front-page .volunteer .you-can-join-text p {
+    text-align: center;
+    font-size: 1.5rem; }
+  .page-front-page .volunteer .find-out-button {
+    display: none; }
 
 .page-front-page .volunteer-img {
   background-size: cover;
   width: 230px;
-  height: 230px;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2; }
-
-.page-front-page .volunteer-text {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1; }
-
-.page-front-page .you-can-join-text {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3; }
-  .page-front-page .you-can-join-text p {
-    text-align: center;
-    font-size: 1.5rem; }
-
-.page-front-page .find-out-button {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-  -ms-flex-item-align: center;
-      align-self: center; }
+  height: 230px; }
 
 .page-front-page .volunteer-form {
   display: none; }
@@ -2046,51 +2032,6 @@ object {
       height: 184px; }
     .page-front-page .front-page-impact-case .front-page-impact-case-photo {
       height: 100%; }
-  .page-front-page .volunteer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 430px;
-    width: 100%;
-    max-width: 900px;
-    margin: 6rem auto 0 auto; }
-  .page-front-page .volunteer-text {
-    width: 70%;
-    max-width: 300px;
-    font-size: 14px; }
-    .page-front-page .volunteer-text p {
-      text-align: left;
-      padding-right: 2rem;
-      margin-bottom: 0; }
-  .page-front-page .volunteer-img {
-    background-size: cover;
-    width: 390px;
-    height: 390px;
-    margin: 0 1rem 0 0;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1; }
-  .page-front-page .you-can-join-text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 70%;
-    max-width: 300px; }
-    .page-front-page .you-can-join-text p {
-      text-align: left;
-      padding-right: 2rem;
-      font-weight: bolder;
-      margin-top: 0; }
   .page-front-page .volunteer-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2164,7 +2105,38 @@ object {
         .page-front-page .wild-fire-count-container .wild-fire-count .count h2 {
           font-family: "Overpass", sans-serif;
           font-size: 40px;
-          margin: 5px 0; } }
+          margin: 5px 0; }
+  .page-front-page .volunteer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .page-front-page .volunteer .volunteer-img {
+      background-size: cover;
+      width: 390px;
+      min-width: 390px;
+      height: 390px;
+      margin-right: 4rem; }
+    .page-front-page .volunteer .volunteer-text h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      text-align: left; }
+    .page-front-page .volunteer .volunteer-text p {
+      text-align: left; }
+    .page-front-page .volunteer .you-can-join-text p {
+      font-size: 2rem;
+      text-align: left;
+      padding-right: 2rem;
+      margin-top: 0; }
+    .page-front-page .volunteer .find-out-button {
+      display: block;
+      text-align: left; } }
 
 /*--------------------------------------------------------------
 - page-footer
