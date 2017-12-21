@@ -69,3 +69,33 @@ function cfp($atts, $content = null) {
 	return $cf7;
 }
 add_shortcode('cfp', 'cfp');
+
+/**
+* Remove unused menu items by adding them to the array
+*
+* @since 1.0.0
+*/
+function remove_menus() {
+global $menu;
+$restricted = array();
+// Example:
+//$restricted = array( __('Dashboard'), __('Posts'), __('Media'), __('Pages'), __('Appearance'), __('Tools'), __('Users'), __('Settings'), __('Comments'), __('Plugins') );
+$restricted = array( __('Posts'), __('Comments'), );
+end ($menu);
+while ( prev( $menu ) ){
+	$value = explode( ' ',$menu[key($menu)][0] );
+	if( in_array( $value[0] != NULL?$value[0]:"" , $restricted ) ){ unset($menu[key($menu)] ); }
+	}
+}
+add_action( 'admin_menu', 'remove_menus' );
+
+/**
+* Remove unnecesary sub-menu links
+*
+* @since 1.0.0
+*/
+function remove_submenus() {
+remove_submenu_page( 'themes.php', 'theme-editor.php' );
+remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'remove_submenus', 110 );
