@@ -1892,7 +1892,7 @@ object {
   background: url("../../assets/elements/paint-white.png"), url("../../assets/photos/bgphoto_hero.jpg");
   background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: bottom, 50% 35%;
+  background-position: bottom, 50% 25%;
   padding: 8em 0 6rem 0; }
   .page-front-page .front-page-header .front-page-header-content {
     font-weight: 300;
