@@ -56,8 +56,7 @@
 			font-size: 2rem;
 			margin: 0 0 .5rem 0;
 			letter-spacing: 0.1em;
-			line-height: 5rem;
-			padding-top: 1.75rem;
+			line-height: 3rem;
 
 		}
 		.front-page-impact-case-metric {
@@ -66,7 +65,7 @@
 			font-family: $font__main;
 			font-size: 1.5rem;
 			letter-spacing: 0.1em;
-			line-height: 3rem;
+			line-height: 2rem;
 		}
 		.front-page-impact-case-icon-container {
 			width: 100px;
@@ -168,6 +167,7 @@
 		.front-page-explanation-case {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: auto;
+			text-align: left;
 		}
 		.front-page-impact-case {
 			display: grid;
@@ -179,6 +179,14 @@
 				padding: 4rem 6rem;
 				margin: 0;
 			}
+
+			front-page-impact-content {
+				.flex-horizontal-left {
+					justify-content: center;
+				}
+			}
+
+
 			div:nth-child(3) {
 				grid-column: 2 / 4;
 			}
@@ -192,14 +200,15 @@
 			.front-page-impact-case-number {
 				font-size: 5rem;
 				margin: 0;
+				line-height: 5rem;
 			}
 			.front-page-impact-case-metric {
 				color: $color__green-main;
 				font-size: 2.5rem;
+				line-height: 3rem;
 			}
 			.front-page-impact-case-icon-container {
-				width: 184px;
-				height: 184px;
+				display: none;
 			}
 			.front-page-impact-case-photo {
 				height: 100%
@@ -232,10 +241,25 @@
 			}
 		}
 
-		.front-page-impact-case-number, 
-		.front-page-impact-case-metric {
-			text-align: left;
-		} 
+
+
+		.front-page-impact-case {
+			.front-page-impact-case-number, 
+			.front-page-impact-case-metric {
+				text-align: left;
+			}
+			.front-page-impact-case-number {
+				margin: 1.7rem 0 0;
+			}
+			.front-page-impact-case-icon-container {
+				min-width: 184px;
+				width: 184px;
+				height: 184px;
+				display: block;
+			}
+		}
+
+
 
 		.wild-fire-count-container {
 			position: relative;

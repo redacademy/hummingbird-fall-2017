@@ -1123,7 +1123,9 @@ object {
   font-size: 5rem;
   color: #72acb2;
   margin: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 4rem;
+  padding-top: 2rem; }
 
 .width-column {
   max-width: 720px;
@@ -1924,15 +1926,14 @@ object {
     font-size: 2rem;
     margin: 0 0 .5rem 0;
     letter-spacing: 0.1em;
-    line-height: 5rem;
-    padding-top: 1.75rem; }
+    line-height: 3rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-metric {
     color: #698e87;
     margin: 0;
     font-family: "Overpass", sans-serif;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
-    line-height: 3rem; }
+    line-height: 2rem; }
   .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
     width: 100px;
     height: 100px;
@@ -2004,7 +2005,8 @@ object {
     display: none; }
   .page-front-page .front-page-explanation-case {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; }
+    grid-template-rows: auto;
+    text-align: left; }
   .page-front-page .front-page-impact-case {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2014,6 +2016,10 @@ object {
       grid-column: span 2;
       padding: 4rem 6rem;
       margin: 0; }
+    .page-front-page .front-page-impact-case front-page-impact-content .flex-horizontal-left {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .page-front-page .front-page-impact-case div:nth-child(3) {
       grid-column: 2 / 4; }
     .page-front-page .front-page-impact-case div:nth-child(4) {
@@ -2023,13 +2029,14 @@ object {
       font-family: "Overpass", sans-serif; }
     .page-front-page .front-page-impact-case .front-page-impact-case-number {
       font-size: 5rem;
-      margin: 0; }
+      margin: 0;
+      line-height: 5rem; }
     .page-front-page .front-page-impact-case .front-page-impact-case-metric {
       color: #698e87;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      line-height: 3rem; }
     .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
-      width: 184px;
-      height: 184px; }
+      display: none; }
     .page-front-page .front-page-impact-case .front-page-impact-case-photo {
       height: 100%; }
   .page-front-page .volunteer-form {
@@ -2057,9 +2064,16 @@ object {
               flex-direction: column; }
       .page-front-page .front-page-explanation-case div .front-page-explanation-case-icon {
         margin-top: auto; }
-  .page-front-page .front-page-impact-case-number,
-  .page-front-page .front-page-impact-case-metric {
+  .page-front-page .front-page-impact-case .front-page-impact-case-number,
+  .page-front-page .front-page-impact-case .front-page-impact-case-metric {
     text-align: left; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-number {
+    margin: 1.7rem 0 0; }
+  .page-front-page .front-page-impact-case .front-page-impact-case-icon-container {
+    min-width: 184px;
+    width: 184px;
+    height: 184px;
+    display: block; }
   .page-front-page .wild-fire-count-container {
     position: relative;
     margin-left: auto;

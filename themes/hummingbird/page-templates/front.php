@@ -90,7 +90,7 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/elements/wolf.svg">
 			</section>
 
-			<section class="width-column"> <!-- Out Impact -->
+			<section class="width-column"> <!-- Our Impact -->
 				<h2><?php echo CFS()->get( 'front_page_impact_title' ); ?></h2>
 				<p class="text-center"><?php echo CFS()->get( 'front_page_impact_content' ); ?></p>
 			</section>
