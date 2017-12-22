@@ -16,7 +16,7 @@ get_header(); ?>
 				<h1>Sign In</h1>
 			</section>
 
-			<section class="signin-form width-content">
+			<section class="signin-form width-column">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 				<?php endwhile; // End of the loop. ?>

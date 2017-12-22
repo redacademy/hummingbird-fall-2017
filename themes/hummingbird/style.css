@@ -469,7 +469,7 @@ textarea {
   color: #fff;
   font-size: 1rem;
   font-weight: 300;
-  width: 85%;
+  width: 100%;
   padding: 1rem; }
   .page-template-contact .contact-form input[type=email]::-webkit-input-placeholder,
   .page-template-contact .contact-form input[type=text]::-webkit-input-placeholder,
@@ -1853,8 +1853,8 @@ object {
   font-family: "Overpass", sans-serif;
   text-decoration: none; }
   .page-signin .signin-form a:hover {
-    color: #cecece;
-    text-decoration: underline; }
+    color: #1e1e1e;
+    font-weight: bold; }
 
 .page-signin .signin-form input {
   font-size: 16px; }
